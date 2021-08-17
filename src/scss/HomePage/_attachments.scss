@@ -1,0 +1,89 @@
+.Attached-mail {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: -20rem;
+  transform: rotate(90deg);
+  right: -12.5rem;
+  z-index: 10;
+  animation: comeout 0.65s 3.1s forwards;
+}
+
+@keyframes comeout {
+  0% {
+    bottom: -20rem;
+  }
+  85% {
+    bottom: 23rem;
+  }
+  100% {
+    bottom: 19.5rem;
+  }
+}
+
+#mail-box {
+  padding: 0.2rem 0;
+}
+
+.mail {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15.75px;
+  letter-spacing: 1px;
+}
+
+.moveup {
+  animation: bounceup 0.3s forwards linear;
+}
+
+@keyframes bounceup {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 1rem;
+  }
+}
+
+.Line-btw {
+  width: 95px;
+  height: 1rem;
+  border-bottom: 1.4px solid rgb(151, 150, 150);
+  margin: 0.7rem 0 0 2rem;
+}
+
+.Scroll__to__top__icon {
+  position: fixed;
+  left: 2rem;
+  bottom: -2.5rem;
+  font-size: 32px;
+
+  transform: scale(0.5);
+  display: none;
+
+  &:hover {
+    box-shadow: 1px 1px 5px solid rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    font-size: 30px;
+  }
+}
+
+.Visible__scroll__to__top__icon {
+  display: block;
+  animation: scroll_to_top_anim 1s ease-in 0.1s forwards;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+@keyframes scroll_to_top_anim {
+  0% {
+    transform: scale(0.5);
+    bottom: -2.5rem;
+  }
+  100% {
+    transform: scale(1);
+    bottom: 3rem;
+  }
+}

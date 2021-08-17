@@ -1,0 +1,96 @@
+.Header-wrapper {
+  @include flex(space-between, row);
+  padding-top: 1rem;
+  position: relative;
+  top: -10rem;
+  opacity: 0;
+  animation: appear 1s 0.3s ease-in forwards;
+}
+
+.Nav-section ul {
+  @include flex(space-between, row);
+  font-family: "Recursive", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 59rem;
+  margin-top: -1rem;
+
+  li {
+    margin: 0 0 0 2rem;
+    padding-top: 1.2rem;
+
+    a {
+      font-family: "Roboto", "Rubik", sans-serif;
+      font-size: 15.5px;
+      letter-spacing: 1px;
+      transition: color 0.25s;
+    }
+
+    span {
+      font-family: "Rubik", sans-serif;
+      margin-right: 2.2px;
+      font-size: 14px;
+    }
+  }
+}
+
+.mobileContact {
+  display: none;
+}
+
+.Logo-section {
+  margin-left: 3rem;
+}
+
+.Logo {
+  width: 11rem;
+  padding-bottom: 0.25rem;
+  object-fit: contain;
+  margin: 1.4rem 0 0 3.2rem;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
+
+.Nav-button {
+  padding: 1.37rem 2.4rem;
+  border-radius: 3px;
+  outline: none;
+  padding: 1.12rem 1.35rem;
+  border: 1.4px solid $pink;
+  border-radius: 3px;
+  margin: 0.4rem 5rem 0 0rem;
+  transition: all 0.25s;
+
+  a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+}
+
+.headerWrapper__onScroll {
+  position: sticky;
+  padding-top: 0.3rem;
+  background-color: #213397;
+  z-index: 80;
+  border-bottom: 1px solid #1a2c92;
+  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.075);
+  transition: background 0.6s;
+
+  .Nav__ul__onScroll {
+    margin-top: -1.4rem;
+  }
+}
+
+.Nav__button__onScroll {
+  margin: -0.25rem 5rem 0 0rem;
+}

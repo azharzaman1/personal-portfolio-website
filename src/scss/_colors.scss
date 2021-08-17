@@ -1,0 +1,259 @@
+$background: #042a64;
+$light-blue: #283791;
+$dim-white: rgb(182, 180, 180);
+$pink: #ec4884;
+$light-pink: #f06196;
+
+body {
+  background-color: $background;
+}
+
+.Nav-items {
+  color: $dim-white;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.Nav-button {
+  background-color: transparent;
+
+  a {
+    color: rgb(202, 215, 228);
+  }
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+// ATTACHMENTS
+
+.mail {
+  color: rgb(224, 226, 230);
+}
+
+.Scroll__to__top__icon {
+  color: $dim-white;
+  z-index: 100;
+}
+
+// About Section Colors
+
+.About-wrapper {
+  #about-dest {
+    color: $background;
+  }
+
+  .text1 {
+    color: $pink;
+  }
+
+  .name {
+    color: rgb(202, 215, 228);
+  }
+  .speciality {
+    color: rgb(174, 188, 201);
+  }
+
+  .description {
+    color: $dim-white;
+  }
+}
+
+.About-btn {
+  background-color: transparent;
+  color: rgb(202, 215, 228);
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.wordpress {
+  color: white;
+}
+
+.react {
+  color: #61dbfb;
+}
+
+// Experience Section Colors
+
+#Experience-dest {
+  color: $background;
+}
+
+.Section-title {
+  color: $pink;
+
+  span {
+    color: $pink;
+  }
+}
+
+.expertiseText,
+.Line {
+  color: $dim-white;
+}
+
+.Line span {
+  color: $pink;
+}
+
+.Tagline {
+  color: $dim-white;
+}
+
+.Experience-mid-border-div {
+  color: $background;
+}
+
+.Experience-btns-container {
+  background-color: $background;
+}
+
+.Experience-output-box {
+  background-color: $light-blue;
+}
+
+.Post {
+  color: rgb(201, 201, 201);
+}
+
+.Industory {
+  color: $pink;
+}
+
+.Time-duration {
+  color: rgb(165, 165, 165);
+}
+
+.Arrow {
+  color: salmon;
+}
+
+.Lower-space-point {
+  color: $dim-white;
+}
+
+.Marcom-btn {
+  color: $dim-white;
+  background-color: $light-blue;
+}
+
+.Marcom-btn-mod {
+  color: $dim-white;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #1b2d96;
+  }
+}
+
+.Huawei-btn {
+  background-color: transparent;
+  color: $dim-white;
+
+  &:hover {
+    background-color: #1b2d96;
+  }
+}
+
+.Huawei-btn-mod {
+  background-color: $light-blue;
+  color: $dim-white;
+}
+
+// Projects Section Coloring
+
+.projectsSection__heading {
+  color: $pink;
+
+  span {
+    color: $pink;
+  }
+}
+
+#scrollTo__projectsSection {
+  color: $background;
+}
+
+.smallProjects__wrapper {
+  background-color: #27347c;
+}
+
+.icons {
+  color: #f06196;
+}
+
+.smallProjects__heading {
+  color: rgb(196, 196, 196);
+}
+
+.smallProjects__desc {
+  color: rgb(196, 194, 194);
+}
+
+.projects__tech,
+.projects__tech a {
+  color: rgb(143, 143, 143);
+}
+
+.projects__tech a:hover {
+  color: rgb(168, 166, 166);
+}
+
+// .moreBtn {
+//   background-color: transparent;
+//   color: rgb(202, 215, 228);
+//   border: 0.8px solid $pink;
+
+//   &:hover {
+//     background-color: $light-blue;
+//   }
+// }
+
+// Footer Section Coloring
+
+#Contact-dest {
+  color: $background;
+}
+
+.What-next {
+  color: $pink;
+
+  span {
+    color: $pink;
+  }
+}
+
+.Hesitate {
+  color: rgb(178, 182, 190);
+}
+
+.contactBtns {
+  background-color: transparent;
+  color: rgb(202, 215, 228);
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.footerTag {
+  color: rgb(207, 210, 218);
+}
+
+.contributionText {
+  color: $dim-white;
+
+  a {
+    color: $dim-white;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}

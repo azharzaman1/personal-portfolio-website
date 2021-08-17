@@ -1,0 +1,10 @@
+$background: #162577;
+$light-blue: #213397;
+$dim-white: rgb(182, 180, 180);
+$pink: #ec4884;
+$light-pink: #f06196;
+
+@import "./responsivebreakpoints/mobile1-320-359";
+@import "./responsivebreakpoints/mobile2-360-400";
+@import "./responsivebreakpoints/mobile3-400-450";
+@import "./responsivebreakpoints/tablet1-786";

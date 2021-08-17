@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500);
+
+.pricingTop__section {
+  margin: 3.8rem auto 0;
+  text-align: center;
+}
+
+.pricingTop__section p {
+  font-family: "Poppins", sans-serif;
+  color: rgb(233, 233, 233);
+  font-size: 25px;
+}
+
+.plansWrapper {
+  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 85px auto 0;
+}
+.plansWrapper .plan {
+  margin: 0;
+  width: 25%;
+  position: relative;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.plansWrapper * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.plansWrapper header {
+  position: relative;
+}
+.plansWrapper .planTitle {
+  position: relative;
+  top: 0;
+  font-weight: 800;
+  padding: 7.5px 16px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+  display: inline-block;
+  background-color: #222f3d;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.plansWrapper .planCost {
+  padding: 0px 10px 20px;
+}
+.plansWrapper .planPrice {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2.4em;
+  color: #34495e;
+}
+
+.plansWrapper .plan-type {
+  opacity: 0.6;
+}
+.plansWrapper .planFeatures {
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  list-style: outside none none;
+}
+.plansWrapper .planFeatures li {
+  border-top: 1px solid #d2d7e2;
+  padding: 16px 5%;
+}
+
+.planFeatures .no,
+.yes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.planFeatures .no svg {
+  align-items: center;
+  color: red;
+  font-size: 17px;
+  margin-right: 1rem;
+}
+
+.planFeatures .yes svg {
+  color: green;
+  font-size: 19px;
+  margin-right: 1rem;
+}
+
+.plansWrapper .planFeatures li:nth-child(even) {
+  background: rgba(0, 0, 0, 0.08);
+}
+.plansWrapper .plan-features i {
+  margin-right: 8px;
+  color: rgb(4, 138, 4);
+  opacity: 0.4;
+}
+.plansWrapper .planCode {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 10px 0;
+  /* box-shadow: 0px -5px 10px 0 rgba(0, 0, 0, 0.2); */
+}
+.plansWrapper .planCode span {
+  background-color: #222f3d;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.plansWrapper .featured {
+  margin-top: -10px;
+  background-color: #34495e;
+  color: #ffffff;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.plansWrapper .featured .planTitle,
+.plansWrapper .featured .planFeatures {
+  color: #ffffff;
+}
+.plansWrapper .featured .planCost {
+  padding: 10px 10px 20px;
+}
+.plansWrapper .featured .plan-features li {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.plansWrapper .featured .planCode {
+  padding: 20px 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#prof__Text {
+  color: white;
+}
+
+/* Responsive Breakpoints 340 */
+
+@media screen and (min-width: 350px) and (max-width: 390px) {
+  .pricingTop__section {
+    margin: 3.5rem auto 0;
+  }
+
+  .pricingTop__section p {
+    font-size: 18px;
+  }
+
+  .plansWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 386px;
+    margin: 40px 10px;
+  }
+
+  .plansWrapper .plan {
+    min-width: 320px;
+  }
+
+  #planTop__marginMobile {
+    margin-top: 7.5rem;
+  }
+
+  #planTop__marginMobile:nth-child(1) {
+    margin-top: 2rem;
+  }
+  .plansWrapper .planCost {
+    padding: 0px 10px 20px;
+  }
+  .plansWrapper .planPrice {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 2.4em;
+    color: #34495e;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 445px) {
+  .pricingTop__section {
+    margin: 3.5rem auto 0;
+  }
+
+  .pricingTop__section p {
+    font-size: 18px;
+  }
+
+  .plansWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 386px;
+    margin: 40px 20px;
+  }
+
+  .plansWrapper .plan {
+    min-width: 375px;
+  }
+
+  #planTop__marginMobile {
+    margin-top: 7.5rem;
+  }
+
+  #planTop__marginMobile:nth-child(1) {
+    margin-top: 2rem;
+  }
+  .plansWrapper .planCost {
+    padding: 0px 10px 20px;
+  }
+  .plansWrapper .planPrice {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 2.4em;
+    color: #34495e;
+  }
+}

@@ -1,0 +1,124 @@
+.student__profilesList {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 81.5vh;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1.75rem 4rem;
+  background-color: rgb(238, 238, 238);
+  border-radius: 2px;
+  box-shadow: 4px 4px 12px -1px rgba(8, 15, 117, 0.25);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.student__profile {
+  display: flex;
+}
+
+.table__header {
+  display: flex;
+  padding: 1.75rem 0.5rem;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.student__profile {
+  padding: 1.25rem 0.5rem;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(211, 211, 211);
+  transition: background 0.15s, transform 0.15s;
+}
+
+.student__profile:hover {
+  background-color: rgb(225, 231, 226);
+}
+
+.student__profile > h1,
+.table__header > h1 {
+  width: 10rem;
+  font-size: 17.5px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 2rem;
+}
+
+.table__header > h1 {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.student__profile > h2,
+.table__header > h2 {
+  font-size: 16.5px;
+  font-weight: 400;
+  width: 31.5rem;
+  letter-spacing: 0.35px;
+}
+
+.table__header > h2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.student__profile > h3,
+.table__header > h3 {
+  font-size: 16.5px;
+  font-weight: 400;
+  width: 27.5rem;
+  letter-spacing: 0.35px;
+}
+
+.table__header > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.student__profile > h4,
+.table__header > h4 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Recursive", sans-serif;
+}
+
+.table__header > h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.notice {
+  margin-top: 1.5rem;
+}
+
+.notice > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(216, 216, 216);
+}
+
+.enrolledStudents__backLink {
+  margin-top: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.enrolledStudents__backLink > a {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(216, 216, 216);
+  margin: auto;
+  /* transition: all 0.15s; */
+}
+
+.enrolledStudents__backLink > a:hover {
+  text-decoration: underline;
+  color: rgb(204, 204, 204);
+}

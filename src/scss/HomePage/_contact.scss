@@ -1,0 +1,62 @@
+.Contact-section-wrapper {
+  margin: 35rem 0 17rem 0rem;
+  text-align: center;
+}
+
+#Contact-dest {
+  font-size: 1px;
+}
+
+.What-next {
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-right: 1.35rem;
+  letter-spacing: 1px;
+
+  span {
+    margin-right: 1px;
+    font-size: 19px;
+  }
+}
+
+.Hesitate {
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 17.5px;
+  margin-top: 2rem;
+  letter-spacing: 0.25px;
+  max-width: 51rem;
+  margin: 2rem auto;
+
+  span {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    font-weight: 500;
+  }
+}
+
+.contactBtns__cont {
+  margin-top: 7rem;
+}
+
+.contactBtns {
+  border: 0.1px solid $pink;
+  padding: 1.2rem 2.2rem;
+  border-radius: 3px;
+  outline: none;
+  transition: background-color 0.25s;
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  letter-spacing: 1px;
+}
+
+.contactBtn1 {
+  margin-right: 1.5rem;
+}
+
+.contactBtn2 {
+  margin-left: 1.5rem;
+}

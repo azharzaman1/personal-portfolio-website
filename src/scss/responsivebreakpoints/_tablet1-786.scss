@@ -1,0 +1,758 @@
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  .Header-wrapper {
+    @include flex(space-between, column);
+    position: relative;
+    opacity: 0;
+    animation: appear 1s 0.3s ease-in forwards;
+
+    .Logo-section {
+      #Logo {
+        width: 9rem;
+        margin-left: -36rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .Nav-section ul {
+      @include flex(space-between, row);
+      font-family: "Recursive", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      margin-left: -35.5rem;
+      margin-top: 2rem;
+
+      li {
+        margin: 0 0 0 1.75rem;
+
+        a {
+          font-family: "Rubik", sans-serif;
+          font-size: 16px;
+          letter-spacing: 0.85px;
+          transition: color 0.25s;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      top: -10rem;
+    }
+    100% {
+      opacity: 1;
+      top: 0rem;
+    }
+  }
+
+  .Nav-button {
+    border: 0.1px solid #ec4884;
+    border-radius: 2.5px;
+    outline: none;
+    padding: 1.1rem 1.35rem;
+    border: 1.2px solid #ec4884;
+    border-radius: 3px;
+    margin: 2.25rem 0rem 0 -29.85rem;
+    transition: all 0.25s;
+    position: absolute;
+    top: 4.1rem;
+    left: 71.5rem;
+
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 14.65px;
+      letter-spacing: 1px;
+    }
+  }
+
+  // About Section //////
+
+  .About-wrapper {
+    @include flex(space-between, column);
+    margin: 5rem 0 0 0rem;
+
+    #about-dest {
+      position: absolute;
+      top: -12rem;
+      font-size: 1px;
+    }
+    .text1 {
+      font-family: "Recursive", sans-serif;
+      font-weight: 400;
+      font-size: 16.85px;
+      margin-left: -9rem;
+      letter-spacing: 1px;
+    }
+    .name {
+      margin-top: 1rem;
+      font-family: "Rubik", sans-serif;
+      font-size: 4.4rem;
+      font-weight: 600;
+      margin-left: -9rem;
+      letter-spacing: 2px;
+      text-shadow: 0.4px 0.4px 1.5px -1px rgb(172, 168, 168);
+    }
+
+    .speciality {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      margin: 1rem 0 0 -9rem;
+      font-size: 1.9rem;
+      letter-spacing: 1px;
+      text-shadow: 0.3px 0.3px 2px -1px rgb(172, 168, 168);
+      line-height: 3.25rem;
+    }
+
+    .ecommerce-spe {
+      max-width: 30rem;
+    }
+
+    .description {
+      margin: 1.5rem 1.75rem 0rem -9rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      max-width: 535px;
+      font-size: 15.5px;
+      letter-spacing: 0.4px;
+    }
+    .About-btn {
+      border: 0.1px solid #ec4884;
+      padding: 1.1rem 1.5rem;
+      border-radius: 3px;
+      outline: none;
+      margin: 3rem 0 0 -8.75rem;
+      transition: all 0.25s;
+
+      a {
+        font-family: "Poppins", sans-serif;
+        font-size: 14.5px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .My-image {
+    z-index: 3;
+    margin-top: 23rem;
+
+    .My-img-cont {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      left: -22rem;
+      margin: 0;
+      z-index: 2;
+    }
+
+    .Back-border1 {
+      display: none;
+    }
+
+    .Back-border2 {
+      display: none;
+    }
+  }
+
+  @keyframes appearmobileimage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .wordpress {
+    font-size: 22px;
+    margin: 0 1.15rem 0 0.65rem;
+  }
+
+  .cart {
+    font-size: 19.5px;
+    margin: 0 1.15rem 0 0.55rem;
+  }
+
+  // Expertise Container /////////////
+
+  .Experience-section-container {
+    margin: 16rem 0rem 0rem 0rem;
+  }
+
+  #Experience-dest {
+    font-size: 1px;
+    margin-bottom: 15.3rem;
+  }
+
+  .Heading-cont {
+    position: relative;
+  }
+
+  #hr-1 {
+    display: none;
+  }
+
+  .Section-title {
+    font-family: "Recursive", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5rem;
+    letter-spacing: 1px;
+
+    span {
+      margin-right: 4px;
+      font-size: 16.5px;
+    }
+  }
+
+  .Experties-content-container {
+    @include flex(space-between, column);
+    margin-top: 1.8rem;
+  }
+
+  .Experties-content-wrapper {
+    margin: 1rem 0 0 0;
+
+    .Expertise-text {
+      margin: 0rem 0 2.5rem -18.5rem;
+      letter-spacing: 0.4px;
+      font-family: "Poppins", sans-serif;
+      max-width: 460px;
+      font-size: 15.75px;
+    }
+
+    .Tagline {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0rem 0 1rem -18.75rem;
+      letter-spacing: 1.5px;
+    }
+
+    .Line {
+      display: flex;
+      font-family: "Recursive", sans-serif;
+      font-weight: 400;
+      flex-direction: row;
+      font-size: 14.75px;
+      margin: 0.7rem 0 0.3rem -18rem;
+
+      span {
+        font-size: 16px;
+        margin-right: 0.8rem;
+      }
+
+      p {
+        margin: 0.3rem 0 0 0;
+      }
+    }
+
+    .extra {
+      margin-left: 5rem;
+    }
+
+    .extra2 {
+      margin-top: 1.6rem;
+    }
+
+    .extra3 {
+      margin-left: 7.1rem;
+    }
+
+    .extra4 {
+      margin-left: 10.85rem;
+    }
+
+    .extra5 {
+      margin-left: 7.9rem;
+    }
+
+    .extra6 {
+      margin-left: 11.9rem;
+    }
+  }
+
+  .Experience-mid-border-div {
+    display: none;
+  }
+
+  .Output-experience-container {
+    height: 100%;
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .Experience-btns-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -9rem;
+  }
+
+  .Experience-output-box {
+    width: 55%;
+    min-height: 29rem;
+    margin: 0.5rem 0 0 -6.5rem;
+    border-radius: 3px;
+  }
+
+  .Output-experience-box-content-container {
+    padding: 1rem 0.5rem 1.1rem 1rem;
+    margin: 0;
+  }
+
+  .Post {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+  }
+
+  .Industory {
+    letter-spacing: 1.5px;
+  }
+
+  .Time-duration {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0.7rem;
+    letter-spacing: 0.7px;
+  }
+
+  .Experience-output-lower-space-wrapper {
+    margin-top: 1.75rem;
+    margin-right: 1.25rem;
+  }
+
+  .Arrow {
+    margin-right: 0.75rem;
+  }
+
+  .Lower-space-point {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 15.25px;
+    letter-spacing: 0.5px;
+  }
+
+  .Marcom-lower-point-2 {
+    margin-top: 1rem;
+  }
+
+  .Josoftech-lower-point-2 {
+    margin-top: 1rem;
+  }
+
+  // Buttons Activeness Styling /////
+
+  .Marcom-btn {
+    width: 13.6rem;
+    height: 6.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-left: 2.5px solid #ec4884;
+    border-bottom: 1px solid rgb(94, 94, 94);
+    border-top: 1px solid rgb(94, 94, 94);
+  }
+
+  .Marcom-btn-mod {
+    width: 13.6rem;
+    height: 6.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+
+    &:hover {
+      border-left: 2.5px solid #ec4884;
+    }
+  }
+
+  .Josoftech-btn {
+    width: 13.5rem;
+    height: 6.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+    transition: background-color 0.25s, border 0.15s;
+
+    &:hover {
+      border-left: 2.5px solid #ec4884;
+    }
+  }
+
+  .Huawei-btn {
+    width: 13.5rem;
+    height: 6.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+    &:hover {
+      border-left: 2.5px solid #ec4884;
+    }
+  }
+
+  .Josoftech-btn-mod {
+    width: 13.5rem;
+    height: 6.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-left: 2.5px solid #ec4884;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+    transition: background-color 0.25s, border 0.15s;
+  }
+
+  .Huawei-btn-mod {
+    width: 13.5rem;
+    height: 6.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-left: 2.5px solid #ec4884;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+    transition: background-color 0.25s, border 0.15s;
+  }
+
+  // Work Section //////
+
+  .All-projects-section-container {
+    margin: 14rem 0 0rem 5.25rem;
+  }
+
+  .Projects-section-heading-cont {
+    position: relative;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+  }
+
+  .Tagline {
+    font-family: "Recursive", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 0rem;
+
+    span {
+      margin-right: 1px;
+      font-size: 16px;
+      margin-left: 1rem;
+    }
+  }
+
+  #Projects-dest {
+    position: absolute;
+    top: -7rem;
+  }
+
+  .Projects-heading-front-line {
+    display: none;
+  }
+
+  // ///////////
+
+  .Projects-first-row,
+  .Projects-sec-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 0rem;
+  }
+
+  .Projects-first-row {
+    margin: 0;
+  }
+
+  .Projects-third-row {
+    margin: 0;
+  }
+
+  .Project-tablet-even-extra-margin {
+    margin-left: 10rem;
+  }
+
+  .Mob-extra-margin {
+    margin-left: 1.5rem;
+  }
+
+  .Project-wrapper {
+    border: 1px solid rgb(66, 66, 66);
+    width: 52%;
+    height: 40vh;
+    margin: 5rem 0 0 22.4rem;
+    border-radius: 2.5px;
+    padding: 1rem 1rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: -2px 15px 25px -2px rgba($color: #000000, $alpha: 0.1);
+    position: relative;
+    top: 7px;
+
+    &:hover {
+      animation: updown 180ms linear 30ms forwards;
+    }
+
+    .Iconsbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .Icons {
+        font-size: 19px;
+      }
+
+      .Slider-opener {
+        display: none;
+      }
+
+      .Icon-bohem,
+      .Icon-procus {
+        margin-left: -21rem;
+      }
+
+      .Icon1 {
+        font-size: 43px;
+      }
+
+      .IconOpen {
+        font-size: 30px;
+        margin-top: 0.8rem;
+      }
+
+      .Icon2 {
+        font-size: 17px;
+        margin-top: 1.7rem;
+        margin-right: 1.4rem;
+      }
+
+      .Icon3 {
+        margin-left: 19rem;
+        margin-top: 1.85rem;
+      }
+
+      .ecommIcon1 {
+        margin-left: 11rem;
+      }
+
+      .ecommIcon2 {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  .Slider__opener__overlapper {
+    display: none;
+  }
+
+  .Tablet-mod-extra-margin {
+    margin-left: -55rem;
+  }
+
+  .Projects-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 1.3px;
+  }
+
+  .Projects-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+  }
+
+  .Projects-tech,
+  .Projects-tech a {
+    font-family: "Recursive", sans-serif;
+    font-weight: 400;
+    font-size: 13.8px;
+    letter-spacing: 0.7px;
+    text-shadow: 0.1px 0.3px 10px -1px rgba($color: #000000, $alpha: 0.2);
+    transition: color 0.25s;
+  }
+
+  @keyframes updown {
+    0% {
+      top: 7px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+  .More-btn-sec {
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .More-btn-change-id {
+    display: none;
+  }
+
+  .More-btn {
+    font-size: 16px;
+    border: 0.8px solid #ec4884;
+    font-family: "Poppins", sans-serif;
+    padding: 1.2rem 2.4rem;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+    top: 2.5px;
+
+    &:hover {
+      animation: moveup 200ms linear 20ms forwards;
+    }
+  }
+
+  @keyframes moveup {
+    0% {
+      top: 2.5px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+  .React-logo {
+    width: 53px;
+    height: 45px;
+  }
+
+  .Coffe-slider-opener-extra-margin {
+    margin-right: -7rem;
+  }
+
+  .Shopify-logo {
+    width: 45px;
+    height: 55px;
+    margin-left: 0.5rem;
+  }
+
+  // Contact Us Section ///////
+
+  .Contact-section-wrapper {
+    margin: 20rem 0 15rem 0rem;
+    text-align: center;
+  }
+
+  #Contact-dest {
+    font-size: 1px;
+  }
+
+  .What-next {
+    font-family: "Recursive", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: -4.5rem;
+    letter-spacing: 1px;
+
+    span {
+      margin-right: 1px;
+      font-size: 16px;
+    }
+  }
+
+  .Hesitate {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin: 2rem 0 0 9.8rem;
+
+    span {
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-shadow: none;
+      font-weight: 500;
+    }
+  }
+
+  .Contact-btns {
+    border: 0.1px solid #ec4884;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    outline: none;
+    margin: 4rem 0 0 -7rem;
+    transition: all 0.25s;
+
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 14.5px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .btn1 {
+    margin-right: 1rem;
+  }
+
+  .btn2 {
+    margin-left: 1.5rem;
+  }
+
+  // Footer Section //////
+
+  .Footer-wrapper {
+    margin-bottom: 2.1rem;
+  }
+
+  .Footer-tag {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem 0 1rem 0;
+    letter-spacing: 1px;
+    margin: 0 0 1rem -3rem;
+  }
+
+  .contribute {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    width: 35rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 1rem;
+    margin-left: 18.25rem;
+
+    a {
+      font-size: 15px;
+      letter-spacing: 1.7px;
+      transition: color 0.18s;
+    }
+  }
+
+  #Footer-span {
+    display: none;
+  }
+
+  .Git-direct-icon {
+    font-size: 14.5px;
+  }
+}

@@ -1,0 +1,383 @@
+// All projects Container Styling //
+
+.projectsSection__mainContainer {
+  margin: 52rem 0 0rem 0rem;
+  user-select: none;
+}
+
+.projectsSection__headingCont {
+  position: relative;
+  margin-left: 12rem;
+}
+
+.projectsSection__heading {
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+  font-size: 23px;
+  letter-spacing: 1px;
+
+  span {
+    margin-right: 1px;
+    font-size: 19px;
+  }
+}
+
+#scrollTo__projectsSection {
+  position: absolute;
+  top: -9rem;
+}
+
+.projectsSection__frontLine {
+  position: absolute;
+  top: 1.55rem;
+  left: 37rem;
+  width: 255px;
+  height: 5px;
+  border-top: 2.2px solid rgb(124, 120, 120);
+}
+
+// ////////////////////////////////
+
+.react__projectsContainer {
+  margin: 5rem 0 5rem;
+}
+
+.projectsTagline {
+  margin: 0 0 6.5rem 0;
+  align-items: center;
+  text-align: center;
+  color: rgb(238, 238, 238);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.reactProjects__firstRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6.55rem;
+}
+
+.reactProjects__pendingRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.reactProjects__secondRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6.55rem;
+}
+
+.bigProject__wrapper {
+  width: 430px;
+  height: 350px;
+  background-color: #273375;
+  border-radius: 6px;
+  padding: 1rem;
+  border: 1px solid rgb(66, 66, 66);
+  box-shadow: -2px 15px 25px -2px rgba($color: #000000, $alpha: 0.1);
+  position: relative;
+  top: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    animation: updown 180ms linear 30ms forwards;
+  }
+}
+
+.bigProject__cardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .googleLogo {
+    width: 130px;
+    margin: 1rem;
+  }
+
+  .netflixLogo {
+    width: 125px;
+    margin: 1.2rem 1rem 1rem 1rem;
+  }
+
+  .covidLogo {
+    width: 160px;
+  }
+
+  .amazonLogo {
+    width: 130px;
+    margin: 2.1rem 1.25rem 0 1.75rem;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: -1rem;
+    margin-top: 1.5rem;
+    color: rgb(226, 226, 226);
+    letter-spacing: 1px;
+  }
+
+  .netflixText {
+    margin-left: -1rem;
+  }
+
+  svg {
+    color: #f06196;
+    font-size: 18px;
+    z-index: 1111;
+    margin-right: 1.7rem;
+    cursor: pointer;
+  }
+
+  .gitHub__icon {
+    color: white;
+    font-size: 21px;
+    margin-left: 11.75rem;
+    margin-top: 0.3rem;
+  }
+
+  .covidProject__github {
+    margin-left: 16.75rem;
+  }
+}
+
+.bigProject__cardBody {
+  padding: 1rem;
+
+  .bigProjects__desc {
+    color: rgb(196, 196, 196);
+    margin-top: -1.5rem;
+    font-family: "Roboto", "Poppins", sans-serif;
+    line-height: 1.6;
+    font-size: 17.2px;
+    color: $dim-white;
+    letter-spacing: 0.2px;
+  }
+}
+
+.bigProject__cardFooter {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+
+  p {
+    span {
+      font-family: "Roboto", "Poppins", sans-serif;
+
+      margin: 0 0.2rem;
+    }
+  }
+}
+
+//////////////////////////////////
+
+.pendingProject {
+  align-items: center;
+  width: 430px;
+  height: 200px;
+  background-color: #273375;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(66, 66, 66);
+  position: relative;
+  top: 7px;
+  padding: 1rem;
+
+  &:hover {
+    animation: updown 180ms linear 30ms forwards;
+  }
+}
+
+.pendingProject > a > img {
+  width: 130px;
+  margin-top: 1.35rem;
+}
+
+.pendingProject__bdLogo {
+  margin-top: 0.65rem !important;
+  width: 60px !important;
+}
+
+.pendingProject__vaLogo {
+  width: 90px !important;
+  margin-top: -1rem !important;
+}
+
+.pendingProject > h2 {
+  font-size: 21.5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: $dim-white;
+  margin-top: 0.75rem;
+}
+
+.cvaTagline {
+  margin-top: -0.35rem !important;
+}
+
+.pendingProject > h3 {
+  font-size: 16.5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: $dim-white;
+  margin-top: 1.75rem;
+}
+
+.pendingProjects__linksIcons {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.pendingProjects__linksIcons > a > svg {
+  margin-top: 1.5rem;
+}
+
+.pendingProjects__linksIcons > a > .pendingProject__githubIcon {
+  font-size: 22px;
+  margin-right: 1rem;
+  color: white;
+}
+
+.pendingProjects__linksIcons > a > .pendingProject__externalIcon {
+  font-size: 20px;
+  margin-left: 1rem;
+  color: #f06196;
+}
+
+//////////////////////////////////
+
+.cmsDevelopment__projectsContainer {
+  margin-top: 20rem;
+}
+
+.cmsDevelopment__firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.smallProjects__wrapper {
+  border: 1px solid rgb(66, 66, 66);
+  width: 22.5%;
+  height: 39.5vh;
+  background-color: #273375;
+  margin: 0 2.5rem 0 0;
+  border-radius: 2.5px;
+  padding: 1rem 1rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: -2px 15px 25px -2px rgba($color: #000000, $alpha: 0.1);
+  position: relative;
+  top: 7px;
+
+  &:hover {
+    animation: updown 180ms linear 30ms forwards;
+  }
+
+  .iconsBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .icon1 {
+      font-size: 50px;
+      margin-top: -0.2rem;
+    }
+
+    .icon2 {
+      font-size: 17px;
+      margin-top: 1.07rem;
+      margin-right: 1.4rem;
+    }
+
+    .icon3 {
+      margin-left: 16.75rem;
+      margin-top: 1rem;
+      padding: 2.5px;
+      font-size: 17px;
+      z-index: 1111;
+    }
+
+    .smallProject__githubIcon {
+      color: white;
+      font-size: 20px;
+      margin-top: 1.55rem;
+      margin-right: 1.2rem;
+    }
+
+    .sliderOpener__overlapper {
+      width: 2.2rem;
+      height: 2.15rem;
+      position: absolute;
+      right: 6.95rem;
+      top: 3.2rem;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+.no_Need_Of_Icons {
+  display: none;
+}
+
+#no_need_of_external_link_icon {
+  display: none;
+}
+
+.smallProjects__heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1.3px;
+}
+
+.smallProjects__desc {
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  font-size: 17.2px;
+  font-weight: 400;
+}
+
+.projects__tech,
+.projects__tech a {
+  font-family: "Roboto", "Poppins", sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 14.2px;
+  transition: color 0.25s;
+  margin: 0 0.5rem;
+}
+
+@keyframes updown {
+  0% {
+    top: 7px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.need_Replace_WP_icon {
+  display: none;
+}
+
+.myLogo {
+  width: 125px;
+  margin-top: 1.35rem;
+  margin-left: 0.45rem;
+}

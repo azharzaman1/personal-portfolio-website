@@ -1,0 +1,96 @@
+.loading__stuff {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 34vh;
+  position: relative;
+}
+
+/* After 3 Sec this class would be added to 'Loadin__stuff' */
+
+.disappear__animation {
+  animation: a3 0.25s linear forwards;
+  animation: a4 0.1s linear forwards;
+}
+
+.loading__circle {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #e74c3c;
+  position: relative;
+  animation: a1 2s linear infinite;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.loading__circle::before,
+.loading__circle::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loading__circle::before {
+  border-top: 10px solid #e67e22;
+  transform: rotate(120deg);
+}
+
+.loading__circle::after {
+  border-top: 10px solid #3498db;
+  transform: rotate(240deg);
+}
+
+.anim__logo {
+  width: 132px;
+  position: absolute;
+  top: 36%;
+  left: 18.25%;
+  opacity: 0;
+  animation: a2 3.5s linear forwards;
+}
+
+@keyframes a1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  0% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes a3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes a4 {
+  to {
+    transform: scale(0);
+  }
+}

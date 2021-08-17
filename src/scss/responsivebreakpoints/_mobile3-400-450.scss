@@ -1,0 +1,585 @@
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .Header-wrapper {
+    @include flex(space-between, column);
+    animation: appear 1s 0.3s ease-in forwards;
+
+    .Logo-section {
+      #Logo {
+        width: 10rem;
+        margin-left: -4rem;
+        margin-top: 0.5rem;
+        padding-bottom: 0;
+      }
+    }
+
+    .Nav-section ul {
+      font-size: 15px;
+      margin-left: -1rem;
+      margin-top: 0.74rem;
+
+      li {
+        margin: 0 0 0 1.2rem;
+
+        a {
+          font-size: 16px;
+          letter-spacing: 0.85px;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .desktopContact {
+    display: none;
+  }
+
+  .mobileContact {
+    display: block;
+  }
+
+  .Nav-button {
+    border: 1.2px solid #ec4884;
+    padding: 0.8rem 1.75rem;
+    padding: 0.8rem 1.1rem;
+    margin: 2.25rem 0rem 0 -0.8rem;
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  // Attached Mail //////
+
+  .Attached-mail {
+    display: none;
+  }
+
+  .Visible__scroll__to__top__icon {
+    display: none;
+  }
+
+  // About Section //////
+
+  .About-wrapper {
+    @include flex(space-between, column);
+    margin: 6rem 0 0 0rem;
+
+    #about-dest {
+      position: absolute;
+      top: -12rem;
+      font-size: 1px;
+    }
+    .text1 {
+      font-size: 16px;
+      margin-left: -1.65rem;
+      text-align: center;
+    }
+    .name {
+      font-size: 4.25rem;
+      margin-left: -0.25rem;
+      text-align: center;
+    }
+    .speciality {
+      text-align: center;
+      margin: 0.75rem 0 0 -0.51rem;
+      font-size: 1.9rem;
+      line-height: 3.5rem;
+    }
+    .description {
+      margin: 1.5rem 0.7rem 0rem 0.7rem;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .Btn-container {
+      margin-top: 4rem;
+    }
+
+    .About-btn {
+      padding: 1.2rem 1.5rem;
+      margin: 3rem 0 0 13.6rem;
+
+      a {
+        font-size: 14.5px;
+      }
+    }
+  }
+
+  .My-image {
+    display: none;
+  }
+
+  .myImage__mobile {
+    display: block;
+
+    animation: appearmobileimage 0.5s linear 0.2s forwards;
+  }
+
+  @keyframes appearmobileimage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .wordpress,
+  .react {
+    margin: 0 1rem 0 0.5rem;
+  }
+
+  .wordpress {
+    font-size: 24px;
+    margin: 0 1.15rem 0 0.65rem;
+  }
+
+  .react {
+    font-size: 26px;
+  }
+
+  // Expertise Container /////////////
+
+  .Experience-section-container {
+    margin: 0;
+  }
+
+  #Experience-dest {
+    font-size: 1px;
+    margin-bottom: 15.3rem;
+  }
+
+  #hr-1 {
+    display: none;
+  }
+
+  .Section-title {
+    font-size: 18px;
+    text-align: center;
+    margin-left: -1rem;
+
+    span {
+      margin-right: 4px;
+      font-size: 14.5px;
+    }
+  }
+
+  .expertiesContent__mainWrapper {
+    @include flex(space-between, column);
+    margin-top: 1.8rem;
+  }
+
+  .expertiesContent__wrapper {
+    margin: 1rem 0 0 0;
+
+    .expertiseText {
+      text-align: center;
+      margin: 0rem 1rem 2.5rem;
+      font-size: 15.5px;
+    }
+
+    .Tagline {
+      text-align: center;
+      font-size: 17px;
+      margin: 3.5rem 0 1rem -1rem;
+    }
+
+    .Line {
+      font-size: 13.75px;
+      margin: 1rem 0 0.3rem 3.5rem;
+
+      span {
+        font-size: 16px;
+        margin-right: 0.8rem;
+      }
+
+      p {
+        margin: 0.3rem 0 0 0;
+      }
+    }
+
+    .extra1 {
+      margin-left: 4.65rem;
+    }
+
+    .extra2 {
+      margin-left: 12.3rem;
+    }
+
+    .extra3 {
+      margin-left: 11.65rem;
+    }
+
+    .extra4 {
+      margin-left: 1.75rem;
+    }
+
+    .extra5 {
+      margin-left: 2.85rem;
+    }
+  }
+
+  .Experience-mid-border-div {
+    display: none;
+  }
+
+  .Output-experience-container {
+    height: 100%;
+    margin-top: 6rem;
+    width: 98%;
+    flex-direction: column;
+    box-shadow: 0 3px 10px 0 rgba($color: #000000, $alpha: 0.1);
+  }
+
+  .Experience-btns-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Experience-output-box {
+    width: 100%;
+    min-height: 28rem;
+    margin: 0.35rem 0 0 0;
+  }
+
+  .Output-experience-box-content-container {
+    margin: 0.75rem 0.5rem 0.9rem 0.85rem;
+  }
+
+  .Post {
+    font-size: 18px;
+  }
+
+  .Time-duration {
+    font-size: 14px;
+  }
+
+  .Lower-space-point {
+    font-size: 15.25px;
+  }
+
+  // Work Section //////
+
+  .projectsSection__mainContainer {
+    margin: 14rem 0.75rem 0rem 1rem;
+  }
+
+  .projectsSection__headingCont {
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+  }
+
+  .projectsSection__heading {
+    font-size: 18px;
+
+    span {
+      font-size: 15px;
+      margin-left: 1rem;
+    }
+  }
+
+  #scrollTo__projectsSection {
+    top: -7rem;
+  }
+
+  .projectsSection__frontLine {
+    display: none;
+  }
+
+  // ///////////
+
+  .react__projectsContainer {
+    margin: 2.5rem 1rem 2.5rem 0.78rem;
+  }
+
+  .projectsTagline {
+    font-size: 19px;
+    margin: 0 0 0rem;
+  }
+
+  .reactProjects__pendingRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reactProjects__firstRow {
+    flex-direction: column;
+    justify-content: space-between;
+    flex: wrap;
+  }
+
+  .reactProjects__secondRow {
+    flex-direction: column;
+    margin-top: 3.5rem;
+  }
+
+  .bigProject__wrapper {
+    width: 96%;
+    height: 98%;
+    border-radius: 4px;
+    margin-top: 4rem;
+  }
+
+  .bigProject__wrapper:nth-child(1) {
+    margin-top: 0rem;
+  }
+
+  .bigProject__cardHeader {
+    max-width: 100%;
+
+    .googleLogo {
+      width: 95px;
+      margin: 0.3rem;
+    }
+
+    .netflixLogo {
+      width: 87px;
+      margin: 0.3rem;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-left: -01rem;
+      margin-top: 1rem;
+    }
+
+    .netflixText {
+      margin-left: -0.75rem;
+    }
+
+    svg {
+      font-size: 15.75px;
+      margin-right: 0.65rem;
+    }
+
+    .gitHub__icon {
+      font-size: 17px;
+      margin-left: 12rem;
+      margin-top: 0.15rem;
+    }
+  }
+
+  .bigProject__cardBody {
+    margin-top: 2rem;
+    padding: 0.5rem;
+
+    .bigProjects__desc {
+      margin-top: -1.5rem;
+      font-size: 15.5px;
+    }
+  }
+
+  .bigProject__cardFooter {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+
+    p {
+      span {
+        cursor: pointer;
+        font-size: 14px;
+        margin: 0 0.1rem;
+      }
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  /////////////////////////////////
+
+  // Pending Project Card Styling
+
+  /////////////////////////////////
+
+  .pendingProject {
+    width: 94%;
+    height: 182.5px;
+    padding: 1rem;
+    margin: 4rem auto 0;
+  }
+
+  .pendingProject:nth-child(1) {
+    margin-top: 0;
+    height: 182.5px;
+  }
+
+  .pendingProject > a > img {
+    width: 95px;
+    margin-top: 1.35rem;
+  }
+
+  .pendingProject__bdLogo {
+    margin-top: 0.65rem !important;
+    width: 57px !important;
+  }
+
+  .pendingProject > h2 {
+    font-size: 17.5px;
+  }
+
+  .pendingProject:nth-child(2) > h2 {
+    font-size: 17px;
+  }
+
+  .pendingProject > h3 {
+    font-size: 15.5px;
+    margin-top: 2.5rem;
+  }
+
+  .pendingProject:nth-child(2) > h3 {
+    font-size: 15.5px;
+    margin-top: 1.75rem;
+  }
+
+  .pendingProjects__linksIcons > a > .pendingProject__githubIcon {
+    font-size: 20px;
+  }
+
+  .pendingProjects__linksIcons > a > .pendingProject__externalIcon {
+    font-size: 18.5px;
+  }
+
+  //////////////////////////////////
+
+  //////////////////////////////////
+
+  .cmsDevelopment__projectsContainer {
+    margin-top: 6rem;
+    margin-right: 3.75rem;
+  }
+
+  .cmsDevelopment__firstRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem 0 1.35rem;
+  }
+
+  .smallProjects__wrapper {
+    width: 97.5%;
+    height: 100%;
+    margin: 0;
+    justify-content: space-between;
+    margin: 4.5rem 0 0 0.5rem;
+    padding: 1.25rem 1.25rem 1.25rem;
+
+    .iconsBar {
+      .icon1 {
+        font-size: 40px;
+      }
+
+      .icon2 {
+        margin-right: 1rem;
+      }
+
+      .icon3 {
+        display: none;
+      }
+    }
+  }
+
+  .smallProjects__heading {
+    font-size: 22px;
+    margin-top: 1.5rem;
+  }
+
+  .smallProjects__desc {
+    font-size: 15.5px;
+    margin-top: 1rem;
+  }
+
+  .projects__tech,
+  .projects__tech a {
+    margin: 1.75rem 0.5rem 0.35rem;
+  }
+
+  .projects__tech a:first-child {
+    margin-left: 0;
+  }
+
+  .myLogo {
+    width: 100px;
+  }
+
+  .Preview__popup {
+    display: none;
+  }
+
+  .Source__popup {
+    display: none;
+  }
+
+  // Contact Us Section ///////
+
+  .Contact-section-wrapper {
+    margin: 20rem 0 15rem 0rem;
+  }
+
+  .What-next {
+    font-size: 17.5px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .Hesitate {
+    font-size: 16px;
+    margin: 2rem 1.5rem;
+  }
+
+  .contactBtns {
+    padding: 1rem 1.75rem;
+    margin: 4rem 0 0 0;
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .contactBtn1 {
+    margin-right: 1rem;
+  }
+
+  // Footer Section //////
+
+  .Footer-wrapper {
+    margin-bottom: 2.1rem;
+  }
+
+  .footerTag {
+    font-size: 17px;
+    padding: 0.75rem 0 0.95rem 0;
+    letter-spacing: 0.2px;
+    margin: 0 0 0rem -4.4rem;
+  }
+
+  .contributionText {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 2.85rem;
+
+    a {
+      font-size: 15px;
+    }
+  }
+
+  #Footer-span {
+    display: none;
+  }
+
+  .Git-direct-icon {
+    font-size: 14.5px;
+  }
+}

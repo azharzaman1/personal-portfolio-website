@@ -1,0 +1,187 @@
+.About-wrapper {
+  @include flex(space-between, row);
+  margin: 9.4rem 0 0 18rem;
+
+  #about-dest {
+    position: absolute;
+    top: -12rem;
+    font-size: 1px;
+  }
+  .text1 {
+    font-family: "Recursive", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 1.8rem;
+    letter-spacing: 1px;
+  }
+  .name {
+    margin-top: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+    letter-spacing: 1.5px;
+    text-shadow: 0.4px 0.4px 1.5px -1px rgb(172, 168, 168);
+  }
+  .speciality {
+    font-family: "Roboto", "Rubik", sans-serif;
+    font-weight: 400;
+    margin: 0.5rem 0 0 0.8rem;
+    font-size: 2.3rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0.3px 0.3px 2px -1px rgb(172, 168, 168);
+    line-height: 4.45rem;
+  }
+  .description {
+    margin: 3.1rem 0rem 0rem 1.2rem;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    max-width: 600px;
+    font-size: 17px;
+  }
+
+  .Btn-container {
+    margin-top: 6.5rem;
+  }
+
+  .About-btn {
+    border: 0.1px solid $pink;
+    padding: 1.37rem 2.4rem;
+    border-radius: 3px;
+    outline: none;
+    margin: 4.4rem 0 0 1.8rem;
+    transition: all 0.25s;
+    font-family: "Poppins", sans-serif;
+    font-size: 15.5px;
+    letter-spacing: 1px;
+  }
+
+  .My-image {
+    z-index: 3;
+
+    .My-img-cont {
+      width: 300px;
+      height: 300px;
+      margin: -2.2rem 19.2rem 0 0;
+      position: absolute;
+      top: -11.5rem;
+      right: 4rem;
+      z-index: 2;
+    }
+
+    .Back-border1 {
+      position: absolute;
+      top: -14.8rem;
+      right: 22.1rem;
+      border-radius: 5px;
+      width: 300px;
+      height: 300px;
+      border: 2px solid $pink;
+    }
+
+    .Back-border2 {
+      border: 2px solid $pink;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      right: 24.34rem;
+      top: -12.55rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+#Scroll__to__top__dest {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+}
+
+.wordpress,
+.react {
+  font-size: 25px;
+  margin: 0 1rem 0 0.52rem;
+}
+
+.wordpress {
+  margin: 0 1.15rem 0 0.65rem;
+}
+
+.react {
+  font-size: 27px;
+}
+
+@keyframes appearabout {
+  0% {
+    opacity: 0;
+    top: 2.5rem;
+  }
+  97% {
+    opacity: 0.97;
+    top: -0.3rem;
+  }
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
+
+.anim {
+  opacity: 0;
+  position: relative;
+  top: 1.5rem;
+}
+
+.anim-1 {
+  animation: appearabout 0.4s 1.4s forwards linear;
+}
+
+.anim-2 {
+  animation: appearabout 0.4s 1.6s forwards linear;
+}
+
+.anim-3 {
+  animation: appearabout 0.4s 1.8s forwards linear;
+}
+
+.anim-4 {
+  animation: appearabout 0.4s 2s forwards linear;
+}
+
+.anim-5 {
+  animation: appearabout 0.4s 2.2s forwards linear;
+}
+
+.My-image {
+  position: relative;
+  right: -55rem;
+  animation: comefromright 0.8s 2.4s linear forwards;
+}
+
+.myImage__mobile {
+  display: none;
+}
+
+@keyframes comefromright {
+  0% {
+    right: -55rem;
+  }
+  88% {
+    right: 4rem;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes moveup2 {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -2.5px;
+  }
+}
