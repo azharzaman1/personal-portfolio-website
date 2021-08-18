@@ -1,0 +1,114 @@
+.aboutTagline {
+  margin-left: 3px !important;
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.aboutName {
+  margin-top: 10px !important;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.aboutSkill {
+  margin: 0;
+  margin-top: 11px;
+  margin-left: 5px;
+  padding: 2.5px 5px 2.5px 10px;
+  border-left: 3px solid var(--secondary-light);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.aboutDesc {
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  max-width: 500px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.aboutButton {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.aboutPic {
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transform: scale(0.85);
+  opacity: 0;
+  animation: fadeimage 0.5s linear 2s forwards;
+}
+
+/* Animations */
+
+@media (max-width: 600px) {
+  .aboutName {
+    font-size: 40px;
+  }
+
+  .aboutSkill {
+    font-size: 16px;
+    border-left: 2px solid var(--secondary-light);
+  }
+
+  .aboutDesc {
+    font-size: 14px;
+  }
+}
+
+.anim1 {
+  animation: fadeup 0.5s linear forwards;
+}
+
+.anim2 {
+  animation: fadeup 0.5s linear 0.25s forwards;
+}
+
+.anim3 {
+  animation: fadeup 0.5s linear 0.75s forwards;
+}
+
+.anim4 {
+  animation: fadeup 0.5s linear 1s forwards;
+}
+
+.anim5 {
+  animation: fadeup 0.5s linear 1.25s forwards;
+}
+
+.anim6 {
+  animation: fadeup 0.5s linear 1.5s forwards;
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeimage {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  80% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

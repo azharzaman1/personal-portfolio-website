@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import "./LocalFonts/fonts.css";
+
+:root {
+  --primary: #023e8a;
+  --primary-light: #0077b6;
+  --primary-dark: #03045e;
+  --secondary: #ec4884;
+  --secondary-light: #f06196;
+  --background-color: #03045e;
+  --background-light: #023e8a;
+  --text-bright: #f5fffd;
+  --text: #e2e2e2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  opacity: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dimText {
+  color: var(--text);
+  opacity: 0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: var(--text);
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
 }
