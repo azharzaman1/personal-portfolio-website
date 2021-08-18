@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Button,
@@ -33,9 +33,25 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
 
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+
+      return () => {
+        window.removeEventListener("scroll");
+      };
+    });
+  });
+
   return (
     <>
-      <AppBar className={classes.appbar}>
+      <AppBar
+        className={`headerAppBar ${classes.appbar} ${show && "shadowed"}`}
+      >
         <Grid container alignItems="center">
           <Grid item className={classes.logo}>
             <img className="headerLogo" src={Logo} />

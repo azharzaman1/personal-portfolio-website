@@ -67,7 +67,7 @@ const About = () => {
               <h4 className="aboutSkill anim4">Advance Wordpress Expert</h4>
             </Grid>
             <Grid item xs={12}>
-              <p className="aboutDesc anim5">
+              <p className="aboutDesc anim5 ">
                 I'm working as full time Developer since March 2019,
                 specializing in some of the powerful and trending Web
                 Technologies like React(Redux), JavaScript(ES6+), Material UI,

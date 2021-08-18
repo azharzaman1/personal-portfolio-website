@@ -8,7 +8,7 @@
   --secondary-light: #f06196;
   --background-color: #03045e;
   --background-light: #023e8a;
-  --text-bright: #f5fffd;
+  --text-bright: #e8fdf9;
   --text: #e2e2e2;
 }
 
@@ -28,9 +28,12 @@ a {
   text-decoration: none;
 }
 
+li,
 p {
   color: var(--text);
   opacity: 0.8;
+  font-size: 15px;
+  letter-spacing: 0.2px;
 }
 
 h1 {
