@@ -1,9 +1,14 @@
 .MuiHeading {
   color: var(--secondary-light) !important;
+  font-size: 17px !important;
+}
+
+.MuiHeading > span {
+  font-size: 14.5px !important;
+  margin-left: 3px;
 }
 
 .MuiHeading.type1 {
-  font-size: 17px !important;
   font-family: Consolas1 !important;
   font-weight: 500 !important;
 }
@@ -36,4 +41,8 @@
 
 .MuiButton.fs {
   font-size: 14px !important;
+}
+
+.rs--anchor {
+  margin-top: 4rem !important;
 }

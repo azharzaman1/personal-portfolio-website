@@ -8,8 +8,7 @@ import ExpertProgress from "./ProgressBar";
 
 const useStyles = makeStyles((theme) => ({
   expertiseSection: {
-    marginTop: "12rem",
-    marginBottom: "12rem",
+    marginTop: "5rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",
     },

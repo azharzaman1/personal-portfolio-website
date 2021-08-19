@@ -23,8 +23,8 @@ export const SectionHeading = ({ children, number, type, className }) => {
   );
 };
 
-export const Heading2 = ({ children }) => {
-  return <h4 className="MuiHeading2">{children}</h4>;
+export const Heading2 = ({ children, className }) => {
+  return <h4 className={`MuiHeading2 ${className}`}>{children}</h4>;
 };
 
 export const MuiButton = ({ children, variant, size, color, fontSize }) => {
@@ -38,5 +38,13 @@ export const MuiButton = ({ children, variant, size, color, fontSize }) => {
     >
       {children}
     </Button>
+  );
+};
+
+export const RSAnchor = ({ target }) => {
+  return (
+    <span id={target} style={{ marginTop: "4rem" }}>
+      .
+    </span>
   );
 };

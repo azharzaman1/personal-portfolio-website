@@ -1,3 +1,7 @@
+#about-section-scroll {
+  color: var(--background);
+}
+
 .aboutTagline {
   margin-left: 3px !important;
   opacity: 0;

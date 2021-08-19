@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
   AppBar,
-  Button,
   duration,
   Grid,
   Hidden,
@@ -51,10 +50,11 @@ const Header = () => {
     <>
       <AppBar
         className={`headerAppBar ${classes.appbar} ${show && "shadowed"}`}
+        id="headerAppBar"
       >
         <Grid container alignItems="center">
           <Grid item className={classes.logo}>
-            <img className="headerLogo" src={Logo} />
+            <img className="headerLogo" src={Logo} id="logo" />
           </Grid>
           <Grid item xs />
           <Grid className={classes.navigation} item>
@@ -76,9 +76,21 @@ const Header = () => {
 const Navigation = () => {
   return (
     <Grid container spacing={1} alignItems="center">
-      <NavItem number="01" linkText="About me" />
-      <NavItem number="02" linkText="Expertise" />
-      <NavItem number="03" linkText="Recent Work" />
+      <NavItem
+        number="01"
+        linkText="About me"
+        to="about-section-scroll-anchor"
+      />
+      <NavItem
+        number="02"
+        linkText="Expertise"
+        to="expertise-section-scroll-anchor"
+      />
+      <NavItem
+        number="03"
+        linkText="Recent Work"
+        to="portfolio-section-scroll-anchor"
+      />
       <NavItem number="04" linkText="Get in Touch" />
       <Grid item>
         <a
