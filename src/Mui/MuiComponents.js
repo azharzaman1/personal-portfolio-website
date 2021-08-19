@@ -23,6 +23,10 @@ export const SectionHeading = ({ children, number, type, className }) => {
   );
 };
 
+export const Heading2 = ({ children }) => {
+  return <h4 className="MuiHeading2">{children}</h4>;
+};
+
 export const MuiButton = ({ children, variant, size, color, fontSize }) => {
   const c = useStyles();
   return (

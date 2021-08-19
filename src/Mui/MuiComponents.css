@@ -16,6 +16,11 @@
   margin-left: 3px !important;
 }
 
+.MuiHeading2 {
+  color: rgb(236, 255, 253);
+  font-size: 17px;
+}
+
 .MuiButton {
   border: 2px solid var(--secondary) !important;
   font-size: 16px !important;

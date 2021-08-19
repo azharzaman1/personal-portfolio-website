@@ -1,7 +1,8 @@
 import { Card, Container, Divider, Grid, makeStyles } from "@material-ui/core";
-import React from "react";
-import { SectionHeading } from "../../Mui/MuiComponents";
+import React, { useState } from "react";
+import { Heading2, SectionHeading } from "../../Mui/MuiComponents";
 import "./Expertise.css";
+import ExpertProgress from "./ProgressBar";
 
 // `
 
@@ -53,84 +54,94 @@ const Expertise = () => {
         <Grid container spacing={2} className="expertiseContent__container">
           <ExpertiseItem
             title="JavaScript (ES6 - ES7)"
+            progress={83}
             desc1="JavaScript is most popular programming language till date"
             desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
           />
           <ExpertiseItem
             title="ReactJs"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={90}
+            desc1="Reacts is world famous JavaScript library by Facebook Inc."
+            desc2="React makes it painless to create interactive, component-based and lightening fast UIs."
           />
           <ExpertiseItem
             title="Redux - Context"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={80}
+            desc1="Redux is an open-source JavaScript library for managing application state."
+            desc2="Redux is a predictable state container designed to help you write JavaScript apps."
           />
 
           <ExpertiseItem
             title="GatsbyJs"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={80}
+            desc1="Gatsby provides development teams an open source frontend framework for creating dynamic, optimized websites."
+            desc2="From marketing sites, to eCommerce stores, to documentation."
           />
           <ExpertiseItem
             title="Material UI"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={96}
+            desc1="Material Design is a design language developed by Google in 2014."
+            desc2="Material UI let you build attractive and interactive components based on Material design of Google. "
           />
           <ExpertiseItem
             title="Semantic UI - React Toolbox"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={90}
+            desc1="Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML."
+            desc2="React Toolbox is a set of React material design-based components."
           />
 
           <ExpertiseItem
             title="HTML5"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={98}
+            desc1="HTML5 is a markup language used for structuring and presenting content on the World Wide Web."
+            desc2="It is the fifth and last major HTML version that is a World Wide Web."
           />
           <ExpertiseItem
             title="CSS(SASS)"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={94}
+            desc1="Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML."
+            desc2="SASS is a CSS with super-powers"
           />
           <ExpertiseItem
             title="Firebase"
-            desc1="JavaScript is most popular programming language till date"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={92}
+            desc1="Firebase is a platform developed by Google for creating mobile and web applications."
+            desc2="Firebase helps you build and run successful apps, webapps etc."
           />
         </Grid>
+
         <Divider className={c.divider} />
 
         <Grid container spacing={2} className="expertiseContent__container">
           <ExpertiseItem
             title="Advance WordPress"
-            desc1="Worlds most popular website powering platform"
-            desc2="More than 70% of running websites are built on WordPress"
+            progress={95}
+            desc1="WordPress is a free, worlds most famous and open-source content management system, for creating next genration scalable sites."
           />
           <ExpertiseItem
             title="WooCommerce"
-            desc1="The All alone eCommerce solution"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={95}
+            desc1="WooCommerce is an open-source e-commerce plugin for WordPress. It is designed for small to large-sized online merchants using WordPress."
           />
           <ExpertiseItem
             title="Dokan Pro"
-            desc1="All in one Multi-vendor eCommerce marketplace solution"
-            desc2="All the famous companies use JavaScript as a tool."
+            progress={98}
+            desc1="Dokan is the best front end multi-vendor marketplaces solution on WordPress, to create marketplaces like Amazon, eBay, flipkart"
           />
           <ExpertiseItem
             title="Elementor Pro"
-            desc1="Worlds most Popular Page Builder and UI designer"
-            desc2="All the famous companies use JavaScript as a tool."
+            progress={94}
+            desc1="Elementor is the most advanced website builder for WordPress, allowing you to visually design pages, posts, slides and much more."
           />
           <ExpertiseItem
             title="Revelution Slider Pro"
-            desc1="Worlds most powerful Sliders solution"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={85}
+            desc1="Slider Revolution is all-in-one slider solution, helping beginner-and mid-level designers WOW their clients with pro-level visuals."
           />
           <ExpertiseItem
             title="Custom WordPress Coding"
-            desc1="Worlds most powerful Sliders solution"
-            desc2="All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc."
+            progress={90}
+            desc1="Interegrating custom CSS, HTML5, JavaScript to WordPress, to make sites more inter-active, functional and user-friendly"
           />
         </Grid>
       </Container>
@@ -138,15 +149,30 @@ const Expertise = () => {
   );
 };
 
-const ExpertiseItem = ({ title, desc1, desc2 }) => {
+const ExpertiseItem = ({ title, progress, desc1, desc2 }) => {
   const c = useStyles();
+  const [showProgress, setShowProgress] = useState(false);
+
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <Card className={`expertyCard ${c.expertise}`} elevation={1}>
-        <h4>{title}</h4>
+      <Card
+        className={`expertyCard ${c.expertise}`}
+        elevation={1}
+        onMouseEnter={() => {
+          setInterval(() => {
+            setShowProgress(true);
+          }, 250);
+        }}
+      >
+        <Heading2>{title}</Heading2>
+        <div className="progressBar__wrapper">
+          {showProgress && (
+            <>{progress && <ExpertProgress progress={progress} />}</>
+          )}
+        </div>
         <ul>
-          <li>{desc1}</li>
-          <li>{desc2}</li>
+          {desc1 && <li>{desc1}</li>}
+          {desc2 && <li>{desc2}</li>}
         </ul>
       </Card>
     </Grid>
