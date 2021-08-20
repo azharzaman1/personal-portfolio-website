@@ -84,38 +84,38 @@ const IcanCreate = () => {
             feature6="All needed pages"
           />
           <ICanCreateCard
+            title="An SEO friednly Blog site for Blogging or Affiliate marketing"
+            imgUrl1={assets.beingGuru}
+            imgUrl2={assets.DicasOnline}
+            feature1="SEO Optimized"
+            feature2="Eye-catching design"
+            feature3="Full blog functionalities"
+            feature4="Google AdSense friendly"
+            feature5="Unlimited posts"
+            feature6="Unlimited Authors"
+          />
+
+          <ICanCreateCard
+            title="A fully-functional JavaScript(React) based WebApp"
+            imgUrl1={assets.VA}
+            imgUrl2={assets.CovidTracker}
+            feature1="Elegant design"
+            feature2="Interactive user interface"
+            feature3="Advance animations"
+            feature4="Unlimited Public APIs"
+            feature5="Clean bug free code"
+            feature6="Healthy team collaboration"
+          />
+          <ICanCreateCard
             title="A personal | company portfolio website"
             imgUrl1={assets.Azhar}
             imgUrl2={assets.CompanyPortfolio}
             feature1="Elegant design"
             feature2="Interactive user interface"
             feature3="Advance animations"
-            feature4=""
-            feature5=""
+            feature4="All must have sections"
+            feature5="Unlimited Projects listing"
             feature6=""
-          />
-
-          <ICanCreateCard
-            title="A Multi-vendor Marketplace like Amazon | eBay"
-            imgUrl1={assets.Amazon}
-            imgUrl2={assets.eBay}
-            feature1="Complete vendors setup"
-            feature2="Complete commissions setup"
-            feature3="Complete shipping solution"
-            feature4="Complete payments solution"
-            feature5="Unlimited sellers"
-            feature6="Unlimited products"
-          />
-          <ICanCreateCard
-            title="A fully-functional eCommerce store"
-            imgUrl1={assets.Amazon}
-            imgUrl2={assets.eBay}
-            feature1="Complete vendors setup"
-            feature2="Complete commissions setup"
-            feature3="Complete shipping solution"
-            feature4="Complete payments solution"
-            feature5="Unlimited sellers"
-            feature6="Unlimited products"
           />
         </Grid>
       </Container>

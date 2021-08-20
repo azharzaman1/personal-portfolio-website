@@ -19,7 +19,7 @@ const ImageComparison = ({ imgUrl1, imgUrl2, imgAlt1, imgAlt2 }) => {
               height: 45,
               fontSize: 12,
             }}
-            linesStyle={{ opacity: 0.75 }}
+            linesStyle={{ opacity: 1 }}
           />
         }
         itemOne={<ReactCompareSliderImage alt={imgAlt1} src={imgUrl1} />}
