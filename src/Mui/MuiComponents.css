@@ -1,6 +1,7 @@
 .MuiHeading {
   color: var(--secondary-light) !important;
   font-size: 17px !important;
+  user-select: none !important;
 }
 
 .MuiHeading > span {
@@ -24,6 +25,7 @@
 .MuiHeading2 {
   color: rgb(236, 255, 253);
   font-size: 17px;
+  user-select: none !important;
 }
 
 .MuiButton {
@@ -31,6 +33,7 @@
   font-size: 16px !important;
   font-weight: 500 !important;
   font-family: "Roboto", sans-serif !important;
+  user-select: none !important;
 }
 
 .MuiButton:hover {

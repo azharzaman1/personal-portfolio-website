@@ -1,6 +1,6 @@
 import { Card, Container, Divider, Grid, makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
-import { Heading2, SectionHeading } from "../../Mui/MuiComponents";
+import { Heading2, MuiDivider, SectionHeading } from "../../Mui/MuiComponents";
 import "./Expertise.css";
 import ExpertProgress from "./ProgressBar";
 
@@ -29,15 +29,6 @@ const useStyles = makeStyles((theme) => ({
 
   expertise: {
     padding: "0 1rem 1rem 1rem",
-  },
-
-  divider: {
-    marginTop: "10px",
-    backgroundColor: "rgba(255,255,255,0.25)",
-    width: "50%",
-    margin: "0 auto",
-    marginTop: "38px",
-    marginBottom: "29px",
   },
 }));
 
@@ -109,7 +100,7 @@ const Expertise = () => {
           />
         </Grid>
 
-        <Divider className={c.divider} />
+        <MuiDivider marginTop="38px" marginBottom="29px" width="50%" />
 
         <Grid container spacing={2} className="expertiseContent__container">
           <ExpertiseItem

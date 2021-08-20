@@ -14,6 +14,7 @@
   opacity: 0;
   transform: translateY(35px);
   color: var(--text-bright);
+  user-select: none;
 }
 
 .aboutSkill {
@@ -26,6 +27,7 @@
   opacity: 0;
   transform: translateY(35px);
   color: var(--text-bright);
+  user-select: none;
 }
 
 .aboutDesc {

@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-ui/core";
+import { Button, Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 import React from "react";
@@ -46,5 +46,30 @@ export const RSAnchor = ({ target }) => {
     <span id={target} style={{ marginTop: "4rem" }}>
       .
     </span>
+  );
+};
+
+export const MuiDivider = ({ marginTop, marginBottom, width, color }) => {
+  return (
+    <Divider
+      style={{
+        margin: "0 auto",
+        backgroundColor: color ? color : "rgba(255,255,255,0.25)",
+        width: width ? width : "50%",
+        marginTop: marginTop,
+        marginBottom: marginBottom,
+      }}
+    ></Divider>
+  );
+};
+
+export const Spacer = ({ height }) => {
+  return (
+    <div
+      className="spacer"
+      style={{
+        height: height ? height : "10px",
+      }}
+    />
   );
 };
