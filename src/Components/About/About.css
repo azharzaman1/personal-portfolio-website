@@ -1,3 +1,7 @@
+#about-section-scroll {
+  color: var(--background);
+}
+
 .aboutTagline {
   margin-left: 3px !important;
   opacity: 0;
@@ -9,6 +13,7 @@
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
   opacity: 0;
   transform: translateY(35px);
+  color: var(--text-bright);
 }
 
 .aboutSkill {
@@ -20,6 +25,7 @@
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
   opacity: 0;
   transform: translateY(35px);
+  color: var(--text-bright);
 }
 
 .aboutDesc {

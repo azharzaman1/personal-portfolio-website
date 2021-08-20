@@ -1,0 +1,46 @@
+.expertiseContent__container {
+  margin: 0 !important;
+  margin-top: 1rem !important;
+  user-select: none;
+}
+
+.expertyCard:hover {
+  transform: scale(1.03) !important;
+  transition: transform 0.25s;
+}
+
+.expertyCard h4 {
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  margin-top: 18px;
+  letter-spacing: 0.2px;
+  border-bottom: 1px solid #1456ad;
+}
+
+.expertyCard ul {
+  padding-left: 25px;
+}
+
+.expertyCard li {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.expertyCard li:nth-child(2) {
+  margin-top: 5px;
+}
+
+.MuiGrid-spacing-xs-2 {
+  width: 100% !important;
+}
+
+.progressBar__wrapper {
+  height: 10px;
+}
+
+.MuiLinearProgress-root {
+  height: 5px !important;
+  border-radius: 5px;
+}

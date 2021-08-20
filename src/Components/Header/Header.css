@@ -1,3 +1,7 @@
+.headerAppBar.shadowed {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
 .headerLogo {
   width: 90px;
 }

@@ -14,23 +14,20 @@ export const SectionHeading = ({ children, number, type, className }) => {
   return (
     <Typography
       variant="h3"
-      className={`MuiHeading ${className} ${
-        !type || (type === "1" && "type1")
-      } ${type === "2" && "type2"}`}
+      className={`MuiHeading ${className} ${!type && "type1"} ${
+        type === "2" && "type2"
+      }`}
     >
       {number && <span>{number}-</span>} {children}
     </Typography>
   );
 };
 
-export const MuiButton = ({
-  children,
-  type,
-  variant,
-  size,
-  color,
-  fontSize,
-}) => {
+export const Heading2 = ({ children, className }) => {
+  return <h4 className={`MuiHeading2 ${className}`}>{children}</h4>;
+};
+
+export const MuiButton = ({ children, variant, size, color, fontSize }) => {
   const c = useStyles();
   return (
     <Button
@@ -41,5 +38,13 @@ export const MuiButton = ({
     >
       {children}
     </Button>
+  );
+};
+
+export const RSAnchor = ({ target }) => {
+  return (
+    <span id={target} style={{ marginTop: "4rem" }}>
+      .
+    </span>
   );
 };
