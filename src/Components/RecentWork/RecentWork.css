@@ -1,0 +1,40 @@
+.recentWork__contentSection {
+  margin-top: 0.75rem !important;
+}
+
+.recentWork__card {
+  padding: 1.25rem 1rem 0;
+}
+
+.recentWork__cardHeader {
+  padding: 8px 0 1rem;
+  max-height: 52px;
+}
+
+.recentWork__cardIcons {
+  color: #e23173 !important;
+}
+
+.recentWork__cardTitle {
+  margin-top: 15px !important;
+}
+
+.recentWork__cardBody {
+  border-top: 1px solid #1456ad;
+  padding: 0 12px !important;
+  user-select: none !important;
+}
+
+.recentWork__cardTechs {
+  border-top: 1px solid #1456ad;
+  font-family: "Consolas1";
+}
+
+.recentWork__cardTechs p {
+  color: rgb(255, 134, 154) !important;
+  box-shadow: unset;
+}
+
+.recentWork__cardWpLogo {
+  height: 36.5px;
+}
