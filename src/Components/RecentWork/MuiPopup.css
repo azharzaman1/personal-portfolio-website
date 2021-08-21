@@ -1,0 +1,28 @@
+.projectsImage__popup {
+  background-color: rgba(65, 105, 225, 0.72);
+}
+
+.projectsImage__popupClose {
+  position: fixed;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: lightblue !important;
+  font-size: 25px !important;
+  cursor: pointer;
+  transition: all 0.2s;
+  opacity: 0;
+  animation: AppearClose 1s linear 2.5s forwards;
+}
+
+.projectsImage__popupClose:hover {
+  color: rgb(255, 190, 190) !important;
+}
+
+@keyframes AppearClose {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
