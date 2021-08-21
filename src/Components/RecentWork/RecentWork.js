@@ -70,7 +70,7 @@ const RecentWork = () => {
             github="https://github.com/TheAzharZaman/Full-Stack-Amazon-Clone.git"
             src="https://azhar-amazonclone.ga/"
             title="Full-featured Amazon clone"
-            desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
+            desc="I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more. This Amazon clone is using Firebase firestore as realtime Database to store user details, addresses, order stats etc."
             tech1="reactjs"
             tech2="redux"
             tech3="firebase"
@@ -82,7 +82,7 @@ const RecentWork = () => {
             logoHeight="37px"
             translateY="8px"
             title="Personal Portfolio Site"
-            desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
+            desc="This website is built with React with its descent UI. I have used CSS(SASS) for styling purposes. Making this website simple but expressive was my first priority. And I guess it meets all the requirements of elegant design website. There is always room for improvement. Your contribution would be a great favour."
             tech1="reactjs"
             tech2="material-ui"
             tech3="aos"
@@ -93,7 +93,7 @@ const RecentWork = () => {
             github="https://github.com/TheAzharZaman/Google-portfolio-clone.git"
             src="https://azhar-googleclone.ga/"
             title="Functional Google clone"
-            desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
+            desc="Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size."
             tech1="reactjs"
             tech2="material-ui"
             tech3="firebase"
@@ -106,7 +106,7 @@ const RecentWork = () => {
             github="https://github.com/TheAzharZaman/Netflix-Portfolio-Clone.git"
             src="https://azhar-netflixclone.ga/"
             title="Basic Netflix Clone"
-            desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
+            desc="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices. I decided to build it with react and used tmdb as realtime movie database. It fetch movies from tmdb and trailers when clicked from youtube with a special 'youtube-trailer' functionality."
             tech1="reactjs"
             tech2="tmdb-api"
             tech3="yt-trailers"
@@ -118,8 +118,8 @@ const RecentWork = () => {
             translateY="5.5px"
             github="https://github.com/TheAzharZaman/Comany-Virtual-Assistant.git"
             src="https://virtual-assistant-application.netlify.app/"
-            title="Company virtual assitant"
-            desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
+            title="Company virtual assistant (In progress)"
+            desc="Aiming to build complete virtual assitant application with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. It uses Google Firebase as a realtime database and Authentication setup functionalities. The build is still in progress, but you can have a look at by clicking external icon above. "
             tech1="reactjs"
             tech2="material-ui"
             tech3="firebase"
@@ -163,7 +163,7 @@ const PortfolioProject = ({
   logoAlt,
   github,
   src,
-  disableGallery,
+  enableGallery,
   title,
   desc,
   tech1,
@@ -172,96 +172,101 @@ const PortfolioProject = ({
   disabledHeader,
 }) => {
   return (
-    <Grid item xs={12} sm={12} md={4}>
-      <Card className="recentWork__card">
-        {!disabledHeader && (
-          <Grid
-            container
-            className="recentWork__cardHeader"
-            justifyContent="space-between"
-          >
-            <Grid item>
-              {logo === "wp" ? (
-                <WPLogo
-                  width={wooLogo ? "110px" : "150px"}
-                  className="recentWork__cardWpLogo"
-                />
-              ) : (
-                <img
-                  src={logo}
-                  alt={logoAlt}
-                  height={logoHeight ? logoHeight : "30px"}
-                  style={{ transform: `translateY(-${translateY})` }}
-                />
-              )}
-
-              {wooLogo && <WooLogo />}
-            </Grid>
+    <>
+      <Grid item xs={12} sm={12} md={4}>
+        <Card className="recentWork__card">
+          {!disabledHeader && (
             <Grid
-              item
-              xs
               container
-              justifyContent="flex-end"
-              style={{ transform: "translateY(-8px)" }}
+              className="recentWork__cardHeader"
+              justifyContent="space-between"
             >
               <Grid item>
-                {github && (
-                  <a href={github} target="_blank">
+                {logo === "wp" ? (
+                  <WPLogo
+                    width={wooLogo ? "110px" : "150px"}
+                    className="recentWork__cardWpLogo"
+                  />
+                ) : (
+                  <img
+                    src={logo}
+                    alt={logoAlt}
+                    height={logoHeight ? logoHeight : "30px"}
+                    style={{ transform: `translateY(-${translateY})` }}
+                  />
+                )}
+
+                {wooLogo && <WooLogo />}
+              </Grid>
+              <Grid
+                item
+                xs
+                container
+                justifyContent="flex-end"
+                style={{ transform: "translateY(-8px)" }}
+              >
+                <Grid item>
+                  {github && (
+                    <a href={github} target="_blank">
+                      <IconButton>
+                        <GitHub
+                          className="recentWork__cardIcons"
+                          fontSize="small"
+                        />
+                      </IconButton>
+                    </a>
+                  )}
+
+                  {enableGallery && (
                     <IconButton>
-                      <GitHub
+                      <ViewCarouselOutlined
                         className="recentWork__cardIcons"
-                        fontSize="small"
+                        fontSize="medium"
                       />
                     </IconButton>
-                  </a>
-                )}
+                  )}
 
-                {!disableGallery && (
-                  <IconButton>
-                    <ViewCarouselOutlined
-                      className="recentWork__cardIcons"
-                      fontSize="medium"
-                    />
-                  </IconButton>
-                )}
-
-                {src && (
-                  <a href={src} target="_blank">
-                    <IconButton>
-                      <Jotaro className="recentWork__cardIcons" width="17px" />
-                    </IconButton>
-                  </a>
-                )}
+                  {src && (
+                    <a href={src} target="_blank">
+                      <IconButton>
+                        <Jotaro
+                          className="recentWork__cardIcons"
+                          width="17px"
+                        />
+                      </IconButton>
+                    </a>
+                  )}
+                </Grid>
               </Grid>
             </Grid>
-          </Grid>
-        )}
+          )}
 
-        <CardContent className="recentWork__cardBody">
-          <Heading2 className="recentWork__cardTitle">{title}</Heading2>
-          <p>{desc}</p>
-        </CardContent>
-        {tech1 ? (
-          <Grid
-            container
-            justifyContent="space-evenly"
-            className="recentWork__cardTechs"
-          >
-            <Grid item>
-              <p>{tech1}</p>
+          <CardContent className="recentWork__cardBody">
+            <Heading2 className="recentWork__cardTitle">{title}</Heading2>
+            <p>{desc}</p>
+          </CardContent>
+          {tech1 ? (
+            <Grid
+              container
+              justifyContent="space-evenly"
+              className="recentWork__cardTechs"
+            >
+              <Grid item>
+                <p>{tech1}</p>
+              </Grid>
+              <Grid item>
+                <p>{tech2}</p>
+              </Grid>
+              <Grid item>
+                <p>{tech3}</p>
+              </Grid>
             </Grid>
-            <Grid item>
-              <p>{tech2}</p>
-            </Grid>
-            <Grid item>
-              <p>{tech3}</p>
-            </Grid>
-          </Grid>
-        ) : (
-          <Spacer height="8px" />
-        )}
-      </Card>
-    </Grid>
+          ) : (
+            <Spacer height="8px" />
+          )}
+        </Card>
+      </Grid>
+    </>
   );
 };
 
