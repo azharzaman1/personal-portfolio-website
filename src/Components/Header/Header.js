@@ -91,7 +91,11 @@ const Navigation = () => {
         linkText="Recent Work"
         to="portfolio-section-scroll-anchor"
       />
-      <NavItem number="04" linkText="Get in Touch" />
+      <NavItem
+        number="04"
+        linkText="Get in Touch"
+        to="getintouch-section-scroll-anchor"
+      />
       <Grid item>
         <a
           href="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
