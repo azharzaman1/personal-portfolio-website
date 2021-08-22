@@ -1,0 +1,92 @@
+.getInTouchSection__content {
+  margin-top: 0.75rem !important;
+}
+
+.getInTouchSection__left {
+  padding-left: 33px !important;
+}
+
+.getInTouchSection__leftWhatsApp {
+  margin-top: 15px !important;
+}
+
+.getInTouchSection__leftEmails a,
+.getInTouchSection__leftWhatsApp a {
+  font-size: 17px;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.getInTouchSection__leftEmails a:hover,
+.getInTouchSection__leftWhatsApp a:hover {
+  color: var(--secondary-light);
+  transition: color 0.2s;
+}
+
+.getInTouchSection__leftEmails {
+  padding: 10px 0;
+}
+
+.getInTouchSection__leftEmails-emails {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.getInTouch__form {
+  background-color: var(--background-light);
+  padding: 1.5rem 2rem 2rem;
+}
+
+.getInTouchForm__heading {
+  text-align: center;
+  margin: 0 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.getInTouch__form input,
+.getInTouch__form textarea {
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.hidden-input {
+  visibility: hidden !important;
+}
+
+.m-t-07rem {
+  margin-top: 0.75rem !important;
+}
+
+.m-t-125rem {
+  margin-top: 1.25rem !important;
+}
+
+.getInTouch__submitButton {
+  padding: 12.5px 0;
+  border: 2px solid var(--secondary-light);
+  background-color: transparent;
+  color: var(--text);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+.getInTouch__submitButton:hover {
+  background-color: var(--secondary-light);
+  transition: background-color 0.25s;
+}
+
+.MuiInputLabel-shrink {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.PrivateNotchedOutline-root-18 {
+  border: 1px solid var(--text) !important;
+  opacity: 0.6;
+}

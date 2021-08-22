@@ -1,14 +1,7 @@
+import React from "react";
 import { Button, Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-
-import React from "react";
 import "./MuiComponents.css";
-
-const useStyles = makeStyles((theme) => ({
-  // MuiButton: {
-  //   border: `2px solid ${theme.palette.secondary.main}`,
-  // },
-}));
 
 export const SectionHeading = ({ children, number, type, className }) => {
   return (
@@ -28,7 +21,6 @@ export const Heading2 = ({ children, className }) => {
 };
 
 export const MuiButton = ({ children, variant, size, color, fontSize }) => {
-  const c = useStyles();
   return (
     <Button
       className={`MuiButton ${fontSize === "small" && "fs"}`}
@@ -49,9 +41,16 @@ export const RSAnchor = ({ target }) => {
   );
 };
 
-export const MuiDivider = ({ marginTop, marginBottom, width, color }) => {
+export const MuiDivider = ({
+  marginTop,
+  marginBottom,
+  width,
+  color,
+  orientation,
+}) => {
   return (
     <Divider
+      orientation={orientation}
       style={{
         margin: "0 auto",
         backgroundColor: color ? color : "rgba(255,255,255,0.25)",
@@ -59,7 +58,7 @@ export const MuiDivider = ({ marginTop, marginBottom, width, color }) => {
         marginTop: marginTop,
         marginBottom: marginBottom,
       }}
-    ></Divider>
+    />
   );
 };
 

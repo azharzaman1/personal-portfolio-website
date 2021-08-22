@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../Components/About/About";
 import Expertise from "../Components/Expertise/Expertise";
+import GetinTouch from "../Components/GetinTouch/GetinTouch";
 import Header from "../Components/Header/Header";
 import IcanCreate from "../Components/IcanCreate/IcanCreate";
 import RecentWork from "../Components/RecentWork/RecentWork";
@@ -16,6 +17,8 @@ const Homepage = () => {
       <IcanCreate />
       <RSAnchor target="portfolio-section-scroll-anchor" />
       <RecentWork />
+      <RSAnchor target="getintouch-section-scroll-anchor" />
+      <GetinTouch />
     </div>
   );
 };
