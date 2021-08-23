@@ -4,6 +4,7 @@
 
 .headerLogo {
   width: 90px;
+  cursor: pointer;
 }
 
 .navItem {

@@ -1,0 +1,31 @@
+.attachment1 {
+  position: fixed;
+  right: -4.55rem;
+  bottom: 11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attachment1 a {
+  color: var(--text);
+  font-family: Consolas1;
+  margin-right: 07px;
+  font-size: 15px;
+  transition: transform 0.25s linear;
+}
+
+@media (max-width: 1050px) {
+  .attachment1 {
+    display: none;
+  }
+}
+
+.attachment1 a.rise--animation {
+  transform: translateX(-10px);
+}
+
+.attachment1.rotated90deg {
+  transform: rotate(90deg);
+}

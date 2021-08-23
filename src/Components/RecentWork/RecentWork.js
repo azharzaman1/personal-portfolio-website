@@ -54,7 +54,10 @@ const RecentWork = () => {
         </SectionHeading>
         <Grid container spacing={3} className="recentWork__contentSection">
           <PortfolioProject
+            data-aos="fade-up"
+            data-aos-delay="500"
             logo={assets.TrackerLogo}
+            logoAlt="Tracker Logo"
             logoHeight="50px"
             translateY="12px"
             github="https://github.com/TheAzharZaman/Covid-tacker-portfolio"
@@ -66,7 +69,10 @@ const RecentWork = () => {
             tech3="firebase"
           />
           <PortfolioProject
+            data-aos="fade-up"
+            data-aos-delay="500"
             logo={assets.AmazonLogo}
+            logoAlt="Amazon Logo"
             github="https://github.com/TheAzharZaman/Full-Stack-Amazon-Clone.git"
             src="https://azhar-amazonclone.ga/"
             title="Full-featured Amazon clone"
@@ -76,7 +82,10 @@ const RecentWork = () => {
             tech3="firebase"
           />
           <PortfolioProject
+            data-aos="fade-up"
+            data-aos-delay="500"
             logo={assets.MyLogo}
+            logoAlt="My Logo"
             github="https://github.com/TheAzharZaman/personal-portfolio-website.git"
             src="https://azharzaman.com"
             logoHeight="37px"
@@ -88,7 +97,9 @@ const RecentWork = () => {
             tech3="aos"
           />
           <PortfolioProject
+            data-aos="fade-up"
             logo={assets.GoogleLogo}
+            logoAlt="Google Logo"
             logoHeight="35px"
             github="https://github.com/TheAzharZaman/Google-portfolio-clone.git"
             src="https://azhar-googleclone.ga/"
@@ -100,7 +111,9 @@ const RecentWork = () => {
           />
 
           <PortfolioProject
+            data-aos="fade-up"
             logo={assets.NetflixLogo}
+            logoAlt="Netflix Logo"
             logoHeight="35px"
             translateY="3.5px"
             github="https://github.com/TheAzharZaman/Netflix-Portfolio-Clone.git"
@@ -113,7 +126,9 @@ const RecentWork = () => {
           />
 
           <PortfolioProject
+            data-aos="fade-up"
             logo={assets.CVALogo}
+            logoAlt="Company Virtual Assitant Logo"
             logoHeight="35px"
             translateY="5.5px"
             github="https://github.com/TheAzharZaman/Comany-Virtual-Assistant.git"
@@ -129,6 +144,7 @@ const RecentWork = () => {
         <MuiDivider marginTop="45px" marginBottom="29px" width="37%" />
         <Grid container spacing={3} className="recentWork__contentSection">
           <PortfolioProject
+            data-aos="fade-up"
             logo="wp"
             wooLogo
             src="https://peeeko.com"
@@ -137,6 +153,7 @@ const RecentWork = () => {
           />
 
           <PortfolioProject
+            data-aos="fade-up"
             logo="wp"
             src="https://plannative.com"
             title="Agency Bussiness Site | PlanNative"
@@ -144,6 +161,7 @@ const RecentWork = () => {
           />
 
           <PortfolioProject
+            data-aos="fade-up"
             logo="wp"
             src="http://ausglobalgroup.com/"
             title="Construction Company Site | AusGlobal"
@@ -170,10 +188,11 @@ const PortfolioProject = ({
   tech2,
   tech3,
   disabledHeader,
+  ...rest
 }) => {
   return (
     <>
-      <Grid item xs={12} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4} {...rest}>
         <Card className="recentWork__card">
           {!disabledHeader && (
             <Grid
@@ -207,7 +226,7 @@ const PortfolioProject = ({
               >
                 <Grid item>
                   {github && (
-                    <a href={github} target="_blank">
+                    <a href={github} target="_blank" rel="noreferrer">
                       <IconButton>
                         <GitHub
                           className="recentWork__cardIcons"
@@ -227,7 +246,7 @@ const PortfolioProject = ({
                   )}
 
                   {src && (
-                    <a href={src} target="_blank">
+                    <a href={src} target="_blank" rel="noreferrer">
                       <IconButton>
                         <Jotaro
                           className="recentWork__cardIcons"

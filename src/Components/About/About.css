@@ -50,7 +50,7 @@
   border-bottom-right-radius: 25px;
   transform: scale(0.85);
   opacity: 0;
-  animation: fadeimage 0.5s linear 2s forwards;
+  animation: fadeimage 0.5s linear 2.5s forwards;
 }
 
 /* Animations */
@@ -70,28 +70,26 @@
   }
 }
 
-.anim1 {
-  animation: fadeup 0.5s linear forwards;
-}
+/* Anim 1 is missing because Heading is having AOS animation */
 
 .anim2 {
-  animation: fadeup 0.5s linear 0.25s forwards;
+  animation: fadeup 0.5s linear 1.25s forwards !important;
 }
 
 .anim3 {
-  animation: fadeup 0.5s linear 0.75s forwards;
+  animation: fadeup 0.5s linear 1.5s forwards;
 }
 
 .anim4 {
-  animation: fadeup 0.5s linear 1s forwards;
+  animation: fadeup 0.5s linear 1.75s forwards;
 }
 
 .anim5 {
-  animation: fadeup 0.5s linear 1.25s forwards;
+  animation: fadeup 0.5s linear 2s forwards;
 }
 
 .anim6 {
-  animation: fadeup 0.5s linear 1.5s forwards;
+  animation: fadeup 0.5s linear 2.25s forwards;
 }
 
 @keyframes fadeup {

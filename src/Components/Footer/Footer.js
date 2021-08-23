@@ -14,7 +14,11 @@ const useStyles = makeStyles((theme) => ({
 const Footer = () => {
   const c = useStyles();
   return (
-    <div className={`footerSection ${c.footerSection}`}>
+    <div
+      className={`footerSection ${c.footerSection}`}
+      data-aos="fade-up"
+      data-aos-delay="1000"
+    >
       <Grid container direction="column" alignItems="center">
         <Grid item>
           <Heading2 className="footerSection__heading">

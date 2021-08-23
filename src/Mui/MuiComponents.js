@@ -2,8 +2,6 @@ import React from "react";
 import { Button, Chip, Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import "./MuiComponents.css";
-import { Dialog } from "@material-ui/core";
-import { Close } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   chip: {
@@ -12,13 +10,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const SectionHeading = ({ children, number, type, className }) => {
+export const SectionHeading = ({
+  children,
+  number,
+  type,
+  className,
+  aosDelay,
+}) => {
   return (
     <Typography
       variant="h3"
       className={`MuiHeading ${className} ${!type && "type1"} ${
         type === "2" && "type2"
       }`}
+      data-aos="fade-up"
+      data-aos-delay={aosDelay ? aosDelay : "0"}
+      data-aos-duration="900"
     >
       {number && <span>{number}-</span>} {children}
     </Typography>
@@ -40,7 +47,7 @@ export const MuiButton = ({
   icon,
 }) => {
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       <Button
         className={`MuiButton ${className} ${fontSize === "small" && "fs"}`}
         color={!color ? "secondary" : color}
@@ -71,6 +78,9 @@ export const MuiDivider = ({
 }) => {
   return (
     <Divider
+      data-aos="fade"
+      data-aos-delay="1000"
+      data-aos-duration="100"
       orientation={orientation}
       style={{
         margin: "0 auto",
@@ -105,7 +115,7 @@ export const MuiChip = ({
 }) => {
   const c = useStyles();
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       <Chip
         label={title}
         icon={icon}
@@ -119,20 +129,20 @@ export const MuiChip = ({
   );
 };
 
-const MuiPopup = ({ open, closePopup, children }) => {
-  return (
-    <Dialog
-      open={open}
-      className="projectsImage__popup"
-      maxWidth="lg"
-      scroll="paper"
-    >
-      <Close
-        className="projectsImage__popupClose"
-        id="projectsImage__popupClose"
-        onClick={closePopup}
-      />
-      {children}
-    </Dialog>
-  );
-};
+// const MuiPopup = ({ open, closePopup, children }) => {
+//   return (
+//     <Dialog
+//       open={open
+//       className="projectsImage__popup"
+//       maxWidth="lg"
+//       scroll="paper"
+//     >
+//       <Close
+//         className="projectsImage__popupClose"
+//         id="projectsImage__popupClose"
+//         onClick={closePopup}
+//       />
+//       {children}
+//     </Dialog>
+//   );
+// };

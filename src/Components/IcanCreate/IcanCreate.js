@@ -139,7 +139,7 @@ const ICanCreateCard = ({
   const c = useStyles();
 
   return (
-    <Grid item xs={12} sm={6}>
+    <Grid item xs={12} sm={6} data-aos="fade-up">
       <Card elevation={2} className={`iCC__Card ${c.iCC__Card}`}>
         <ImageComparison
           imgUrl1={imgUrl1}
