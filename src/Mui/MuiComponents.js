@@ -29,16 +29,28 @@ export const Heading2 = ({ children, className }) => {
   return <h4 className={`MuiHeading2 ${className}`}>{children}</h4>;
 };
 
-export const MuiButton = ({ children, variant, size, color, fontSize }) => {
+export const MuiButton = ({
+  children,
+  variant,
+  size,
+  color,
+  fontSize,
+  link,
+  className,
+  icon,
+}) => {
   return (
-    <Button
-      className={`MuiButton ${fontSize === "small" && "fs"}`}
-      color={!color ? "secondary" : color}
-      variant={!variant ? "outlined" : variant}
-      size={!size ? "large" : size}
-    >
-      {children}
-    </Button>
+    <a href={link} target="_blank">
+      <Button
+        className={`MuiButton ${className} ${fontSize === "small" && "fs"}`}
+        color={!color ? "secondary" : color}
+        variant={!variant ? "outlined" : variant}
+        size={!size ? "large" : size}
+        startIcon={icon}
+      >
+        {children}
+      </Button>
+    </a>
   );
 };
 

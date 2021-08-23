@@ -31,6 +31,7 @@ const ThemeWrapper = ({ children, theme }) => {
       MuiDivider: {
         root: {
           backgroundColor: "rgba(255,255,255,0.3)",
+          marginBottom: "0",
         },
       },
       MuiButton: {

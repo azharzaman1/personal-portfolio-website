@@ -6,12 +6,15 @@ import {
   Hidden,
   IconButton,
   makeStyles,
+  useMediaQuery,
+  useTheme,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "./logo.png";
 import { Link } from "react-scroll";
 import "./Header.css";
 import { MuiButton } from "../../Mui/MuiComponents";
+import MobileSideNav from "./HeaderMobileDrawer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -31,8 +34,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-
+  const theme = useTheme();
+  const switchNav = useMediaQuery(theme.breakpoints.down("sm"));
   const [show, handleShow] = useState(false);
+  const [drawerState, setDrawerState] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -45,6 +50,10 @@ const Header = () => {
       };
     });
   });
+
+  const closeDrawer = () => {
+    setDrawerState(false);
+  };
 
   return (
     <>
@@ -61,52 +70,59 @@ const Header = () => {
             <Hidden smDown>
               <Navigation />
             </Hidden>
-            <Hidden smUp>
-              <IconButton color="secondary">
+            {switchNav && (
+              <IconButton
+                color="secondary"
+                onClick={() => {
+                  setDrawerState(true);
+                }}
+              >
                 <MenuIcon />
               </IconButton>
-            </Hidden>
+            )}
           </Grid>
         </Grid>
       </AppBar>
+      <MobileSideNav open={drawerState} closeDrawer={closeDrawer} />
     </>
   );
 };
 
 const Navigation = () => {
   return (
-    <Grid container spacing={1} alignItems="center">
-      <NavItem
-        number="01"
-        linkText="About me"
-        to="about-section-scroll-anchor"
-      />
-      <NavItem
-        number="02"
-        linkText="Expertise"
-        to="expertise-section-scroll-anchor"
-      />
-      <NavItem
-        number="03"
-        linkText="Recent Work"
-        to="portfolio-section-scroll-anchor"
-      />
-      <NavItem
-        number="04"
-        linkText="Get in Touch"
-        to="getintouch-section-scroll-anchor"
-      />
-      <Grid item>
-        <a
-          href="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
-          target="_blank"
-        >
-          <MuiButton size="small" fontSize="small">
+    <>
+      <Grid container spacing={1} alignItems="center">
+        <NavItem
+          number="01"
+          linkText="About me"
+          to="about-section-scroll-anchor"
+        />
+        <NavItem
+          number="02"
+          linkText="Expertise"
+          to="expertise-section-scroll-anchor"
+        />
+        <NavItem
+          number="03"
+          linkText="Recent Work"
+          to="portfolio-section-scroll-anchor"
+        />
+        <NavItem
+          number="04"
+          linkText="Get in Touch"
+          to="getintouch-section-scroll-anchor"
+        />
+        <Grid item>
+          <MuiButton
+            size="small"
+            fontSize="small"
+            link="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
+          >
             Resume
           </MuiButton>
-        </a>
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 };
 
