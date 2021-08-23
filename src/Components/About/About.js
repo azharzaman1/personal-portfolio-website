@@ -77,9 +77,9 @@ const About = () => {
               </Grid>
               <Grid item xs={12}>
                 <p className="aboutDesc anim5 ">
-                  I'm working as full time Developer since March 2019,
-                  specializing in some of the powerful and trending Web
-                  Technologies like React(Redux), JavaScript(ES6+), Material UI,
+                  I'm working as full time Developer since early 2019,
+                  specializing in some of the powerful and trending web
+                  technologies like React(Redux), JavaScript(ES6+), Material UI,
                   HTML/CSS etc. I can build and design exceptional websites on
                   every niche, web applications, custom themes & interfaces,
                   eCommerce stores with custom functionalaities.
@@ -87,7 +87,9 @@ const About = () => {
               </Grid>
               <Grid item container className={c.buttonContainer} xs={12}>
                 <Grid item className="aboutButton anim6">
-                  <MuiButton>Get in touch</MuiButton>
+                  <MuiButton link="https://api.whatsapp.com/send?phone=+923170460466">
+                    Get in touch
+                  </MuiButton>
                 </Grid>
               </Grid>
             </Grid>
