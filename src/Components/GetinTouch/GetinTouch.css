@@ -2,10 +2,6 @@
   margin-top: 0.75rem !important;
 }
 
-.getInTouchSection__left {
-  padding-left: 33px !important;
-}
-
 .getInTouchSection__leftWhatsApp {
   margin-top: 15px !important;
 }
@@ -34,7 +30,6 @@
 
 .getInTouch__form {
   background-color: var(--background-light);
-  padding: 1.5rem 2rem 2rem;
 }
 
 .getInTouchForm__heading {
@@ -86,7 +81,24 @@
   opacity: 0.9;
 }
 
-.PrivateNotchedOutline-root-18 {
+.MuiOutlinedInput-root fieldset {
   border: 1px solid var(--text) !important;
   opacity: 0.6;
+}
+
+.getInTouch__popupIcon {
+  font-size: 75px !important;
+}
+
+.getInTouch__popupHeading {
+  margin: 0 !important;
+  margin-top: 0.75rem !important;
+  text-align: center;
+}
+
+.getInTouch__error,
+.error-message {
+  margin: 0;
+  margin-top: 07px;
+  color: var(--secondary-light);
 }
