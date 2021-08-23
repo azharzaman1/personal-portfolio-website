@@ -10,11 +10,11 @@ import {
   useTheme,
   Button,
 } from "@material-ui/core";
-import { Heading2, MuiButton, SectionHeading } from "../../Mui/MuiComponents";
+import { Heading2, SectionHeading } from "../../Mui/MuiComponents";
 import { WhatsApp, MailOutline } from "@material-ui/icons";
-import "./GetinTouch.css";
 import MuiPopup from "../RecentWork/MuiPopup";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import "./GetinTouch.css";
 
 const useStyles = makeStyles((theme) => ({
   getInTouchSection: {
@@ -91,8 +91,32 @@ const GetinTouch = () => {
   const [formStatusPopup, setFormStatusPopup] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const c = useStyles();
+
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
+
+  const dynamicDelay = (d, t, m) => {
+    if (!isTablet && !isMobile) {
+      if (d) {
+        return d;
+      } else {
+        return "300";
+      }
+    } else if (isTablet && !isMobile) {
+      if (t) {
+        return t;
+      } else {
+        return "300";
+      }
+    } else {
+      if (m) {
+        return m;
+      } else {
+        return "300";
+      }
+    }
+  };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -174,6 +198,7 @@ const GetinTouch = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=+923170460466"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Button color="secondary" style={{ marginTop: "5px" }}>
                   Whatsapp me
@@ -200,7 +225,7 @@ const GetinTouch = () => {
             justifyContent="center"
           >
             <Grid item xs={12} md={9}>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="600">
                 Well! Thanks for giving some time to my portfolio website. You
                 reached this point, means your interest for me. If you want me
                 build something for you, something efficient, something cool,
@@ -213,6 +238,8 @@ const GetinTouch = () => {
               container
               alignItems="center"
               className="getInTouchSection__leftEmails"
+              data-aos="fade-up"
+              data-aos-delay="800"
             >
               <Grid item>
                 <MailOutline
@@ -232,6 +259,8 @@ const GetinTouch = () => {
               container
               className="getInTouchSection__leftWhatsApp"
               alignItems="center"
+              data-aos="fade-up"
+              data-aos-delay="950"
             >
               <Grid item>
                 <WhatsApp
@@ -244,6 +273,7 @@ const GetinTouch = () => {
                 <a
                   href="https://api.whatsapp.com/send?phone=+923170460466"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   +92 3154860263
                 </a>
@@ -257,6 +287,8 @@ const GetinTouch = () => {
             md={6}
             className={`getInTouchSection__right ${c.right}`}
             justifyContent={isMobile ? "center" : "flex-end"}
+            data-aos={isTablet || isMobile ? "fade-up" : "fade-left"}
+            data-aos-delay={dynamicDelay("1500", null, null)}
           >
             <Grid item>
               <form

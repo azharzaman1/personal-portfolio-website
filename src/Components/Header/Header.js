@@ -60,10 +60,13 @@ const Header = () => {
       <AppBar
         className={`headerAppBar ${classes.appbar} ${show && "shadowed"}`}
         id="headerAppBar"
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-duration="750"
       >
         <Grid container alignItems="center">
           <Grid item className={classes.logo}>
-            <img className="headerLogo" src={Logo} id="logo" />
+            <img className="headerLogo" src={Logo} id="logo" alt="My Logo" />
           </Grid>
           <Grid item xs />
           <Grid className={classes.navigation} item>

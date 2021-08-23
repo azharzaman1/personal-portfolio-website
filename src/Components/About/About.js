@@ -50,7 +50,7 @@ const About = () => {
       <span id="about-section-scroll-anchor">Hy</span>
       <div className={`aboutSection ${c.aboutSection}`}>
         <Container maxWidth="lg" className={c.root}>
-          <SectionHeading type="2" className="aboutTagline anim1">
+          <SectionHeading type="2" aosDelay="800" className="aboutTagline">
             Hi, my name is
           </SectionHeading>
           <Grid container justifyContent="space-around" alignItems="center">
@@ -102,7 +102,12 @@ const About = () => {
               justifyContent="flex-end"
             >
               <Grid item>
-                <img className="aboutPic" src={myImage} width="275px" />
+                <img
+                  className="aboutPic"
+                  src={myImage}
+                  width="275px"
+                  alt="My Pic"
+                />
               </Grid>
             </Grid>
           </Grid>
