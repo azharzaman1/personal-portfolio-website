@@ -1,7 +1,16 @@
 import React from "react";
-import { Button, Divider, Typography } from "@material-ui/core";
+import { Button, Chip, Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import "./MuiComponents.css";
+import { Dialog } from "@material-ui/core";
+import { Close } from "@material-ui/icons";
+
+const useStyles = makeStyles((theme) => ({
+  chip: {
+    margin: "0 5px",
+    padding: "0 5px",
+  },
+}));
 
 export const SectionHeading = ({ children, number, type, className }) => {
   return (
@@ -70,5 +79,48 @@ export const Spacer = ({ height }) => {
         height: height ? height : "10px",
       }}
     />
+  );
+};
+
+export const MuiChip = ({
+  title,
+  icon,
+  size,
+  unclickable,
+  color,
+  variant,
+  link,
+}) => {
+  const c = useStyles();
+  return (
+    <a href={link} target="_blank">
+      <Chip
+        label={title}
+        icon={icon}
+        size={size ? size : "medium"}
+        clickable={unclickable ? false : true}
+        color={color ? color : "secondary"}
+        variant={variant ? variant : "outlined"}
+        className={`${c.chip}`}
+      />
+    </a>
+  );
+};
+
+const MuiPopup = ({ open, closePopup, children }) => {
+  return (
+    <Dialog
+      open={open}
+      className="projectsImage__popup"
+      maxWidth="lg"
+      scroll="paper"
+    >
+      <Close
+        className="projectsImage__popupClose"
+        id="projectsImage__popupClose"
+        onClick={closePopup}
+      />
+      {children}
+    </Dialog>
   );
 };
