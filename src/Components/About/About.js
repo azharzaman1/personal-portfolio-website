@@ -15,12 +15,15 @@ const useStyles = makeStyles((theme) => ({
   },
 
   root: {
-    padding: "0 14px",
-    [theme.breakpoints.up("xs")]: {
-      padding: "0 24px",
+    padding: "0 150px",
+    [theme.breakpoints.down("lg")]: {
+      padding: "0 125px",
     },
-    [theme.breakpoints.up("sm")]: {
-      padding: "0 150px",
+    [theme.breakpoints.down("md")]: {
+      padding: "0 50px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "0 16px",
     },
   },
 

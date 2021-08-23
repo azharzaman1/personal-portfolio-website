@@ -54,14 +54,14 @@ const IcanCreate = () => {
             imgUrl1={assets.Amazon}
             imgUrl2={assets.eBay}
             feature1="Complete vendors setup"
-            feature2="Complete commissions setup"
+            feature2="Commissions setup"
             feature3="Complete shipping setup"
             feature4="Complete payments setup"
             feature5="Unlimited sellers"
             feature6="Unlimited products"
           />
           <ICanCreateCard
-            title="A fully-functional eCommerce store like Macys | BestBuy"
+            title="A fully-functional eCommerce store like Macys"
             imgUrl1={assets.Macys}
             imgUrl2={assets.BestBuy}
             feature1="Complete shipping setup"
@@ -84,7 +84,7 @@ const IcanCreate = () => {
             feature6="All needed pages"
           />
           <ICanCreateCard
-            title="An SEO friednly Blog site for Blogging or Affiliate marketing"
+            title="A Blog site for Blogging or Affiliate marketing"
             imgUrl1={assets.beingGuru}
             imgUrl2={assets.DicasOnline}
             feature1="SEO Optimized"
@@ -96,7 +96,7 @@ const IcanCreate = () => {
           />
 
           <ICanCreateCard
-            title="A fully-functional JavaScript(React) based WebApp"
+            title="JavaScript(React) based WebApplication"
             imgUrl1={assets.VA}
             imgUrl2={assets.CovidTracker}
             feature1="Elegant design"

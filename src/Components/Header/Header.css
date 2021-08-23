@@ -21,3 +21,12 @@
   font-weight: 400;
   font-size: 14px;
 }
+
+.mobileNav__header {
+  padding: 0.25rem 1.5rem 0.25rem 0.2rem;
+}
+
+.mobileNav__headerHeading {
+  margin: 0;
+  margin-left: 0.75rem;
+}
