@@ -27,7 +27,7 @@ const Footer = () => {
         </Grid>
         <Grid item container justifyContent="center">
           <MuiChip
-            link="https://github.com/DrAzharZaman"
+            link="https://github.com/azharzaman1"
             title="Github"
             icon={<GitHub fontSize="small" />}
           />
