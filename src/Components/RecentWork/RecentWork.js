@@ -116,7 +116,7 @@ const RecentWork = () => {
             logoAlt="Netflix Logo"
             logoHeight="35px"
             translateY="3.5px"
-            github="https://github.com/azharzaman1/Netflix-Portfolio-Clone.git"
+            github="https://github.com/azharzaman1/netflix-portfolio-clone"
             src="https://azhar-netflixclone.ga/"
             title="Basic Netflix Clone"
             desc="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices. I decided to build it with react and used tmdb as realtime movie database. It fetch movies from tmdb and trailers when clicked from youtube with a special 'youtube-trailer' functionality."
