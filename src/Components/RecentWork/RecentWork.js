@@ -60,7 +60,7 @@ const RecentWork = () => {
             logoAlt="Tracker Logo"
             logoHeight="50px"
             translateY="12px"
-            github="https://github.com/azharzaman1/Covid-tacker-portfolio"
+            github="https://github.com/azharzaman1/covid-tracker"
             src="https://azhar-covidtracker.ga/"
             title="Covid-19 Tracker"
             desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
