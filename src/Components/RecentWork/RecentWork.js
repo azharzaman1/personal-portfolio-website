@@ -73,7 +73,7 @@ const RecentWork = () => {
             data-aos-delay="500"
             logo={assets.AmazonLogo}
             logoAlt="Amazon Logo"
-            github="https://github.com/azharzaman1/Full-Stack-Amazon-Clone.git"
+            github="https://github.com/azharzaman1/fullstack-amazon-clone"
             src="https://azhar-amazonclone.ga/"
             title="Full-featured Amazon clone"
             desc="I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more. This Amazon clone is using Firebase firestore as realtime Database to store user details, addresses, order stats etc."
