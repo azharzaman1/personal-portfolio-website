@@ -173,7 +173,7 @@ const Expertise = () => {
             desc1="Elementor is the most advanced website builder for WordPress, allowing you to visually design pages, posts, slides and much more."
           />
           <ExpertiseItem
-            title="Revelution Slider Pro"
+            title="Revolution Slider Pro"
             progress={85}
             data-aos="fade-up"
             desc1="Slider Revolution is all-in-one slider solution, helping beginner-and mid-level designers WOW their clients with pro-level visuals."

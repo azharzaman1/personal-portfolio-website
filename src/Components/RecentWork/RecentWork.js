@@ -96,19 +96,6 @@ const RecentWork = () => {
             tech2="material-ui"
             tech3="aos"
           />
-          <PortfolioProject
-            data-aos="fade-up"
-            logo={assets.GoogleLogo}
-            logoAlt="Google Logo"
-            logoHeight="35px"
-            github="https://github.com/azharzaman1/Google-portfolio-clone.git"
-            src="https://azhar-googleclone.ga/"
-            title="Functional Google clone"
-            desc="Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size."
-            tech1="reactjs"
-            tech2="material-ui"
-            tech3="firebase"
-          />
 
           <PortfolioProject
             data-aos="fade-up"
@@ -123,6 +110,20 @@ const RecentWork = () => {
             tech1="reactjs"
             tech2="tmdb-api"
             tech3="yt-trailers"
+          />
+
+          <PortfolioProject
+            data-aos="fade-up"
+            logo={assets.GoogleLogo}
+            logoAlt="Google Logo"
+            logoHeight="35px"
+            github="https://github.com/azharzaman1/Google-portfolio-clone.git"
+            src="https://azhar-googleclone.ga/"
+            title="Functional Google clone"
+            desc="Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size."
+            tech1="reactjs"
+            tech2="material-ui"
+            tech3="firebase"
           />
 
           <PortfolioProject
