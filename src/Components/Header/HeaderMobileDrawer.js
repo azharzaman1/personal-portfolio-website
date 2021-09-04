@@ -76,25 +76,25 @@ export default function MobileSideNav({ open, closeDrawer }) {
             <Grid item container direction="column">
               <List component="nav" className={`${c.mobileNavList}`}>
                 <MuiListItem
-                  icon={<Inbox color="secondary" />}
+                  // icon={<Inbox color="secondary" />}
                   primaryText="About me"
                   to="about-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  icon={<Inbox color="secondary" />}
+                  // icon={<Inbox color="secondary" />}
                   primaryText="Expertise"
                   to="expertise-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  icon={<Inbox color="secondary" />}
+                  // icon={<Inbox color="secondary" />}
                   primaryText="Recent Work"
                   to="portfolio-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  icon={<Inbox color="secondary" />}
+                  // icon={<Inbox color="secondary" />}
                   primaryText="Get in touch"
                   to="getintouch-section-scroll-anchor"
                   closeDrawer={closeDrawer}
