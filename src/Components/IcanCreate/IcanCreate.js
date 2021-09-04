@@ -50,6 +50,18 @@ const IcanCreate = () => {
         <SectionHeading type="2">What I can build for you!</SectionHeading>
         <Grid container spacing={4} className="iCC__contentContainer">
           <ICanCreateCard
+            title="JavaScript(React) based Web Application"
+            imgUrl1={assets.VA}
+            imgUrl2={assets.CovidTracker}
+            feature1="Elegant design"
+            feature2="Interactive user interface"
+            feature3="Advance animations"
+            feature4="Unlimited Public APIs"
+            feature5="Clean bug free code"
+            feature6="Healthy team collaboration"
+          />
+
+          <ICanCreateCard
             title="A Multi-vendor Marketplace like Amazon | eBay"
             imgUrl1={assets.Amazon}
             imgUrl2={assets.eBay}
@@ -60,6 +72,7 @@ const IcanCreate = () => {
             feature5="Unlimited sellers"
             feature6="Unlimited products"
           />
+
           <ICanCreateCard
             title="A fully-functional eCommerce store like Macys"
             imgUrl1={assets.Macys}
@@ -83,6 +96,7 @@ const IcanCreate = () => {
             feature5="SEO optimized"
             feature6="All needed pages"
           />
+
           <ICanCreateCard
             title="A Blog site for Blogging or Affiliate marketing"
             imgUrl1={assets.beingGuru}
@@ -95,17 +109,6 @@ const IcanCreate = () => {
             feature6="Unlimited Authors"
           />
 
-          <ICanCreateCard
-            title="JavaScript(React) based WebApplication"
-            imgUrl1={assets.VA}
-            imgUrl2={assets.CovidTracker}
-            feature1="Elegant design"
-            feature2="Interactive user interface"
-            feature3="Advance animations"
-            feature4="Unlimited Public APIs"
-            feature5="Clean bug free code"
-            feature6="Healthy team collaboration"
-          />
           <ICanCreateCard
             title="A personal | company portfolio website"
             imgUrl1={assets.Azhar}
