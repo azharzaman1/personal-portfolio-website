@@ -168,7 +168,7 @@ duration
               </Grid>
             </Grid>
           </ul>
-          <Link to="getintouch-section-scroll-anchor" duration={duration ? duration : 1000} smooth={true}>
+          <Link to="getintouch-section-scroll-anchor" duration={duration ? duration : 1750} smooth={true}>
             <MuiButton size="small" variant="contained">
               Book now
             </MuiButton>
