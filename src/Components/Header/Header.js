@@ -99,22 +99,24 @@ const Navigation = () => {
           number="01"
           linkText="About me"
           to="about-section-scroll-anchor"
+duration='1250
         />
         <NavItem
           number="02"
           linkText="Expertise"
+duration='1500
           to="expertise-section-scroll-anchor"
         />
         <NavItem
           number="03"
           linkText="Recent Work"
-duration='1100'
+duration='1750'
           to="portfolio-section-scroll-anchor"
         />
         <NavItem
           number="04"
           linkText="Get in Touch"
-duration='1100'
+duration='2000'
           to="getintouch-section-scroll-anchor"
         />
         <Grid item>
