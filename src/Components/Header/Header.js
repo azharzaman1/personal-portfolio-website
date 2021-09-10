@@ -108,11 +108,13 @@ const Navigation = () => {
         <NavItem
           number="03"
           linkText="Recent Work"
+duration='1100'
           to="portfolio-section-scroll-anchor"
         />
         <NavItem
           number="04"
           linkText="Get in Touch"
+duration='1100'
           to="getintouch-section-scroll-anchor"
         />
         <Grid item>
@@ -129,14 +131,14 @@ const Navigation = () => {
   );
 };
 
-const NavItem = ({ linkText, to, number }) => {
+const NavItem = ({ linkText, to, number, duration }) => {
   return (
     <Grid item>
       <Link
         className="navItem"
         to={to}
         smooth={true}
-        duration={!duration ? 800 : duration}
+        duration={duration ? duration : 1000}
       >
         <span>{number}</span>- {linkText}
       </Link>
