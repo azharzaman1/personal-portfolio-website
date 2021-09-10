@@ -138,6 +138,7 @@ const ICanCreateCard = ({
   feature4,
   feature5,
   feature6,
+duration
 }) => {
   const c = useStyles();
 
@@ -167,7 +168,7 @@ const ICanCreateCard = ({
               </Grid>
             </Grid>
           </ul>
-          <Link to="getintouch-section-scroll-anchor" duration={500} smooth={true}>
+          <Link to="getintouch-section-scroll-anchor" duration={duration ? duration : 1000} smooth={true}>
             <MuiButton size="small" variant="contained">
               Book now
             </MuiButton>
