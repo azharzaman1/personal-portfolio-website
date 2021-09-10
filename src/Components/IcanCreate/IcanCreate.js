@@ -167,7 +167,7 @@ const ICanCreateCard = ({
               </Grid>
             </Grid>
           </ul>
-          <Link to="contactSection" duration={500} smooth={true}>
+          <Link to="getintouch-section-scroll-anchor" duration={500} smooth={true}>
             <MuiButton size="small" variant="contained">
               Book now
             </MuiButton>
