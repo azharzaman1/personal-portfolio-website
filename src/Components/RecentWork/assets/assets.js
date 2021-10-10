@@ -5,6 +5,7 @@ import MyLogo from "./images/azhar.png";
 import TrackerLogo from "./images/tracker.png";
 import CVALogo from "./images/cva.png";
 import WordPress from "./wp.png";
+import CodeGodown from "./images/cd.png";
 
 export const assets = {
   GoogleLogo,
@@ -14,4 +15,5 @@ export const assets = {
   TrackerLogo,
   CVALogo,
   WordPress,
+  CodeGodown,
 };

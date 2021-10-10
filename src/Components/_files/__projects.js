@@ -76,14 +76,14 @@ export const projects = [
   },
 
   {
-    title: "Code Godown",
-    logo: assets.CVALogo,
+    title: "Code Godown (Under development)",
+    logo: assets.CodeGodown,
     logoAlt: "Code Godown Logo",
     logoHeight: "35px", //
     translateY: "3.5px", //
     github: "https://github.com/azharzaman1/coding-godown",
     src: "https://code-godown.netlify.app/",
-    desc: "Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size.",
+    desc: "Code Godown is a Code saving, code manuplating, platform. One can store, manange code snippets. One can also share code with friends, and publish articles for their audience. This is going to be all in platform for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcomed.",
     tech1: "nextjs",
     tech2: "mui - antd",
     tech3: "firebase",
