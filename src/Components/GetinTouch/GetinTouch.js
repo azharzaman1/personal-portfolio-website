@@ -227,10 +227,11 @@ const GetinTouch = () => {
             <Grid item xs={12} md={9}>
               <p data-aos="fade-up" data-aos-delay="600">
                 Well! Thanks for giving some time to my portfolio website. You
-                reached this point, means your interest for me. If you want me
-                build something for you, something efficient, something cool,
-                give me a signal. Or in case you want to discuss about your
-                project, my inbox is waiting for you. Thanks
+                reached this point, means your interest in my skill-set. If you
+                want me build something for you, something efficient, something
+                cool, give me a signal. Or in case you just want to discuss your
+                project, my inbox is always waiting for nice persons like you.
+                Thanks
               </p>
             </Grid>
             <Grid

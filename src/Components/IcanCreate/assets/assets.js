@@ -7,7 +7,7 @@ export const assets = {
   PlanNative: "https://i.ibb.co/MGjt9dK/Plan-Native.jpg",
   Azhar: "https://i.ibb.co/WsQD0Jj/Azhar.jpg",
   CompanyPortfolio: "https://i.ibb.co/jZPTTSN/Company-Portfolio.jpg",
-  VA: "https://i.ibb.co/0c0gpDX/VA.jpg",
+  CVA: "https://i.ibb.co/0c0gpDX/VA.jpg",
   CovidTracker: "https://i.ibb.co/zQgbhTT/Covid-Tracker.jpg",
   beingGuru: "https://i.ibb.co/HCwrm1y/being-Guru.jpg",
   DicasOnline: "https://i.ibb.co/8bXFws6/Dicas-Online.jpg",

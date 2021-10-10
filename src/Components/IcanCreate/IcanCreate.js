@@ -51,7 +51,7 @@ const IcanCreate = () => {
         <Grid container spacing={4} className="iCC__contentContainer">
           <ICanCreateCard
             title="JavaScript(React) based Web Application"
-            imgUrl1={assets.VA}
+            imgUrl1={assets.CVA}
             imgUrl2={assets.CovidTracker}
             feature1="Elegant design"
             feature2="Interactive user interface"
@@ -138,7 +138,7 @@ const ICanCreateCard = ({
   feature4,
   feature5,
   feature6,
-duration
+  duration,
 }) => {
   const c = useStyles();
 
@@ -168,7 +168,11 @@ duration
               </Grid>
             </Grid>
           </ul>
-          <Link to="getintouch-section-scroll-anchor" duration={duration ? duration : 1750} smooth={true}>
+          <Link
+            to="getintouch-section-scroll-anchor"
+            duration={duration ? duration : 1750}
+            smooth={true}
+          >
             <MuiButton size="small" variant="contained">
               Book now
             </MuiButton>

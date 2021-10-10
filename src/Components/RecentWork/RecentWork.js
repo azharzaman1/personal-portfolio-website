@@ -19,6 +19,7 @@ import { ReactComponent as Jotaro } from "./assets/extlink.svg";
 import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
 import { ReactComponent as WPLogo } from "./assets/wp.svg";
+import { projects, projectsWPDev } from "../_files/__projects";
 
 const useStyles = makeStyles((theme) => ({
   portfolioSection: {
@@ -52,122 +53,49 @@ const RecentWork = () => {
         <SectionHeading type="2" number="03">
           What I have built!
         </SectionHeading>
-        <Grid container spacing={3} className="recentWork__contentSection">
-          <PortfolioProject
-            data-aos="fade-up"
-            data-aos-delay="500"
-            logo={assets.TrackerLogo}
-            logoAlt="Tracker Logo"
-            logoHeight="50px"
-            translateY="12px"
-            github="https://github.com/azharzaman1/covid-tracker"
-            src="https://azhar-covidtracker.ga/"
-            title="Covid-19 Tracker"
-            desc="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
-            tech1="reactjs"
-            tech2="react-chartjs"
-            tech3="firebase"
-          />
-          <PortfolioProject
-            data-aos="fade-up"
-            data-aos-delay="500"
-            logo={assets.AmazonLogo}
-            logoAlt="Amazon Logo"
-            github="https://github.com/azharzaman1/fullstack-amazon-clone"
-            src="https://azhar-amazonclone.ga/"
-            title="Full-featured Amazon clone"
-            desc="I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more. This Amazon clone is using Firebase firestore as realtime Database to store user details, addresses, order stats etc."
-            tech1="reactjs"
-            tech2="redux"
-            tech3="firebase"
-          />
-          <PortfolioProject
-            data-aos="fade-up"
-            data-aos-delay="500"
-            logo={assets.MyLogo}
-            logoAlt="My Logo"
-            github="https://github.com/azharzaman1/personal-portfolio-website.git"
-            src="https://azharzaman.com"
-            logoHeight="37px"
-            translateY="8px"
-            title="Personal Portfolio Site"
-            desc="This website is built with React with its descent UI. I have used CSS(SASS) for styling purposes. Making this website simple but expressive was my first priority. And I guess it meets all the requirements of elegant design website. There is always room for improvement. Your contribution would be a great favour."
-            tech1="reactjs"
-            tech2="material-ui"
-            tech3="aos"
-          />
-
-          <PortfolioProject
-            data-aos="fade-up"
-            logo={assets.NetflixLogo}
-            logoAlt="Netflix Logo"
-            logoHeight="35px"
-            translateY="3.5px"
-            github="https://github.com/azharzaman1/netflix-portfolio-clone"
-            src="https://azhar-netflixclone.ga/"
-            title="Basic Netflix Clone"
-            desc="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices. I decided to build it with react and used tmdb as realtime movie database. It fetch movies from tmdb and trailers when clicked from youtube with a special 'youtube-trailer' functionality."
-            tech1="reactjs"
-            tech2="tmdb-api"
-            tech3="yt-trailers"
-          />
-
-          <PortfolioProject
-            data-aos="fade-up"
-            logo={assets.GoogleLogo}
-            logoAlt="Google Logo"
-            logoHeight="35px"
-            github="https://github.com/azharzaman1/Google-portfolio-clone.git"
-            src="https://azhar-googleclone.ga/"
-            title="Functional Google clone"
-            desc="Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size."
-            tech1="reactjs"
-            tech2="material-ui"
-            tech3="firebase"
-          />
-
-          <PortfolioProject
-            data-aos="fade-up"
-            logo={assets.CVALogo}
-            logoAlt="Company Virtual Assitant Logo"
-            logoHeight="35px"
-            translateY="5.5px"
-            github="https://github.com/azharzaman1/Comany-Virtual-Assistant.git"
-            src="https://virtual-assistant-application.netlify.app/"
-            title="Company virtual assistant (In progress)"
-            desc="Aiming to build complete virtual assitant application with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. It uses Google Firebase as a realtime database and Authentication setup functionalities. The build is still in progress, but you can have a look at by clicking external icon above. "
-            tech1="reactjs"
-            tech2="material-ui"
-            tech3="firebase"
-          />
+        <Grid
+          container
+          spacing={3}
+          className="recentWork__contentSection"
+          justifyContent="center"
+        >
+          {projects.map((project) => (
+            <PortfolioProject
+              data-aos={project.dataAOS}
+              data-aos-delay={project?.dataAosDelay}
+              logo={project.logo}
+              logoAlt={project.logoAlt}
+              logoHeight={project?.logoHeight}
+              translateY={project?.translateY}
+              github={project.github}
+              src={project.src}
+              title={project.title}
+              desc={project.desc}
+              tech1={project.tech1}
+              tech2={project.tech2}
+              tech3={project.tech3}
+            />
+          ))}
         </Grid>
 
         <MuiDivider marginTop="45px" marginBottom="29px" width="37%" />
-        <Grid container spacing={3} className="recentWork__contentSection">
-          <PortfolioProject
-            data-aos="fade-up"
-            logo="wp"
-            wooLogo
-            src="https://peeeko.com"
-            title="Multi-vendor Marketplace | Peeeko"
-            desc="Peeeko.com is the First Pakistani Online Multi-Vendor Marketplace, specially designed for Females in all aspects. This marketplace forms a One Window Solution to serve all Needs of Females of All Ages. With a 90% Women Employment Policy, this platform gather Vendors, Manufacturers and Importers of various Products and Services."
-          />
 
-          <PortfolioProject
-            data-aos="fade-up"
-            logo="wp"
-            src="https://plannative.com"
-            title="Agency Bussiness Site | PlanNative"
-            desc="Plan Native is a Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts, Business Consultants and Growth Strategists, who have been providing One Window Business Solutions and Advisory Services to clients around the globe since many years."
-          />
-
-          <PortfolioProject
-            data-aos="fade-up"
-            logo="wp"
-            src="http://ausglobalgroup.com/"
-            title="Construction Company Site | AusGlobal"
-            desc="AUSGLOBAL GROUP is an international company with head offices in Perth – Australia, and other branches in Tianjin – China and Hong Kong. Experts in commercial and residential construction and and in creating opportunities for real estate investment for local and foreign investors."
-          />
+        <Grid
+          container
+          spacing={3}
+          className="recentWork__contentSection"
+          justifyContent="center"
+        >
+          {projectsWPDev.map((project) => (
+            <PortfolioProject
+              data-aos={project.dataAOS}
+              logo={project.logo}
+              wooLogo={project.wooLogo}
+              src={project.src}
+              title={project.title}
+              desc={project.desc}
+            />
+          ))}
         </Grid>
       </Container>
     </div>

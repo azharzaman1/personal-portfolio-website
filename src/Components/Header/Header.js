@@ -1,4 +1,4 @@
-Weimport React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   duration,
@@ -103,19 +103,19 @@ const Navigation = () => {
         <NavItem
           number="02"
           linkText="Expertise"
-duration='1750'
+          duration="1750"
           to="expertise-section-scroll-anchor"
         />
         <NavItem
           number="03"
           linkText="Recent Work"
-duration='2000'
+          duration="2000"
           to="portfolio-section-scroll-anchor"
         />
         <NavItem
           number="04"
           linkText="Get in Touch"
-duration='2250'
+          duration="2250"
           to="getintouch-section-scroll-anchor"
         />
         <Grid item>
