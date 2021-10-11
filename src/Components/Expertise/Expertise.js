@@ -77,11 +77,13 @@ const Expertise = () => {
         <Grid container spacing={2} className="expertiseContent__container">
           {expertise.map((item) => (
             <ExpertiseItem
+              key={item.order}
               title={item.title}
               progress={item.progress}
               data-aos={item.dataAOS}
               data-aos-delay={item?.dataAOS_delay}
               desc1={item.desc1}
+              s
               desc2={item.desc2}
             />
           ))}
@@ -92,6 +94,7 @@ const Expertise = () => {
         <Grid container spacing={2} className="expertiseContent__container">
           {wpDevExpertise.map((item) => (
             <ExpertiseItem
+              key={item.order}
               title={item.title}
               progress={item.progress}
               data-aos="fade-up"

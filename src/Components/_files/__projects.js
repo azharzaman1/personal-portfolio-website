@@ -48,6 +48,7 @@ export const projects = [
     dataAosDelay: 500,
   },
   {
+    order: 3,
     title: "Basic Netflix Clone",
     logo: assets.NetflixLogo,
     logoAlt: "Netflix Logo",
@@ -62,6 +63,7 @@ export const projects = [
     dataAOS: "fade-up",
   },
   {
+    order: 4,
     title: "Basic Google Clone",
     logo: assets.GoogleLogo,
     logoAlt: "Google Logo",
@@ -76,6 +78,7 @@ export const projects = [
   },
 
   {
+    order: 5,
     title: "Code Godown (Under development)",
     logo: assets.CodeGodown,
     logoAlt: "Code Godown Logo",
@@ -93,6 +96,7 @@ export const projects = [
 
 export const projectsWPDev = [
   {
+    order: 6,
     title: "Multi-vendor Marketplace | Peeeko",
     logo: "wp",
     src: "https://peeeko.com",
@@ -101,6 +105,7 @@ export const projectsWPDev = [
     dataAOS: "fade-up",
   },
   {
+    order: 7,
     title: "Agency Bussiness Site | PlanNative",
     logo: "wp",
     src: "https://plannative.com",

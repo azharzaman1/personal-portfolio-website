@@ -1,5 +1,6 @@
 export const expertise = [
   {
+    order: 0,
     title: "JavaScript (ES6 - ES7)",
     progress: 85,
     desc1: "JavaScript is most popular programming language till date",
@@ -9,6 +10,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 1,
     title: "ReactJs(Hooks)",
     progress: 90,
     desc1: "Reacts is world famous JavaScript library by Facebook Inc.",
@@ -18,6 +20,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 2,
     title: "Redux(toolkit) - Context",
     progress: 85,
     desc1:
@@ -28,6 +31,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 3,
     title: "NextJs",
     progress: 75,
     desc1:
@@ -38,6 +42,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 4,
     title: "GatsbyJs",
     progress: 83,
     desc1:
@@ -47,6 +52,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 5,
     title: "Material UI / Ant Design",
     progress: 88,
     desc1: "Material Design is a design language developed by Google in 2014.",
@@ -57,6 +63,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 6,
     title: "HTML5 / CSS3(Sass)",
     progress: 95,
     desc1:
@@ -66,6 +73,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 7,
     title: "Bootstrap(react)",
     progress: 87,
     desc1:
@@ -75,6 +83,7 @@ export const expertise = [
     dataAOS_delay: 500,
   },
   {
+    order: 8,
     title: "Google Firebase",
     progress: 85,
     desc1:
@@ -88,6 +97,7 @@ export const expertise = [
 const getExpertise = (dynamicDelay) => {
   return [
     {
+      order: 9,
       title: "JavaScript (ES6 - ES7)",
       progress: 85,
       desc1: "JavaScript is most popular programming language till date",
@@ -97,6 +107,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("500", "500", "500"),
     },
     {
+      order: 10,
       title: "ReactJs(Hooks)",
       progress: 90,
       desc1: "Reacts is world famous JavaScript library by Facebook Inc.",
@@ -106,6 +117,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("500", "500", null),
     },
     {
+      order: 11,
       title: "Redux(toolkit) - Context",
       progress: 85,
       desc1:
@@ -116,6 +128,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("500", null, null),
     },
     {
+      order: 12,
       title: "NextJs",
       progress: 75,
       desc1:
@@ -126,6 +139,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
+      order: 13,
       title: "GatsbyJs",
       progress: 83,
       desc1:
@@ -135,6 +149,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
+      order: 14,
       title: "Material UI / Ant Design",
       progress: 88,
       desc1:
@@ -145,6 +160,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
+      order: 15,
       title: "HTML5 / CSS3(Sass)",
       progress: 95,
       desc1:
@@ -153,6 +169,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS: "fade-up",
     },
     {
+      order: 16,
       title: "Bootstrap(react)",
       progress: 87,
       desc1:
@@ -161,6 +178,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS: "fade-up",
     },
     {
+      order: 17,
       title: "Google Firebase",
       progress: 85,
       desc1:
@@ -175,6 +193,7 @@ export default getExpertise;
 
 export const wpDevExpertise = [
   {
+    order: 0,
     title: "Advance WordPress",
     progress: 95,
     desc1:

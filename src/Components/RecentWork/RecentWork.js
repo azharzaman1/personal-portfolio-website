@@ -61,6 +61,7 @@ const RecentWork = () => {
         >
           {projects.map((project) => (
             <PortfolioProject
+              key={project.order}
               data-aos={project.dataAOS}
               data-aos-delay={project?.dataAosDelay}
               logo={project.logo}
@@ -88,6 +89,7 @@ const RecentWork = () => {
         >
           {projectsWPDev.map((project) => (
             <PortfolioProject
+              key={project.order}
               data-aos={project.dataAOS}
               logo={project.logo}
               wooLogo={project.wooLogo}
