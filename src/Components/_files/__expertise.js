@@ -98,8 +98,8 @@ const getExpertise = (dynamicDelay) => {
   return [
     {
       order: 9,
-      title: "JavaScript (ES6 - ES7)",
-      progress: 85,
+      title: "JavaScript (ES6+)",
+      progress: 86,
       desc1: "JavaScript is most popular programming language till date",
       desc2:
         "All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc.",
@@ -119,7 +119,7 @@ const getExpertise = (dynamicDelay) => {
     {
       order: 11,
       title: "Redux(toolkit) - Context",
-      progress: 85,
+      progress: 86,
       desc1:
         "Redux is an open-source JavaScript library for managing application state.",
       desc2:
@@ -129,8 +129,8 @@ const getExpertise = (dynamicDelay) => {
     },
     {
       order: 12,
-      title: "NextJs",
-      progress: 75,
+      title: "NextJs (SSR / SSG / APIs)",
+      progress: 84,
       desc1:
         "Next.js is a development framework built on top of Node.js enabling React based web applications functionalities.",
       desc2:
@@ -140,7 +140,7 @@ const getExpertise = (dynamicDelay) => {
     },
     {
       order: 13,
-      title: "GatsbyJs",
+      title: "GatsbyJs / Basic Graphql",
       progress: 83,
       desc1:
         "Gatsby provides development teams an open source frontend framework for creating dynamic, optimized websites.",
@@ -170,20 +170,20 @@ const getExpertise = (dynamicDelay) => {
     },
     {
       order: 16,
-      title: "Bootstrap(react)",
+      title: "Tailwind CSS / Bootstrap",
       progress: 87,
       desc1:
-        "Bootstrap is an open-source CSS framework directed at responsive, rich UI web development.",
-      desc2: "While React Bootstrap is built exclusive for react.",
+        "Tailwind CSS is a utility-first CSS framework composed to build any design, directly in your markup.",
+      desc2: "React Bootstrap is utility Components library for react.",
       dataAOS: "fade-up",
     },
     {
       order: 17,
-      title: "Google Firebase",
+      title: "Google Firebase / APIs etc.",
       progress: 85,
       desc1:
         "Firebase is a platform developed by Google for creating mobile and web applications.",
-      desc2: "Firebase helps you build and run successful apps, webapps etc.",
+      desc2: "Have descent experience consuming popular APIs, like MapBox etc.",
       dataAOS: "fade-up",
     },
   ];

@@ -16,4 +16,5 @@ export const assets = {
   CVALogo,
   WordPress,
   CodeGodown,
+  AirbnbLogo: "https://links.papareact.com/qd3",
 };

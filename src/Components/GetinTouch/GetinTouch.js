@@ -276,7 +276,7 @@ const GetinTouch = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +92 3154860263
+                  +92 3170460466
                 </a>
               </Grid>
             </Grid>
