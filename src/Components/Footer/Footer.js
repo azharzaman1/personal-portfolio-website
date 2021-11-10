@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import { Heading2, MuiChip } from "../../Mui/MuiComponents";
-import { GitHub, Language, LinkedIn, Twitter } from "@material-ui/icons";
+import { Facebook, GitHub, Twitter } from "@material-ui/icons";
 import "./Footer.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,19 +27,14 @@ const Footer = () => {
         </Grid>
         <Grid item container justifyContent="center">
           <MuiChip
-            link="https://azharzaman.com"
-            title="Website"
-            icon={<Language fontSize="small" />}
-          />
-          <MuiChip
             link="https://github.com/azharzaman1"
             title="Github"
             icon={<GitHub fontSize="small" />}
           />
           <MuiChip
-            link="https://www.linkedin.com/in/azhar-zaman-06b454221"
-            title="LinkedIn"
-            icon={<LinkedIn fontSize="small" />}
+            link="https://web.facebook.com/DrAzharZaman1/"
+            title="Facebook"
+            icon={<Facebook fontSize="small" />}
           />
           <MuiChip
             link="https://twitter.com/DrAzharZaman"
