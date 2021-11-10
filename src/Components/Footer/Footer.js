@@ -27,14 +27,19 @@ const Footer = () => {
         </Grid>
         <Grid item container justifyContent="center">
           <MuiChip
+            link="https://azharzaman.com"
+            title="Website"
+            icon={<Language fontSize="small" />}
+          />
+          <MuiChip
             link="https://github.com/azharzaman1"
             title="Github"
             icon={<GitHub fontSize="small" />}
           />
           <MuiChip
-            link="https://web.facebook.com/DrAzharZaman1/"
-            title="Facebook"
-            icon={<Facebook fontSize="small" />}
+            link="https://www.linkedin.com/in/azhar-zaman-06b454221"
+            title="LinkedIn"
+            icon={<LinkedIn fontSize="small" />}
           />
           <MuiChip
             link="https://twitter.com/DrAzharZaman"
