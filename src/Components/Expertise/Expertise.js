@@ -79,7 +79,7 @@ const Expertise = () => {
             <ExpertiseItem
               key={item.order}
               title={item.title}
-              progress={item.progress}
+              // progress={item.progress}
               data-aos={item.dataAOS}
               data-aos-delay={item?.dataAOS_delay}
               desc1={item.desc1}
@@ -96,7 +96,7 @@ const Expertise = () => {
             <ExpertiseItem
               key={item.order}
               title={item.title}
-              progress={item.progress}
+              // progress={item.progress}
               data-aos="fade-up"
               desc1={item.desc1}
             />
@@ -124,8 +124,10 @@ const ExpertiseItem = ({ title, progress, desc1, desc2, ...rest }) => {
       >
         <Heading2>{title}</Heading2>
         <div className="progressBar__wrapper">
-          {showProgress && (
-            <>{progress && <ExpertProgress progress={progress} />}</>
+          {showProgress && progress ? (
+            <ExpertProgress progress={progress} />
+          ) : (
+            <></>
           )}
         </div>
         <ul>

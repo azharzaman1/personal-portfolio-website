@@ -92,7 +92,7 @@ const IcanCreate = () => {
             feature1="Elegant design"
             feature2="Interactive user interface"
             feature3="Advance animations"
-            feature4="Lead generating ui"
+            feature4="Leads generating ui"
             feature5="SEO optimized"
             feature6="All needed pages"
           />

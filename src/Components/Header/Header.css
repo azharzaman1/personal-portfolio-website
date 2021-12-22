@@ -1,5 +1,5 @@
 .headerAppBar.shadowed {
-  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .headerLogo {
@@ -9,7 +9,7 @@
 
 .navItem {
   font-family: Consolas1;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.1px;
   color: var(--secondary-light);

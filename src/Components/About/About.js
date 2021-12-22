@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
-import myImage from "../../myPic.png";
+import myImage from "../../myPic2.jpg";
 import "./About.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +51,7 @@ const About = () => {
       <div className={`aboutSection ${c.aboutSection}`}>
         <Container maxWidth="lg" className={c.root}>
           <SectionHeading type="2" aosDelay="800" className="aboutTagline">
-            Hi, my name is
+            Hi, its
           </SectionHeading>
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid
@@ -73,16 +73,19 @@ const About = () => {
                 </h4>
               </Grid>
               <Grid item xs={12}>
-                <h4 className="aboutSkill anim4">Advance Wordpress Expert</h4>
+                <h4 className="aboutSkill anim4">
+                  Wordpress Development Expert
+                </h4>
               </Grid>
               <Grid item xs={12}>
                 <p className="aboutDesc anim5 ">
                   I'm working as full time Developer since early 2019,
                   specializing in some of the powerful and trending web
-                  technologies like React(Redux), JavaScript(ES6+), Material UI,
-                  HTML/CSS etc. I can build and design exceptional websites on
-                  every niche, web applications, custom themes & interfaces,
-                  eCommerce stores with custom functionalaities.
+                  technologies like React(Hooks - Redux), NextJs(SSR - SSG -
+                  ISG) JavaScript(ES6+), Material UI, HTML/CSS etc. I can build
+                  and design exceptional websites on every niche, web
+                  applications, custom themes & interfaces, eCommerce stores
+                  with custom functionalaities.
                 </p>
               </Grid>
               <Grid item container className={c.buttonContainer} xs={12}>

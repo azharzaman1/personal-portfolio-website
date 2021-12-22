@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useEffect, useState } from "react";
 import LinearProgress from "@material-ui/core/LinearProgress";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 
 export default function ExpertProgress({ progress }) {
   const classes = useStyles();
-  const [tempProgress, setTempProgress] = React.useState(0);
+  const [tempProgress, setTempProgress] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
