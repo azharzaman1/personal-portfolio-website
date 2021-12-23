@@ -1,5 +1,3 @@
-@import "./LocalFonts/fonts.css";
-
 :root {
   --primary: #023e8a;
   --primary-light: #0077b6;
@@ -10,10 +8,12 @@
   --background-light: #023e8a;
   --text-bright: #e8fdf9;
   --text: #e2e2e2;
+  --codefont: "Fira Code", monospace !important;
+  --primaryFont: "Inter", "Roboto", sans-serif !important;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primaryFont);
   color: var(--text);
   opacity: 0.8;
 }

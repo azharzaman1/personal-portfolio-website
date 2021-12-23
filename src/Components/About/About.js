@@ -78,7 +78,7 @@ const About = () => {
                 </h4>
               </Grid>
               <Grid item xs={12}>
-                <p className="aboutDesc anim5 ">
+                <p className="aboutDesc anim5">
                   I'm working as full time Developer since early 2019,
                   specializing in some of the powerful and trending web
                   technologies like React(Hooks - Redux), NextJs(SSR - SSG -

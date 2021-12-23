@@ -19,6 +19,7 @@
 
 .aboutSkill {
   margin: 0;
+  font-family: var(--primaryFont);
   margin-top: 11px;
   margin-left: 5px;
   padding: 2.5px 5px 2.5px 10px;
@@ -38,6 +39,7 @@
   opacity: 0;
   transform: translateY(35px);
   font-weight: 400;
+  font-family: var(--primaryFont);
 }
 
 .aboutButton {

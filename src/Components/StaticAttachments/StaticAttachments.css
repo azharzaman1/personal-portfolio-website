@@ -10,9 +10,9 @@
 
 .attachment1 a {
   color: var(--text);
-  font-family: Consolas1;
+  font-family: var(--codefont);
   margin-right: 07px;
-  font-size: 15px;
+  font-size: 14px;
   transition: transform 0.25s linear;
 }
 

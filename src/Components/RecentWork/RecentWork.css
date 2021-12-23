@@ -3,11 +3,25 @@
 }
 
 .recentWork__card {
-  padding: 1.25rem 1rem 0;
-  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-height: 350px;
+  padding: 1.25rem 1rem 0;
+  transform: translateY(8px);
+}
+
+.recentWork__card:hover {
+  animation: transformUp 0.25s linear forwards;
+}
+
+@keyframes transformUp {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .recentWork__cardHeader {
@@ -31,7 +45,7 @@
 
 .recentWork__cardTechs {
   border-top: 1px solid #1456ad;
-  font-family: "Consolas1";
+  font-family: var(--codefont);
   margin-top: auto !important;
 }
 

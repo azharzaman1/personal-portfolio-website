@@ -10,13 +10,13 @@
 }
 
 .MuiHeading.type1 {
-  font-family: Consolas1 !important;
+  font-family: var(--codefont);
   font-weight: 500 !important;
 }
 
 .MuiHeading.type2 {
   font-size: 17px !important;
-  font-family: "Roboto" !important;
+  font-family: var(--primaryFont);
   font-weight: 400 !important;
   letter-spacing: 0.3px;
   margin-left: 3px !important;
@@ -32,7 +32,7 @@
   border: 2px solid var(--secondary) !important;
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: var(--primaryFont);
   user-select: none !important;
 }
 
