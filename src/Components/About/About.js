@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
-import myImage from "../../myPic2.jpg";
+import myImage from "../../myPic.jpg";
 import "./About.css";
 
 const useStyles = makeStyles((theme) => ({

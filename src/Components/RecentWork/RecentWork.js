@@ -84,8 +84,8 @@ const RecentWork = () => {
         <Grid
           container
           spacing={3}
-          className="recentWork__contentSection"
           justifyContent="center"
+          className="recentWork__contentSection"
         >
           {projectsWPDev.map((project) => (
             <PortfolioProject
