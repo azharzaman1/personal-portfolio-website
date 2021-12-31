@@ -83,7 +83,7 @@ export const projects = [
     logoHeight: "35px",
     translateY: "3.5px",
     github: "https://github.com/azharzaman1/coding-godown",
-    src: "https://code-godown.netlify.app/",
+    src: "https://azhar-codegodown.netlify.app/",
     desc: "Code Godown is a Code saving, code manuplating, platform. One can store, manange code snippets. One can also share code with friends, and publish articles for their audience. This is going to be all in platform for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcomed.",
     tech1: "nextjs",
     tech2: "mui - tailwind",
