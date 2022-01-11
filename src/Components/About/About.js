@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import myImage from "../../myPic.jpg";
+import TypeWriterEffect from "react-typewriter-effect";
 import "./About.css";
+import { useRef } from "react";
+import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
@@ -27,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
+  typeWritterContainer: {
+    marginTop: "0.75rem",
+  },
+
   buttonContainer: {
     marginTop: "10px",
     [theme.breakpoints.down("sm")]: {
@@ -44,6 +51,11 @@ const useStyles = makeStyles((theme) => ({
 
 const About = () => {
   const c = useStyles();
+  const [typeWriterRef, setTypeWriterRef] = useState();
+
+  useEffect(() => {
+    setTypeWriterRef(document.querySelector("#typeWritterRef"));
+  }, []);
 
   return (
     <>
@@ -67,7 +79,37 @@ const About = () => {
                   Azhar Zaman
                 </Typography>
               </Grid>
-              <Grid item xs={12}>
+
+              <Grid
+                item
+                xs={12}
+                className={c.typeWritterContainer}
+                id="typeWritterRef"
+              >
+                <TypeWriterEffect
+                  cursorColor="#ec4884"
+                  startDelay={2000}
+                  multiTextDelay={1000}
+                  typeSpeed={60}
+                  scrollArea={typeWriterRef}
+                  multiTextLoop
+                  textStyle={{
+                    fontFamily: "Roboto",
+                    color: "#f06196",
+                    fontWeight: 500,
+                    fontSize: "1.5em",
+                    textDecoration: "underline",
+                  }}
+                  multiText={[
+                    "A mid level JavaScript developer",
+                    "Proficient ReactJs developer",
+                    "Advance Wordpress expert",
+                    "eCommerce development expert",
+                  ]}
+                />
+              </Grid>
+
+              {/* <Grid item xs={12}>
                 <h4 className="aboutSkill anim3">
                   Front-end-developer(React - Js)
                 </h4>
@@ -76,7 +118,8 @@ const About = () => {
                 <h4 className="aboutSkill anim4">
                   Wordpress Development Expert
                 </h4>
-              </Grid>
+              </Grid> */}
+
               <Grid item xs={12}>
                 <p className="aboutDesc anim5">
                   I'm working as full time Developer since early 2019,
