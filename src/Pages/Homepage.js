@@ -6,7 +6,6 @@ import GetinTouch from "../Components/GetinTouch/GetinTouch";
 import Header from "../Components/Header/Header";
 import IcanCreate from "../Components/IcanCreate/IcanCreate";
 import RecentWork from "../Components/RecentWork/RecentWork";
-import StaticAttachments from "../Components/StaticAttachments/StaticAttachments";
 import { RSAnchor } from "../Mui/MuiComponents";
 
 const Homepage = () => {

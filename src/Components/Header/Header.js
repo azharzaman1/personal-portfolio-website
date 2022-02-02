@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
   AppBar,
-  duration,
   Grid,
   Hidden,
   IconButton,
