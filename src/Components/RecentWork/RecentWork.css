@@ -11,6 +11,10 @@
   transform: translateY(8px);
 }
 
+.cms-dev-projects-card {
+  min-height: 300px !important;
+}
+
 .recentWork__card:hover {
   animation: transformUp 0.25s linear forwards;
 }

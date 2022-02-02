@@ -4,9 +4,21 @@
   user-select: none;
 }
 
+.expertyCard {
+  transform: translateY(6px);
+}
+
 .expertyCard:hover {
-  transform: scale(1.03) !important;
-  transition: transform 0.25s;
+  animation: transformUp2 0.25s linear forwards;
+}
+
+@keyframes transformUp2 {
+  0% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .expertyCard h4 {

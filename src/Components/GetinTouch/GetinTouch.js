@@ -15,6 +15,7 @@ import { WhatsApp, MailOutline } from "@material-ui/icons";
 import MuiPopup from "../RecentWork/MuiPopup";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import "./GetinTouch.css";
+import { validateEmail } from "../../utils/utils";
 
 const useStyles = makeStyles((theme) => ({
   getInTouchSection: {
@@ -157,12 +158,6 @@ const GetinTouch = () => {
     }
   };
 
-  function validateEmail(email) {
-    const re =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  }
-
   const closePopup = () => {
     setFormStatusPopup(false);
   };
@@ -190,8 +185,8 @@ const GetinTouch = () => {
               <p
                 style={{ textAlign: "center", margin: "0", marginTop: "10px" }}
               >
-                I will try to get back to you possibly in 1-3 Hrs <br /> For
-                quicker response please
+                I will try to get back to you as soon I see you message. <br />{" "}
+                For quicker response please
               </p>
             </Grid>
             <Grid item>
@@ -226,12 +221,11 @@ const GetinTouch = () => {
           >
             <Grid item xs={12} md={9}>
               <p data-aos="fade-up" data-aos-delay="600">
-                Well! Thanks for giving some time to my portfolio website. You
-                reached this point, means your interest in my skill-set. If you
-                want me build something for you, something efficient, something
-                cool, give me a signal. Or in case you just want to discuss your
-                project, my inbox is always waiting for nice persons like you.
-                Thanks
+                Well! You reached this point, means your interest in my
+                skill-set. If you want me build something for you, something
+                efficient, something cool, give me a signal. Or in case you just
+                want to discuss your project, my inbox is always waiting for
+                nice persons like you. Thanks
               </p>
             </Grid>
             <Grid

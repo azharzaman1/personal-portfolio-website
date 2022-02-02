@@ -15,6 +15,7 @@ import { Link } from "react-scroll";
 import "./Header.css";
 import { MuiButton } from "../../Mui/MuiComponents";
 import MobileSideNav from "./HeaderMobileDrawer";
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -119,13 +120,15 @@ const Navigation = () => {
           to="getintouch-section-scroll-anchor"
         />
         <Grid item>
-          <MuiButton
-            size="small"
-            fontSize="small"
-            link="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
-          >
-            Resume
-          </MuiButton>
+          <RouterLink to="/files/azhar_resume.pdf" target="_blank" download>
+            <MuiButton
+              size="small"
+              fontSize="small"
+              // link="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
+            >
+              Resume
+            </MuiButton>
+          </RouterLink>
         </Grid>
       </Grid>
     </>

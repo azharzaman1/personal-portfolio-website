@@ -101,7 +101,7 @@ const About = () => {
                     textDecoration: "underline",
                   }}
                   multiText={[
-                    "A mid level JavaScript developer",
+                    "Intermediate level JavaScript developer",
                     "Proficient ReactJs developer",
                     "Advance Wordpress expert",
                     "eCommerce development expert",

@@ -1,7 +1,7 @@
 const getExpertise = (dynamicDelay) => {
   return [
     {
-      order: 9,
+      order: 1,
       title: "JavaScript (ES6+)",
       progress: 86,
       desc1: "JavaScript is most popular programming language till date",
@@ -11,8 +11,8 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("500", "500", "500"),
     },
     {
-      order: 10,
-      title: "ReactJs(Hooks)",
+      order: 2,
+      title: "ReactJs (Hooks)",
       progress: 90,
       desc1: "React is world famous JavaScript library by Facebook Inc.",
       desc2:
@@ -21,18 +21,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("500", "500", null),
     },
     {
-      order: 11,
-      title: "Redux(toolkit) - Context",
-      progress: 86,
-      desc1:
-        "Redux is an open-source JavaScript library for managing application state.",
-      desc2:
-        "Redux is a predictable state container designed to help you write JavaScript apps.",
-      dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("500", null, null),
-    },
-    {
-      order: 12,
+      order: 3,
       title: "NextJs (SSR / SSG / APIs)",
       progress: 84,
       desc1:
@@ -43,7 +32,18 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
-      order: 13,
+      order: 4,
+      title: "Redux - Context",
+      progress: 86,
+      desc1:
+        "Redux is an open-source JavaScript library for managing application state.",
+      desc2:
+        "Redux is a predictable state container designed to help you write JavaScript apps.",
+      dataAOS: "fade-up",
+      dataAOS_delay: dynamicDelay("500", null, null),
+    },
+    {
+      order: 5,
       title: "GatsbyJs / Basic Graphql",
       progress: 83,
       desc1:
@@ -53,8 +53,8 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
-      order: 14,
-      title: "Material UI / Ant Design",
+      order: 6,
+      title: "Mui / PrimeReact",
       progress: 88,
       desc1:
         "Material Design is a design language developed by Google in 2014.",
@@ -64,7 +64,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
-      order: 15,
+      order: 7,
       title: "HTML5 / CSS3(Sass)",
       progress: 95,
       desc1:
@@ -73,7 +73,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS: "fade-up",
     },
     {
-      order: 16,
+      order: 8,
       title: "Tailwind CSS / Bootstrap",
       progress: 87,
       desc1:
@@ -82,7 +82,7 @@ const getExpertise = (dynamicDelay) => {
       dataAOS: "fade-up",
     },
     {
-      order: 17,
+      order: 9,
       title: "Google Firebase / APIs etc.",
       progress: 85,
       desc1:

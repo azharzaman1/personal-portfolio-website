@@ -5,6 +5,7 @@ import { CssBaseline } from "@material-ui/core";
 import StaticAttachments from "./Components/StaticAttachments/StaticAttachments";
 import aos from "aos";
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   React.useEffect(() => {
@@ -17,9 +18,11 @@ function App() {
   });
   return (
     <ThemeWrapper>
-      <div className="App">
-        <Homepage />
-      </div>
+      <Router>
+        <div className="App">
+          <Homepage />
+        </div>
+      </Router>
       <StaticAttachments />
       <CssBaseline />
     </ThemeWrapper>

@@ -96,6 +96,7 @@ const RecentWork = () => {
               src={project.src}
               title={project.title}
               desc={project.desc}
+              className="cms-dev-projects-card"
             />
           ))}
         </Grid>
@@ -119,12 +120,13 @@ const PortfolioProject = ({
   tech2,
   tech3,
   disabledHeader,
+  className,
   ...rest
 }) => {
   return (
     <>
       <Grid item xs={12} sm={6} md={4} {...rest}>
-        <Card className="recentWork__card">
+        <Card className={`recentWork__card ${className}`}>
           {!disabledHeader && (
             <Grid
               container
