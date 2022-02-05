@@ -2,7 +2,7 @@ import { assets } from "../IcanCreate/assets/assets";
 
 export const ICanCreate = [
   {
-    title: "JavaScript(React) based Web Application",
+    title: "Enterprise level JavaScript(ReactJs) Web Application",
     imgUrl1: assets.CVA,
     imgUrl2: assets.CovidTracker,
     feature1: "Clean, Testes Bugless code",
@@ -13,7 +13,7 @@ export const ICanCreate = [
     feature6: "Data rich UI",
   },
   {
-    title: "A Multi-vendor Marketplace like Amazon | eBay",
+    title: "A multi-vendor eCommerce marketplace like Amazon | eBay",
     imgUrl1: assets.Amazon,
     imgUrl2: assets.eBay,
     feature1: "Complete vendors setup",
@@ -24,7 +24,7 @@ export const ICanCreate = [
     feature6: "Unlimited products",
   },
   {
-    title: "A fully-functional eCommerce store like Macys",
+    title: "A fully-featured eCommerce store like Macys",
     imgUrl1: assets.Macys,
     imgUrl2: assets.BestBuy,
     feature1: "Complete shipping setup",
@@ -35,7 +35,7 @@ export const ICanCreate = [
     feature6: "Next-level descent design",
   },
   {
-    title: "An elegant business or agency website ",
+    title: "Enterprise level business website for your business",
     imgUrl1: assets.Traackr,
     imgUrl2: assets.PlanNative,
     feature1: "Elegant design",
