@@ -30,8 +30,10 @@
 
 .MuiHeading2.dim {
   color: var(--text-dim);
-  font-size: 17px;
-  font-family: var(--primaryFont);
+}
+
+.MuiHeading2.small {
+  font-size: 15px;
 }
 
 .MuiHeading3 {

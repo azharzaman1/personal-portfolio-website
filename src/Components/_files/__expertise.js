@@ -9,8 +9,6 @@ export const mernExpertise = [
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
-  ],
-  [
     {
       order: 1,
       title: "ExpressJs",
@@ -25,8 +23,6 @@ export const mernExpertise = [
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
-  ],
-  [
     {
       order: 3,
       title: "NodeJs",

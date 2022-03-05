@@ -12,18 +12,13 @@
   align-items: center;
 }
 
-.exprtyItem__imageShadow {
-  border-radius: 50%;
-  box-shadow: 2px 3px 10px rgba(150, 150, 150, 0.5);
-}
-
 .expertiesItem__logoShape {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-color: var(--background-light);
   clip-path: polygon(
     30% 0%,
@@ -35,10 +30,22 @@
     0% 70%,
     0% 30%
   );
+  border: 1px solid #f06195bd;
+
+  transform: translateY(7.5px);
+}
+
+.expertiesItem__logoShape:hover {
+  transform: translateY(0px);
+  transition: transform 0.5s;
 }
 
 .expertiesItem__logoShape > img {
   width: 75px;
+}
+
+.expertiesItem__logoShape svg {
+  fill: red !important;
 }
 
 .MuiGrid-spacing-xs-2 {

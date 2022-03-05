@@ -35,21 +35,13 @@ const Expertise = () => {
 
   return (
     <SectionLayout className="expertiseSection">
-      <LayoutContainer maxWidth="xl">
+      <LayoutContainer maxWidth="lg">
         <SectionHeading type="2" number="02">
           Tech stack and expertise
         </SectionHeading>
-
-        <ExpertiseGroup title="MERN Stack" data={mernExpertise} />
-
-        <ExpertiseGroup
-          title="Front End Development"
-          data={frontEndExpertise}
-        />
-
+        <ExpertiseGroup title="MERN" data={mernExpertise} />
+        <ExpertiseGroup title="Front End" data={frontEndExpertise} />
         <ExpertiseGroup title="Tools and Libraries" data={toolsAndLibraries} />
-
-        {/* <MuiDivider marginTop="50px" marginBottom="25px" width="30%" /> */}
       </LayoutContainer>
     </SectionLayout>
   );
@@ -101,7 +93,9 @@ const ExpertiseItem = ({ item, ...rest }) => {
           </div>
 
           <div className="mt-3">
-            <Heading2 dim>{item.title}</Heading2>
+            <Heading2 dim small>
+              {item.title}
+            </Heading2>
           </div>
         </div>
       </Grid>

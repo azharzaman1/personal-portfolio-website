@@ -32,9 +32,13 @@ export const SectionHeading = ({
   );
 };
 
-export const Heading2 = ({ children, dim, className }) => {
+export const Heading2 = ({ children, dim, small, className }) => {
   return (
-    <h4 className={`MuiHeading2 ${className} ${dim && "dim"}`}>{children}</h4>
+    <h4
+      className={`MuiHeading2 ${className} ${dim && "dim"} ${small && "small"}`}
+    >
+      {children}
+    </h4>
   );
 };
 
