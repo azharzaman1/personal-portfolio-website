@@ -21,20 +21,6 @@
   user-select: none;
 }
 
-.aboutSkill {
-  margin: 0;
-  font-family: var(--primaryFont);
-  margin-top: 11px;
-  margin-left: 5px;
-  padding: 2.5px 5px 2.5px 10px;
-  border-left: 3px solid var(--secondary-light);
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
-  opacity: 0;
-  transform: translateY(35px);
-  color: var(--text-bright);
-  user-select: none;
-}
-
 .aboutDesc {
   line-height: 23px;
   letter-spacing: 0.15px;
@@ -56,7 +42,15 @@
   border-bottom-left-radius: 0;
   transform: scale(0.85);
   opacity: 0;
+  filter: saturate(0);
   animation: fadeimage 0.5s linear 2.5s forwards;
+  padding: 2px;
+  border: 2px solid rgb(114, 114, 114);
+}
+
+.aboutPic:hover {
+  transition: filter 0.25s;
+  filter: saturate(1);
 }
 
 /* Animations */

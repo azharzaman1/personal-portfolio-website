@@ -14,7 +14,7 @@ import getExpertise, { wpDevExpertise } from "../_files/__expertise";
 
 const useStyles = makeStyles((theme) => ({
   expertiseSection: {
-    marginTop: "5rem",
+    marginTop: "7rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",
     },
@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
   expertise: {
     padding: "0 1rem 1rem 1rem",
+    minHeight: 225,
   },
 }));
 
@@ -79,26 +80,24 @@ const Expertise = () => {
             <ExpertiseItem
               key={item.order}
               title={item.title}
-              // progress={item.progress}
               data-aos={item.dataAOS}
-              data-aos-delay={item?.dataAOS_delay}
               desc1={item.desc1}
-              s
               desc2={item.desc2}
+              data-aos-delay={350}
             />
           ))}
         </Grid>
 
-        <MuiDivider marginTop="38px" marginBottom="29px" width="50%" />
+        <MuiDivider marginTop="38px" marginBottom="29px" width="33%" />
 
         <Grid container spacing={2} className="expertiseContent__container">
           {wpDevExpertise.map((item) => (
             <ExpertiseItem
               key={item.order}
               title={item.title}
-              // progress={item.progress}
-              data-aos="fade-up"
               desc1={item.desc1}
+              data-aos="fade-up"
+              data-aos-delay={350}
             />
           ))}
         </Grid>

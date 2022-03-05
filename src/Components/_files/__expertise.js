@@ -8,7 +8,6 @@ const getExpertise = (dynamicDelay) => {
       desc2:
         "All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc.",
       dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("500", "500", "500"),
     },
     {
       order: 2,
@@ -18,18 +17,51 @@ const getExpertise = (dynamicDelay) => {
       desc2:
         "React makes it painless to create interactive, component-based and lightening fast UIs.",
       dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("500", "500", null),
+    },
+    {
+      order: 2,
+      title: "NodeJs",
+      progress: 90,
+      desc1:
+        "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
+
+      dataAOS: "fade-up",
+    },
+    {
+      order: 2,
+      title: "ExpressJs",
+      progress: 90,
+      desc1:
+        "Express.js, or simply Express, is a back end web application framework for Node.js, designed for building web applications and robust RESTful APIs.",
+      dataAOS: "fade-up",
+    },
+    {
+      order: 2,
+      title: "MongoDB",
+      progress: 90,
+      desc1:
+        "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents.",
+      dataAOS: "fade-up",
     },
     {
       order: 3,
-      title: "NextJs (SSR / SSG / APIs)",
+      title: "NextJs",
       progress: 84,
       desc1:
         "Next.js is a development framework built on top of Node.js enabling React based web applications functionalities.",
       desc2:
         "Such as server-side rendering(SSR) and generating static websites(SSG).",
       dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("400", null, null),
+    },
+
+    {
+      order: 5,
+      title: "GatsbyJs / Basic Graphql",
+      progress: 83,
+      desc1:
+        "Gatsby provides development teams an open source frontend framework for creating dynamic, optimized websites.",
+      desc2: "From marketing sites, to eCommerce stores, to documentation.",
+      dataAOS: "fade-up",
     },
     {
       order: 4,
@@ -40,17 +72,6 @@ const getExpertise = (dynamicDelay) => {
       desc2:
         "Redux is a predictable state container designed to help you write JavaScript apps.",
       dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("500", null, null),
-    },
-    {
-      order: 5,
-      title: "GatsbyJs / Basic Graphql",
-      progress: 83,
-      desc1:
-        "Gatsby provides development teams an open source frontend framework for creating dynamic, optimized websites.",
-      desc2: "From marketing sites, to eCommerce stores, to documentation.",
-      dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
       order: 6,
@@ -61,7 +82,6 @@ const getExpertise = (dynamicDelay) => {
       desc2:
         "Contains a set of high quality components for building rich, interactive user interfaces",
       dataAOS: "fade-up",
-      dataAOS_delay: dynamicDelay("400", null, null),
     },
     {
       order: 7,
@@ -118,25 +138,4 @@ export const wpDevExpertise = [
       "Elementor is the most advanced website builder for WordPress, allowing you to visually design pages, posts, slides and much more.",
     dataAOS: "fade-up",
   },
-  // {
-  //   title: "Dokan Pro",
-  //   progress: 95,
-  //   desc1:
-  //     "Dokan is the best front end multi-vendor marketplaces solution on WordPress, to create marketplaces like Amazon, eBay, flipkart",
-  //   dataAOS: "fade-up",
-  // },
-  // {
-  //   title: "Revolution Slider Pro",
-  //   progress: 85,
-  //   desc1:
-  //     "Slider Revolution is all-in-one slider solution, helping beginner-and mid-level designers WOW their clients with pro-level visuals.",
-  //   dataAOS: "fade-up",
-  // },
-  // {
-  //   title: "Custom WP Coding",
-  //   progress: 85,
-  //   desc1:
-  //     "Interegrating custom CSS, HTML5, JavaScript to WordPress, to make sites more inter-active, functional and user-friendly",
-  //   dataAOS: "fade-up",
-  // },
 ];

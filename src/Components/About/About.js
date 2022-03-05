@@ -109,17 +109,6 @@ const About = () => {
                 />
               </Grid>
 
-              {/* <Grid item xs={12}>
-                <h4 className="aboutSkill anim3">
-                  Front-end-developer(React - Js)
-                </h4>
-              </Grid>
-              <Grid item xs={12}>
-                <h4 className="aboutSkill anim4">
-                  Wordpress Development Expert
-                </h4>
-              </Grid> */}
-
               <Grid item xs={12}>
                 <p className="aboutDesc anim5">
                   I'm working as full time Developer since early 2019,
@@ -148,12 +137,14 @@ const About = () => {
               justifyContent="flex-end"
             >
               <Grid item>
-                <img
-                  className="aboutPic"
-                  src={myImage}
-                  width="275px"
-                  alt="My Pic"
-                />
+                <div className="aboutPicBorder">
+                  <img
+                    className="aboutPic"
+                    src={myImage}
+                    width="275px"
+                    alt="My Pic"
+                  />
+                </div>
               </Grid>
             </Grid>
           </Grid>
