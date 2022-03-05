@@ -1,3 +1,11 @@
+.expertiesGroup {
+  margin-top: 3rem;
+}
+
+.expertiesGroup__heading {
+  margin-bottom: 2rem;
+}
+
 .expertiesItem {
   display: flex;
   flex-direction: column;

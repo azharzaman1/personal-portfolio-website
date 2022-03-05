@@ -10,14 +10,7 @@ import {
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
 
-const useStyles = makeStyles({
-  group: {
-    marginTop: "3rem",
-  },
-});
-
 const Expertise = () => {
-  const classes = useStyles();
   const formatExpertise = (expertise) => {
     // breaking stuff
     let tempExpertise = [...expertise];
@@ -42,7 +35,7 @@ const Expertise = () => {
 
   return (
     <SectionLayout className="expertiseSection">
-      <LayoutContainer maxWidth="lg">
+      <LayoutContainer maxWidth="xl">
         <SectionHeading type="2" number="02">
           Tech stack and expertise
         </SectionHeading>
@@ -50,16 +43,21 @@ const Expertise = () => {
           container
           direction="column"
           alignItems="center"
-          className={classes.group}
+          className="expertiesGroup"
         >
           <Grid item>
-            <Heading3>MERN Stack</Heading3>
+            <Heading3 className="expertiesGroup__heading">MERN Stack</Heading3>
           </Grid>
-          <Grid item container spacing={2} justifyContent="space-evenly">
+          <Grid item container justifyContent="space-evenly">
             {formatExpertise(mernExpertise).map((item, i) => (
               <Grid key={i} item container justifyContent="center">
                 {item.map((item) => (
-                  <ExpertiseItem key={item.order} item={item} />
+                  <ExpertiseItem
+                    key={item.order}
+                    item={item}
+                    data-aos="fade-up"
+                    aos-data-delay={350}
+                  />
                 ))}
               </Grid>
             ))}
@@ -72,16 +70,23 @@ const Expertise = () => {
           container
           direction="column"
           alignItems="center"
-          className={classes.group}
+          className="expertiesGroup"
         >
           <Grid item>
-            <Heading3>Front End Development</Heading3>
+            <Heading3 className="expertiesGroup__heading">
+              Front End Development
+            </Heading3>
           </Grid>
-          <Grid item container spacing={2} justifyContent="space-evenly">
+          <Grid item container justifyContent="space-evenly">
             {formatExpertise(frontEndExpertise).map((item, i) => (
               <Grid key={i} item container justifyContent="center">
                 {item.map((item) => (
-                  <ExpertiseItem key={item.order} item={item} />
+                  <ExpertiseItem
+                    key={item.order}
+                    item={item}
+                    data-aos="fade-up"
+                    aos-data-delay={350}
+                  />
                 ))}
               </Grid>
             ))}
@@ -94,16 +99,23 @@ const Expertise = () => {
           container
           direction="column"
           alignItems="center"
-          className={classes.group}
+          className="expertiesGroup"
         >
           <Grid item>
-            <Heading3>Tools and Libraries</Heading3>
+            <Heading3 className="expertiesGroup__heading">
+              Tools and Libraries
+            </Heading3>
           </Grid>
-          <Grid item container spacing={2} justifyContent="space-evenly">
+          <Grid item container justifyContent="space-evenly">
             {formatExpertise(toolsAndLibraries).map((item, i) => (
               <Grid key={i} item container justifyContent="center">
                 {item.map((item) => (
-                  <ExpertiseItem key={item.order} item={item} />
+                  <ExpertiseItem
+                    key={item.order}
+                    item={item}
+                    data-aos="fade-up"
+                    aos-data-delay={350}
+                  />
                 ))}
               </Grid>
             ))}
@@ -116,7 +128,7 @@ const Expertise = () => {
 
 const ExpertiseItem = ({ item, ...rest }) => {
   return (
-    <Grid item container xs={6} sm={4} md={3} justifyContent="center">
+    <Grid item container xs={6} sm={4} md={3} justifyContent="center" {...rest}>
       <Grid item>
         <div className="expertiesItem">
           <div className="exprtyItem__imageShadow">
