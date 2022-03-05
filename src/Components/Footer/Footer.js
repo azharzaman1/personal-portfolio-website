@@ -43,12 +43,12 @@ const Footer = () => {
             icon={<GitHub fontSize="small" />}
           />
           <MuiChip
-            link="https://www.linkedin.com/in/azhar-zaman-06b454221"
+            link="https://www.linkedin.com/in/azhar-zaman/"
             title="LinkedIn"
             icon={<LinkedIn fontSize="small" />}
           />
           <MuiChip
-            link="https://twitter.com/DrAzharZaman"
+            link="https://twitter.com/idrazhar"
             title="Twitter"
             icon={<Twitter fontSize="small" />}
           />
