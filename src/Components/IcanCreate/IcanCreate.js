@@ -1,41 +1,15 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  Container,
-  Grid,
-  makeStyles,
-} from "@material-ui/core";
+import { Card, CardContent, Grid, makeStyles } from "@material-ui/core";
 import { Heading2, MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import ImageComparison from "./ImageComparison";
 import { Link } from "react-scroll";
 import { ICanCreate } from "../_files/__iCanCreate";
 import "./IcanCreate.css";
+import SectionLayout from "../Layout/SectionLayout";
+import LayoutContainer from "../Layout/LayoutContainer";
 
 // `
 
 const useStyles = makeStyles((theme) => ({
-  iCC__Section: {
-    marginTop: "4rem",
-    marginBottom: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
-  },
-
-  root: {
-    padding: "0 150px",
-    [theme.breakpoints.down("lg")]: {
-      padding: "0 125px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "0 50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "0 24px",
-    },
-  },
-
   iCC__Card: {
     borderRadius: 5,
   },
@@ -45,8 +19,8 @@ const IcanCreate = () => {
   const c = useStyles();
 
   return (
-    <div className={`iCanCreateSection ${c.iCC__Section}`}>
-      <Container className={c.root} maxWidth="lg">
+    <SectionLayout className={`iCanCreateSection`}>
+      <LayoutContainer maxWidth="lg">
         <SectionHeading type="2">What I can build for you!</SectionHeading>
         <Grid container spacing={4} className="iCC__contentContainer">
           {ICanCreate.map((item, i) => (
@@ -64,8 +38,8 @@ const IcanCreate = () => {
             />
           ))}
         </Grid>
-      </Container>
-    </div>
+      </LayoutContainer>
+    </SectionLayout>
   );
 };
 

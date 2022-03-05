@@ -1,139 +1,135 @@
-import {
-  Card,
-  Container,
-  Grid,
-  makeStyles,
-  useMediaQuery,
-  useTheme,
-} from "@material-ui/core";
-import React, { useState } from "react";
-import { Heading2, MuiDivider, SectionHeading } from "../../Mui/MuiComponents";
-import ExpertProgress from "./ProgressBar";
+import React from "react";
+import { Grid, makeStyles } from "@material-ui/core";
+import { Heading2, Heading3, SectionHeading } from "../../Mui/MuiComponents";
 import "./Expertise.css";
-import getExpertise, { wpDevExpertise } from "../_files/__expertise";
+import {
+  frontEndExpertise,
+  mernExpertise,
+  toolsAndLibraries,
+} from "../_files/__expertise";
+import SectionLayout from "../Layout/SectionLayout";
+import LayoutContainer from "../Layout/LayoutContainer";
 
-const useStyles = makeStyles((theme) => ({
-  expertiseSection: {
-    marginTop: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
+const useStyles = makeStyles({
+  group: {
+    marginTop: "3rem",
   },
-
-  root: {
-    padding: "0 150px",
-    [theme.breakpoints.down("lg")]: {
-      padding: "0 125px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "0 50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "0 24px",
-    },
-  },
-
-  expertise: {
-    padding: "0 1rem 1rem 1rem",
-    minHeight: 225,
-  },
-}));
+});
 
 const Expertise = () => {
-  const c = useStyles();
-  const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
+  const classes = useStyles();
+  const formatExpertise = (expertise) => {
+    // breaking stuff
+    let tempExpertise = [...expertise];
+    const result = [];
+    for (var i = 1; i < tempExpertise.length; i++) {
+      let temporary = tempExpertise.slice(0, i);
+      tempExpertise = tempExpertise.slice(temporary.length);
 
-  const dynamicDelay = (d, t, m) => {
-    if (!isTablet && !isMobile) {
-      if (d) {
-        return d;
+      result.push(temporary);
+
+      if (i < tempExpertise.length) {
       } else {
-        return "300";
-      }
-    } else if (isTablet && !isMobile) {
-      if (t) {
-        return t;
-      } else {
-        return "300";
-      }
-    } else {
-      if (m) {
-        return m;
-      } else {
-        return "300";
+        result.push(tempExpertise);
       }
     }
+
+    return result;
   };
 
-  const expertise = getExpertise(dynamicDelay);
+  console.log(toolsAndLibraries);
+  console.log("h,", formatExpertise(toolsAndLibraries));
 
   return (
-    <div className={`expertiseSection ${c.expertiseSection}`}>
-      <Container className={c.root} maxWidth="lg">
+    <SectionLayout className="expertiseSection">
+      <LayoutContainer maxWidth="lg">
         <SectionHeading type="2" number="02">
           Tech stack and expertise
         </SectionHeading>
-        <Grid container spacing={2} className="expertiseContent__container">
-          {expertise.map((item) => (
-            <ExpertiseItem
-              key={item.order}
-              title={item.title}
-              data-aos={item.dataAOS}
-              desc1={item.desc1}
-              desc2={item.desc2}
-              data-aos-delay={350}
-            />
-          ))}
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={classes.group}
+        >
+          <Grid item>
+            <Heading3>MERN Stack</Heading3>
+          </Grid>
+          <Grid item container spacing={2} justifyContent="space-evenly">
+            {formatExpertise(mernExpertise).map((item, i) => (
+              <Grid key={i} item container justifyContent="center">
+                {item.map((item) => (
+                  <ExpertiseItem key={item.order} item={item} />
+                ))}
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
 
-        <MuiDivider marginTop="38px" marginBottom="29px" width="33%" />
+        {/* <MuiDivider marginTop="50px" marginBottom="25px" width="30%" /> */}
 
-        <Grid container spacing={2} className="expertiseContent__container">
-          {wpDevExpertise.map((item) => (
-            <ExpertiseItem
-              key={item.order}
-              title={item.title}
-              desc1={item.desc1}
-              data-aos="fade-up"
-              data-aos-delay={350}
-            />
-          ))}
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={classes.group}
+        >
+          <Grid item>
+            <Heading3>Front End Development</Heading3>
+          </Grid>
+          <Grid item container spacing={2} justifyContent="space-evenly">
+            {formatExpertise(frontEndExpertise).map((item, i) => (
+              <Grid key={i} item container justifyContent="center">
+                {item.map((item) => (
+                  <ExpertiseItem key={item.order} item={item} />
+                ))}
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
-      </Container>
-    </div>
+
+        {/* <MuiDivider marginTop="50px" marginBottom="25px" width="30%" /> */}
+
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={classes.group}
+        >
+          <Grid item>
+            <Heading3>Tools and Libraries</Heading3>
+          </Grid>
+          <Grid item container spacing={2} justifyContent="space-evenly">
+            {formatExpertise(toolsAndLibraries).map((item, i) => (
+              <Grid key={i} item container justifyContent="center">
+                {item.map((item) => (
+                  <ExpertiseItem key={item.order} item={item} />
+                ))}
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </LayoutContainer>
+    </SectionLayout>
   );
 };
 
-const ExpertiseItem = ({ title, progress, desc1, desc2, ...rest }) => {
-  const c = useStyles();
-  const [showProgress, setShowProgress] = useState(false);
-
+const ExpertiseItem = ({ item, ...rest }) => {
   return (
-    <Grid item xs={12} sm={6} md={4} {...rest}>
-      <Card
-        className={`expertyCard ${c.expertise}`}
-        elevation={1}
-        onMouseEnter={() => {
-          setInterval(() => {
-            setShowProgress(true);
-          }, 250);
-        }}
-      >
-        <Heading2>{title}</Heading2>
-        <div className="progressBar__wrapper">
-          {showProgress && progress ? (
-            <ExpertProgress progress={progress} />
-          ) : (
-            <></>
-          )}
+    <Grid item container xs={6} sm={4} md={3} justifyContent="center">
+      <Grid item>
+        <div className="expertiesItem">
+          <div className="exprtyItem__imageShadow">
+            <div className="expertiesItem__logoShape">
+              <item.logo />
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <Heading2>{item.title}</Heading2>
+          </div>
         </div>
-        <ul>
-          {desc1 && <li>{desc1}</li>}
-          {desc2 && <li>{desc2}</li>}
-        </ul>
-      </Card>
+      </Grid>
     </Grid>
   );
 };

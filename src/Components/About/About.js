@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import myImage from "../../myPic.jpg";
 import TypeWriterEffect from "react-typewriter-effect";
 import "./About.css";
+import LayoutContainer from "../Layout/LayoutContainer";
 
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
@@ -12,19 +13,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "7rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",
-    },
-  },
-
-  root: {
-    padding: "0 150px",
-    [theme.breakpoints.down("lg")]: {
-      padding: "0 125px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "0 50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "0 16px",
     },
   },
 
@@ -59,7 +47,7 @@ const About = () => {
     <>
       <span id="about-section-scroll-anchor">Hy</span>
       <div className={`aboutSection ${c.aboutSection}`}>
-        <Container maxWidth="lg" className={c.root}>
+        <LayoutContainer maxWidth="lg">
           <SectionHeading type="2" aosDelay="800" className="aboutTagline">
             Hi, its
           </SectionHeading>
@@ -146,7 +134,7 @@ const About = () => {
               </Grid>
             </Grid>
           </Grid>
-        </Container>
+        </LayoutContainer>
       </div>
     </>
   );

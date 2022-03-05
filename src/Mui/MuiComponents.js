@@ -36,6 +36,10 @@ export const Heading2 = ({ children, className }) => {
   return <h4 className={`MuiHeading2 ${className}`}>{children}</h4>;
 };
 
+export const Heading3 = ({ children, className }) => {
+  return <h2 className={`MuiHeading3 ${className}`}>{children}</h2>;
+};
+
 export const MuiButton = ({
   children,
   variant,
