@@ -23,7 +23,13 @@
 }
 
 .MuiHeading2 {
-  color: rgb(236, 255, 253);
+  color: var(--text-bright);
+  font-size: 17px;
+  font-family: var(--primaryFont);
+}
+
+.MuiHeading2.dim {
+  color: var(--text-dim);
   font-size: 17px;
   font-family: var(--primaryFont);
 }

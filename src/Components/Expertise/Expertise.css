@@ -37,6 +37,10 @@
   );
 }
 
+.expertiesItem__logoShape > img {
+  width: 75px;
+}
+
 .MuiGrid-spacing-xs-2 {
   width: 100% !important;
 }
