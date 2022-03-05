@@ -13,13 +13,12 @@ import {
   SectionHeading,
   Spacer,
 } from "../../Mui/MuiComponents";
-import "./RecentWork.css";
-import { assets } from "./assets/assets";
 import { ReactComponent as Jotaro } from "./assets/extlink.svg";
 import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
 import { ReactComponent as WPLogo } from "./assets/wp.svg";
 import { projects, projectsWPDev } from "../_files/__projects";
+import "./RecentWork.css";
 
 const useStyles = makeStyles((theme) => ({
   portfolioSection: {

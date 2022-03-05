@@ -9,9 +9,8 @@ import {
 import { Heading2, MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import ImageComparison from "./ImageComparison";
 import { Link } from "react-scroll";
-import { assets } from "./assets/assets";
-import "./IcanCreate.css";
 import { ICanCreate } from "../_files/__iCanCreate";
+import "./IcanCreate.css";
 
 // `
 

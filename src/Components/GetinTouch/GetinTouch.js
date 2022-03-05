@@ -193,7 +193,7 @@ const GetinTouch = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=+923170460466"
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer noopenner"
               >
                 <Button color="secondary" style={{ marginTop: "5px" }}>
                   Whatsapp me

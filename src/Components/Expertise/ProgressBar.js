@@ -25,7 +25,7 @@ export default function ExpertProgress({ progress }) {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  }, [progress]);
 
   return (
     <div className={classes.root}>

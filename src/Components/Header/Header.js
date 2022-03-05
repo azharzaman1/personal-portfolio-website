@@ -119,7 +119,12 @@ const Navigation = () => {
           to="getintouch-section-scroll-anchor"
         />
         <Grid item>
-          <RouterLink to="/files/azhar_resume.pdf" target="_blank" download>
+          <RouterLink
+            to="/files/azhar_resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            download
+          >
             <MuiButton
               size="small"
               fontSize="small"

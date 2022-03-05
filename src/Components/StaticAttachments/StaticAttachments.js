@@ -21,6 +21,7 @@ const StaticAttachments = () => {
         <a
           href="mailto:azharzaman.001@gmail.com"
           target="_blank"
+          rel="noreferrer"
           id="attachment1"
         >
           azharzaman.001@gmail.com

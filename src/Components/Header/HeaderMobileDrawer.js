@@ -6,12 +6,7 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import {
-  EmailOutlined,
-  Inbox,
-  KeyboardBackspace,
-  WhatsApp,
-} from "@material-ui/icons";
+import { EmailOutlined, KeyboardBackspace, WhatsApp } from "@material-ui/icons";
 import { Grid, IconButton } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import { Heading2, MuiButton } from "../../Mui/MuiComponents";

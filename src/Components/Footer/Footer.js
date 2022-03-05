@@ -1,13 +1,6 @@
-import React from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import { Heading2, MuiChip } from "../../Mui/MuiComponents";
-import {
-  Facebook,
-  GitHub,
-  Language,
-  LinkedIn,
-  Twitter,
-} from "@material-ui/icons";
+import { GitHub, Language, LinkedIn, Twitter } from "@material-ui/icons";
 import "./Footer.css";
 
 const useStyles = makeStyles((theme) => ({

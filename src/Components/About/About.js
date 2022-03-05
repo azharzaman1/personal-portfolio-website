@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import myImage from "../../myPic.jpg";
 import TypeWriterEffect from "react-typewriter-effect";
 import "./About.css";
-import { useRef } from "react";
-import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
