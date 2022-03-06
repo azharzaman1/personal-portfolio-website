@@ -20,6 +20,12 @@ import { ReactComponent as WPLogo } from "./wordpress-logo.svg";
 import { ReactComponent as WooLogo } from "./woo-logo.svg";
 import { ReactComponent as JestLogo } from "./jest-logo.svg";
 
+import ChartJsLogo from "./chart-logo.png";
+import { ReactComponent as AOSLogo } from "./aos-logo.svg";
+import { ReactComponent as NextLogo2 } from "./next2-logo.svg";
+import { ReactComponent as StripeLogo } from "./stripe.svg";
+import { ReactComponent as MapboxLogo } from "./mapbox-logo.svg";
+
 const assets = {
   ReactLogo,
   MongoLogo,
@@ -40,6 +46,11 @@ const assets = {
   WPLogo,
   WooLogo,
   JestLogo,
+  ChartJsLogo,
+  AOSLogo,
+  NextLogo2,
+  StripeLogo,
+  MapboxLogo,
 };
 
 export default assets;

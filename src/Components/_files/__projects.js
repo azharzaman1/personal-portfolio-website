@@ -1,75 +1,112 @@
-import { assets } from "../RecentWork/assets/assets";
+import { assets as Logos } from "../RecentWork/assets/assets";
+import assets from "./assets/assets";
 
 export const projects = [
   {
     order: 1,
     title: "Covid-19 Tracker",
-    logo: assets.TrackerLogo,
+    logo: Logos.TrackerLogo,
     logoAlt: "Tracker Logo",
     logoHeight: "50px",
     translateY: "12px",
     src: "https://covidtracker.azharzaman.com/",
     desc: "Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. Tracker finds its realtime database from 'disease.sh' using live API calls.",
-    tech1: "reactjs",
-    tech2: "react-chartjs",
-    tech3: "firebase",
-    dataAOS: "fade-up",
-    dataAosDelay: 500,
+    techsLogos: [
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: assets.ChartJsLogo,
+        title: "react-chartjs",
+        isImage: true,
+      },
+      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
+    ],
     logoClasses: "w-24 -translate-y-1.5",
   },
   {
     order: 2,
     title: "Fully-featured Amazon demo",
-    logo: assets.AmazonLogo,
+    logo: Logos.AmazonLogo,
     logoAlt: "Amazon Logo",
     src: "https://amazondemo.azharzaman.com/",
     desc: "I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more.",
-    tech1: "reactjs",
-    tech2: "redux",
-    tech3: "firebase",
-    dataAOS: "fade-up",
-    dataAosDelay: 500,
+    techsLogos: [
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: <assets.ReduxLogo className="w-5 h-5" />,
+        title: "redux(toolkit)",
+      },
+      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
+      { Logo: <assets.StripeLogo className="w-10" />, title: "stripe-js" },
+    ],
     logoClasses: "w-24 -translate-y-1",
   },
   {
     order: 3,
     title: "Personal Portfolio Site",
-    logo: assets.MyLogo,
+    logo: Logos.MyLogo,
     logoAlt: "Azhar Logo",
     // github: "https://github.com/azharzaman1/personal-portfolio-website",
     src: "https://azharzaman.com",
     desc: "I built my personal portfolio website on ReactJs to showcase my skill-set and recent work. Making this website simple but expressive was my first priority. And I believe it meet all the requirements of an elegant design website.",
-    tech1: "reactjs",
-    tech2: "material-ui",
-    tech3: "aos",
-    dataAOS: "fade-up",
-    dataAosDelay: 500,
+    techsLogos: [
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+        title: "mui(material-ui)",
+      },
+      { Logo: <assets.AOSLogo className="w-8" />, title: "aos" },
+      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
+    ],
     logoClasses: "w-24 -translate-y-2",
   },
   {
     order: 4,
     title: "Airbnb demo",
-    logo: assets.AirbnbLogo,
+    logo: Logos.AirbnbLogo,
     logoAlt: "Airbnb Logo",
     src: "https://airbnbdemo.azharzaman.com/",
     desc: "Built Airbnb clone using some of the trending web technologies these days like NextJs, Tailwind CSS and something really cool Server side rendering by NextJs. It is a nice little application with awesome UI and basic feautres of world famous Airbnb.",
-    tech1: "nextjs",
-    tech2: "ssr",
-    tech3: "mapbox",
-    dataAOS: "fade-up",
+    techsLogos: [
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: (
+          <div className="bg-white rounded-full h-5 flex justify-center items-center">
+            <assets.NextLogo2 className="w-5 h-5" />
+          </div>
+        ),
+        title: "nextjs",
+      },
+      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
+      { Logo: <assets.MapboxLogo className="w-20" />, title: "mapbox" },
+    ],
     logoClasses: "w-24 -translate-y-1",
   },
   {
     order: 5,
     title: "Code Godown (development)",
-    logo: assets.CodeGodown,
+    logo: Logos.CodeGodown,
     logoAlt: "Code Godown Logo",
     src: "https://codegodown.azharzaman.com/",
     desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
     tech1: "nextjs",
     tech2: "mui - tailwind",
     tech3: "firebase",
-    dataAOS: "fade-up",
+    techsLogos: [
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: (
+          <div className="bg-white rounded-full h-5 flex justify-center items-center">
+            <assets.NextLogo2 className="w-5 h-5" />
+          </div>
+        ),
+        title: "nextjs",
+      },
+      {
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+        title: "mui(material-ui)",
+      },
+      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
+    ],
     logoClasses: "w-10 -translate-y-2",
   },
 ];

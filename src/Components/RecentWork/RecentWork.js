@@ -5,6 +5,7 @@ import {
   makeStyles,
   CardContent,
   IconButton,
+  Tooltip,
 } from "@material-ui/core";
 import {
   Heading2,
@@ -52,7 +53,7 @@ const RecentWork = () => {
           ))}
         </Grid>
 
-        <MuiDivider marginTop="45px" marginBottom="29px" width="37%" />
+        <MuiDivider marginTop="45px" marginBottom="29px" width="33%" />
 
         <Grid container spacing={3} justifyContent="center" className="mt-3">
           {projectsWPDev.map((project) => (
@@ -61,7 +62,7 @@ const RecentWork = () => {
               key={project.order}
               data-aos="fade-up"
               data-aos-delay={400}
-              className="min-h-[280px]"
+              className="min-h-[300px]"
             />
           ))}
         </Grid>
@@ -146,21 +147,26 @@ const PortfolioProject = ({
             <Heading2>{project.title}</Heading2>
             <p className="mt-4">{project.desc}</p>
           </CardContent>
-          {project.tech1 ? (
+          {project.techsLogos ? (
             <Grid
               container
-              justifyContent="space-evenly"
-              className="py-3 mt-auto font-code border-t border-t-[#1456ad]"
+              justifyContent="flex-start"
+              alignItems="center"
+              className="px-4 py-3 mt-auto font-code border-t border-t-[#1456ad] space-x-5"
             >
-              <Grid item>
-                <p className="text-dimSecondary shadow-none">{project.tech1}</p>
-              </Grid>
-              <Grid item>
-                <p className="text-dimSecondary shadow-none">{project.tech2}</p>
-              </Grid>
-              <Grid item>
-                <p className="text-dimSecondary shadow-none">{project.tech3}</p>
-              </Grid>
+              {project.techsLogos.map((tech, i) => (
+                <Grid item key={Math.random() * i}>
+                  <div className="h-5 flex items-center justify-center">
+                    <Tooltip title={tech?.title} placement="top">
+                      {tech.isImage ? (
+                        <img src={tech.Logo} alt="." className="w-6" />
+                      ) : (
+                        <>{tech.Logo}</>
+                      )}
+                    </Tooltip>
+                  </div>
+                </Grid>
+              ))}
             </Grid>
           ) : (
             <Spacer height="8px" />
