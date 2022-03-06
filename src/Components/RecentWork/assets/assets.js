@@ -5,7 +5,8 @@ import MyLogo from "./images/azhar.png";
 import TrackerLogo from "./images/tracker.png";
 import CVALogo from "./images/cva.png";
 import WordPress from "./wp.png";
-import CodeGodown from "./images/cd.png";
+import CodeGodown from "./code-logo.svg";
+import AirbnbLogo from "./airbnb.svg";
 
 export const assets = {
   GoogleLogo,
@@ -16,5 +17,5 @@ export const assets = {
   CVALogo,
   WordPress,
   CodeGodown,
-  AirbnbLogo: "https://links.papareact.com/qd3",
+  AirbnbLogo,
 };

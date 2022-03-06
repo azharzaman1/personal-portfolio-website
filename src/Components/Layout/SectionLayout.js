@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: "7rem",
+    marginTop: "12rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",
     },

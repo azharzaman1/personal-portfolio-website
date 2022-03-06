@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Container,
   Grid,
   Card,
   makeStyles,
@@ -18,106 +17,62 @@ import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
 import { ReactComponent as WPLogo } from "./assets/wp.svg";
 import { projects, projectsWPDev } from "../_files/__projects";
+import LayoutContainer from "../Layout/LayoutContainer";
+import SectionLayout from "../Layout/SectionLayout";
 import "./RecentWork.css";
 
 const useStyles = makeStyles((theme) => ({
-  portfolioSection: {
-    marginTop: "5rem",
-    marginBottom: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
-  },
-
   root: {
-    padding: "0 125px",
     [theme.breakpoints.down("lg")]: {
       padding: "0 75px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "0 50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "0 24px",
     },
   },
 }));
 
 const RecentWork = () => {
-  const c = useStyles();
+  const classes = useStyles();
 
   return (
-    <div className={`portfolioSection ${c.portfolioSection}`}>
-      <Container className={c.root} maxWidth="lg">
-        <SectionHeading type="2" number="03">
-          What I have built!
-        </SectionHeading>
-        <Grid
-          container
-          spacing={3}
-          className="recentWork__contentSection"
-          justifyContent="center"
-        >
+    <SectionLayout className={`portfolioSection`}>
+      <LayoutContainer className={classes.root} maxWidth="lg">
+        <div className="mb-5">
+          <SectionHeading type="2" number="03">
+            What I have built!
+          </SectionHeading>
+        </div>
+
+        <Grid container spacing={3} justifyContent="center" className="mt-6">
           {projects.map((project) => (
             <PortfolioProject
+              project={project}
               key={project.order}
-              data-aos={project.dataAOS}
-              data-aos-delay={project?.dataAosDelay}
-              logo={project.logo}
-              logoAlt={project.logoAlt}
-              logoHeight={project?.logoHeight}
-              translateY={project?.translateY}
-              github={project.github}
-              src={project.src}
-              title={project.title}
-              desc={project.desc}
-              tech1={project.tech1}
-              tech2={project.tech2}
-              tech3={project.tech3}
+              data-aos="fade-up"
+              data-aos-delay={400}
             />
           ))}
         </Grid>
 
         <MuiDivider marginTop="45px" marginBottom="29px" width="37%" />
 
-        <Grid
-          container
-          spacing={3}
-          justifyContent="center"
-          className="recentWork__contentSection"
-        >
+        <Grid container spacing={3} justifyContent="center" className="mt-3">
           {projectsWPDev.map((project) => (
             <PortfolioProject
+              project={project}
               key={project.order}
-              data-aos={project.dataAOS}
-              logo={project.logo}
-              wooLogo={project.wooLogo}
-              src={project.src}
-              title={project.title}
-              desc={project.desc}
-              className="cms-dev-projects-card"
+              data-aos="fade-up"
+              data-aos-delay={400}
+              className="min-h-[280px]"
             />
           ))}
         </Grid>
-      </Container>
-    </div>
+      </LayoutContainer>
+    </SectionLayout>
   );
 };
 
 const PortfolioProject = ({
-  logo,
-  wooLogo,
-  logoHeight,
-  translateY,
-  logoAlt,
-  github,
-  src,
+  project,
   enableGallery,
-  title,
-  desc,
-  tech1,
-  tech2,
-  tech3,
   disabledHeader,
   className,
   ...rest
@@ -125,29 +80,30 @@ const PortfolioProject = ({
   return (
     <>
       <Grid item xs={12} sm={6} md={4} {...rest}>
-        <Card className={`recentWork__card ${className}`}>
+        <Card
+          className={`recentWork__Card flex flex-col justify-start min-h-[350px] pt-4 px-4 ${className}`}
+        >
           {!disabledHeader && (
             <Grid
               container
-              className="recentWork__cardHeader"
+              className="pt-2 pb-0 px-4 max-h-[52px] flex items-center justify-between"
               justifyContent="space-between"
             >
               <Grid item>
-                {logo === "wp" ? (
-                  <WPLogo
-                    width={wooLogo ? "110px" : "150px"}
-                    className="recentWork__cardWpLogo"
-                  />
+                {project.logo === "wp" ? (
+                  // wp project logo
+                  <div className="flex space-x-1 items-center">
+                    <WPLogo width="130px" className="h-[40px]" />
+                    {project.wooLogo && <WooLogo />}
+                  </div>
                 ) : (
+                  // coding-project
                   <img
-                    src={logo}
-                    alt={logoAlt}
-                    height={logoHeight ? logoHeight : "30px"}
-                    style={{ transform: `translateY(-${translateY})` }}
+                    src={project.logo}
+                    alt={project.logoAlt}
+                    className={project.logoClasses}
                   />
                 )}
-
-                {wooLogo && <WooLogo />}
               </Grid>
               <Grid
                 item
@@ -157,13 +113,10 @@ const PortfolioProject = ({
                 style={{ transform: "translateY(-8px)" }}
               >
                 <Grid item>
-                  {github && (
-                    <a href={github} target="_blank" rel="noreferrer">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noreferrer">
                       <IconButton>
-                        <GitHub
-                          className="recentWork__cardIcons"
-                          fontSize="small"
-                        />
+                        <GitHub className="text-[#e23173]" fontSize="small" />
                       </IconButton>
                     </a>
                   )}
@@ -171,19 +124,16 @@ const PortfolioProject = ({
                   {enableGallery && (
                     <IconButton>
                       <ViewCarouselOutlined
-                        className="recentWork__cardIcons"
+                        className="text-[#e23173]"
                         fontSize="medium"
                       />
                     </IconButton>
                   )}
 
-                  {src && (
-                    <a href={src} target="_blank" rel="noreferrer">
+                  {project.src && (
+                    <a href={project.src} target="_blank" rel="noreferrer">
                       <IconButton>
-                        <Jotaro
-                          className="recentWork__cardIcons"
-                          width="17px"
-                        />
+                        <Jotaro className="text-[#e23173]" width="17px" />
                       </IconButton>
                     </a>
                   )}
@@ -192,24 +142,24 @@ const PortfolioProject = ({
             </Grid>
           )}
 
-          <CardContent className="recentWork__cardBody">
-            <Heading2 className="recentWork__cardTitle">{title}</Heading2>
-            <p>{desc}</p>
+          <CardContent className="px-3 mt-2 select-none border-t border-t-[#1456ad]">
+            <Heading2>{project.title}</Heading2>
+            <p className="mt-4">{project.desc}</p>
           </CardContent>
-          {tech1 ? (
+          {project.tech1 ? (
             <Grid
               container
               justifyContent="space-evenly"
-              className="recentWork__cardTechs"
+              className="py-3 mt-auto font-code border-t border-t-[#1456ad]"
             >
               <Grid item>
-                <p>{tech1}</p>
+                <p className="text-dimSecondary shadow-none">{project.tech1}</p>
               </Grid>
               <Grid item>
-                <p>{tech2}</p>
+                <p className="text-dimSecondary shadow-none">{project.tech2}</p>
               </Grid>
               <Grid item>
-                <p>{tech3}</p>
+                <p className="text-dimSecondary shadow-none">{project.tech3}</p>
               </Grid>
             </Grid>
           ) : (

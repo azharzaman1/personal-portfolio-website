@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, makeStyles } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { Heading2, Heading3, SectionHeading } from "../../Mui/MuiComponents";
 import "./Expertise.css";
 import {
@@ -11,28 +11,6 @@ import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
 
 const Expertise = () => {
-  const formatExpertise = (expertise) => {
-    // breaking stuff
-    let tempExpertise = [...expertise];
-    const result = [];
-    for (var i = 1; i < tempExpertise.length; i++) {
-      let temporary = tempExpertise.slice(0, i);
-      tempExpertise = tempExpertise.slice(temporary.length);
-
-      result.push(temporary);
-
-      if (i < tempExpertise.length) {
-      } else {
-        result.push(tempExpertise);
-      }
-    }
-
-    return result;
-  };
-
-  console.log(toolsAndLibraries);
-  console.log("h,", formatExpertise(toolsAndLibraries));
-
   return (
     <SectionLayout className="expertiseSection">
       <LayoutContainer maxWidth="lg">

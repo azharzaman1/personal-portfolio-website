@@ -20,14 +20,17 @@ export const SectionHeading = ({
   return (
     <Typography
       variant="h3"
-      className={`MuiHeading ${className} ${!type && "type1"} ${
-        type === "2" && "type2"
+      className={`MuiHeading ${className} ${!type && "font-code font-normal"} ${
+        type === "2" && "font-sans text-lg tracking-wide ml-1 font-normal"
       }`}
       data-aos="fade-up"
       data-aos-delay={aosDelay ? aosDelay : "0"}
       data-aos-duration="900"
     >
-      {number && <span>{number}-</span>} {children}
+      {number && (
+        <span className="text-inherit font-medium font-code">{number}-</span>
+      )}{" "}
+      {children}
     </Typography>
   );
 };
@@ -35,7 +38,9 @@ export const SectionHeading = ({
 export const Heading2 = ({ children, dim, small, className, ...rest }) => {
   return (
     <h4
-      className={`MuiHeading2 ${className} ${dim && "dim"} ${small && "small"}`}
+      className={`text-textBright font-sans text-base ${className} ${
+        dim && "text-textDim"
+      } ${small && "text-sm"}`}
       {...rest}
     >
       {children}
@@ -45,7 +50,7 @@ export const Heading2 = ({ children, dim, small, className, ...rest }) => {
 
 export const Heading3 = ({ children, className, ...rest }) => {
   return (
-    <h2 className={`MuiHeading3 ${className}`} {...rest}>
+    <h2 className={`text-textBright text-xl font-sans ${className}`} {...rest}>
       {children}
     </h2>
   );

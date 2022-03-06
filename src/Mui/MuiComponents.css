@@ -4,24 +4,6 @@
   user-select: none !important;
 }
 
-.MuiHeading > span {
-  font-size: 14.5px !important;
-  margin-left: 3px;
-}
-
-.MuiHeading.type1 {
-  font-family: var(--codefont);
-  font-weight: 500 !important;
-}
-
-.MuiHeading.type2 {
-  font-size: 17px !important;
-  font-family: var(--primaryFont);
-  font-weight: 400 !important;
-  letter-spacing: 0.3px;
-  margin-left: 3px !important;
-}
-
 .MuiHeading2 {
   color: var(--text-bright);
   font-size: 17px;
