@@ -32,18 +32,23 @@ export const SectionHeading = ({
   );
 };
 
-export const Heading2 = ({ children, dim, small, className }) => {
+export const Heading2 = ({ children, dim, small, className, ...rest }) => {
   return (
     <h4
       className={`MuiHeading2 ${className} ${dim && "dim"} ${small && "small"}`}
+      {...rest}
     >
       {children}
     </h4>
   );
 };
 
-export const Heading3 = ({ children, className }) => {
-  return <h2 className={`MuiHeading3 ${className}`}>{children}</h2>;
+export const Heading3 = ({ children, className, ...rest }) => {
+  return (
+    <h2 className={`MuiHeading3 ${className}`} {...rest}>
+      {children}
+    </h2>
+  );
 };
 
 export const MuiButton = ({

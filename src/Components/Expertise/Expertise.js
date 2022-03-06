@@ -56,7 +56,13 @@ const ExpertiseGroup = ({ title, data }) => {
       className="expertiesGroup"
     >
       <Grid item>
-        <Heading3 className="expertiesGroup__heading">{title}</Heading3>
+        <Heading3
+          className="expertiesGroup__heading"
+          data-aos="fade-up"
+          aos-data-delay={350}
+        >
+          {title}
+        </Heading3>
       </Grid>
       <Grid item container justifyContent="space-evenly">
         {data.map((item, i) => (
