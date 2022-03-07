@@ -24,8 +24,8 @@ export const SectionHeading = ({
         type === "2" && "font-sans text-lg tracking-wide ml-1 font-normal"
       }`}
       data-aos="fade-up"
+      data-aos-duration="750"
       data-aos-delay={aosDelay ? aosDelay : "0"}
-      data-aos-duration="900"
     >
       {number && (
         <span className="text-inherit font-medium font-code">{number}-</span>

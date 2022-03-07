@@ -1,42 +1,13 @@
 import { useState, useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import TypeWriterEffect from "react-typewriter-effect";
+import LayoutContainer from "../Layout/LayoutContainer";
+import SectionLayout from "../Layout/SectionLayout";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import myImage from "../../myPic.jpg";
-import TypeWriterEffect from "react-typewriter-effect";
-import "./About.css";
-import LayoutContainer from "../Layout/LayoutContainer";
-
-const useStyles = makeStyles((theme) => ({
-  aboutSection: {
-    marginTop: "9.25rem",
-    marginBottom: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
-  },
-
-  typeWritterContainer: {
-    marginTop: "0.75rem",
-  },
-
-  buttonContainer: {
-    marginTop: "10px",
-    [theme.breakpoints.down("sm")]: {
-      justifyContent: "center",
-    },
-  },
-
-  right: {
-    [theme.breakpoints.down("sm")]: {
-      justifyContent: "center",
-      paddingTop: "35px",
-    },
-  },
-}));
+// import "./About.css";
 
 const About = () => {
-  const c = useStyles();
   const [typeWriterRef, setTypeWriterRef] = useState();
 
   useEffect(() => {
@@ -45,23 +16,25 @@ const About = () => {
 
   return (
     <>
-      <span id="about-section-scroll-anchor">Hy</span>
-      <div className={`aboutSection ${c.aboutSection}`}>
+      <span id="about-section-scroll-anchor" className="bg-backgroundV1">
+        .
+      </span>
+      <SectionLayout className={`aboutSection`}>
         <LayoutContainer maxWidth="lg">
-          <SectionHeading type="2" aosDelay="800" className="aboutTagline">
+          <SectionHeading type="2" aosDelay={800}>
             Hi, its
           </SectionHeading>
           <Grid container justifyContent="space-around" alignItems="center">
-            <Grid
-              item
-              container
-              xs={12}
-              sm={6}
-              justifyContent="center"
-              className={c.left}
-            >
+            {/* right */}
+            <Grid item container xs={12} sm={6} justifyContent="center">
               <Grid item xs={12}>
-                <Typography className="aboutName anim2" variant="h3">
+                <Typography
+                  className="opacity-0 text-textBright select-none mt-3 mb-5"
+                  variant="h3"
+                  data-aos="fade-up"
+                  data-aos-duration="750"
+                  data-aos-delay="1250"
+                >
                   Azhar Zaman
                 </Typography>
               </Grid>
@@ -69,8 +42,11 @@ const About = () => {
               <Grid
                 item
                 xs={12}
-                className={c.typeWritterContainer}
                 id="typeWritterRef"
+                className="mt-6"
+                data-aos="fade-up"
+                data-aos-duration="750"
+                data-aos-delay="1500"
               >
                 <TypeWriterEffect
                   cursorColor="#ec4884"
@@ -95,8 +71,13 @@ const About = () => {
                 />
               </Grid>
 
-              <Grid item xs={12}>
-                <p className="aboutDesc anim5">
+              <Grid item xs={12} className="mt-5">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="750"
+                  data-aos-delay="1750"
+                  className="font-sans font-normal text-base max-w-lg mt-3 mb-5"
+                >
                   I'm working as full time Developer since early 2019,
                   specializing in some of the powerful and trending web
                   technologies like React(Hooks - Redux), NextJs(SSR - SSG -
@@ -106,8 +87,15 @@ const About = () => {
                   with custom functionalaities.
                 </p>
               </Grid>
-              <Grid item container className={c.buttonContainer} xs={12}>
-                <Grid item className="aboutButton anim6">
+              <Grid
+                item
+                container
+                xs={12}
+                data-aos="fade-up"
+                data-aos-duration="750"
+                data-aos-delay="2000"
+              >
+                <Grid item>
                   <MuiButton link="https://api.whatsapp.com/send?phone=+923170460466">
                     Get in touch
                   </MuiButton>
@@ -115,17 +103,16 @@ const About = () => {
               </Grid>
             </Grid>
             <Grid
-              className={c.right}
               item
               container
               xs={12}
               sm={6}
-              justifyContent="flex-end"
+              className="justify-center md:justify-end pt-16 md:mt-0"
             >
               <Grid item>
                 <div className="aboutPicBorder">
                   <img
-                    className="aboutPic"
+                    className="rounded-2xl p-0.5 rounded-bl-none border-2 border-gray-500  saturate-0 hover:saturate-100 transition-all duration-200 opacity-0 scale-80 animate-scaleIn"
                     src={myImage}
                     width="275px"
                     alt="My Pic"
@@ -135,7 +122,7 @@ const About = () => {
             </Grid>
           </Grid>
         </LayoutContainer>
-      </div>
+      </SectionLayout>
     </>
   );
 };

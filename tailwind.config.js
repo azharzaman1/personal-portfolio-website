@@ -21,6 +21,16 @@ module.exports = {
         backgroundV2: "#0f172a",
         backgroundContrast: "#023e8a",
       },
+      animation: {
+        scaleIn: "scaleIn 0.5s linear 2.5s forwards",
+      },
+      keyframes: {
+        scaleIn: {
+          "0%": { opacity: "0", transform: "scale(0.85)" },
+          "80%": { opacity: "0.9", transform: "scale(1.05)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+      },
     },
     fontFamily: {
       sans: ["Inter", "Roboto", "sans-serif"],
