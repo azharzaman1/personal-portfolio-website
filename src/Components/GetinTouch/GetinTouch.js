@@ -124,7 +124,7 @@ const GetinTouch = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="600"
-                className="font-sans font-normal text-base max-w-lg mb-5"
+                className="leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans mb-5"
               >
                 Well! You reached this point, means your interest in my
                 skill-set. If you want me build something for you, something
@@ -190,7 +190,7 @@ const GetinTouch = () => {
             data-aos-delay={dynamicDelay("1500", null, null)}
           >
             <form
-              className={`py-6 px-4 md:px-6 rounded-md w-full max-w-lg bg-backgroundContrast`}
+              className={`getInTouch__form py-6 px-4 md:px-6 rounded-md w-full max-w-lg bg-backgroundContrast`}
               autoComplete="off"
               id="form"
               onSubmit={handleFormSubmit}

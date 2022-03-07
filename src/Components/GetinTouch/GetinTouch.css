@@ -36,7 +36,7 @@
 
 .getInTouch__form input,
 .getInTouch__form textarea {
-  color: var(--text);
+  color: var(--text) !important;
   opacity: 0.85;
 }
 
