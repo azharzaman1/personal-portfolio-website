@@ -29,7 +29,7 @@ const About = () => {
             <Grid item container xs={12} sm={6} justifyContent="center">
               <Grid item xs={12}>
                 <Typography
-                  className="opacity-0 text-textBright select-none mt-3 mb-5"
+                  className="opacity-0 text-textBright select-none mb-8"
                   variant="h3"
                   data-aos="fade-up"
                   data-aos-duration="750"

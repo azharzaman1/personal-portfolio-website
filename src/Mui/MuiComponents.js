@@ -14,15 +14,15 @@ export const SectionHeading = ({
   children,
   number,
   type,
-  className,
   aosDelay,
+  className,
 }) => {
   return (
     <Typography
       variant="h3"
-      className={`MuiHeading ${className} ${!type && "font-code font-normal"} ${
+      className={`MuiHeading ${!type && "font-code font-normal"} ${
         type === "2" && "font-sans text-lg tracking-wide ml-1 font-normal"
-      }`}
+      } ${className}`}
       data-aos="fade-up"
       data-aos-duration="750"
       data-aos-delay={aosDelay ? aosDelay : "0"}
@@ -69,7 +69,7 @@ export const MuiButton = ({
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <Button
-        className={`MuiButton ${className} ${fontSize === "small" && "fs"}`}
+        className={`MuiButton ${fontSize === "small" && "fs"} ${className}`}
         color={!color ? "secondary" : color}
         variant={!variant ? "outlined" : variant}
         size={!size ? "large" : size}
