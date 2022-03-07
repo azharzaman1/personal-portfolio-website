@@ -44,10 +44,6 @@
   width: 75px;
 }
 
-.expertiesItem__logoShape svg {
-  fill: red !important;
-}
-
 .MuiGrid-spacing-xs-2 {
   width: 100% !important;
 }

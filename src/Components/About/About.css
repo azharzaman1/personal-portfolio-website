@@ -1,0 +1,32 @@
+/* anim 1 is missing because Heading is having AOS animation */
+
+.anim2 {
+  animation: fadeup 0.5s linear 1.25s forwards !important;
+}
+
+.anim3 {
+  animation: fadeup 0.5s linear 1.5s forwards;
+}
+
+.anim4 {
+  animation: fadeup 0.5s linear 1.75s forwards;
+}
+
+.anim5 {
+  animation: fadeup 0.5s linear 2s forwards;
+}
+
+.anim6 {
+  animation: fadeup 0.5s linear 2.25s forwards;
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,13 +1,56 @@
 import { useState, useEffect } from "react";
-import { Grid, Typography } from "@material-ui/core";
-import TypeWriterEffect from "react-typewriter-effect";
-import LayoutContainer from "../Layout/LayoutContainer";
-import SectionLayout from "../Layout/SectionLayout";
+import { Container, Grid, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
 import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import myImage from "../../myPic.jpg";
-// import "./About.css";
+import TypeWriterEffect from "react-typewriter-effect";
+import "./About.css";
+import SectionLayout from "../Layout/SectionLayout";
+
+const useStyles = makeStyles((theme) => ({
+  aboutSection: {
+    marginTop: "9.25rem",
+    marginBottom: "7rem",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "7rem",
+    },
+  },
+
+  root: {
+    padding: "0 150px",
+    [theme.breakpoints.down("lg")]: {
+      padding: "0 125px",
+    },
+    [theme.breakpoints.down("md")]: {
+      padding: "0 50px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "0 16px",
+    },
+  },
+
+  typeWritterContainer: {
+    marginTop: "0.75rem",
+    marginBottom: "0.75rem",
+  },
+
+  buttonContainer: {
+    marginTop: "16px",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+    },
+  },
+
+  right: {
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+      paddingTop: "35px",
+    },
+  },
+}));
 
 const About = () => {
+  const c = useStyles();
   const [typeWriterRef, setTypeWriterRef] = useState();
 
   useEffect(() => {
@@ -20,20 +63,27 @@ const About = () => {
         .
       </span>
       <SectionLayout className={`aboutSection`}>
-        <LayoutContainer maxWidth="lg">
-          <SectionHeading type="2" aosDelay={800}>
+        <Container maxWidth="lg" className={c.root}>
+          <SectionHeading
+            type="2"
+            aosDelay="800"
+            className="aboutTagline opacity-0 -translate-y-9 ml-1"
+          >
             Hi, its
           </SectionHeading>
           <Grid container justifyContent="space-around" alignItems="center">
-            {/* right */}
-            <Grid item container xs={12} sm={6} justifyContent="center">
+            <Grid
+              item
+              container
+              xs={12}
+              sm={6}
+              justifyContent="center"
+              className={c.left}
+            >
               <Grid item xs={12}>
                 <Typography
-                  className="opacity-0 text-textBright select-none mb-8"
+                  className="aboutName opacity-0 -translate-y-9 text-textBright mt-2.5 anim2"
                   variant="h3"
-                  data-aos="fade-up"
-                  data-aos-duration="750"
-                  data-aos-delay="1250"
                 >
                   Azhar Zaman
                 </Typography>
@@ -42,11 +92,8 @@ const About = () => {
               <Grid
                 item
                 xs={12}
+                className={c.typeWritterContainer}
                 id="typeWritterRef"
-                className="mt-6"
-                data-aos="fade-up"
-                data-aos-duration="750"
-                data-aos-delay="1500"
               >
                 <TypeWriterEffect
                   cursorColor="#ec4884"
@@ -71,31 +118,18 @@ const About = () => {
                 />
               </Grid>
 
-              <Grid item xs={12} className="mt-5">
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="750"
-                  data-aos-delay="1750"
-                  className="font-sans font-normal text-base max-w-lg mt-3 mb-5"
-                >
+              <Grid item xs={12}>
+                <p className="aboutDesc opacity-0 -translate-y-9 leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans anim5">
                   I'm working as full time Developer since early 2019,
                   specializing in some of the powerful and trending web
-                  technologies like React(Hooks - Redux), NextJs(SSR - SSG -
-                  ISG) JavaScript(ES6+), Material UI, HTML/CSS etc. I can build
-                  and design exceptional websites on every niche, web
-                  applications, custom themes & interfaces, eCommerce stores
+                  technologies like JavaScript, ReactJs, NextJs, NodeJs, MongoDB
+                  etc. I build and design exceptional websites on every niche,
+                  web applications, custom themes & interfaces, eCommerce stores
                   with custom functionalaities.
                 </p>
               </Grid>
-              <Grid
-                item
-                container
-                xs={12}
-                data-aos="fade-up"
-                data-aos-duration="750"
-                data-aos-delay="2000"
-              >
-                <Grid item>
+              <Grid item container className={c.buttonContainer} xs={12}>
+                <Grid item className="opacity-0 -translate-y-9 anim6">
                   <MuiButton link="https://api.whatsapp.com/send?phone=+923170460466">
                     Get in touch
                   </MuiButton>
@@ -103,25 +137,23 @@ const About = () => {
               </Grid>
             </Grid>
             <Grid
+              className={c.right}
               item
               container
               xs={12}
               sm={6}
-              className="justify-center md:justify-end pt-16 md:mt-0"
+              justifyContent="flex-end"
             >
               <Grid item>
-                <div className="aboutPicBorder">
-                  <img
-                    className="rounded-2xl p-0.5 rounded-bl-none border-2 border-gray-500  saturate-0 hover:saturate-100 transition-all duration-200 opacity-0 scale-80 animate-scaleIn"
-                    src={myImage}
-                    width="275px"
-                    alt="My Pic"
-                  />
-                </div>
+                <img
+                  className="aboutPic w-[300px] sm:w-[250px] lg:w-[275px] rounded-2xl rounded-bl-none opacity-0 saturate-0 hover:saturate-100 p-0.5 border-2 border-gray-500 animate-scaleIn transition-all duration-300"
+                  src={myImage}
+                  alt="My Pic"
+                />
               </Grid>
             </Grid>
           </Grid>
-        </LayoutContainer>
+        </Container>
       </SectionLayout>
     </>
   );
