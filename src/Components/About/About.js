@@ -110,10 +110,11 @@ const About = () => {
                     textDecoration: "underline",
                   }}
                   multiText={[
-                    "Intermediate level JavaScript developer",
-                    "Proficient ReactJs developer",
-                    "Advance Wordpress expert",
-                    "eCommerce development expert",
+                    "Love to create things for web!",
+                    "JavaScript developer",
+                    "Proficient ReactJs / NextJs developer",
+                    "MERN Stack developer",
+                    "Love to learn and try new stuff",
                   ]}
                 />
               </Grid>
