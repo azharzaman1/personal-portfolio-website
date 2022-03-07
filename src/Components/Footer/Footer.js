@@ -1,26 +1,17 @@
-import { Grid, makeStyles } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { Heading2, MuiChip } from "../../Mui/MuiComponents";
 import { GitHub, Language, LinkedIn, Twitter } from "@material-ui/icons";
-import "./Footer.css";
-
-const useStyles = makeStyles((theme) => ({
-  footerSection: {
-    marginTop: "8rem",
-    padding: "1rem",
-  },
-}));
 
 const Footer = () => {
-  const c = useStyles();
   return (
     <div
-      className={`footerSection ${c.footerSection}`}
+      className={`footerSection mt-32 p-4`}
       data-aos="fade-up"
       data-aos-delay="1000"
     >
       <Grid container direction="column" alignItems="center">
         <Grid item>
-          <Heading2 className="footerSection__heading">
+          <Heading2 className="m-0 text-lg pt-1 px-0 pb-2 mb-4">
             Design and developed by Azhar Zaman
           </Heading2>
         </Grid>

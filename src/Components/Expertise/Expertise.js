@@ -69,7 +69,7 @@ const ExpertiseItem = ({ item, ...rest }) => {
             <div
               className={`expertiesItem__logoShape ${item.logoImg && "img"}`}
             >
-              {item.logo && <item.logo />}
+              {item.logo && <item.logo className="h-16" />}
               {item.logoImg && (
                 <img src={item.logoImg} alt={item?.logoAlt || "Logo"} />
               )}

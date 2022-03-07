@@ -2,10 +2,10 @@ import React from "react";
 import {
   Grid,
   Card,
-  makeStyles,
   CardContent,
   IconButton,
   Tooltip,
+  makeStyles,
 } from "@material-ui/core";
 import {
   Heading2,
@@ -24,18 +24,24 @@ import "./RecentWork.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    padding: "0 125px",
     [theme.breakpoints.down("lg")]: {
       padding: "0 75px",
+    },
+    [theme.breakpoints.down("md")]: {
+      padding: "0 50px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "0 24px",
     },
   },
 }));
 
 const RecentWork = () => {
   const classes = useStyles();
-
   return (
     <SectionLayout className={`portfolioSection`}>
-      <LayoutContainer className={classes.root} maxWidth="lg">
+      <LayoutContainer maxWidth="lg" className={classes.root}>
         <div className="mb-5">
           <SectionHeading type="2" number="03">
             What I have built!
@@ -62,7 +68,7 @@ const RecentWork = () => {
               key={project.order}
               data-aos="fade-up"
               data-aos-delay={400}
-              className="min-h-[300px]"
+              className="min-h-[280px]"
             />
           ))}
         </Grid>

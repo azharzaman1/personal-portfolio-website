@@ -16,9 +16,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
   width: 70px;
   height: 70px;
+  padding: 14px;
   background-color: var(--background-light);
   clip-path: polygon(
     30% 0%,
