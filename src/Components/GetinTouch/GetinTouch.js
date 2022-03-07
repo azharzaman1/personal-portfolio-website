@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Container,
   Divider,
   Grid,
   Card,
@@ -15,8 +14,8 @@ import MuiPopup from "../RecentWork/MuiPopup";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import { validateEmail } from "../../utils/utils";
 import SectionLayout from "../Layout/SectionLayout";
-import "./GetinTouch.css";
 import LayoutContainer from "../Layout/LayoutContainer";
+import "./GetinTouch.css";
 
 const GetinTouch = () => {
   const [fullName, setFullName] = useState("");
