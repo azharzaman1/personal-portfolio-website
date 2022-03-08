@@ -64,7 +64,7 @@ export const projects = [
     logoAlt: "Code Godown Logo",
     logoHeight: "35px",
     translateY: "3.5px",
-    src: "https://codegodown.azharzaman.com/",
+    src: "https://code-godown.vercel.app/",
     desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
     tech1: "nextjs",
     tech2: "mui - tailwind",
