@@ -16,7 +16,7 @@ import "./IcanCreate.css";
 
 const useStyles = makeStyles((theme) => ({
   iCC__Section: {
-    marginTop: "4rem",
+    marginTop: "10rem",
     marginBottom: "7rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",

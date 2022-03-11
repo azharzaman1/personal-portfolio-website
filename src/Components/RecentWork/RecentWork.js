@@ -7,6 +7,7 @@ import {
   CardContent,
   IconButton,
 } from "@material-ui/core";
+import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import {
   Heading2,
   MuiDivider,
@@ -14,7 +15,6 @@ import {
   Spacer,
 } from "../../Mui/MuiComponents";
 import { ReactComponent as Jotaro } from "./assets/extlink.svg";
-import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
 import { ReactComponent as WPLogo } from "./assets/wp.svg";
 import { projects, projectsWPDev } from "../_files/__projects";

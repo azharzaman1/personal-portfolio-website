@@ -1,16 +1,13 @@
-import {
-  Card,
-  Container,
-  Grid,
-  makeStyles,
-  useMediaQuery,
-  useTheme,
-} from "@material-ui/core";
+import { Card, Container, Grid, makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
-import { Heading2, MuiDivider, SectionHeading } from "../../Mui/MuiComponents";
+import { Heading2, Heading3, SectionHeading } from "../../Mui/MuiComponents";
 import ExpertProgress from "./ProgressBar";
 import "./Expertise.css";
-import getExpertise, { wpDevExpertise } from "../_files/__expertise";
+import {
+  frontEndExpertise,
+  mernExpertise,
+  toolsAndLibraries,
+} from "../_files/__expertise";
 
 const useStyles = makeStyles((theme) => ({
   expertiseSection: {
@@ -37,37 +34,13 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 1rem 1rem 1rem",
     minHeight: 225,
   },
+  expertiseGroup: {
+    margin: "2rem 0 0rem",
+  },
 }));
 
 const Expertise = () => {
   const c = useStyles();
-  const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
-
-  const dynamicDelay = (d, t, m) => {
-    if (!isTablet && !isMobile) {
-      if (d) {
-        return d;
-      } else {
-        return "300";
-      }
-    } else if (isTablet && !isMobile) {
-      if (t) {
-        return t;
-      } else {
-        return "300";
-      }
-    } else {
-      if (m) {
-        return m;
-      } else {
-        return "300";
-      }
-    }
-  };
-
-  const expertise = getExpertise(dynamicDelay);
 
   return (
     <div className={`expertiseSection ${c.expertiseSection}`}>
@@ -75,31 +48,92 @@ const Expertise = () => {
         <SectionHeading type="2" number="02">
           Tech stack and expertise
         </SectionHeading>
-        <Grid container spacing={2} className="expertiseContent__container">
-          {expertise.map((item) => (
-            <ExpertiseItem
-              key={item.order}
-              title={item.title}
-              data-aos={item.dataAOS}
-              desc1={item.desc1}
-              desc2={item.desc2}
-              data-aos-delay={350}
-            />
-          ))}
+
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={c.expertiseGroup}
+        >
+          <Grid item>
+            <Heading3>MERN</Heading3>
+          </Grid>
+          <Grid
+            item
+            container
+            spacing={2}
+            justifyContent="center"
+            className="expertiseContent__container"
+          >
+            {mernExpertise.map((item) => (
+              <ExpertiseItem
+                key={item.order}
+                title={item.title}
+                data-aos={item.dataAOS}
+                desc1={item.desc1}
+                desc2={item.desc2}
+                data-aos-delay={350}
+              />
+            ))}
+          </Grid>
         </Grid>
 
-        <MuiDivider marginTop="38px" marginBottom="29px" width="33%" />
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={c.expertiseGroup}
+        >
+          <Grid item>
+            <Heading3>Front End</Heading3>
+          </Grid>
+          <Grid
+            item
+            container
+            spacing={2}
+            justifyContent="center"
+            className="expertiseContent__container"
+          >
+            {frontEndExpertise.map((item) => (
+              <ExpertiseItem
+                key={item.order}
+                title={item.title}
+                data-aos={item.dataAOS}
+                desc1={item.desc1}
+                desc2={item.desc2}
+                data-aos-delay={350}
+              />
+            ))}
+          </Grid>
+        </Grid>
 
-        <Grid container spacing={2} className="expertiseContent__container">
-          {wpDevExpertise.map((item) => (
-            <ExpertiseItem
-              key={item.order}
-              title={item.title}
-              desc1={item.desc1}
-              data-aos="fade-up"
-              data-aos-delay={350}
-            />
-          ))}
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className={c.expertiseGroup}
+        >
+          <Grid item>
+            <Heading3>Tools and Libraries</Heading3>
+          </Grid>
+          <Grid
+            item
+            container
+            spacing={2}
+            justifyContent="center"
+            className="expertiseContent__container"
+          >
+            {toolsAndLibraries.map((item) => (
+              <ExpertiseItem
+                key={item.order}
+                title={item.title}
+                data-aos={item.dataAOS}
+                desc1={item.desc1}
+                desc2={item.desc2}
+                data-aos-delay={350}
+              />
+            ))}
+          </Grid>
         </Grid>
       </Container>
     </div>

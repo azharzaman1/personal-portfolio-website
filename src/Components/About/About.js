@@ -109,13 +109,12 @@ const About = () => {
 
               <Grid item xs={12}>
                 <p className="aboutDesc anim5">
-                  I'm working as full time Developer since early 2019,
+                  I'm working as a full-time Developer since early 2019,
                   specializing in some of the powerful and trending web
-                  technologies like React(Hooks - Redux), NextJs(SSR - SSG -
-                  ISG) JavaScript(ES6+), Material UI, HTML/CSS etc. I can build
-                  and design exceptional websites on every niche, web
-                  applications, custom themes & interfaces, eCommerce stores
-                  with custom functionalaities.
+                  technologies like JavaScript, ReactJs, NextJs, NodeJs,
+                  ExpressJs, MongoDB, etc. I build and design exceptional
+                  websites on every niche, web applications, custom themes &
+                  interfaces, eCommerce stores with custom functionalities.
                 </p>
               </Grid>
               <Grid item container className={c.buttonContainer} xs={12}>
