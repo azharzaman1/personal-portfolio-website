@@ -61,19 +61,9 @@ const RecentWork = () => {
           {projects.map((project) => (
             <PortfolioProject
               key={project.order}
-              data-aos={project.dataAOS}
-              data-aos-delay={project?.dataAosDelay}
-              logo={project.logo}
-              logoAlt={project.logoAlt}
-              logoHeight={project?.logoHeight}
-              translateY={project?.translateY}
-              github={project.github}
-              src={project.src}
-              title={project.title}
-              desc={project.desc}
-              tech1={project.tech1}
-              tech2={project.tech2}
-              tech3={project.tech3}
+              project={project}
+              data-aos="fade-up"
+              data-aos-delay={350}
             />
           ))}
         </Grid>
@@ -88,14 +78,11 @@ const RecentWork = () => {
         >
           {projectsWPDev.map((project) => (
             <PortfolioProject
+              project={project}
               key={project.order}
-              data-aos={project.dataAOS}
-              logo={project.logo}
-              wooLogo={project.wooLogo}
-              src={project.src}
-              title={project.title}
-              desc={project.desc}
               className="cms-dev-projects-card"
+              data-aos="fade-up"
+              data-aos-delay={350}
             />
           ))}
         </Grid>
@@ -105,19 +92,8 @@ const RecentWork = () => {
 };
 
 const PortfolioProject = ({
-  logo,
-  wooLogo,
-  logoHeight,
-  translateY,
-  logoAlt,
-  github,
-  src,
+  project,
   enableGallery,
-  title,
-  desc,
-  tech1,
-  tech2,
-  tech3,
   disabledHeader,
   className,
   ...rest
@@ -133,21 +109,21 @@ const PortfolioProject = ({
               justifyContent="space-between"
             >
               <Grid item>
-                {logo === "wp" ? (
+                {project.logo === "wp" ? (
                   <WPLogo
-                    width={wooLogo ? "110px" : "150px"}
+                    width={project.wooLogo ? "110px" : "150px"}
                     className="recentWork__cardWpLogo"
                   />
                 ) : (
                   <img
-                    src={logo}
-                    alt={logoAlt}
-                    height={logoHeight ? logoHeight : "30px"}
-                    style={{ transform: `translateY(-${translateY})` }}
+                    src={project.logo}
+                    alt={project.logoAlt}
+                    height={project.logoHeight ? project.logoHeight : "30px"}
+                    style={{ transform: `translateY(-${project.translateY})` }}
                   />
                 )}
 
-                {wooLogo && <WooLogo />}
+                {project.wooLogo && <WooLogo />}
               </Grid>
               <Grid
                 item
@@ -157,8 +133,8 @@ const PortfolioProject = ({
                 style={{ transform: "translateY(-8px)" }}
               >
                 <Grid item>
-                  {github && (
-                    <a href={github} target="_blank" rel="noreferrer">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noreferrer">
                       <IconButton>
                         <GitHub
                           className="recentWork__cardIcons"
@@ -177,8 +153,8 @@ const PortfolioProject = ({
                     </IconButton>
                   )}
 
-                  {src && (
-                    <a href={src} target="_blank" rel="noreferrer">
+                  {project.src && (
+                    <a href={project.src} target="_blank" rel="noreferrer">
                       <IconButton>
                         <Jotaro
                           className="recentWork__cardIcons"
@@ -193,24 +169,22 @@ const PortfolioProject = ({
           )}
 
           <CardContent className="recentWork__cardBody">
-            <Heading2 className="recentWork__cardTitle">{title}</Heading2>
-            <p>{desc}</p>
+            <Heading2 className="recentWork__cardTitle">
+              {project.title}
+            </Heading2>
+            <p>{project.desc}</p>
           </CardContent>
-          {tech1 ? (
+          {project.techs ? (
             <Grid
               container
               justifyContent="space-evenly"
               className="recentWork__cardTechs"
             >
-              <Grid item>
-                <p>{tech1}</p>
-              </Grid>
-              <Grid item>
-                <p>{tech2}</p>
-              </Grid>
-              <Grid item>
-                <p>{tech3}</p>
-              </Grid>
+              {project.techs.map((tech, i) => (
+                <Grid item key={i}>
+                  <p>{tech}</p>
+                </Grid>
+              ))}
             </Grid>
           ) : (
             <Spacer height="8px" />

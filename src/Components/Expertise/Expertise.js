@@ -1,13 +1,11 @@
 import { Card, Container, Grid, makeStyles } from "@material-ui/core";
-import React, { useState } from "react";
 import { Heading2, Heading3, SectionHeading } from "../../Mui/MuiComponents";
-import ExpertProgress from "./ProgressBar";
-import "./Expertise.css";
 import {
   frontEndExpertise,
   mernExpertise,
   toolsAndLibraries,
 } from "../_files/__expertise";
+import "./Expertise.css";
 
 const useStyles = makeStyles((theme) => ({
   expertiseSection: {
@@ -69,7 +67,7 @@ const Expertise = () => {
               <ExpertiseItem
                 key={item.key}
                 item={item}
-                data-aos={item.dataAOS}
+                data-aos="fade-up"
                 data-aos-delay={350}
               />
             ))}
@@ -96,7 +94,7 @@ const Expertise = () => {
               <ExpertiseItem
                 key={item.key}
                 item={item}
-                data-aos={item.dataAOS}
+                data-aos="fade-up"
                 data-aos-delay={350}
               />
             ))}
@@ -136,19 +134,10 @@ const Expertise = () => {
 
 const ExpertiseItem = ({ item, ...rest }) => {
   const c = useStyles();
-  const [showProgress, setShowProgress] = useState(false);
 
   return (
     <Grid item xs={12} sm={6} md={4} {...rest}>
-      <Card
-        className={`expertyCard ${c.expertise}`}
-        elevation={1}
-        onMouseEnter={() => {
-          setInterval(() => {
-            setShowProgress(true);
-          }, 250);
-        }}
-      >
+      <Card className={`expertyCard ${c.expertise}`} elevation={1}>
         <Heading2>{item.title}</Heading2>
         <ul>
           {item.descriptions.map((desc, i) => (

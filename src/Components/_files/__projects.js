@@ -2,6 +2,19 @@ import { assets } from "../RecentWork/assets/assets";
 
 export const projects = [
   {
+    order: 0,
+    title: "Code Godown (development)",
+    logo: assets.CodeGodown,
+    logoAlt: "Code Godown Logo",
+    logoHeight: "35px",
+    translateY: "3.5px",
+    src: "https://code-godown.vercel.app/",
+    github: "https://github.com/azharzaman1/code-godown",
+    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
+    techs: ["nextjs", "mui - tailwind", "firebase"],
+    dataAOS: "fade-up",
+  },
+  {
     order: 1,
     title: "Covid-19 Tracker",
     logo: assets.TrackerLogo,
@@ -11,11 +24,7 @@ export const projects = [
     github: "https://github.com/azharzaman1/covid-tracker",
     src: "https://covidtracker.azharzaman.com/",
     desc: "Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. Tracker finds its realtime database from 'disease.sh' using live API calls.",
-    tech1: "reactjs",
-    tech2: "react-chartjs",
-    tech3: "firebase",
-    dataAOS: "fade-up",
-    dataAosDelay: 500,
+    techs: ["reactjs", "react-chartjs", "firebase"],
   },
   {
     order: 2,
@@ -25,11 +34,7 @@ export const projects = [
     github: "https://github.com/azharzaman1/fullstack-amazon-clone",
     src: "https://amazondemo.azharzaman.com/",
     desc: "I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more.",
-    tech1: "reactjs",
-    tech2: "redux",
-    tech3: "firebase",
-    dataAOS: "fade-up",
-    dataAosDelay: 500,
+    techs: ["reactjs", "redux", "firebase"],
   },
   {
     order: 3,
@@ -41,11 +46,7 @@ export const projects = [
     // github: "https://github.com/azharzaman1/personal-portfolio-website",
     src: "https://azharzaman.com",
     desc: "I built my personal portfolio website on ReactJs to showcase my skill-set and recent work. Making this website simple but expressive was my first priority. And I believe it meet all the requirements of an elegant design website.",
-    tech1: "reactjs",
-    tech2: "material-ui",
-    tech3: "aos",
-    dataAOS: "fade-up",
-    dataAosDelay: 500,
+    techs: ["reactjs", "material-ui", "aos"],
   },
   {
     order: 4,
@@ -58,22 +59,7 @@ export const projects = [
     tech1: "nextjs",
     tech2: "ssr",
     tech3: "mapbox",
-    dataAOS: "fade-up",
-  },
-  {
-    order: 5,
-    title: "Code Godown (development)",
-    logo: assets.CodeGodown,
-    logoAlt: "Code Godown Logo",
-    logoHeight: "35px",
-    translateY: "3.5px",
-    src: "https://code-godown.vercel.app/",
-    github: "https://github.com/azharzaman1/code-godown",
-    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
-    tech1: "nextjs",
-    tech2: "mui - tailwind",
-    tech3: "firebase",
-    dataAOS: "fade-up",
+    techs: ["nextjs", "ssr", "mapbox"],
   },
 ];
 
@@ -89,7 +75,6 @@ export const projects = [
 //   tech1: "reactjs",
 //   tech2: "tmdb-api",
 //   tech3: "yt-trailers",
-//   dataAOS: "fade-up",
 // },
 
 /*
@@ -105,7 +90,6 @@ export const projects = [
   tech1: "reactjs",
   tech2: "material-ui",
   tech3: "firebase",
-  dataAOS: "fade-up",
 },
 */
 
@@ -117,7 +101,6 @@ export const projectsWPDev = [
     // src: "https://peeeko.com",
     wooLogo: true,
     desc: "Built a Multi-vendor Marketplace for Peeeko (Pvt) Ltd. developed sepecifically for females. This marketplace forms a One Window Solution to serve all Needs of Females of all Ages.",
-    dataAOS: "fade-up",
   },
   {
     order: 2,
@@ -126,7 +109,6 @@ export const projectsWPDev = [
     src: "https://plannative.com",
     wooLogo: false,
     desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
-    dataAOS: "fade-up",
   },
   {
     order: 3,
@@ -135,6 +117,5 @@ export const projectsWPDev = [
     // src: "http://brpakistan.com/",
     wooLogo: false,
     desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
-    dataAOS: "fade-up",
   },
 ];
