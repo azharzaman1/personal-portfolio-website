@@ -63,21 +63,22 @@ export const projects = [
   },
 ];
 
-// {
-//   order: 5,
-//   title: "Netflix demo",
-//   logo: assets.NetflixLogo,
-//   logoAlt: "Netflix Logo",
-//   logoHeight: "35px",
-//   translateY: "3.5px",
-//   src: "https://netflixdemo.azharzaman.com/",
-//   desc: "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices. I decided to build it with react and used tmdb as realtime movie database. It fetch movies from tmdb and trailers when clicked from youtube with a special 'youtube-trailer' functionality.",
-//   tech1: "reactjs",
-//   tech2: "tmdb-api",
-//   tech3: "yt-trailers",
-// },
-
 /*
+
+{
+  order: 5,
+  title: "Netflix demo",
+  logo: assets.NetflixLogo,
+  logoAlt: "Netflix Logo",
+  logoHeight: "35px",
+  translateY: "3.5px",
+  src: "https://netflixdemo.azharzaman.com/",
+  desc: "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices. I decided to build it with react and used tmdb as realtime movie database. It fetch movies from tmdb and trailers when clicked from youtube with a special 'youtube-trailer' functionality.",
+  tech1: "reactjs",
+  tech2: "tmdb-api",
+  tech3: "yt-trailers",
+},
+
 {
   order: 6,
   title: "Basic Google Clone",
@@ -98,24 +99,25 @@ export const projectsWPDev = [
     order: 1,
     title: "Multi-vendor Marketplace | Peeeko",
     logo: "wp",
-    // src: "https://peeeko.com",
+    src: "https://peeeko.com",
     wooLogo: true,
     desc: "Built a Multi-vendor Marketplace for Peeeko (Pvt) Ltd. developed sepecifically for females. This marketplace forms a One Window Solution to serve all Needs of Females of all Ages.",
-  },
-  {
-    order: 2,
-    title: "Agency Bussiness Site | PlanNative",
-    logo: "wp",
-    src: "https://plannative.com",
-    wooLogo: false,
-    desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
   },
   {
     order: 3,
     title: "Business Site | BRPakistan",
     logo: "wp",
-    // src: "http://brpakistan.com/",
+    src: "http://brpakistan.com/",
     wooLogo: false,
     desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
+  },
+  {
+    order: 2,
+    title: "Agency Bussiness Site | PlanNative",
+    logo: "wp",
+    disableLink: true,
+    // src: "https://plannative.com",
+    wooLogo: false,
+    desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
   },
 ];

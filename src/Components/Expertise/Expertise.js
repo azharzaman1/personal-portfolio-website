@@ -121,7 +121,7 @@ const Expertise = () => {
               <ExpertiseItem
                 key={item.key}
                 item={item}
-                data-aos={item.dataAOS}
+                data-aos="fade-up"
                 data-aos-delay={350}
               />
             ))}

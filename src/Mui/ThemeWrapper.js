@@ -55,11 +55,20 @@ const ThemeWrapper = ({ children, theme }) => {
           color: "rgba(255,255,255,0.8)",
         },
       },
-    },
-    props: {
-      // MuiButton: {
-      //   disableRipple: true,
-      // },
+      MuiTooltip: {
+        popper: {
+          minWidth: 120,
+          maxWidth: 250,
+        },
+        tooltip: {
+          backgroundColor: "#ccc",
+          color: "#023e8a",
+          fontSize: 14,
+          width: "100%",
+          minWidth: 100,
+          textAlign: "center",
+        },
+      },
     },
   });
   return (

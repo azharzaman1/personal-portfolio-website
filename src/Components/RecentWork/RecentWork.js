@@ -6,8 +6,9 @@ import {
   makeStyles,
   CardContent,
   IconButton,
+  Tooltip,
 } from "@material-ui/core";
-import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
+import { ViewCarouselOutlined, GitHub, Lock } from "@material-ui/icons";
 import {
   Heading2,
   MuiDivider,
@@ -135,33 +136,49 @@ const PortfolioProject = ({
                 <Grid item>
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noreferrer">
-                      <IconButton>
-                        <GitHub
-                          className="recentWork__cardIcons"
-                          fontSize="small"
-                        />
-                      </IconButton>
+                      <Tooltip title="Source Code" placement="top" arrow>
+                        <IconButton>
+                          <GitHub
+                            className="recentWork__cardIcons"
+                            fontSize="small"
+                          />
+                        </IconButton>
+                      </Tooltip>
                     </a>
                   )}
 
                   {enableGallery && (
-                    <IconButton>
-                      <ViewCarouselOutlined
-                        className="recentWork__cardIcons"
-                        fontSize="medium"
-                      />
-                    </IconButton>
+                    <Tooltip title="Project Gallery" placement="top" arrow>
+                      <IconButton>
+                        <ViewCarouselOutlined
+                          className="recentWork__cardIcons"
+                          fontSize="medium"
+                        />
+                      </IconButton>
+                    </Tooltip>
                   )}
 
                   {project.src && (
                     <a href={project.src} target="_blank" rel="noreferrer">
+                      <Tooltip title="Live Link" placement="top" arrow>
+                        <IconButton disabled={project.disableLink}>
+                          <Jotaro
+                            className="recentWork__cardIcons"
+                            width="17px"
+                          />
+                        </IconButton>
+                      </Tooltip>
+                    </a>
+                  )}
+                  {project.disableLink && (
+                    <Tooltip title="Private Project" placement="top" arrow>
                       <IconButton>
-                        <Jotaro
-                          className="recentWork__cardIcons"
-                          width="17px"
+                        <Lock
+                          fontSize="small"
+                          className="recentWork__cardIcons disabled"
                         />
                       </IconButton>
-                    </a>
+                    </Tooltip>
                   )}
                 </Grid>
               </Grid>

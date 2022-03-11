@@ -34,7 +34,11 @@
 }
 
 .recentWork__cardIcons {
-  color: #e23173 !important;
+  color: var(--secondary) !important;
+}
+
+.recentWork__cardIcons.disabled {
+  color: var(--secondary-light) !important;
 }
 
 .recentWork__cardTitle {
