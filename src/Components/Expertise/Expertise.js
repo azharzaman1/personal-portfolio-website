@@ -67,11 +67,9 @@ const Expertise = () => {
           >
             {mernExpertise.map((item) => (
               <ExpertiseItem
-                key={item.order}
-                title={item.title}
+                key={item.key}
+                item={item}
                 data-aos={item.dataAOS}
-                desc1={item.desc1}
-                desc2={item.desc2}
                 data-aos-delay={350}
               />
             ))}
@@ -96,11 +94,9 @@ const Expertise = () => {
           >
             {frontEndExpertise.map((item) => (
               <ExpertiseItem
-                key={item.order}
-                title={item.title}
+                key={item.key}
+                item={item}
                 data-aos={item.dataAOS}
-                desc1={item.desc1}
-                desc2={item.desc2}
                 data-aos-delay={350}
               />
             ))}
@@ -125,11 +121,9 @@ const Expertise = () => {
           >
             {toolsAndLibraries.map((item) => (
               <ExpertiseItem
-                key={item.order}
-                title={item.title}
+                key={item.key}
+                item={item}
                 data-aos={item.dataAOS}
-                desc1={item.desc1}
-                desc2={item.desc2}
                 data-aos-delay={350}
               />
             ))}
@@ -140,7 +134,7 @@ const Expertise = () => {
   );
 };
 
-const ExpertiseItem = ({ title, progress, desc1, desc2, ...rest }) => {
+const ExpertiseItem = ({ item, ...rest }) => {
   const c = useStyles();
   const [showProgress, setShowProgress] = useState(false);
 
@@ -155,17 +149,11 @@ const ExpertiseItem = ({ title, progress, desc1, desc2, ...rest }) => {
           }, 250);
         }}
       >
-        <Heading2>{title}</Heading2>
-        <div className="progressBar__wrapper">
-          {showProgress && progress ? (
-            <ExpertProgress progress={progress} />
-          ) : (
-            <></>
-          )}
-        </div>
+        <Heading2>{item.title}</Heading2>
         <ul>
-          {desc1 && <li>{desc1}</li>}
-          {desc2 && <li>{desc2}</li>}
+          {item.descriptions.map((desc, i) => (
+            <li key={i}>{desc}</li>
+          ))}
         </ul>
       </Card>
     </Grid>
