@@ -6,11 +6,17 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import { EmailOutlined, KeyboardBackspace, WhatsApp } from "@material-ui/icons";
+import {
+  Description,
+  EmailOutlined,
+  KeyboardBackspace,
+  WhatsApp,
+} from "@material-ui/icons";
 import { Grid, IconButton } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import { Heading2, MuiButton } from "../../Mui/MuiComponents";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   mobileNavList: {
@@ -96,14 +102,20 @@ export default function MobileSideNav({ open, closeDrawer }) {
                 />
                 <Divider className={c.divider} />
                 <Grid item>
-                  <MuiButton
-                    size="medium"
-                    icon={<LinkIcon />}
-                    className={`${c.mobileNavHeaderButton}`}
-                    link="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
+                  <RouterLink
+                    to="/files/azhar_resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    download
                   >
-                    Download resume
-                  </MuiButton>
+                    <MuiButton
+                      size="medium"
+                      className={`${c.mobileNavHeaderButton}`}
+                      icon={<Description />}
+                    >
+                      Resume
+                    </MuiButton>
+                  </RouterLink>
                 </Grid>
                 <Grid item>
                   <MuiButton
