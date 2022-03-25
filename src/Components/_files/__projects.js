@@ -3,6 +3,53 @@ import assets from "./assets/assets";
 
 export const projects = [
   {
+    order: 5,
+    title: "Code Godown (development)",
+    logo: Logos.Code,
+    logoAlt: "Code Godown Logo",
+    src: "https://code-godown.vercel.app/",
+    github: "https://github.com/azharzaman1/code-godown",
+    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "nodejs",
+        Logo: <assets.NodeLogo className="w-5 h-5" />,
+      },
+      {
+        Logo: assets.ExpressLogo,
+        title: "expressjs",
+        isImage: true,
+      },
+      {
+        title: "mongodb",
+        Logo: <assets.MongoLogo className="w-5 h-5" />,
+      },
+      {
+        title: "nextjs",
+        Logo: (
+          <div className="bg-white rounded-full h-5 flex justify-center items-center">
+            <assets.NextLogo2 className="w-5 h-5" />
+          </div>
+        ),
+      },
+      {
+        Logo: <assets.ReduxLogo className="w-5 h-5" />,
+        title: "redux(toolkit)",
+      },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
+    ],
+    logoClasses: "w-10 -translate-y-2",
+  },
+  {
     order: 1,
     title: "Covid-19 Tracker",
     logo: Logos.TrackerLogo,
@@ -10,8 +57,13 @@ export const projects = [
     logoHeight: "50px",
     translateY: "12px",
     src: "https://covidtracker.azharzaman.com/",
+    github: "https://github.com/azharzaman1/covid-tracker",
     desc: "Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. Tracker finds its realtime database from 'disease.sh' using live API calls.",
     techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
       { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
         Logo: assets.ChartJsLogo,
@@ -28,8 +80,13 @@ export const projects = [
     logo: Logos.AmazonLogo,
     logoAlt: "Amazon Logo",
     src: "https://amazondemo.azharzaman.com/",
+    github: "https://github.com/azharzaman1/fullstack-amazon-clone",
     desc: "I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more.",
     techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
       { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
         Logo: <assets.ReduxLogo className="w-5 h-5" />,
@@ -41,23 +98,74 @@ export const projects = [
     logoClasses: "w-24 -translate-y-1",
   },
   {
-    order: 3,
-    title: "Personal Portfolio Site",
-    logo: Logos.MyLogo,
-    logoAlt: "Azhar Logo",
-    // github: "https://github.com/azharzaman1/personal-portfolio-website",
-    src: "https://azharzaman.com",
-    desc: "I built my personal portfolio website on ReactJs to showcase my skill-set and recent work. Making this website simple but expressive was my first priority. And I believe it meet all the requirements of an elegant design website.",
+    order: 5,
+    title: "Library Application",
+    logo: Logos.Code,
+    logoAlt: "Library application logo",
+    src: "https://azhar-libraryapp.vercel.app/",
+    github: "https://github.com/azharzaman1/library-application-client",
+    desc: "Built library application to practice MERN stack, with secure JWT-authentication, mongodb as database, mongoose as mongodb-engine, expressjs restful apis following MVC(Modal, View, Conroller) pattern. On frontend mui was used.",
     techsLogos: [
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
-        title: "mui(material-ui)",
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
       },
-      { Logo: <assets.AOSLogo className="w-8" />, title: "aos" },
-      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "nodejs",
+        Logo: <assets.NodeLogo className="w-5 h-5" />,
+      },
+      {
+        Logo: assets.ExpressLogo,
+        title: "expressjs",
+        isImage: true,
+      },
+      {
+        title: "mongodb",
+        Logo: <assets.MongoLogo className="w-5 h-5" />,
+      },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
     ],
-    logoClasses: "w-24 -translate-y-2",
+    logoClasses: "w-10 -translate-y-2",
+  },
+  {
+    order: 5,
+    title: "Single Product eCommerce site(development)",
+    logo: Logos.Code,
+    logoAlt: "Library application logo",
+    src: "https://single-product-ecommerce.vercel.app/",
+    github: "https://github.com/azharzaman1/single-product-site",
+    desc: "Building a simple eCommerce store like website for a friend, for health related product, with all basic eCommerce features like, cart, checkout, coupons, admin dashboard, reviews etc. Website is under production, there is lot to come.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "nextjs",
+        Logo: (
+          <div className="bg-white rounded-full h-5 flex justify-center items-center">
+            <assets.NextLogo2 className="w-5 h-5" />
+          </div>
+        ),
+      },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
+      {
+        Logo: <assets.ReduxLogo className="w-5 h-5" />,
+        title: "redux(toolkit)",
+      },
+      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
+    ],
+    logoClasses: "w-10 -translate-y-2",
   },
   {
     order: 4,
@@ -65,8 +173,13 @@ export const projects = [
     logo: Logos.AirbnbLogo,
     logoAlt: "Airbnb Logo",
     src: "https://airbnbdemo.azharzaman.com/",
+    github: "https://github.com/azharzaman1/airbnb-portfolio-project",
     desc: "Built Airbnb clone using some of the trending web technologies these days like NextJs, Tailwind CSS and something really cool Server side rendering by NextJs. It is a nice little application with awesome UI and basic feautres of world famous Airbnb.",
     techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
       { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
         Logo: (
@@ -82,32 +195,27 @@ export const projects = [
     logoClasses: "w-24 -translate-y-1",
   },
   {
-    order: 5,
-    title: "Code Godown (development)",
-    logo: Logos.CodeGodown,
-    logoAlt: "Code Godown Logo",
-    src: "https://codegodown.azharzaman.com/",
-    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
-    tech1: "nextjs",
-    tech2: "mui - tailwind",
-    tech3: "firebase",
+    order: 3,
+    title: "Personal Portfolio Site",
+    logo: Logos.MyLogo,
+    logoAlt: "Azhar Logo",
+    // github: "https://github.com/azharzaman1/personal-portfolio-website",
+    src: "https://azharzaman.com",
+    desc: "I built my personal portfolio website on ReactJs to showcase my skill-set and recent work. Making this website simple but expressive was my first priority. And I believe it meet all the requirements of an elegant design website.",
     techsLogos: [
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
-        Logo: (
-          <div className="bg-white rounded-full h-5 flex justify-center items-center">
-            <assets.NextLogo2 className="w-5 h-5" />
-          </div>
-        ),
-        title: "nextjs",
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
       },
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
         Logo: <assets.MuiLogo className="w-5 h-5" />,
         title: "mui(material-ui)",
       },
+      { Logo: <assets.AOSLogo className="w-8" />, title: "animate on scroll" },
       { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
     ],
-    logoClasses: "w-10 -translate-y-2",
+    logoClasses: "w-24 -translate-y-2",
   },
 ];
 

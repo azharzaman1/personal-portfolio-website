@@ -111,8 +111,8 @@ const About = () => {
                   }}
                   multiText={[
                     "Love to create things for web!",
-                    "JavaScript developer",
-                    "Proficient ReactJs / NextJs developer",
+                    "Intermediate JavaScript developer",
+                    "Proficient ReactJs developer",
                     "MERN Stack developer",
                     "Love to learn and try new stuff",
                   ]}

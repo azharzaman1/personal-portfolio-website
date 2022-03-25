@@ -158,7 +158,7 @@ const PortfolioProject = ({
               container
               justifyContent="flex-start"
               alignItems="center"
-              className="px-4 py-3 mt-auto font-code border-t border-t-[#1456ad] space-x-5"
+              className="px-4 py-3 mt-auto font-code border-t border-t-[#1456ad] space-x-3"
             >
               {project.techsLogos.map((tech, i) => (
                 <Grid item key={Math.random() * i}>
@@ -167,7 +167,7 @@ const PortfolioProject = ({
                       {tech.isImage ? (
                         <img src={tech.Logo} alt="." className="w-6" />
                       ) : (
-                        <>{tech.Logo}</>
+                        tech.Logo
                       )}
                     </Tooltip>
                   </div>

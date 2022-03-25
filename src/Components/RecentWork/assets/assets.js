@@ -5,7 +5,7 @@ import MyLogo from "./images/azhar.png";
 import TrackerLogo from "./images/tracker.png";
 import CVALogo from "./images/cva.png";
 import WordPress from "./wp.png";
-import CodeGodown from "./code-logo.svg";
+import Code from "./code-logo.svg";
 import AirbnbLogo from "./airbnb.svg";
 
 export const assets = {
@@ -16,6 +16,6 @@ export const assets = {
   TrackerLogo,
   CVALogo,
   WordPress,
-  CodeGodown,
+  Code,
   AirbnbLogo,
 };
