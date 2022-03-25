@@ -9,7 +9,7 @@ import { MuiButton, SectionHeading } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
-    marginTop: "9.25rem",
+    marginTop: "10rem",
     marginBottom: "7rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",
@@ -35,22 +35,25 @@ const useStyles = makeStyles((theme) => ({
   },
 
   buttonContainer: {
-    marginTop: "16px",
+    marginTop: 30,
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
     },
   },
 
+  left: {
+    paddingTop: 10,
+  },
   right: {
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
-      paddingTop: "35px",
+      paddingTop: 35,
     },
   },
 }));
 
 const About = () => {
-  const c = useStyles();
+  const classes = useStyles();
   const [typeWriterRef, setTypeWriterRef] = useState();
 
   useEffect(() => {
@@ -62,8 +65,8 @@ const About = () => {
       <span id="about-section-scroll-anchor" className="bg-backgroundV1">
         .
       </span>
-      <SectionLayout className={`aboutSection`}>
-        <Container maxWidth="lg" className={c.root}>
+      <SectionLayout className={`aboutSection ${classes.aboutSection}`}>
+        <Container maxWidth="lg" className={classes.root}>
           <SectionHeading
             type="2"
             aosDelay="800"
@@ -78,7 +81,7 @@ const About = () => {
               xs={12}
               sm={6}
               justifyContent="center"
-              className={c.left}
+              className={classes.left}
             >
               <Grid item xs={12}>
                 <Typography
@@ -92,7 +95,7 @@ const About = () => {
               <Grid
                 item
                 xs={12}
-                className={c.typeWritterContainer}
+                className={classes.typeWritterContainer}
                 id="typeWritterRef"
               >
                 <TypeWriterEffect
@@ -124,12 +127,12 @@ const About = () => {
                   I'm working as full time Developer since early 2019,
                   specializing in some of the powerful and trending web
                   technologies like JavaScript, ReactJs, NextJs, NodeJs, MongoDB
-                  etc. I build and design exceptional websites on every niche,
-                  web applications, custom themes & interfaces, eCommerce stores
-                  with custom functionalaities.
+                  etclasses. I build and design exceptional websites on every
+                  niche, web applications, custom themes & interfaces, eCommerce
+                  stores with custom functionalaities.
                 </p>
               </Grid>
-              <Grid item container className={c.buttonContainer} xs={12}>
+              <Grid item container className={classes.buttonContainer} xs={12}>
                 <Grid item className="opacity-0 -translate-y-9 anim6">
                   <MuiButton link="https://api.whatsapp.com/send?phone=+923170460466">
                     Get in touch
@@ -138,7 +141,7 @@ const About = () => {
               </Grid>
             </Grid>
             <Grid
-              className={c.right}
+              className={classes.right}
               item
               container
               xs={12}
