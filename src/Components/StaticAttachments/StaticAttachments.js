@@ -1,5 +1,5 @@
 import React from "react";
-import { MuiDivider } from "../../Mui/MuiComponents";
+import { MuiDivider } from "../Generic/Theme";
 import "./StaticAttachments.css";
 
 const StaticAttachments = () => {

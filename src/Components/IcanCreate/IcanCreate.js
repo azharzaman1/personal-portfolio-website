@@ -1,10 +1,10 @@
 import { Card, CardContent, Grid } from "@material-ui/core";
-import { Heading2, MuiButton, SectionHeading } from "../../Mui/MuiComponents";
 import ImageComparison from "./ImageComparison";
 import { Link } from "react-scroll";
 import { ICanCreate } from "../_files/__iCanCreate";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
+import { Heading2, MuiButton, SectionHeading } from "../Generic/Theme";
 
 const IcanCreate = () => {
   return (

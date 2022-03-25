@@ -12,9 +12,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "./logo.png";
 import { Link } from "react-scroll";
 import "./Header.css";
-import { MuiButton } from "../../Mui/MuiComponents";
 import MobileSideNav from "./HeaderMobileDrawer";
 import { Link as RouterLink } from "react-router-dom";
+import { MuiButton } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {

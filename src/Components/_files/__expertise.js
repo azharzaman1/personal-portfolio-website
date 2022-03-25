@@ -98,10 +98,11 @@ export const frontEndExpertise = [
   ],
   [
     {
-      order: 6,
-      title: "Google Firebase",
-      logo: assets.FirebaseLogo,
+      order: 3,
+      title: "Tailwind CSS",
+      logo: assets.TailwindLogo,
       dataAOS: "fade-up",
+      dataAOS_delay: 500,
     },
   ],
 ];
@@ -118,31 +119,24 @@ export const toolsAndLibraries = [
   ],
   [
     {
-      order: 1,
-      title: "Mui (Material UI)",
-      logo: assets.MuiLogo,
+      order: 4,
+      title: "React Query",
+      logo: assets.BootstrapLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 2,
-      title: "PrimeReact",
-      logo: assets.PrimeReactLogo,
+      order: 5,
+      title: "Axios(Rest APIs)",
+      logo: assets.SassLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
   ],
   [
     {
-      order: 3,
-      title: "Tailwind CSS",
-      logo: assets.TailwindLogo,
-      dataAOS: "fade-up",
-      dataAOS_delay: 500,
-    },
-    {
       order: 4,
-      title: "Bootstrap (React)",
+      title: "Git/Hub",
       logo: assets.BootstrapLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
@@ -154,8 +148,35 @@ export const toolsAndLibraries = [
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
+    {
+      order: 5,
+      title: "Vercel / Netlify / Heroku",
+      logo: assets.SassLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
   ],
   [
+    {
+      order: 4,
+      title: "Basic Photoshop / Canva / Figma",
+      logo: assets.BootstrapLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 4,
+      title: "Bootstrap (React)",
+      logo: assets.BootstrapLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 6,
+      title: "Google Firebase",
+      logo: assets.FirebaseLogo,
+      dataAOS: "fade-up",
+    },
     {
       order: 6,
       title: "Advance WordPress",
@@ -163,6 +184,8 @@ export const toolsAndLibraries = [
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
+  ],
+  [
     {
       order: 7,
       title: "WooCommerce",
@@ -170,11 +193,16 @@ export const toolsAndLibraries = [
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
-  ],
-  [
     {
       order: 8,
       title: "Jest",
+      logo: assets.JestLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 8,
+      title: "Testing Library",
       logo: assets.JestLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,

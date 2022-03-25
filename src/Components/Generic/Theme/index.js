@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Chip, Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import "./MuiComponents.css";
+import "./ThemeComponents.css";
 
 const useStyles = makeStyles((theme) => ({
   chip: {
@@ -35,12 +35,19 @@ export const SectionHeading = ({
   );
 };
 
-export const Heading2 = ({ children, dim, small, className, ...rest }) => {
+export const Heading2 = ({
+  children,
+  dim,
+  small,
+  center,
+  className,
+  ...rest
+}) => {
   return (
     <h4
       className={`text-textBright font-sans text-base ${className} ${
         dim && "text-textDim"
-      } ${small && "text-sm"}`}
+      } ${small && "text-sm"} ${center && "text-center"}`}
       {...rest}
     >
       {children}

@@ -7,12 +7,6 @@ import {
   Tooltip,
   makeStyles,
 } from "@material-ui/core";
-import {
-  Heading2,
-  MuiDivider,
-  SectionHeading,
-  Spacer,
-} from "../../Mui/MuiComponents";
 import { ReactComponent as Jotaro } from "./assets/extlink.svg";
 import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
@@ -21,6 +15,7 @@ import { projects, projectsWPDev } from "../_files/__projects";
 import LayoutContainer from "../Layout/LayoutContainer";
 import SectionLayout from "../Layout/SectionLayout";
 import "./RecentWork.css";
+import { Heading2, MuiDivider, SectionHeading, Spacer } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   root: {

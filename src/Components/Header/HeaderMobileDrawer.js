@@ -11,7 +11,7 @@ import LinkIcon from "@material-ui/icons/Link";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { EmailOutlined, KeyboardBackspace, WhatsApp } from "@material-ui/icons";
-import { Heading2, MuiButton } from "../../Mui/MuiComponents";
+import { Heading2, MuiButton } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   mobileNavList: {

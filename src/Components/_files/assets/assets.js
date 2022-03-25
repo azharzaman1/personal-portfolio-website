@@ -5,7 +5,7 @@ import ExpressLogo from "./expressjs-logo.png";
 
 import { ReactComponent as JavaScriptLogo } from "./javascript-logo.svg";
 import { ReactComponent as NextLogo } from "./next-logo.svg";
-import { ReactComponent as GatsbyLogo } from "./next-logo.svg";
+import { ReactComponent as GatsbyLogo } from "./gatsby-logo.svg";
 import { ReactComponent as HTMLLogo } from "./html-logo.svg";
 import { ReactComponent as CSSLogo } from "./css-logo.svg";
 import { ReactComponent as MuiLogo } from "./mui-logo.svg";

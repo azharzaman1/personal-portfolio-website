@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
-import { Heading2, MuiChip } from "../../Mui/MuiComponents";
 import { GitHub, Language, LinkedIn, Twitter } from "@material-ui/icons";
+import { Heading2, MuiChip } from "../Generic/Theme";
 
 const Footer = () => {
   return (

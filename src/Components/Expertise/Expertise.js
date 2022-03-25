@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import { Heading2, Heading3, SectionHeading } from "../../Mui/MuiComponents";
 import "./Expertise.css";
 import {
   frontEndExpertise,
@@ -9,6 +8,7 @@ import {
 } from "../_files/__expertise";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
+import { Heading2, Heading3, SectionHeading } from "../Generic/Theme";
 
 const Expertise = () => {
   return (
@@ -77,7 +77,7 @@ const ExpertiseItem = ({ item, ...rest }) => {
           </div>
 
           <div className="mt-3">
-            <Heading2 dim small>
+            <Heading2 dim small center>
               {item.title}
             </Heading2>
           </div>

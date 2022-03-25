@@ -8,7 +8,6 @@ import {
   useTheme,
   Button,
 } from "@material-ui/core";
-import { Heading2, SectionHeading } from "../../Mui/MuiComponents";
 import { WhatsApp, MailOutline } from "@material-ui/icons";
 import MuiPopup from "../RecentWork/MuiPopup";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
@@ -16,6 +15,7 @@ import { validateEmail } from "../../utils/utils";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
 import "./GetinTouch.css";
+import { Heading2, SectionHeading } from "../Generic/Theme";
 
 const GetinTouch = () => {
   const [fullName, setFullName] = useState("");
