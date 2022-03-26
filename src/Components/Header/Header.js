@@ -9,12 +9,12 @@ import {
   useTheme,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import Logo from "./logo.png";
 import { Link } from "react-scroll";
-import "./Header.css";
-import { MuiButton } from "../../Mui/MuiComponents";
-import MobileSideNav from "./HeaderMobileDrawer";
 import { Link as RouterLink } from "react-router-dom";
+import Logo from "./logo.png";
+import MobileSideNav from "./HeaderMobileDrawer";
+import { MuiButton } from "../../Mui/MuiComponents";
+import "./Header.css";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -130,7 +130,7 @@ const Navigation = () => {
               fontSize="small"
               // link="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
             >
-              Resume
+              Résumé
             </MuiButton>
           </RouterLink>
         </Grid>

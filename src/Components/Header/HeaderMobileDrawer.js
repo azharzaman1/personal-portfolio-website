@@ -13,7 +13,6 @@ import {
   WhatsApp,
 } from "@material-ui/icons";
 import { Grid, IconButton } from "@material-ui/core";
-import LinkIcon from "@material-ui/icons/Link";
 import { Heading2, MuiButton } from "../../Mui/MuiComponents";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
@@ -77,25 +76,21 @@ export default function MobileSideNav({ open, closeDrawer }) {
             <Grid item container direction="column">
               <List component="nav" className={`${c.mobileNavList}`}>
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="About me"
                   to="about-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="Expertise"
                   to="expertise-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="Recent Work"
                   to="portfolio-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="Get in touch"
                   to="getintouch-section-scroll-anchor"
                   closeDrawer={closeDrawer}
@@ -113,7 +108,7 @@ export default function MobileSideNav({ open, closeDrawer }) {
                       className={`${c.mobileNavHeaderButton}`}
                       icon={<Description />}
                     >
-                      Resume
+                      Résumé
                     </MuiButton>
                   </RouterLink>
                 </Grid>
