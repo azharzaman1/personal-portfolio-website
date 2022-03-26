@@ -1,9 +1,8 @@
-import { Grid, useTheme } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { GitHub, Language, LinkedIn, Twitter } from "@material-ui/icons";
-import { Heading2, MuiChip } from "../Generic/Theme";
+import { MuiChip } from "../Generic/Theme";
 
 const Footer = () => {
-  const theme = useTheme();
   return (
     <div
       className={`footerSection mt-48 p-4`}
