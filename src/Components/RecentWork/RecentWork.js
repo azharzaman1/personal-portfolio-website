@@ -14,8 +14,8 @@ import { ReactComponent as WPLogo } from "./assets/wp.svg";
 import { projects, projectsWPDev } from "../_files/__projects";
 import LayoutContainer from "../Layout/LayoutContainer";
 import SectionLayout from "../Layout/SectionLayout";
-import "./RecentWork.css";
 import { Heading2, MuiDivider, SectionHeading, Spacer } from "../Generic/Theme";
+import "./RecentWork.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -118,7 +118,10 @@ const PortfolioProject = ({
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noreferrer">
                       <IconButton>
-                        <GitHub className="text-[#e23173]" fontSize="small" />
+                        <GitHub
+                          className="text-[#e2e2e29d] text-opacity-90"
+                          fontSize="small"
+                        />
                       </IconButton>
                     </a>
                   )}
@@ -126,7 +129,7 @@ const PortfolioProject = ({
                   {enableGallery && (
                     <IconButton>
                       <ViewCarouselOutlined
-                        className="text-[#e23173]"
+                        className="text-[#e2e2e29d] text-opacity-90"
                         fontSize="medium"
                       />
                     </IconButton>
@@ -135,7 +138,7 @@ const PortfolioProject = ({
                   {project.src && (
                     <a href={project.src} target="_blank" rel="noreferrer">
                       <IconButton>
-                        <Jotaro className="text-[#e23173]" width="17px" />
+                        <Jotaro width="17px" />
                       </IconButton>
                     </a>
                   )}
@@ -157,8 +160,8 @@ const PortfolioProject = ({
             >
               {project.techsLogos.map((tech, i) => (
                 <Grid item key={Math.random() * i}>
-                  <div className="h-5 flex items-center justify-center mt-3">
-                    <Tooltip title={tech?.title} placement="top">
+                  <div className="h-5 flex items-center justify-center mt-3 cursor-pointer">
+                    <Tooltip title={tech?.title} placement="top" arrow>
                       {tech.isImage ? (
                         <img src={tech.Logo} alt="." className="w-6" />
                       ) : (

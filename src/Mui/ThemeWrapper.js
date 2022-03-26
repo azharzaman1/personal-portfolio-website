@@ -1,5 +1,6 @@
 import React from "react";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import zIndex from "@material-ui/core/styles/zIndex";
 
 const ThemeWrapper = ({ children, theme }) => {
   const colorTheme = createTheme({
@@ -12,6 +13,7 @@ const ThemeWrapper = ({ children, theme }) => {
       secondary: {
         main: "#ec4884",
         light: "#f06196",
+        dark: "#e23173",
       },
 
       background: {
@@ -55,11 +57,17 @@ const ThemeWrapper = ({ children, theme }) => {
           color: "rgba(255,255,255,0.8)",
         },
       },
-    },
-    props: {
-      // MuiButton: {
-      //   disableRipple: true,
-      // },
+      MuiTooltip: {
+        tooltip: {
+          backgroundColor: "#fff",
+          color: "#333333",
+          fontSize: 12,
+          boxShadow: "0px 0 15px 0px rgba(255,255,255,0.8)",
+        },
+        popperArrow: {
+          fill: "#fff",
+        },
+      },
     },
   });
   return (

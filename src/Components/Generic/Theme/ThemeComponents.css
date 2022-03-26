@@ -34,7 +34,7 @@
 
 .MuiButton:hover {
   background-color: var(--secondary) !important;
-  color: var(--text-bright) !important;
+  color: white !important;
   transition: color 250ms, background-color 250ms !important;
 }
 

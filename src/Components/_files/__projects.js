@@ -208,7 +208,7 @@ export const projects = [
     logo: Logos.MyLogo,
     logoAlt: "Azhar Logo",
     // github: "https://github.com/azharzaman1/personal-portfolio-website",
-    src: "https://azharzaman.com",
+    // src: "https://azharzaman.com",
     desc: "I built my personal portfolio website on ReactJs to showcase my skill-set and recent work. Making this website simple but expressive was my first priority. And I believe it meet all the requirements of an elegant design website.",
     techsLogos: [
       {
