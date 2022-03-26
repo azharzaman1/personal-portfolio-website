@@ -46,6 +46,10 @@ export const projects = [
         Logo: <assets.MuiLogo className="w-5 h-5" />,
       },
       { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
+      {
+        title: "react-query",
+        Logo: <assets.ReactQueryLogo className="w-5 h-5" />,
+      },
     ],
     logoClasses: "w-10 -translate-y-2",
   },
@@ -129,6 +133,10 @@ export const projects = [
         Logo: <assets.MuiLogo className="w-5 h-5" />,
       },
       { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
+      {
+        title: "react-query",
+        Logo: <assets.ReactQueryLogo className="w-5 h-5" />,
+      },
     ],
     logoClasses: "w-10 -translate-y-2",
   },
@@ -219,6 +227,36 @@ export const projects = [
   },
 ];
 
+export const projectsWPDev = [
+  {
+    order: 1,
+    title: "Multi-vendor Marketplace | Peeeko",
+    logo: "wp",
+    // src: "https://peeeko.com",
+    wooLogo: true,
+    desc: "Built a Multi-vendor Marketplace for Peeeko (Pvt) Ltd. developed sepecifically for females. This marketplace forms a One Window Solution to serve all Needs of Females of all Ages.",
+    dataAOS: "fade-up",
+  },
+  {
+    order: 2,
+    title: "Agency Bussiness Site | PlanNative",
+    logo: "wp",
+    src: "https://plannative.com",
+    wooLogo: false,
+    desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
+    dataAOS: "fade-up",
+  },
+  {
+    order: 3,
+    title: "Business Site | BRPakistan",
+    logo: "wp",
+    // src: "http://brpakistan.com/",
+    wooLogo: false,
+    desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
+    dataAOS: "fade-up",
+  },
+];
+
 // {
 //   order: 5,
 //   title: "Netflix demo",
@@ -250,33 +288,3 @@ export const projects = [
   dataAOS: "fade-up",
 },
 */
-
-export const projectsWPDev = [
-  {
-    order: 1,
-    title: "Multi-vendor Marketplace | Peeeko",
-    logo: "wp",
-    // src: "https://peeeko.com",
-    wooLogo: true,
-    desc: "Built a Multi-vendor Marketplace for Peeeko (Pvt) Ltd. developed sepecifically for females. This marketplace forms a One Window Solution to serve all Needs of Females of all Ages.",
-    dataAOS: "fade-up",
-  },
-  {
-    order: 2,
-    title: "Agency Bussiness Site | PlanNative",
-    logo: "wp",
-    src: "https://plannative.com",
-    wooLogo: false,
-    desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
-    dataAOS: "fade-up",
-  },
-  {
-    order: 3,
-    title: "Business Site | BRPakistan",
-    logo: "wp",
-    // src: "http://brpakistan.com/",
-    wooLogo: false,
-    desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
-    dataAOS: "fade-up",
-  },
-];

@@ -26,6 +26,14 @@ import { ReactComponent as NextLogo2 } from "./next2-logo.svg";
 import { ReactComponent as StripeLogo } from "./stripe.svg";
 import { ReactComponent as MapboxLogo } from "./mapbox-logo.svg";
 
+import { ReactComponent as AxiosLogo } from "./axios-logo.svg";
+import { ReactComponent as CanvaLogo } from "./canva-logo.svg";
+import { ReactComponent as GtihubLogo } from "./github-logo.svg";
+import { ReactComponent as NetlifyLogo } from "./netlify-logo.svg";
+import { ReactComponent as ReactQueryLogo } from "./react-query-logo.svg";
+
+import TestingLibLogo from "./testing-lib.png";
+
 const assets = {
   ReactLogo,
   MongoLogo,
@@ -51,6 +59,13 @@ const assets = {
   NextLogo2,
   StripeLogo,
   MapboxLogo,
+
+  AxiosLogo,
+  CanvaLogo,
+  GtihubLogo,
+  TestingLibLogo,
+  NetlifyLogo,
+  ReactQueryLogo,
 };
 
 export default assets;

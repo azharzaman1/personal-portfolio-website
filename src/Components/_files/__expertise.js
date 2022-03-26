@@ -121,14 +121,14 @@ export const toolsAndLibraries = [
     {
       order: 4,
       title: "React Query",
-      logo: assets.BootstrapLogo,
+      logo: assets.ReactQueryLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       order: 5,
       title: "Axios(Rest APIs)",
-      logo: assets.SassLogo,
+      logo: assets.AxiosLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -137,7 +137,7 @@ export const toolsAndLibraries = [
     {
       order: 4,
       title: "Git/Hub",
-      logo: assets.BootstrapLogo,
+      logo: assets.GtihubLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -151,7 +151,7 @@ export const toolsAndLibraries = [
     {
       order: 5,
       title: "Vercel / Netlify / Heroku",
-      logo: assets.SassLogo,
+      logo: assets.NetlifyLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -160,7 +160,7 @@ export const toolsAndLibraries = [
     {
       order: 4,
       title: "Basic Photoshop / Canva / Figma",
-      logo: assets.BootstrapLogo,
+      logo: assets.CanvaLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -203,7 +203,7 @@ export const toolsAndLibraries = [
     {
       order: 8,
       title: "Testing Library",
-      logo: assets.JestLogo,
+      logoImg: assets.TestingLibLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
