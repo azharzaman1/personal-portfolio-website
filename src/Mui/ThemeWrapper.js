@@ -1,6 +1,5 @@
 import React from "react";
 import { createTheme, ThemeProvider } from "@material-ui/core";
-import zIndex from "@material-ui/core/styles/zIndex";
 
 const ThemeWrapper = ({ children, theme }) => {
   const colorTheme = createTheme({

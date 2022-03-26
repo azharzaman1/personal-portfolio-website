@@ -63,19 +63,6 @@ export const Heading3 = ({ children, className, ...rest }) => {
   );
 };
 
-export const Heading3 = ({ children, className }) => {
-  return (
-    <h4
-      data-aos="fade-up"
-      data-aos-delay="350"
-      data-aos-duration="900"
-      className={`MuiHeading3 ${className}`}
-    >
-      {children}
-    </h4>
-  );
-};
-
 export const MuiButton = ({
   children,
   variant,
