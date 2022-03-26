@@ -4,18 +4,23 @@
   --primary-dark: #03045e;
   --secondary: #ec4884;
   --secondary-light: #f06196;
+  --secondary-dark: #e23173;
   --background-color: #03045e;
   --background-light: #023e8a;
   --text-bright: #e8fdf9;
   --text: #e2e2e2;
+  --text-dim: #e2e2e29d;
   --codefont: "Fira Code", monospace !important;
   --primaryFont: "Inter", "Roboto", sans-serif !important;
 }
 
 body {
-  font-family: var(--primaryFont);
   color: var(--text);
   opacity: 0.8;
+}
+
+body * {
+  font-family: var(--primaryFont);
 }
 
 .dimText {

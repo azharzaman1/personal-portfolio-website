@@ -1,54 +1,20 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  Container,
-  Grid,
-  makeStyles,
-} from "@material-ui/core";
-import { Heading2, MuiButton, SectionHeading } from "../../Mui/MuiComponents";
+import { Card, CardContent, Grid } from "@material-ui/core";
 import ImageComparison from "./ImageComparison";
 import { Link } from "react-scroll";
 import { ICanCreate } from "../_files/__iCanCreate";
-import "./IcanCreate.css";
-
-// `
-
-const useStyles = makeStyles((theme) => ({
-  iCC__Section: {
-    marginTop: "10rem",
-    marginBottom: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
-  },
-
-  root: {
-    padding: "0 150px",
-    [theme.breakpoints.down("lg")]: {
-      padding: "0 125px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "0 50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "0 24px",
-    },
-  },
-
-  iCC__Card: {
-    borderRadius: 5,
-  },
-}));
+import SectionLayout from "../Layout/SectionLayout";
+import LayoutContainer from "../Layout/LayoutContainer";
+import { Heading2, MuiButton, SectionHeading } from "../Generic/Theme";
 
 const IcanCreate = () => {
-  const c = useStyles();
-
   return (
-    <div className={`iCanCreateSection ${c.iCC__Section}`}>
-      <Container className={c.root} maxWidth="lg">
-        <SectionHeading type="2">What I can build for you!</SectionHeading>
-        <Grid container spacing={4} className="iCC__contentContainer">
+    <SectionLayout className={`iCanCreateSection`}>
+      <LayoutContainer maxWidth="lg">
+        <div className="mb-6">
+          <SectionHeading type="2">What I can build for you!</SectionHeading>
+        </div>
+
+        <Grid container spacing={4} className="mt-3">
           {ICanCreate.map((item, i) => (
             <ICanCreateCard
               key={i}
@@ -64,8 +30,8 @@ const IcanCreate = () => {
             />
           ))}
         </Grid>
-      </Container>
-    </div>
+      </LayoutContainer>
+    </SectionLayout>
   );
 };
 
@@ -83,43 +49,57 @@ const ICanCreateCard = ({
   feature6,
   duration,
 }) => {
-  const c = useStyles();
-
   return (
     <Grid item xs={12} sm={6} data-aos="fade-up">
-      <Card elevation={2} className={`iCC__Card ${c.iCC__Card}`}>
+      <Card elevation={2} className="rounded-md">
         <ImageComparison
           imgUrl1={imgUrl1}
           imgUrl2={imgUrl2}
           imgAlt1={imgAlt1}
           imgAlt2={imgAlt2}
         />
-        <CardContent className={c.iCC__CContent}>
-          <Heading2 className="iCC__cHeading">{title}</Heading2>
+        <CardContent>
+          <Heading2 className="m-0">{title}</Heading2>
 
-          <ul className="iCC__cFeatures">
+          <ul className="pl-4">
             <Grid container direction="row">
               <Grid item container direction="column" xs={6}>
-                <Grid item>{feature1 && <li>{feature1}</li>}</Grid>
-                <Grid item>{feature2 && <li>{feature2}</li>}</Grid>
-                <Grid item>{feature3 && <li>{feature3}</li>}</Grid>
+                <Grid item>
+                  {feature1 && <li className="mt-1.5 text-sm">{feature1}</li>}
+                </Grid>
+                <Grid item>
+                  {feature2 && <li className="mt-1.5 text-sm">{feature2}</li>}
+                </Grid>
+                <Grid item>
+                  {feature3 && <li className="mt-1.5 text-sm">{feature3}</li>}
+                </Grid>
               </Grid>
               <Grid item container direction="column" xs={6}>
-                <Grid item>{feature4 && <li>{feature4}</li>}</Grid>
-                <Grid item>{feature5 && <li>{feature5}</li>}</Grid>
-                <Grid item>{feature6 && <li>{feature6} ...</li>}</Grid>
+                <Grid item>
+                  {feature4 && <li className="mt-1.5 text-sm">{feature4}</li>}
+                </Grid>
+                <Grid item>
+                  {feature5 && <li className="mt-1.5 text-sm">{feature5}</li>}
+                </Grid>
+                <Grid item>
+                  {feature6 && (
+                    <li className="mt-1.5 text-sm">{feature6} ...</li>
+                  )}
+                </Grid>
               </Grid>
             </Grid>
           </ul>
-          <Link
-            to="getintouch-section-scroll-anchor"
-            duration={duration ? duration : 1750}
-            smooth={true}
-          >
-            <MuiButton size="small" variant="contained">
-              Book now
-            </MuiButton>
-          </Link>
+          <div className="mt-4">
+            <Link
+              to="getintouch-section-scroll-anchor"
+              smooth={true}
+              duration={duration ? duration : 1750}
+            >
+              <MuiButton size="small" variant="contained">
+                Book now
+              </MuiButton>
+            </Link>
+          </div>
         </CardContent>
       </Card>
     </Grid>

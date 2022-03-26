@@ -28,10 +28,6 @@
   flex-direction: column !important;
 }
 
-.getInTouch__form {
-  background-color: var(--background-light);
-}
-
 .getInTouchForm__heading {
   text-align: center;
   margin: 0 !important;
@@ -40,7 +36,7 @@
 
 .getInTouch__form input,
 .getInTouch__form textarea {
-  color: var(--text);
+  color: var(--text) !important;
   opacity: 0.85;
 }
 

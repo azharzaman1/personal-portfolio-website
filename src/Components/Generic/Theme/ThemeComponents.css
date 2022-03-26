@@ -4,28 +4,24 @@
   user-select: none !important;
 }
 
-.MuiHeading > span {
-  font-size: 14.5px !important;
-  margin-left: 3px;
-}
-
-.MuiHeading.type1 {
-  font-family: var(--codefont);
-  font-weight: 500 !important;
-}
-
-.MuiHeading.type2 {
-  font-size: 17px !important;
-  font-family: var(--primaryFont);
-  font-weight: 400 !important;
-  letter-spacing: 0.3px;
-  margin-left: 3px !important;
-}
-
 .MuiHeading2 {
-  color: rgb(236, 255, 253);
+  color: var(--text-bright);
   font-size: 17px;
-  user-select: none !important;
+  font-family: var(--primaryFont);
+}
+
+.MuiHeading2.dim {
+  color: var(--text-dim);
+}
+
+.MuiHeading2.small {
+  font-size: 15px;
+}
+
+.MuiHeading3 {
+  color: rgb(236, 255, 253);
+  font-size: 20px;
+  font-family: var(--primaryFont);
 }
 
 .MuiHeading3 {
@@ -46,7 +42,7 @@
 
 .MuiButton:hover {
   background-color: var(--secondary) !important;
-  color: var(--text-bright) !important;
+  color: white !important;
   transition: color 250ms, background-color 250ms !important;
 }
 

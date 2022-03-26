@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Chip, Divider, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import "./MuiComponents.css";
+import "./ThemeComponents.css";
 
 const useStyles = makeStyles((theme) => ({
   chip: {
@@ -14,26 +14,53 @@ export const SectionHeading = ({
   children,
   number,
   type,
-  className,
   aosDelay,
+  className,
 }) => {
   return (
     <Typography
       variant="h3"
-      className={`MuiHeading ${className} ${!type && "type1"} ${
-        type === "2" && "type2"
-      }`}
+      className={`MuiHeading ${!type && "font-code font-normal"} ${
+        type === "2" && "font-sans text-lg tracking-wide ml-1 font-normal"
+      } ${className}`}
       data-aos="fade-up"
+      data-aos-duration="750"
       data-aos-delay={aosDelay ? aosDelay : "0"}
-      data-aos-duration="900"
     >
-      {number && <span>{number}-</span>} {children}
+      {number && (
+        <span className="text-inherit font-medium font-code">{number}-</span>
+      )}{" "}
+      {children}
     </Typography>
   );
 };
 
-export const Heading2 = ({ children, className }) => {
-  return <h4 className={`MuiHeading2 ${className}`}>{children}</h4>;
+export const Heading2 = ({
+  children,
+  dim,
+  small,
+  center,
+  className,
+  ...rest
+}) => {
+  return (
+    <h4
+      className={`text-textBright font-sans text-base ${className} ${
+        dim && "text-textDim"
+      } ${small && "text-sm"} ${center && "text-center"}`}
+      {...rest}
+    >
+      {children}
+    </h4>
+  );
+};
+
+export const Heading3 = ({ children, className, ...rest }) => {
+  return (
+    <h2 className={`text-textBright text-xl font-sans ${className}`} {...rest}>
+      {children}
+    </h2>
+  );
 };
 
 export const Heading3 = ({ children, className }) => {
@@ -62,7 +89,7 @@ export const MuiButton = ({
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <Button
-        className={`MuiButton ${className} ${fontSize === "small" && "fs"}`}
+        className={`MuiButton ${fontSize === "small" && "fs"} ${className}`}
         color={!color ? "secondary" : color}
         variant={!variant ? "outlined" : variant}
         size={!size ? "large" : size}

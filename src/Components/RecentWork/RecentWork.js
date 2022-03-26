@@ -1,35 +1,23 @@
 import React from "react";
 import {
-  Container,
   Grid,
   Card,
-  makeStyles,
   CardContent,
   IconButton,
   Tooltip,
+  makeStyles,
 } from "@material-ui/core";
-import { ViewCarouselOutlined, GitHub, Lock } from "@material-ui/icons";
-import {
-  Heading2,
-  MuiDivider,
-  SectionHeading,
-  Spacer,
-} from "../../Mui/MuiComponents";
 import { ReactComponent as Jotaro } from "./assets/extlink.svg";
+import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
 import { ReactComponent as WPLogo } from "./assets/wp.svg";
 import { projects, projectsWPDev } from "../_files/__projects";
+import LayoutContainer from "../Layout/LayoutContainer";
+import SectionLayout from "../Layout/SectionLayout";
+import { Heading2, MuiDivider, SectionHeading, Spacer } from "../Generic/Theme";
 import "./RecentWork.css";
 
 const useStyles = makeStyles((theme) => ({
-  portfolioSection: {
-    marginTop: "5rem",
-    marginBottom: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
-  },
-
   root: {
     padding: "0 125px",
     [theme.breakpoints.down("lg")]: {
@@ -45,50 +33,42 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const RecentWork = () => {
-  const c = useStyles();
-
+  const classes = useStyles();
   return (
-    <div className={`portfolioSection ${c.portfolioSection}`}>
-      <Container className={c.root} maxWidth="lg">
-        <SectionHeading type="2" number="03">
-          What I have built!
-        </SectionHeading>
-        <Grid
-          container
-          spacing={3}
-          className="recentWork__contentSection"
-          justifyContent="center"
-        >
+    <SectionLayout className={`portfolioSection`}>
+      <LayoutContainer maxWidth="lg" className={classes.root}>
+        <div className="mb-5">
+          <SectionHeading type="2" number="03">
+            What I have built!
+          </SectionHeading>
+        </div>
+
+        <Grid container spacing={3} justifyContent="center" className="mt-6">
           {projects.map((project) => (
             <PortfolioProject
-              key={project.order}
               project={project}
+              key={project.order}
               data-aos="fade-up"
-              data-aos-delay={350}
+              data-aos-delay={400}
             />
           ))}
         </Grid>
 
-        <MuiDivider marginTop="45px" marginBottom="29px" width="37%" />
+        <MuiDivider marginTop="45px" marginBottom="29px" width="33%" />
 
-        <Grid
-          container
-          spacing={3}
-          justifyContent="center"
-          className="recentWork__contentSection"
-        >
+        <Grid container spacing={3} justifyContent="center" className="mt-3">
           {projectsWPDev.map((project) => (
             <PortfolioProject
               project={project}
               key={project.order}
-              className="cms-dev-projects-card"
               data-aos="fade-up"
-              data-aos-delay={350}
+              data-aos-delay={400}
+              className="min-h-[280px]"
             />
           ))}
         </Grid>
-      </Container>
-    </div>
+      </LayoutContainer>
+    </SectionLayout>
   );
 };
 
@@ -102,29 +82,30 @@ const PortfolioProject = ({
   return (
     <>
       <Grid item xs={12} sm={6} md={4} {...rest}>
-        <Card className={`recentWork__card ${className}`}>
+        <Card
+          className={`recentWork__Card flex flex-col justify-start min-h-[350px] pt-4 px-4 ${className}`}
+        >
           {!disabledHeader && (
             <Grid
               container
-              className="recentWork__cardHeader"
+              className="pt-2 pb-0 px-4 max-h-[52px] flex items-center justify-between"
               justifyContent="space-between"
             >
               <Grid item>
                 {project.logo === "wp" ? (
-                  <WPLogo
-                    width={project.wooLogo ? "110px" : "150px"}
-                    className="recentWork__cardWpLogo"
-                  />
+                  // wp project logo
+                  <div className="flex space-x-1 items-center">
+                    <WPLogo width="130px" className="h-[40px]" />
+                    {project.wooLogo && <WooLogo />}
+                  </div>
                 ) : (
+                  // coding-project
                   <img
                     src={project.logo}
                     alt={project.logoAlt}
-                    height={project.logoHeight ? project.logoHeight : "30px"}
-                    style={{ transform: `translateY(-${project.translateY})` }}
+                    className={project.logoClasses}
                   />
                 )}
-
-                {project.wooLogo && <WooLogo />}
               </Grid>
               <Grid
                 item
@@ -136,70 +117,58 @@ const PortfolioProject = ({
                 <Grid item>
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noreferrer">
-                      <Tooltip title="Source Code" placement="top" arrow>
-                        <IconButton>
-                          <GitHub
-                            className="recentWork__cardIcons"
-                            fontSize="small"
-                          />
-                        </IconButton>
-                      </Tooltip>
+                      <IconButton>
+                        <GitHub
+                          className="text-[#e2e2e29d] text-opacity-90"
+                          fontSize="small"
+                        />
+                      </IconButton>
                     </a>
                   )}
 
                   {enableGallery && (
-                    <Tooltip title="Project Gallery" placement="top" arrow>
-                      <IconButton>
-                        <ViewCarouselOutlined
-                          className="recentWork__cardIcons"
-                          fontSize="medium"
-                        />
-                      </IconButton>
-                    </Tooltip>
+                    <IconButton>
+                      <ViewCarouselOutlined
+                        className="text-[#e2e2e29d] text-opacity-90"
+                        fontSize="medium"
+                      />
+                    </IconButton>
                   )}
 
                   {project.src && (
                     <a href={project.src} target="_blank" rel="noreferrer">
-                      <Tooltip title="Live Link" placement="top" arrow>
-                        <IconButton disabled={project.disableLink}>
-                          <Jotaro
-                            className="recentWork__cardIcons"
-                            width="17px"
-                          />
-                        </IconButton>
-                      </Tooltip>
-                    </a>
-                  )}
-                  {project.disableLink && (
-                    <Tooltip title="Private Project" placement="top" arrow>
                       <IconButton>
-                        <Lock
-                          fontSize="small"
-                          className="recentWork__cardIcons disabled"
-                        />
+                        <Jotaro width="17px" />
                       </IconButton>
-                    </Tooltip>
+                    </a>
                   )}
                 </Grid>
               </Grid>
             </Grid>
           )}
 
-          <CardContent className="recentWork__cardBody">
-            <Heading2 className="recentWork__cardTitle">
-              {project.title}
-            </Heading2>
-            <p>{project.desc}</p>
+          <CardContent className="px-3 mt-2 select-none border-t border-t-[#1456ad]">
+            <Heading2>{project.title}</Heading2>
+            <p className="mt-4">{project.desc}</p>
           </CardContent>
-          {project.techs ? (
+          {project.techsLogos ? (
             <Grid
               container
-              justifyContent="space-evenly"
-              className="recentWork__cardTechs"
+              justifyContent="flex-start"
+              alignItems="center"
+              className="px-4 pb-3 mt-auto font-code border-t border-t-[#1456ad] space-x-2.5"
             >
-              {project.techs.map((tech, i) => (
-                <Grid item key={i}>
-                  <p>{tech}</p>
+              {project.techsLogos.map((tech, i) => (
+                <Grid item key={Math.random() * i}>
+                  <div className="h-5 flex items-center justify-center mt-3 cursor-pointer">
+                    <Tooltip title={tech?.title} placement="top" arrow>
+                      {tech.isImage ? (
+                        <img src={tech.Logo} alt="." className="w-6" />
+                      ) : (
+                        tech.Logo
+                      )}
+                    </Tooltip>
+                  </div>
                 </Grid>
               ))}
             </Grid>

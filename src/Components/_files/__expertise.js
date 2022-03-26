@@ -1,195 +1,211 @@
-export const mernExpertise = [
-  {
-    key: 1,
-    title: "MongoDB",
-    progress: 90,
-    descriptions: [
-      "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents.",
-    ],
-  },
+import assets from "./assets/assets";
 
-  {
-    key: 2,
-    title: "ExpressJs",
-    progress: 90,
-    descriptions: [
-      "Express.js, or simply Express, is a back end web application framework for Node.js, designed for building web applications and robust RESTful APIs.",
-    ],
-  },
-  {
-    key: 3,
-    title: "ReactJs (Hooks)",
-    progress: 90,
-    descriptions: [
-      "React is world famous JavaScript library by Facebook Inc.",
-      "React makes it painless to create interactive, component-based and lightening fast UIs.",
-    ],
-  },
-  {
-    key: 4,
-    title: "NodeJs",
-    progress: 90,
-    descriptions: [
-      "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
-    ],
-  },
+export const mernExpertise = [
+  [
+    {
+      order: 0,
+      title: "MongoDB",
+      logo: assets.MongoLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 1,
+      title: "ExpressJs",
+      logoImg: assets.ExpressLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 2,
+      title: "ReactJs",
+      logo: assets.ReactLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 3,
+      title: "NodeJs",
+      logo: assets.NodeLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
 ];
 
 export const frontEndExpertise = [
-  {
-    key: 1,
-    title: "JavaScript (ES6+)",
-    descriptions: [
-      "JavaScript is most popular programming language till date",
-      "All the famous companies use JavaScript as a tool including Google, Amazon, PayPal, etc.",
-    ],
-  },
-  {
-    key: 2,
-    title: "ReactJs (Hooks)",
-    descriptions: [
-      "React is world famous JavaScript library by Facebook Inc.",
-      "React makes it painless to create interactive, component-based and lightening fast UIs.",
-    ],
-  },
-  {
-    key: 3,
-    title: "NextJs",
-    descriptions: [
-      "Next.js is a development framework built on top of Node.js enabling React based web applications functionalities.",
-      "Such as server-side rendering(SSR) and generating static websites(SSG).",
-    ],
-  },
-
-  {
-    key: 4,
-    title: "GatsbyJs",
-    descriptions: [
-      "Gatsby provides development teams an open source frontend framework for creating dynamic, optimized websites.",
-      "From marketing sites, to eCommerce stores, to documentation.",
-    ],
-  },
-
-  {
-    key: 5,
-    title: "HTML5 / CSS3",
-    descriptions: [
-      "HTML5 is a markup language used for structuring and presenting content on the World Wide Web.",
-      "Cascading Style Sheets(CSS) styles the document.",
-    ],
-  },
-  {
-    key: 6,
-    title: "Mui (Material UI)",
-    descriptions: [
-      "Material Design is a design language developed by Google in 2014.",
-      "Contains a set of high quality components for building rich, interactive user interfaces.",
-    ],
-  },
-  {
-    key: 7,
-    title: "PrimeReact",
-    descriptions: [
-      "Provides React UI Components with top-notch quality to help developer implement all UI in style, especially application invloving lot of data.",
-    ],
-  },
-  {
-    key: 8,
-    title: "Tailwind CSS",
-    descriptions: [
-      "Tailwind CSS is a utility-first CSS framework composed to build any design, directly in your markup. Makes development a breeze",
-    ],
-  },
-  {
-    key: 9,
-    title: "Bootstrap (react)",
-    descriptions: [
-      "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
-    ],
-  },
+  [
+    {
+      order: 0,
+      title: "JavaScript",
+      logo: assets.JavaScriptLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 1,
+      title: "ReactJs (Hooks)",
+      logo: assets.ReactLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 2,
+      title: "NextJs",
+      logo: assets.NextLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 3,
+      title: "GatsbyJs",
+      logo: assets.GatsbyLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 4,
+      title: "HTML5",
+      logo: assets.HTMLLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 5,
+      title: "CSS3",
+      logo: assets.CSSLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 6,
+      title: "Mui",
+      logo: assets.MuiLogo,
+      dataAOS: "fade-up",
+    },
+    {
+      order: 6,
+      title: "PrimeReact",
+      logo: assets.PrimeReactLogo,
+      dataAOS: "fade-up",
+    },
+  ],
+  [
+    {
+      order: 3,
+      title: "Tailwind CSS",
+      logo: assets.TailwindLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
 ];
 
 export const toolsAndLibraries = [
-  {
-    key: 1,
-    title: "Redux - Context",
-    descriptions: [
-      "Redux is an open-source JavaScript library for managing application state.",
-      "Redux is a predictable state container designed to help you write JavaScript apps.",
-    ],
-  },
-
-  {
-    key: 2,
-    title: "React Query",
-    descriptions: [
-      "React Query is configurable down to each observer instance of a query with knobs and options to fit every use-case.",
-    ],
-  },
-  {
-    key: 3,
-    title: "Axios (Rest APIs)",
-    descriptions: [
-      "Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase).",
-    ],
-  },
-
-  {
-    key: 4,
-    title: "Git/Hub",
-    descriptions: [
-      "Git is a free and open source distributed version control system",
-      "GitHub, Inc. is a provider of Internet hosting for software development and version control using Git.",
-    ],
-  },
-  {
-    key: 5,
-    title: "Sass / SCSS",
-    descriptions: [
-      "Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets. SassScript is the scripting language itself. Sass consists of two syntaxes.",
-    ],
-  },
-  {
-    key: 6,
-    title: "Vercel / Netlify / Heroku",
-    descriptions: [
-      "Vercel & Netlify are hosting platforms for frontend frameworks.",
-      "Heroku is a cloud platform as a service supporting several programming languages.",
-    ],
-  },
-  {
-    key: 7,
-    title: "AWS Amplify",
-    descriptions: [
-      "AWS Amplify is a set of purpose-built tools and features that lets frontend web and mobile developers quickly and easily build full-stack applications on AWS.",
-    ],
-  },
-  {
-    key: 8,
-    title: "Basic Photoshop / Figma / Canva",
-    descriptions: [
-      "These are all graphical tools, built and used for graphical illustrations, prototype building, data visualization, mockups preperations, etc.",
-    ],
-  },
-  {
-    key: 9,
-    title: "Google Firebase",
-    descriptions: [
-      "Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011",
-    ],
-  },
-  {
-    key: 10,
-    title: "Advance WordPress",
-    descriptions: [
-      "WordPress is a free, worlds most famous and open-source content management system, for creating next genration scalable sites.",
-    ],
-  },
-  {
-    key: 11,
-    title: "WooCommerce",
-    descriptions: [
-      "WooCommerce is an open-source e-commerce plugin for WordPress. It is designed for small to large-sized online merchants using WordPress.",
-    ],
-  },
+  [
+    {
+      order: 0,
+      title: "Redux - Context",
+      logo: assets.ReduxLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 4,
+      title: "React Query",
+      logo: assets.ReactQueryLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 5,
+      title: "Axios(Rest APIs)",
+      logo: assets.AxiosLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 4,
+      title: "Git/Hub",
+      logo: assets.GtihubLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 5,
+      title: "SCSS (Sass)",
+      logo: assets.SassLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 5,
+      title: "Vercel / Netlify / Heroku",
+      logo: assets.NetlifyLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 4,
+      title: "Basic Photoshop / Canva / Figma",
+      logo: assets.CanvaLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 4,
+      title: "Bootstrap (React)",
+      logo: assets.BootstrapLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 6,
+      title: "Google Firebase",
+      logo: assets.FirebaseLogo,
+      dataAOS: "fade-up",
+    },
+    {
+      order: 6,
+      title: "Advance WordPress",
+      logo: assets.WPLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
+  [
+    {
+      order: 7,
+      title: "WooCommerce",
+      logo: assets.WooLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 8,
+      title: "Jest",
+      logo: assets.JestLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+    {
+      order: 8,
+      title: "Testing Library",
+      logoImg: assets.TestingLibLogo,
+      dataAOS: "fade-up",
+      dataAOS_delay: 500,
+    },
+  ],
 ];

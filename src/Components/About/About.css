@@ -1,76 +1,4 @@
-#about-section-scroll {
-  color: var(--background);
-}
-
-.aboutSection {
-  user-select: none;
-}
-
-.aboutTagline {
-  margin-left: 3px !important;
-  opacity: 0;
-  transform: translateY(35px);
-}
-
-.aboutName {
-  margin-top: 10px !important;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
-  opacity: 0;
-  transform: translateY(35px);
-  color: var(--text-bright);
-  user-select: none;
-}
-
-.aboutDesc {
-  line-height: 23px;
-  letter-spacing: 0.15px;
-  max-width: 500px;
-  font-size: 15px;
-  opacity: 0;
-  transform: translateY(35px);
-  font-weight: 400;
-  font-family: var(--primaryFont);
-}
-
-.aboutButton {
-  opacity: 0;
-  transform: translateY(35px);
-}
-
-.aboutPic {
-  border-radius: 15px;
-  border-bottom-left-radius: 0;
-  transform: scale(0.85);
-  opacity: 0;
-  filter: saturate(0);
-  animation: fadeimage 0.5s linear 2.5s forwards;
-  padding: 2px;
-  border: 2px solid rgb(114, 114, 114);
-}
-
-.aboutPic:hover {
-  transition: filter 0.25s;
-  filter: saturate(1);
-}
-
-/* Animations */
-
-@media (max-width: 600px) {
-  .aboutName {
-    font-size: 40px;
-  }
-
-  .aboutSkill {
-    font-size: 16px;
-    border-left: 2px solid var(--secondary-light);
-  }
-
-  .aboutDesc {
-    font-size: 14px;
-  }
-}
-
-/* Anim 1 is missing because Heading is having AOS animation */
+/* anim 1 is missing because Heading is having AOS animation */
 
 .anim2 {
   animation: fadeup 0.5s linear 1.25s forwards !important;
@@ -100,21 +28,5 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes fadeimage {
-  0% {
-    opacity: 0;
-    transform: scale(0.85);
-  }
-  80% {
-    opacity: 0.9;
-    transform: scale(1.05);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
   }
 }

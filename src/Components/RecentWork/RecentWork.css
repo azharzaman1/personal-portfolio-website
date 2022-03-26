@@ -1,67 +1,8 @@
-.recentWork__contentSection {
-  margin-top: 0.75rem !important;
-}
-
-.recentWork__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 350px;
-  padding: 1.25rem 1rem 0;
+.recentWork__Card {
   transform: translateY(8px);
 }
 
-.cms-dev-projects-card {
-  min-height: 300px !important;
-}
-
-.recentWork__card:hover {
-  animation: transformUp 0.25s linear forwards;
-}
-
-@keyframes transformUp {
-  0% {
-    transform: translateY(8px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.recentWork__cardHeader {
-  padding: 8px 0 1rem;
-  max-height: 52px;
-}
-
-.recentWork__cardIcons {
-  color: var(--secondary) !important;
-}
-
-.recentWork__cardIcons.disabled {
-  color: var(--secondary-light) !important;
-}
-
-.recentWork__cardTitle {
-  margin-top: 15px !important;
-}
-
-.recentWork__cardBody {
-  border-top: 1px solid #1456ad;
-  padding: 0 12px !important;
-  user-select: none !important;
-}
-
-.recentWork__cardTechs {
-  border-top: 1px solid #1456ad;
-  font-family: var(--codefont);
-  margin-top: auto !important;
-}
-
-.recentWork__cardTechs p {
-  color: rgb(255, 134, 154) !important;
-  box-shadow: unset;
-}
-
-.recentWork__cardWpLogo {
-  height: 36.5px;
+.recentWork__Card:hover {
+  transform: translateY(0);
+  transition: transform 0.25s;
 }

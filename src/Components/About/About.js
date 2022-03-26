@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import { MuiButton, SectionHeading } from "../../Mui/MuiComponents";
-import myImage from "../../myPic.jpg";
 import TypeWriterEffect from "react-typewriter-effect";
 import "./About.css";
+import SectionLayout from "../Layout/SectionLayout";
+import myImage from "../../myPic.jpg";
+import { MuiButton, SectionHeading } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
-    marginTop: "9.25rem",
+    marginTop: "10rem",
     marginBottom: "7rem",
     [theme.breakpoints.down("sm")]: {
       marginTop: "7rem",
@@ -30,25 +31,29 @@ const useStyles = makeStyles((theme) => ({
 
   typeWritterContainer: {
     marginTop: "0.75rem",
+    marginBottom: "0.75rem",
   },
 
   buttonContainer: {
-    marginTop: "10px",
+    marginTop: 30,
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
     },
   },
 
+  left: {
+    paddingTop: 10,
+  },
   right: {
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
-      paddingTop: "35px",
+      paddingTop: 35,
     },
   },
 }));
 
 const About = () => {
-  const c = useStyles();
+  const classes = useStyles();
   const [typeWriterRef, setTypeWriterRef] = useState();
 
   useEffect(() => {
@@ -57,10 +62,16 @@ const About = () => {
 
   return (
     <>
-      <span id="about-section-scroll-anchor">Hy</span>
-      <div className={`aboutSection ${c.aboutSection}`}>
-        <Container maxWidth="lg" className={c.root}>
-          <SectionHeading type="2" aosDelay="800" className="aboutTagline">
+      <span id="about-section-scroll-anchor" className="bg-backgroundV1">
+        .
+      </span>
+      <SectionLayout className={`aboutSection ${classes.aboutSection}`}>
+        <Container maxWidth="lg" className={classes.root}>
+          <SectionHeading
+            type="2"
+            aosDelay="800"
+            className="aboutTagline opacity-0 -translate-y-9 ml-1"
+          >
             Hi, its
           </SectionHeading>
           <Grid container justifyContent="space-around" alignItems="center">
@@ -70,10 +81,13 @@ const About = () => {
               xs={12}
               sm={6}
               justifyContent="center"
-              className={c.left}
+              className={classes.left}
             >
               <Grid item xs={12}>
-                <Typography className="aboutName anim2" variant="h3">
+                <Typography
+                  className="aboutName opacity-0 -translate-y-9 text-textBright mt-2.5 anim2"
+                  variant="h3"
+                >
                   Azhar Zaman
                 </Typography>
               </Grid>
@@ -81,7 +95,7 @@ const About = () => {
               <Grid
                 item
                 xs={12}
-                className={c.typeWritterContainer}
+                className={classes.typeWritterContainer}
                 id="typeWritterRef"
               >
                 <TypeWriterEffect
@@ -99,26 +113,27 @@ const About = () => {
                     textDecoration: "underline",
                   }}
                   multiText={[
-                    "Intermediate level JavaScript developer",
+                    "Love to create things for web!",
+                    "Intermediate JavaScript developer",
                     "Proficient ReactJs developer",
-                    "Advance Wordpress expert",
-                    "eCommerce development expert",
+                    "MERN Stack developer",
+                    "Love to learn and try new stuff",
                   ]}
                 />
               </Grid>
 
               <Grid item xs={12}>
-                <p className="aboutDesc anim5">
-                  I'm working as a full-time Developer since early 2019,
+                <p className="aboutDesc opacity-0 -translate-y-9 leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans anim5">
+                  I'm working as full time Developer since early 2019,
                   specializing in some of the powerful and trending web
-                  technologies like JavaScript, ReactJs, NextJs, NodeJs,
-                  ExpressJs, MongoDB, etc. I build and design exceptional
-                  websites on every niche, web applications, custom themes &
-                  interfaces, eCommerce stores with custom functionalities.
+                  technologies like JavaScript, ReactJs, NextJs, NodeJs, MongoDB
+                  etclasses. I build and design exceptional websites on every
+                  niche, web applications, custom themes & interfaces, eCommerce
+                  stores with custom functionalaities.
                 </p>
               </Grid>
-              <Grid item container className={c.buttonContainer} xs={12}>
-                <Grid item className="aboutButton anim6">
+              <Grid item container className={classes.buttonContainer} xs={12}>
+                <Grid item className="opacity-0 -translate-y-9 anim6">
                   <MuiButton link="https://api.whatsapp.com/send?phone=+923170460466">
                     Get in touch
                   </MuiButton>
@@ -126,7 +141,7 @@ const About = () => {
               </Grid>
             </Grid>
             <Grid
-              className={c.right}
+              className={classes.right}
               item
               container
               xs={12}
@@ -134,19 +149,16 @@ const About = () => {
               justifyContent="flex-end"
             >
               <Grid item>
-                <div className="aboutPicBorder">
-                  <img
-                    className="aboutPic"
-                    src={myImage}
-                    width="275px"
-                    alt="My Pic"
-                  />
-                </div>
+                <img
+                  className="aboutPic w-[300px] sm:w-[250px] lg:w-[275px] rounded-2xl rounded-bl-none opacity-0 saturate-0 hover:saturate-100 p-0.5 border-2 border-gray-500 animate-scaleIn transition-all duration-300"
+                  src={myImage}
+                  alt="My Pic"
+                />
               </Grid>
             </Grid>
           </Grid>
         </Container>
-      </div>
+      </SectionLayout>
     </>
   );
 };

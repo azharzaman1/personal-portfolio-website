@@ -13,7 +13,7 @@ export const ICanCreate = [
     feature6: "Data rich UI",
   },
   {
-    title: "A multi-vendor eCommerce marketplace like Amazon | eBay",
+    title: "A multi-vendor eCommerce marketplace like Amazon",
     imgUrl1: assets.Amazon,
     imgUrl2: assets.eBay,
     feature1: "Complete vendors setup",

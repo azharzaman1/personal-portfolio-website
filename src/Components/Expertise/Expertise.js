@@ -1,150 +1,88 @@
-import { Card, Container, Grid, makeStyles } from "@material-ui/core";
-import { Heading2, Heading3, SectionHeading } from "../../Mui/MuiComponents";
+import React from "react";
+import { Grid } from "@material-ui/core";
+import "./Expertise.css";
 import {
   frontEndExpertise,
   mernExpertise,
   toolsAndLibraries,
 } from "../_files/__expertise";
-import "./Expertise.css";
-
-const useStyles = makeStyles((theme) => ({
-  expertiseSection: {
-    marginTop: "7rem",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "7rem",
-    },
-  },
-
-  root: {
-    padding: "0 150px",
-    [theme.breakpoints.down("lg")]: {
-      padding: "0 125px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "0 50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "0 24px",
-    },
-  },
-
-  expertise: {
-    padding: "0 1rem 1rem 1rem",
-    minHeight: 225,
-  },
-  expertiseGroup: {
-    margin: "2rem 0 0rem",
-  },
-}));
+import SectionLayout from "../Layout/SectionLayout";
+import LayoutContainer from "../Layout/LayoutContainer";
+import { Heading2, Heading3, SectionHeading } from "../Generic/Theme";
 
 const Expertise = () => {
-  const c = useStyles();
-
   return (
-    <div className={`expertiseSection ${c.expertiseSection}`}>
-      <Container className={c.root} maxWidth="lg">
+    <SectionLayout className="expertiseSection">
+      <LayoutContainer maxWidth="lg">
         <SectionHeading type="2" number="02">
           Tech stack and expertise
         </SectionHeading>
+        <ExpertiseGroup title="MERN" data={mernExpertise} />
+        <ExpertiseGroup title="Front End" data={frontEndExpertise} />
+        <ExpertiseGroup title="Tools and Libraries" data={toolsAndLibraries} />
+      </LayoutContainer>
+    </SectionLayout>
+  );
+};
 
-        <Grid
-          container
-          direction="column"
-          alignItems="center"
-          className={c.expertiseGroup}
+const ExpertiseGroup = ({ title, data }) => {
+  return (
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      className="expertiesGroup"
+    >
+      <Grid item>
+        <Heading3
+          className="expertiesGroup__heading"
+          data-aos="fade-up"
+          aos-data-delay={350}
         >
-          <Grid item>
-            <Heading3>MERN</Heading3>
-          </Grid>
-          <Grid
-            item
-            container
-            spacing={2}
-            justifyContent="center"
-            className="expertiseContent__container"
-          >
-            {mernExpertise.map((item) => (
+          {title}
+        </Heading3>
+      </Grid>
+      <Grid item container justifyContent="space-evenly">
+        {data.map((item, i) => (
+          <Grid key={i} item container justifyContent="center">
+            {item.map((item) => (
               <ExpertiseItem
-                key={item.key}
+                key={item.order}
                 item={item}
                 data-aos="fade-up"
-                data-aos-delay={350}
+                aos-data-delay={350}
               />
             ))}
           </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="column"
-          alignItems="center"
-          className={c.expertiseGroup}
-        >
-          <Grid item>
-            <Heading3>Front End</Heading3>
-          </Grid>
-          <Grid
-            item
-            container
-            spacing={2}
-            justifyContent="center"
-            className="expertiseContent__container"
-          >
-            {frontEndExpertise.map((item) => (
-              <ExpertiseItem
-                key={item.key}
-                item={item}
-                data-aos="fade-up"
-                data-aos-delay={350}
-              />
-            ))}
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="column"
-          alignItems="center"
-          className={c.expertiseGroup}
-        >
-          <Grid item>
-            <Heading3>Tools and Libraries</Heading3>
-          </Grid>
-          <Grid
-            item
-            container
-            spacing={2}
-            justifyContent="center"
-            className="expertiseContent__container"
-          >
-            {toolsAndLibraries.map((item) => (
-              <ExpertiseItem
-                key={item.key}
-                item={item}
-                data-aos="fade-up"
-                data-aos-delay={350}
-              />
-            ))}
-          </Grid>
-        </Grid>
-      </Container>
-    </div>
+        ))}
+      </Grid>
+    </Grid>
   );
 };
 
 const ExpertiseItem = ({ item, ...rest }) => {
-  const c = useStyles();
-
   return (
-    <Grid item xs={12} sm={6} md={4} {...rest}>
-      <Card className={`expertyCard ${c.expertise}`} elevation={1}>
-        <Heading2>{item.title}</Heading2>
-        <ul>
-          {item.descriptions.map((desc, i) => (
-            <li key={i}>{desc}</li>
-          ))}
-        </ul>
-      </Card>
+    <Grid item container xs={6} sm={4} md={3} justifyContent="center" {...rest}>
+      <Grid item>
+        <div className="expertiesItem">
+          <div className="exprtyItem__imageShadow">
+            <div
+              className={`expertiesItem__logoShape ${item.logoImg && "img"}`}
+            >
+              {item.logo && <item.logo className="h-16" />}
+              {item.logoImg && (
+                <img src={item.logoImg} alt={item?.logoAlt || "Logo"} />
+              )}
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <Heading2 dim small center>
+              {item.title}
+            </Heading2>
+          </div>
+        </div>
+      </Grid>
     </Grid>
   );
 };

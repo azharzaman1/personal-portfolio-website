@@ -6,17 +6,12 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import {
-  Description,
-  EmailOutlined,
-  KeyboardBackspace,
-  WhatsApp,
-} from "@material-ui/icons";
 import { Grid, IconButton } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
-import { Heading2, MuiButton } from "../../Mui/MuiComponents";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import { EmailOutlined, KeyboardBackspace, WhatsApp } from "@material-ui/icons";
+import { Heading2, MuiButton } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   mobileNavList: {
@@ -77,25 +72,21 @@ export default function MobileSideNav({ open, closeDrawer }) {
             <Grid item container direction="column">
               <List component="nav" className={`${c.mobileNavList}`}>
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="About me"
                   to="about-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="Expertise"
                   to="expertise-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="Recent Work"
                   to="portfolio-section-scroll-anchor"
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
-                  // icon={<Inbox color="secondary" />}
                   primaryText="Get in touch"
                   to="getintouch-section-scroll-anchor"
                   closeDrawer={closeDrawer}
@@ -111,7 +102,7 @@ export default function MobileSideNav({ open, closeDrawer }) {
                     <MuiButton
                       size="medium"
                       className={`${c.mobileNavHeaderButton}`}
-                      icon={<Description />}
+                      icon={<LinkIcon />}
                     >
                       Resume
                     </MuiButton>
