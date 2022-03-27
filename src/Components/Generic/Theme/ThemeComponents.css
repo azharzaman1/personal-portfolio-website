@@ -1,7 +1,6 @@
 .MuiHeading {
   color: var(--secondary-light) !important;
   font-size: 17px !important;
-  user-select: none !important;
 }
 
 .MuiHeading2 {
@@ -37,7 +36,6 @@
   font-size: 16px !important;
   font-weight: 500 !important;
   font-family: var(--primaryFont);
-  user-select: none !important;
 }
 
 .MuiButton:hover {

@@ -2,10 +2,11 @@ import React from "react";
 import ThemeWrapper from "./Mui/ThemeWrapper";
 import Homepage from "./Pages/Homepage";
 import { CssBaseline } from "@material-ui/core";
-import StaticAttachments from "./Components/StaticAttachments/StaticAttachments";
 import aos from "aos";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import StaticAttachments from "./Components/StaticAttachments/StaticAttachments";
+import StaticAttachmentsLeft from "./Components/StaticAttachments/StaticAttachmentsLeft";
 
 function App() {
   React.useEffect(() => {
@@ -20,10 +21,11 @@ function App() {
     <ThemeWrapper>
       <Router>
         <div className="App">
+          <StaticAttachmentsLeft />
           <Homepage />
+          <StaticAttachments />
         </div>
       </Router>
-      <StaticAttachments />
       <CssBaseline />
     </ThemeWrapper>
   );

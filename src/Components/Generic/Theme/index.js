@@ -45,7 +45,7 @@ export const Heading2 = ({
 }) => {
   return (
     <h4
-      className={`text-textBright font-sans text-base ${className} ${
+      className={`text-textBright font-sans text-xs md:text-sm lg:text-base ${className} ${
         dim && "text-textDim"
       } ${small && "text-sm"} ${center && "text-center"}`}
       {...rest}

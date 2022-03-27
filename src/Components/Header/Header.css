@@ -15,7 +15,6 @@
   color: var(--secondary-light);
   padding: 0 10px;
   cursor: pointer;
-  user-select: none;
 }
 
 .navItem > span {

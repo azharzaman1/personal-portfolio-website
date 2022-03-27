@@ -147,7 +147,7 @@ const PortfolioProject = ({
             </Grid>
           )}
 
-          <CardContent className="px-3 mt-2 select-none border-t border-t-[#1456ad]">
+          <CardContent className="px-3 mt-2 border-t border-t-[#1456ad]">
             <Heading2>{project.title}</Heading2>
             <p className="mt-4">{project.desc}</p>
           </CardContent>
