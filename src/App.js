@@ -6,7 +6,6 @@ import aos from "aos";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import StaticAttachments from "./Components/StaticAttachments/StaticAttachments";
-import StaticAttachmentsLeft from "./Components/StaticAttachments/StaticAttachmentsLeft";
 
 function App() {
   React.useEffect(() => {
@@ -21,7 +20,6 @@ function App() {
     <ThemeWrapper>
       <Router>
         <div className="App">
-          <StaticAttachmentsLeft />
           <Homepage />
           <StaticAttachments />
         </div>
