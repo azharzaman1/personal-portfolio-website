@@ -231,42 +231,9 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
-];
-
-export const projectsWPDev = [
   {
-    order: 1,
-    title: "Multi-vendor Marketplace | Peeeko",
-    logo: "wp",
-    // src: "https://peeeko.com",
-    wooLogo: true,
-    desc: "Built a Multi-vendor Marketplace for Peeeko (Pvt) Ltd. developed sepecifically for females. This marketplace forms a One Window Solution to serve all Needs of Females of all Ages.",
-    dataAOS: "fade-up",
-  },
-  {
-    order: 2,
-    title: "Agency Bussiness Site | PlanNative",
-    logo: "wp",
-    src: "https://plannative.com",
-    wooLogo: false,
-    desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
-    dataAOS: "fade-up",
-  },
-  {
-    order: 3,
-    title: "Business Site | BRPakistan",
-    logo: "wp",
-    // src: "http://brpakistan.com/",
-    wooLogo: false,
-    desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
-    dataAOS: "fade-up",
-  },
-];
-
-/*
-{
-    order: 5,
-    title: "Single Product eCommerce site(development)",
+    order: 7,
+    title: "Single Product eCommerce site (development)",
     logo: Logos.Code,
     logoAlt: "Library application logo",
     src: "https://single-product-ecommerce.vercel.app/",
@@ -299,36 +266,76 @@ export const projectsWPDev = [
     ],
     logoClasses: "w-10 -translate-y-2",
   },
-*/
+  {
+    order: 9,
+    title: "Netflix demo",
+    logo: Logos.NetflixLogo,
+    logoAlt: "Netflix Logo",
+    src: "https://netflixdemo.azharzaman.com/",
+    desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial(clever programmer), but finished on my own.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+    ],
+    logoClasses: "w-24 -translate-y-1",
+  },
+  {
+    order: 8,
+    title: "Google Demo",
+    logo: Logos.GoogleLogo,
+    logoAlt: "Google Logo",
+    logoHeight: "35px",
+    github: "https://github.com/azharzaman1/google-demo",
+    src: "https://googledemo.azharzaman.com/",
+    desc: "Built a Google demo with React finding its database from the original Google server. Material UI is serving as a design library.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+    ],
+    logoClasses: "w-24 -translate-y-1",
+  },
+];
 
-// {
-//   order: 5,
-//   title: "Netflix demo",
-//   logo: assets.NetflixLogo,
-//   logoAlt: "Netflix Logo",
-//   logoHeight: "35px",
-//   translateY: "3.5px",
-//   src: "https://netflixdemo.azharzaman.com/",
-//   desc: "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices. I decided to build it with react and used tmdb as realtime movie database. It fetch movies from tmdb and trailers when clicked from youtube with a special 'youtube-trailer' functionality.",
-//   tech1: "reactjs",
-//   tech2: "tmdb-api",
-//   tech3: "yt-trailers",
-//   dataAOS: "fade-up",
-// },
-
-/*
-{
-  order: 6,
-  title: "Basic Google Clone",
-  logo: assets.GoogleLogo,
-  logoAlt: "Google Logo",
-  logoHeight: "35px",
-  github: "https://github.com/azharzaman1/google-demo",
-  src: "https://googledemo.azharzaman.com/",
-  desc: "Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size.",
-  tech1: "reactjs",
-  tech2: "material-ui",
-  tech3: "firebase",
-  dataAOS: "fade-up",
-},
-*/
+// export const projectsWPDev = [
+//   {
+//     order: 1,
+//     title: "Multi-vendor Marketplace | Peeeko",
+//     logo: "wp",
+//     // src: "https://peeeko.com",
+//     wooLogo: true,
+//     desc: "Built a Multi-vendor Marketplace for Peeeko (Pvt) Ltd. developed sepecifically for females. This marketplace forms a One Window Solution to serve all Needs of Females of all Ages.",
+//     dataAOS: "fade-up",
+//   },
+//   {
+//     order: 2,
+//     title: "Agency Bussiness Site | PlanNative",
+//     logo: "wp",
+//     src: "https://plannative.com",
+//     wooLogo: false,
+//     desc: "Built enterprise level business website for Plan Native, which is Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts.",
+//     dataAOS: "fade-up",
+//   },
+//   {
+//     order: 3,
+//     title: "Business Site | BRPakistan",
+//     logo: "wp",
+//     // src: "http://brpakistan.com/",
+//     wooLogo: false,
+//     desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
+//     dataAOS: "fade-up",
+//   },
+// ];
