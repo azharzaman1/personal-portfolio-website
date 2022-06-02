@@ -113,23 +113,22 @@ const About = () => {
                     textDecoration: "underline",
                   }}
                   multiText={[
-                    "Love to create things for web!",
-                    "Intermediate JavaScript developer",
-                    "Proficient ReactJs developer",
+                    "JavaScript developer",
+                    "ReactJs developer",
                     "MERN Stack developer",
-                    "Love to learn and try new stuff",
+                    "Love to create things for web!",
                   ]}
                 />
               </Grid>
 
               <Grid item xs={12}>
                 <p className="aboutDesc opacity-0 -translate-y-9 leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans anim5">
-                  I'm working as full time Developer since early 2019,
-                  specializing in some of the powerful and trending web
-                  technologies like JavaScript, ReactJs, NextJs, NodeJs, MongoDB
-                  etclasses. I build and design exceptional websites on every
-                  niche, web applications, custom themes & interfaces, eCommerce
-                  stores with custom functionalaities.
+                  I am frontend and MERN stack developer, specializing in some
+                  of the powerful and trending web technologies like JavaScript,
+                  ReactJs, NextJs, NodeJs, MongoDB etclasses. I build and design
+                  exceptional websites on every niche, web applications, custom
+                  themes & interfaces, eCommerce stores with custom
+                  functionalities.
                 </p>
               </Grid>
               <Grid item container className={classes.buttonContainer} xs={12}>

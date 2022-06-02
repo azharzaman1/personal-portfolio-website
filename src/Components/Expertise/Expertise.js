@@ -64,7 +64,7 @@ const ExpertiseItem = ({ item, ...rest }) => {
   return (
     <Grid item container xs={6} sm={4} md={3} justifyContent="center" {...rest}>
       <Grid item>
-        <div className="expertiesItem">
+        <div className="expertiesItem mt-3 md:mt-2">
           <div className="exprtyItem__imageShadow">
             <div
               className={`expertiesItem__logoShape ${item.logoImg && "img"}`}

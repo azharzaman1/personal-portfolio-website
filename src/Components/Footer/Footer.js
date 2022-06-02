@@ -14,22 +14,22 @@ const Footer = () => {
           <MuiChip
             link="https://azharzaman.com"
             title="Website"
-            icon={<Language style={{ color: "#dbbdd5" }} fontSize="small" />}
+            icon={<Language style={{ color: "#e2e2e29d" }} fontSize="small" />}
           />
           <MuiChip
             link="https://github.com/azharzaman1"
             title="Github"
-            icon={<GitHub style={{ color: "#dbbdd5" }} fontSize="small" />}
+            icon={<GitHub style={{ color: "#e2e2e29d" }} fontSize="small" />}
           />
           <MuiChip
             link="https://www.linkedin.com/in/azhar-zaman/"
             title="LinkedIn"
-            icon={<LinkedIn style={{ color: "#dbbdd5" }} fontSize="small" />}
+            icon={<LinkedIn style={{ color: "#e2e2e29d" }} fontSize="small" />}
           />
           <MuiChip
             link="https://twitter.com/idrazhar"
             title="Twitter"
-            icon={<Twitter style={{ color: "#dbbdd5" }} fontSize="small" />}
+            icon={<Twitter style={{ color: "#e2e2e29d" }} fontSize="small" />}
           />
         </Grid>
       </Grid>
