@@ -43,8 +43,8 @@ const ExpertiseGroup = ({ title, data }) => {
         </Heading3>
       </Grid>
       <Grid item container justifyContent="space-evenly" spacing={1}>
-        {data.map((item, i) => (
-          <Grid key={i} item container justifyContent="center">
+        {data.map((item) => (
+          <Grid key={item.order} item container justifyContent="center">
             {item.map((item) => (
               <ExpertiseItem
                 key={item.order}

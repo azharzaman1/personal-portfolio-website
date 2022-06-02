@@ -45,14 +45,14 @@ export const frontEndExpertise = [
   ],
   [
     {
-      order: 1,
+      order: 0,
       title: "ReactJs (Hooks)",
       logo: assets.ReactLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 2,
+      order: 1,
       title: "NextJs",
       logo: assets.NextLogo,
       dataAOS: "fade-up",
@@ -61,21 +61,21 @@ export const frontEndExpertise = [
   ],
   [
     {
-      order: 4,
+      order: 0,
       title: "HTML5",
       logo: assets.HTMLLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 5,
+      order: 1,
       title: "CSS3",
       logo: assets.CSSLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 3,
+      order: 2,
       title: "Tailwind CSS",
       logo: assets.TailwindLogo,
       dataAOS: "fade-up",
@@ -84,14 +84,14 @@ export const frontEndExpertise = [
   ],
   [
     {
-      order: 4,
+      order: 0,
       title: "Bootstrap",
       logo: assets.BootstrapLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 6,
+      order: 1,
       title: "Mui",
       logo: assets.MuiLogo,
       dataAOS: "fade-up",
@@ -99,7 +99,7 @@ export const frontEndExpertise = [
   ],
   [
     {
-      order: 3,
+      order: 0,
       title: "Basic PS / Figma",
       logo: assets.CanvaLogo,
       dataAOS: "fade-up",
@@ -120,14 +120,14 @@ export const toolsAndLibraries = [
   ],
   [
     {
-      order: 4,
+      order: 0,
       title: "React Query",
       logo: assets.ReactQueryLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 4,
+      order: 1,
       title: "Bootstrap (React)",
       logo: assets.BootstrapLogo,
       dataAOS: "fade-up",
@@ -136,21 +136,21 @@ export const toolsAndLibraries = [
   ],
   [
     {
-      order: 5,
+      order: 0,
       title: "SCSS (Sass)",
       logo: assets.SassLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 5,
+      order: 1,
       title: "Vercel / Netlify / Heroku",
       logo: assets.NetlifyLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 4,
+      order: 2,
       title: "Git/Hub",
       logo: assets.GtihubLogo,
       dataAOS: "fade-up",
@@ -159,14 +159,14 @@ export const toolsAndLibraries = [
   ],
   [
     {
-      order: 8,
+      order: 0,
       title: "Jest / Testing Library",
       logoImg: assets.TestingLibLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
-      order: 6,
+      order: 1,
       title: "Google Firebase",
       logo: assets.FirebaseLogo,
       dataAOS: "fade-up",
@@ -174,7 +174,7 @@ export const toolsAndLibraries = [
   ],
   [
     {
-      order: 6,
+      order: 2,
       title: "WordPress",
       logo: assets.WPLogo,
       dataAOS: "fade-up",
