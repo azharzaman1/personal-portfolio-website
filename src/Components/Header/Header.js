@@ -44,10 +44,11 @@ const Header = () => {
       if (window.scrollY > 100) {
         handleShow(true);
       } else handleShow(false);
-    });
-    return () => {
+
+      return () => {
         window.removeEventListener("scroll");
       };
+    });
   });
 
   const closeDrawer = () => {
