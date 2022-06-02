@@ -11,10 +11,10 @@ import { ReactComponent as Jotaro } from "./assets/extlink.svg";
 import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
 import { ReactComponent as WooLogo } from "./assets/woo.svg";
 import { ReactComponent as WPLogo } from "./assets/wp.svg";
-import { projects, projectsWPDev } from "../_files/__projects";
+import { projects } from "../_files/__projects";
 import LayoutContainer from "../Layout/LayoutContainer";
 import SectionLayout from "../Layout/SectionLayout";
-import { Heading2, MuiDivider, SectionHeading, Spacer } from "../Generic/Theme";
+import { Heading2, SectionHeading, Spacer } from "../Generic/Theme";
 import "./RecentWork.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -53,7 +53,7 @@ const RecentWork = () => {
             />
           ))}
         </Grid>
-
+        {/* 
         <MuiDivider marginTop="45px" marginBottom="29px" width="33%" />
 
         <Grid container spacing={3} justifyContent="center" className="mt-3">
@@ -66,7 +66,7 @@ const RecentWork = () => {
               className="min-h-[280px]"
             />
           ))}
-        </Grid>
+        </Grid> */}
       </LayoutContainer>
     </SectionLayout>
   );

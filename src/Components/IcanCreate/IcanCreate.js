@@ -60,35 +60,6 @@ const ICanCreateCard = ({
         />
         <CardContent>
           <Heading2 className="m-0">{title}</Heading2>
-
-          <ul className="pl-4">
-            <Grid container direction="row">
-              <Grid item container direction="column" xs={6}>
-                <Grid item>
-                  {feature1 && <li className="mt-1.5 text-sm">{feature1}</li>}
-                </Grid>
-                <Grid item>
-                  {feature2 && <li className="mt-1.5 text-sm">{feature2}</li>}
-                </Grid>
-                <Grid item>
-                  {feature3 && <li className="mt-1.5 text-sm">{feature3}</li>}
-                </Grid>
-              </Grid>
-              <Grid item container direction="column" xs={6}>
-                <Grid item>
-                  {feature4 && <li className="mt-1.5 text-sm">{feature4}</li>}
-                </Grid>
-                <Grid item>
-                  {feature5 && <li className="mt-1.5 text-sm">{feature5}</li>}
-                </Grid>
-                <Grid item>
-                  {feature6 && (
-                    <li className="mt-1.5 text-sm">{feature6} ...</li>
-                  )}
-                </Grid>
-              </Grid>
-            </Grid>
-          </ul>
           <div className="mt-4">
             <Link
               to="getintouch-section-scroll-anchor"

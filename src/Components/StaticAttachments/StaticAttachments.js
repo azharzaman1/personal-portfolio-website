@@ -19,12 +19,12 @@ const StaticAttachments = () => {
         }}
       >
         <a
-          href="mailto:azharzaman.001@gmail.com"
+          href="mailto:azhar.works1@gmail.com"
           target="_blank"
           rel="noreferrer"
           id="attachment1"
         >
-          azharzaman.001@gmail.com
+          azhar.works1@gmail.com
         </a>
         <MuiDivider width="20%" color="#f06196" />
       </div>

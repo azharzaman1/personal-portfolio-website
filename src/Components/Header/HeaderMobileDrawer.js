@@ -123,7 +123,7 @@ export default function MobileSideNav({ open, closeDrawer }) {
                     size="medium"
                     icon={<EmailOutlined />}
                     className={`${c.mobileNavHeaderButton}`}
-                    link="mailto:azharzaman.001@gmail.com"
+                    link="mailto:azhar.works1@gmail.com"
                   >
                     Send email
                   </MuiButton>

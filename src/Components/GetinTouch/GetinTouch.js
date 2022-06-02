@@ -56,7 +56,7 @@ const GetinTouch = () => {
     e.preventDefault();
     if (validateEmail(email)) {
       setIsLoading(true);
-      await fetch("https://formsubmit.co/ajax/azharzaman.001@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/azhar.works1@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -149,8 +149,8 @@ const GetinTouch = () => {
               </Grid>
               <Divider orientation="vertical" flexItem variant="middle" />
               <Grid item className="getInTouchSection__leftEmails-emails">
-                <a href="mailto:azharzaman.001@gmail.com">
-                  azharzaman.001@gmail.com
+                <a href="mailto:azhar.works1@gmail.com">
+                  azhar.works1@gmail.com
                 </a>
               </Grid>
             </Grid>
