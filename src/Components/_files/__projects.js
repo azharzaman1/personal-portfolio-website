@@ -72,27 +72,27 @@ export const projects = [
     ],
     logoClasses: "w-10 -translate-y-2",
   },
-  {
-    order: 1,
-    title: "eCommerce Store Front",
-    logo: Logos.Code,
-    logoAlt: "eCommerce Store Front",
-    src: "https://ecommerce-store-front.vercel.app",
-    github: "https://github.com/azharzaman1/ecommerce-store-front",
-    desc: "Built an eCommerce store frontend, fetching database from Graphql API. Store is still under development, and there is lot to come.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "qraphql",
-        Logo: <GraphqlLogo className="w-5 h-5" />,
-      },
-    ],
-    logoClasses: "w-10 -translate-y-2",
-  },
+  // {
+  //   order: 1,
+  //   title: "eCommerce Store Front",
+  //   logo: Logos.Code,
+  //   logoAlt: "eCommerce Store Front",
+  //   src: "https://ecommerce-store-front.vercel.app",
+  //   github: "https://github.com/azharzaman1/ecommerce-store-front",
+  //   desc: "Built an eCommerce store frontend, fetching database from Graphql API. Store is still under development, and there is lot to come.",
+  //   techsLogos: [
+  //     {
+  //       title: "javascript",
+  //       Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+  //     },
+  //     { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+  //     {
+  //       title: "qraphql",
+  //       Logo: <GraphqlLogo className="w-5 h-5" />,
+  //     },
+  //   ],
+  //   logoClasses: "w-10 -translate-y-2",
+  // },
   {
     order: 2,
     title: "Covid-19 Tracker",
@@ -143,7 +143,7 @@ export const projects = [
   },
   {
     order: 4,
-    title: "Library Application",
+    title: "Library Application (development)",
     logo: Logos.Code,
     logoAlt: "Library application logo",
     src: "https://azhar-libraryapp.vercel.app/",
@@ -286,28 +286,28 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-1",
   },
-  {
-    order: 8,
-    title: "Google Demo",
-    logo: Logos.GoogleLogo,
-    logoAlt: "Google Logo",
-    logoHeight: "35px",
-    github: "https://github.com/azharzaman1/google-demo",
-    src: "https://googledemo.azharzaman.com/",
-    desc: "Built a Google demo with React finding its database from the original Google server. Material UI is serving as a design library.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
-      },
-    ],
-    logoClasses: "w-24 -translate-y-1",
-  },
+  // {
+  //   order: 8,
+  //   title: "Google Demo",
+  //   logo: Logos.GoogleLogo,
+  //   logoAlt: "Google Logo",
+  //   logoHeight: "35px",
+  //   github: "https://github.com/azharzaman1/google-demo",
+  //   src: "https://googledemo.azharzaman.com/",
+  //   desc: "Built a Google demo with React finding its database from the original Google server. Material UI is serving as a design library.",
+  //   techsLogos: [
+  //     {
+  //       title: "javascript",
+  //       Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+  //     },
+  //     { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+  //     {
+  //       title: "mui(material-ui)",
+  //       Logo: <assets.MuiLogo className="w-5 h-5" />,
+  //     },
+  //   ],
+  //   logoClasses: "w-24 -translate-y-1",
+  // },
 ];
 
 // export const projectsWPDev = [
