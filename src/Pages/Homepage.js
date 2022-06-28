@@ -15,9 +15,9 @@ const Homepage = () => {
       <About />
       <RSAnchor target="expertise-section-scroll-anchor" />
       <Expertise />
-      <IcanCreate />
       <RSAnchor target="portfolio-section-scroll-anchor" />
       <RecentWork />
+      <IcanCreate />    
       <RSAnchor target="getintouch-section-scroll-anchor" />
       <GetinTouch />
       <Footer />
