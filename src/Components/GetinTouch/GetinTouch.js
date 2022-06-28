@@ -103,7 +103,7 @@ const GetinTouch = () => {
       />
       <LayoutContainer>
         <div className="mb-5">
-          <SectionHeading type="2" number="03">
+          <SectionHeading type="2" number="04">
             Lets Work together!
           </SectionHeading>
         </div>
