@@ -64,7 +64,7 @@ const ICanCreateCard = ({
             <Link
               to="getintouch-section-scroll-anchor"
               smooth={true}
-              duration={duration ? duration : 1750}
+              duration={duration ? duration : 500}
             >
               <MuiButton size="small" variant="contained">
                 Book now
