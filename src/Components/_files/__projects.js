@@ -278,14 +278,14 @@ export const projects = [
   //      Logo: <assets.MuiLogo className="w-5 h-5" />,
  //     },
    //   { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
-      {
+  //    {
   //      Logo: <assets.ReduxLogo className="w-5 h-5" />,
-        title: "redux(toolkit)",
-      },
-      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
-    ],
-    logoClasses: "w-10 -translate-y-2",
-  },
+     //   title: "redux(toolkit)",
+     // },
+   //   { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
+  //  ],
+ //   logoClasses: "w-10 -translate-y-2",
+//  },
 
   // {
   //   order: 8,
