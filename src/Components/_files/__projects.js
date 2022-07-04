@@ -72,27 +72,27 @@ export const projects = [
     ],
     logoClasses: "w-10 -translate-y-2",
   },
-  // {
-  //   order: 1,
-  //   title: "eCommerce Store Front",
-  //   logo: Logos.Code,
-  //   logoAlt: "eCommerce Store Front",
-  //   src: "https://ecommerce-store-front.vercel.app",
-  //   github: "https://github.com/azharzaman1/ecommerce-store-front",
-  //   desc: "Built an eCommerce store frontend, fetching database from Graphql API. Store is still under development, and there is lot to come.",
-  //   techsLogos: [
-  //     {
-  //       title: "javascript",
-  //       Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-  //     },
-  //     { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-  //     {
-  //       title: "qraphql",
-  //       Logo: <GraphqlLogo className="w-5 h-5" />,
-  //     },
-  //   ],
-  //   logoClasses: "w-10 -translate-y-2",
-  // },
+  {
+     order: 1,
+    title: "eCommerce Store Front",
+    logo: Logos.Code,
+     logoAlt: "eCommerce Store Front",
+    src: "https://ecommerce-store-front.vercel.app",
+    github: "https://github.com/azharzaman1/ecommerce-store-front",
+    desc: "Built an eCommerce store frontend, fetching database from Graphql API. Store is still under development, and there is lot to come.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "qraphql",
+        Logo: <GraphqlLogo className="w-5 h-5" />,
+      },
+    ],
+    logoClasses: "w-10 -translate-y-2",
+  },
   {
     order: 2,
     title: "Covid-19 Tracker",
@@ -251,35 +251,35 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
-  {
-    order: 8,
-    title: "Single Product eCommerce site (development)",
-    logo: Logos.Code,
-    logoAlt: "Library application logo",
-    src: "https://single-product-ecommerce.vercel.app/",
-    github: "https://github.com/azharzaman1/single-product-site",
-    desc: "Building a simple eCommerce store like website for a friend, for health related product, with all basic eCommerce features like, cart, checkout, coupons, admin dashboard, reviews etc. Website is under production, there is lot to come.",
-    techsLogos: [
+ // {
+ //   order: 8,
+  //  title: "Single Product eCommerce site (development)",
+  //  logo: Logos.Code,
+ //   logoAlt: "Library application logo",
+ //   src: "https://single-product-ecommerce.vercel.app/",
+ //   github: "https://github.com/azharzaman1/single-product-site",
+  //  desc: "Building a simple eCommerce store like website for a friend, for health related product, with all basic eCommerce features like, cart, checkout, coupons, admin dashboard, reviews etc. Website is under production, there is lot to come.",
+  //  techsLogos: [
+//      {
+   //     title: "javascript",
+    //    Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+   //   },
+    //  { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+    //  {
+    //    title: "nextjs",
+       // Logo: (
+      //    <div className="bg-white rounded-full h-5 flex justify-center items-center">
+         //   <assets.NextLogo2 className="w-5 h-5" />
+     //     </div>
+   //     ),
+ //     },
+   //   {
+  //      title: "mui(material-ui)",
+  //      Logo: <assets.MuiLogo className="w-5 h-5" />,
+ //     },
+   //   { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "nextjs",
-        Logo: (
-          <div className="bg-white rounded-full h-5 flex justify-center items-center">
-            <assets.NextLogo2 className="w-5 h-5" />
-          </div>
-        ),
-      },
-      {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
-      },
-      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
-      {
-        Logo: <assets.ReduxLogo className="w-5 h-5" />,
+  //      Logo: <assets.ReduxLogo className="w-5 h-5" />,
         title: "redux(toolkit)",
       },
       { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
