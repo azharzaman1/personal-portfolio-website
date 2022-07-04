@@ -251,7 +251,10 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
- // {
+ ];
+
+ {/*
+// {
  //   order: 8,
   //  title: "Single Product eCommerce site (development)",
   //  logo: Logos.Code,
@@ -308,8 +311,8 @@ export const projects = [
   //     },
   //   ],
   //   logoClasses: "w-24 -translate-y-1",
-  // },
-];
+  // }
+*/}
 
 // export const projectsWPDev = [
 //   {
@@ -339,4 +342,3 @@ export const projects = [
 //     desc: "Built next level Business Website for BRPakistan, which is multi service company based in Pakistan. Main services include Business registration, Tax consultation etc.",
 //     dataAOS: "fade-up",
 //   },
-// ];
