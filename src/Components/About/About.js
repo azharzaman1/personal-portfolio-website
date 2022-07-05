@@ -3,7 +3,6 @@ import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import TypeWriterEffect from "react-typewriter-effect";
 import SectionLayout from "../Layout/SectionLayout";
-import myImage from "../../profile-pic.png";
 import Button from "../Generic/Theme/Button";
 import Heading from "../Generic/Theme/Heading";
 import Text from "../Generic/Theme/Text";
@@ -152,9 +151,9 @@ const About = () => {
             <Grid item>
               <img
                 className="aboutPic w-[300px] sm:w-[250px] lg:w-[275px] rounded-2xl rounded-bl-none opacity-0 p-0.5 animate-scaleIn transition-all duration-300"
-                src={myImage}
+                src="https://i.ibb.co/xMzXbyQ/profile-pic.png"
                 //saturate-0 hover:saturate-100 border-2 border-gray-500
-                alt="My Pic"
+                alt="Azhar Zaman"
               />
             </Grid>
           </Grid>
