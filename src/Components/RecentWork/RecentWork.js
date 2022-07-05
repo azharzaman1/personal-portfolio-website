@@ -14,8 +14,10 @@ import { ReactComponent as WPLogo } from "../_files/assets/wp.svg";
 import { projects } from "../_files/__projects";
 import LayoutContainer from "../Layout/LayoutContainer";
 import SectionLayout from "../Layout/SectionLayout";
-import { Heading2, SectionHeading, Spacer } from "../Generic/Theme";
+import Spacer from "../Generic/Spacer";
+import Heading from "../Generic/Theme/Heading";
 import "./RecentWork.css";
+import Text from "../Generic/Theme/Text";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,9 +41,9 @@ const RecentWork = () => {
       <LayoutContainer maxWidth="lg" className={classes.root}>
         <div className="mb-5">
           <div id="portfolio-section-scroll-anchor" />
-          <SectionHeading type="2" number="03">
+          <Heading index="03" type="section">
             What I have built!
-          </SectionHeading>
+          </Heading>
         </div>
 
         <Grid container spacing={3} justifyContent="center" className="mt-6">
@@ -135,8 +137,8 @@ const PortfolioProject = ({
           )}
 
           <CardContent className="px-3 mt-2 border-t border-t-[#1456ad]">
-            <Heading2>{project.title}</Heading2>
-            <p className="mt-4">{project.desc}</p>
+            <Heading type="secondary">{project.title}</Heading>
+            <Text className="mt-4">{project.desc}</Text>
           </CardContent>
           {project.techsLogos ? (
             <Grid
@@ -169,19 +171,18 @@ const PortfolioProject = ({
 };
 
 /* 
-        <MuiDivider marginTop="45px" marginBottom="29px" width="33%" />
-
-        <Grid container spacing={3} justifyContent="center" className="mt-3">
-          {projectsWPDev.map((project) => (
-            <PortfolioProject
-              project={project}
-              key={project.order}
-              data-aos="fade-up"
-              data-aos-delay={400}
-              className="min-h-[280px]"
-            />
-          ))}
-        </Grid> 
+  <Divider marginTop="45px" marginBottom="29px" width="33%" />
+  <Grid container spacing={3} justifyContent="center" className="mt-3">
+    {projectsWPDev.map((project) => (
+      <PortfolioProject
+        project={project}
+        key={project.order}
+        data-aos="fade-up"
+        data-aos-delay={400}
+        className="min-h-[280px]"
+      />
+    ))}
+  </Grid> 
 */
 
 export default RecentWork;

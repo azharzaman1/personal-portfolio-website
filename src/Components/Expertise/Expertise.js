@@ -8,16 +8,17 @@ import {
 } from "../_files/__expertise";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
-import { Heading2, Heading3, SectionHeading } from "../Generic/Theme";
+import Heading from "../Generic/Theme/Heading";
+import Text from "../Generic/Theme/Text";
 
 const Expertise = () => {
   return (
     <SectionLayout className="expertiseSection">
       <LayoutContainer maxWidth="lg">
         <div id="expertise-section-scroll-anchor" />
-        <SectionHeading type="2" number="02">
+        <Heading type="section" index="02">
           Tech stack and expertise
-        </SectionHeading>
+        </Heading>
         <ExpertiseGroup title="MERN" data={mernExpertise} />
         <ExpertiseGroup title="Front End" data={frontEndExpertise} />
         <ExpertiseGroup title="Tools and Libraries" data={toolsAndLibraries} />
@@ -35,20 +36,17 @@ const ExpertiseGroup = ({ title, data }) => {
       className="expertiesGroup"
     >
       <Grid item>
-        <Heading3
-          className="expertiesGroup__heading"
-          data-aos="fade-up"
-          aos-data-delay={350}
-        >
+        <Heading className="mb-8" data-aos="fade-up" aos-data-delay={350}>
           {title}
-        </Heading3>
+        </Heading>
       </Grid>
       <Grid item container justifyContent="space-evenly" spacing={1}>
-        {data.map((item) => (
-          <Grid key={item.order} item container justifyContent="center">
-            {item.map((item) => (
+        {data.map((item, i) => (
+          <Grid key={i} item container justifyContent="center">
+            {/* passing index as key coz, data is not going to be changed - safe */}
+            {item.map((item, ind) => (
               <ExpertiseItem
-                key={item.order}
+                key={ind}
                 item={item}
                 data-aos="fade-up"
                 aos-data-delay={350}
@@ -78,9 +76,9 @@ const ExpertiseItem = ({ item, ...rest }) => {
           </div>
 
           <div className="mt-3">
-            <Heading2 dim small center>
+            <Text type="heading" center>
               {item.title}
-            </Heading2>
+            </Text>
           </div>
         </div>
       </Grid>

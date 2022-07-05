@@ -13,9 +13,10 @@ import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import { validateEmail } from "../../utils/utils";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
-import "./GetinTouch.css";
-import { Heading2, SectionHeading } from "../Generic/Theme";
 import Button from "../Generic/Theme/Button";
+import Text from "../Generic/Theme/Text";
+import Heading from "../Generic/Theme/Heading";
+import "./GetinTouch.css";
 
 const GetinTouch = () => {
   const [fullName, setFullName] = useState("");
@@ -106,9 +107,9 @@ const GetinTouch = () => {
 
       <LayoutContainer>
         <div className="mb-5">
-          <SectionHeading type="2" number="04">
+          <Heading type="section" index="04">
             Lets Work together!
-          </SectionHeading>
+          </Heading>
           <div id="getintouch-section-scroll-anchor" />
         </div>
 
@@ -117,13 +118,7 @@ const GetinTouch = () => {
           justifyContent="center"
           className="getInTouchSection__content"
         >
-          <Grid
-            item
-            xs={12}
-            md={6}
-            className={`getInTouchSection__left`}
-            justifyContent="center"
-          >
+          <Grid item xs={12} md={6} className={`getInTouchSection__left`}>
             <Grid item xs={12} md={9}>
               <p
                 data-aos="fade-up"
@@ -199,9 +194,9 @@ const GetinTouch = () => {
               id="form"
               onSubmit={handleFormSubmit}
             >
-              <Heading2 className="getInTouchForm__heading">
+              <Text className="text-center mb-5">
                 Please fill in your details and hit Send
-              </Heading2>
+              </Text>
               <Grid item container direction="column">
                 <TextField
                   name="name"
@@ -209,8 +204,7 @@ const GetinTouch = () => {
                   variant="filled"
                   color="secondary"
                   fullWidth
-                  autoComplete={false}
-                  className={``}
+                  autoComplete="off"
                   value={fullName}
                   onChange={(e) => {
                     setFullName(e.target.value);
@@ -222,7 +216,7 @@ const GetinTouch = () => {
                   label="Email address"
                   variant="filled"
                   color="secondary"
-                  autoComplete={false}
+                  autoComplete="off"
                   className={`m-t-07rem`}
                   value={email}
                   onChange={(e) => {
@@ -315,10 +309,8 @@ const FormConfirmationDialog = ({ formStatusPopup, closePopup }) => {
             />
           </Grid>
           <Grid item>
-            <Heading2 className="getInTouch__popupHeading">
-              Your message is recieved
-            </Heading2>
-            <p style={{ textAlign: "center", margin: "0", marginTop: "10px" }}>
+            <Heading center>Your message is recieved</Heading>
+            <p className="text-center mt-2">
               I will get back to you as soon I see you message. <br /> For
               quicker response please
             </p>
@@ -341,7 +333,7 @@ const FormConfirmationDialog = ({ formStatusPopup, closePopup }) => {
                     className="bi bi-chevron-right h-3"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                     />
                   </svg>

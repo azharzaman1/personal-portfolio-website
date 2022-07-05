@@ -11,8 +11,8 @@ import LinkIcon from "@material-ui/icons/Link";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { EmailOutlined, KeyboardBackspace, WhatsApp } from "@material-ui/icons";
-import { Heading2 } from "../Generic/Theme";
 import Button from "../Generic/Theme/Button";
+import Text from "../Generic/Theme/Text";
 
 const useStyles = makeStyles((theme) => ({
   mobileNavList: {
@@ -64,7 +64,7 @@ export default function MobileSideNav({ open, closeDrawer }) {
                 />
               </IconButton>
               <Grid item>
-                <Heading2 className="mobileNav__headerHeading">Menu</Heading2>
+                <Text className="ml-3">Menu</Text>
               </Grid>
             </Grid>
 

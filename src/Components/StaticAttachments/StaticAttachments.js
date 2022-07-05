@@ -1,5 +1,5 @@
 import React from "react";
-import { MuiDivider } from "../Generic/Theme";
+import Divider from "../Generic/Theme/Divider";
 import "./StaticAttachments.css";
 
 const StaticAttachments = () => {
@@ -26,7 +26,7 @@ const StaticAttachments = () => {
         >
           azhar.works1@gmail.com
         </a>
-        <MuiDivider width="20%" color="#f06196" />
+        <Divider width="20%" color="#f06196" />
       </div>
     </div>
   );

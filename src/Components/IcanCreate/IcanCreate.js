@@ -4,18 +4,16 @@ import { Link } from "react-scroll";
 import { ICanCreate } from "../_files/__iCanCreate";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
-import { Heading2, SectionHeading } from "../Generic/Theme";
 import Button from "../Generic/Theme/Button";
+import Heading from "../Generic/Theme/Heading";
 
 const IcanCreate = () => {
   return (
     <SectionLayout className={`iCanCreateSection`}>
       <LayoutContainer maxWidth="lg">
-        <div className="mb-6">
-          <SectionHeading type="2">What I can build for you!</SectionHeading>
-        </div>
+        <Heading type="section">What I can build for you!</Heading>
 
-        <Grid container spacing={4} className="mt-3">
+        <Grid container spacing={4} className="!mt-4">
           {ICanCreate.map((item, i) => (
             <ICanCreateCard
               key={i}
@@ -42,12 +40,6 @@ const ICanCreateCard = ({
   imgUrl2,
   imgAlt1,
   imgAlt2,
-  feature1,
-  feature2,
-  feature3,
-  feature4,
-  feature5,
-  feature6,
   duration,
 }) => {
   return (
@@ -60,7 +52,9 @@ const ICanCreateCard = ({
           imgAlt2={imgAlt2}
         />
         <CardContent>
-          <Heading2 className="m-0">{title}</Heading2>
+          <Heading type="secondary" className="font-medium">
+            {title}
+          </Heading>
           <div className="mt-4">
             <Link
               to="getintouch-section-scroll-anchor"
@@ -79,7 +73,7 @@ const ICanCreateCard = ({
                     className="bi bi-chevron-right h-3"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                     />
                   </svg>
