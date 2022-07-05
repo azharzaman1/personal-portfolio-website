@@ -1,34 +1,16 @@
-import { assets as Logos } from "../RecentWork/assets/assets";
+import CodeLogo from "./assets/code-logo.svg";
+import AirbnbLogo from "./assets/airbnb.svg";
 import assets from "./assets/assets";
-
-const GraphqlLogo = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height="64"
-    width="64"
-    viewBox="0 0 29.999 30"
-    fill="#e10098"
-    {...props}
-  >
-    <path d="M4.08 22.864l-1.1-.636L15.248.98l1.1.636z" />
-    <path d="M2.727 20.53h24.538v1.272H2.727z" />
-    <path d="M15.486 28.332L3.213 21.246l.636-1.1 12.273 7.086zm10.662-18.47L13.874 2.777l.636-1.1 12.273 7.086z" />
-    <path d="M3.852 9.858l-.636-1.1L15.5 1.67l.636 1.1z" />
-    <path d="M25.922 22.864l-12.27-21.25 1.1-.636 12.27 21.25zM3.7 7.914h1.272v14.172H3.7zm21.328 0H26.3v14.172h-1.272z" />
-    <path d="M15.27 27.793l-.555-.962 10.675-6.163.555.962z" />
-    <path d="M27.985 22.5a2.68 2.68 0 0 1-3.654.981 2.68 2.68 0 0 1-.981-3.654 2.68 2.68 0 0 1 3.654-.981c1.287.743 1.724 2.375.98 3.654M6.642 10.174a2.68 2.68 0 0 1-3.654.981A2.68 2.68 0 0 1 2.007 7.5a2.68 2.68 0 0 1 3.654-.981 2.68 2.68 0 0 1 .981 3.654M2.015 22.5a2.68 2.68 0 0 1 .981-3.654 2.68 2.68 0 0 1 3.654.981 2.68 2.68 0 0 1-.981 3.654c-1.287.735-2.92.3-3.654-.98m21.343-12.326a2.68 2.68 0 0 1 .981-3.654 2.68 2.68 0 0 1 3.654.981 2.68 2.68 0 0 1-.981 3.654 2.68 2.68 0 0 1-3.654-.981M15 30a2.674 2.674 0 1 1 2.674-2.673A2.68 2.68 0 0 1 15 30m0-24.652a2.67 2.67 0 0 1-2.674-2.674 2.67 2.67 0 1 1 5.347 0A2.67 2.67 0 0 1 15 5.347" />
-  </svg>
-);
 
 export const projects = [
   {
     order: 0,
-    title: "Code Godown (development)",
-    logo: Logos.Code,
+    title: "Code Godown V1",
+    logo: CodeLogo,
     logoAlt: "Code Godown Logo",
     src: "https://code-godown.vercel.app/",
     github: "https://github.com/azharzaman1/code-godown",
-    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone want to contribute, you are most welcome.",
+    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone wants to contribute, you are most welcome.",
     techsLogos: [
       {
         title: "javascript",
@@ -75,7 +57,7 @@ export const projects = [
   {
     order: 1,
     title: "eCommerce Store Front",
-    logo: Logos.Code,
+    logo: CodeLogo,
     logoAlt: "eCommerce Store Front",
     src: "https://ecommerce-store-front.vercel.app",
     github: "https://github.com/azharzaman1/ecommerce-store-front",
@@ -87,8 +69,12 @@ export const projects = [
       },
       { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
       {
+        Logo: <assets.ReduxLogo className="w-5 h-5" />,
+        title: "redux(toolkit)",
+      },
+      {
         title: "qraphql",
-        Logo: <GraphqlLogo className="w-5 h-5" />,
+        Logo: <assets.GraphqlLogo className="w-5 h-5" />,
       },
     ],
     logoClasses: "w-10 -translate-y-2",
@@ -96,7 +82,7 @@ export const projects = [
   {
     order: 2,
     title: "Covid-19 Tracker",
-    logo: Logos.TrackerLogo,
+    logo: "https://i.ibb.co/h7JVqGg/tracker.png",
     logoAlt: "Tracker Logo",
     logoHeight: "50px",
     translateY: "12px",
@@ -121,7 +107,7 @@ export const projects = [
   {
     order: 3,
     title: "Fully-featured Amazon demo",
-    logo: Logos.AmazonLogo,
+    logo: "https://i.ibb.co/YkkjL4g/amazon.png",
     logoAlt: "Amazon Logo",
     src: "https://amazondemo.azharzaman.com/",
     github: "https://github.com/azharzaman1/fullstack-amazon-clone",
@@ -144,7 +130,7 @@ export const projects = [
   {
     order: 4,
     title: "Library Application (development)",
-    logo: Logos.Code,
+    logo: CodeLogo,
     logoAlt: "Library application logo",
     src: "https://azhar-libraryapp.vercel.app/",
     github: "https://github.com/azharzaman1/library-application-client",
@@ -183,7 +169,7 @@ export const projects = [
   {
     order: 5,
     title: "Netflix demo",
-    logo: Logos.NetflixLogo,
+    logo: "https://i.ibb.co/ZJZ9kKx/netflix.png",
     logoAlt: "Netflix Logo",
     src: "https://netflixdemo.azharzaman.com/",
     github: "https://github.com/azharzaman1/netflix-portfolio-clone",
@@ -204,7 +190,7 @@ export const projects = [
   {
     order: 6,
     title: "Airbnb demo",
-    logo: Logos.AirbnbLogo,
+    logo: AirbnbLogo,
     logoAlt: "Airbnb Logo",
     src: "https://airbnbdemo.azharzaman.com/",
     github: "https://github.com/azharzaman1/airbnb-portfolio-project",
@@ -231,7 +217,7 @@ export const projects = [
   {
     order: 7,
     title: "Personal Portfolio Site",
-    logo: Logos.MyLogo,
+    logo: "https://i.ibb.co/SJPMpGH/azhar.png",
     logoAlt: "Azhar Logo",
     // github: "https://github.com/azharzaman1/personal-portfolio-website",
     // src: "https://azharzaman.com",
@@ -256,7 +242,7 @@ export const projects = [
 // {
 //   order: 8,
 //   title: "Single Product eCommerce site (development)",
-//   logo: Logos.Code,
+//   logo: CodeLogo,
 //   logoAlt: "Library application logo",
 //   src: "https://single-product-ecommerce.vercel.app/",
 //   github: "https://github.com/azharzaman1/single-product-site",
@@ -292,7 +278,7 @@ export const projects = [
 // {
 //   order: 8,
 //   title: "Google Demo",
-//   logo: Logos.GoogleLogo,
+//   logo: 'https://i.ibb.co/RDJS7Yw/google.png',
 //   logoAlt: "Google Logo",
 //   logoHeight: "35px",
 //   github: "https://github.com/azharzaman1/google-demo",

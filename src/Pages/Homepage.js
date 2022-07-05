@@ -2,7 +2,6 @@ import React from "react";
 import About from "../Components/About/About";
 import Expertise from "../Components/Expertise/Expertise";
 import Footer from "../Components/Footer/Footer";
-import { RSAnchor } from "../Components/Generic/Theme";
 import GetinTouch from "../Components/GetinTouch/GetinTouch";
 import Header from "../Components/Header/Header";
 import IcanCreate from "../Components/IcanCreate/IcanCreate";
@@ -13,12 +12,9 @@ const Homepage = () => {
     <div>
       <Header />
       <About />
-      <RSAnchor target="expertise-section-scroll-anchor" />
       <Expertise />
-      <RSAnchor target="portfolio-section-scroll-anchor" />
       <RecentWork />
-      <IcanCreate />    
-      <RSAnchor target="getintouch-section-scroll-anchor" />
+      <IcanCreate />
       <GetinTouch />
       <Footer />
     </div>

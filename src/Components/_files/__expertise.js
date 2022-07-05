@@ -152,7 +152,7 @@ export const toolsAndLibraries = [
     {
       order: 2,
       title: "Git/Hub",
-      logo: assets.GtihubLogo,
+      logo: assets.GithubLogo,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },

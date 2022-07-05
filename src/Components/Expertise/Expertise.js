@@ -14,6 +14,7 @@ const Expertise = () => {
   return (
     <SectionLayout className="expertiseSection">
       <LayoutContainer maxWidth="lg">
+        <div id="expertise-section-scroll-anchor" />
         <SectionHeading type="2" number="02">
           Tech stack and expertise
         </SectionHeading>

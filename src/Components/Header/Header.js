@@ -10,11 +10,11 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "./logo.png";
+import MobileSideNav from "./HeaderMobileDrawer";
+import Button from "../Generic/Theme/Button";
+import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./Header.css";
-import MobileSideNav from "./HeaderMobileDrawer";
-import { Link as RouterLink } from "react-router-dom";
-import { MuiButton } from "../Generic/Theme";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -125,13 +125,7 @@ const Navigation = () => {
             rel="noreferrer"
             download
           >
-            <MuiButton
-              size="small"
-              fontSize="small"
-              // link="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
-            >
-              Resume
-            </MuiButton>
+            <Button size="xs">Resume</Button>
           </RouterLink>
         </Grid>
       </Grid>
@@ -147,6 +141,7 @@ const NavItem = ({ linkText, to, number, duration }) => {
         to={to}
         smooth={true}
         duration={duration ? duration : 1500}
+        offset={-100}
       >
         <span>{number}</span>- {linkText}
       </Link>

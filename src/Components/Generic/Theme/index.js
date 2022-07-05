@@ -63,39 +63,6 @@ export const Heading3 = ({ children, className, ...rest }) => {
   );
 };
 
-export const MuiButton = ({
-  children,
-  variant,
-  size,
-  color,
-  fontSize,
-  link,
-  className,
-  icon,
-}) => {
-  return (
-    <a href={link} target="_blank" rel="noreferrer">
-      <Button
-        className={`MuiButton ${fontSize === "small" && "fs"} ${className}`}
-        color={!color ? "secondary" : color}
-        variant={!variant ? "outlined" : variant}
-        size={!size ? "large" : size}
-        startIcon={icon}
-      >
-        {children}
-      </Button>
-    </a>
-  );
-};
-
-export const RSAnchor = ({ target }) => {
-  return (
-    <span id={target} style={{ marginTop: "4rem" }}>
-      .
-    </span>
-  );
-};
-
 export const MuiDivider = ({
   marginTop,
   marginBottom,

@@ -11,7 +11,8 @@ import LinkIcon from "@material-ui/icons/Link";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { EmailOutlined, KeyboardBackspace, WhatsApp } from "@material-ui/icons";
-import { Heading2, MuiButton } from "../Generic/Theme";
+import { Heading2 } from "../Generic/Theme";
+import Button from "../Generic/Theme/Button";
 
 const useStyles = makeStyles((theme) => ({
   mobileNavList: {
@@ -92,41 +93,59 @@ export default function MobileSideNav({ open, closeDrawer }) {
                   closeDrawer={closeDrawer}
                 />
                 <Divider className={c.divider} />
-                <Grid item>
-                  <RouterLink
-                    to="/files/azhar_resume.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    download
-                  >
-                    <MuiButton
-                      size="medium"
-                      className={`${c.mobileNavHeaderButton}`}
-                      icon={<LinkIcon />}
+                <Grid
+                  item
+                  container
+                  direction="column"
+                  spacing={2}
+                  className="!ml-2 !mt-2"
+                >
+                  <Grid item>
+                    <RouterLink
+                      to="/files/azhar_resume.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                      download
                     >
-                      Resume
-                    </MuiButton>
-                  </RouterLink>
-                </Grid>
-                <Grid item>
-                  <MuiButton
-                    size="medium"
-                    className={`${c.mobileNavHeaderButton}`}
-                    icon={<WhatsApp />}
-                    link="https://api.whatsapp.com/send?phone=+923170460466"
-                  >
-                    Whatsapp me
-                  </MuiButton>
-                </Grid>
-                <Grid item>
-                  <MuiButton
-                    size="medium"
-                    icon={<EmailOutlined />}
-                    className={`${c.mobileNavHeaderButton}`}
-                    link="mailto:azhar.works1@gmail.com"
-                  >
-                    Send email
-                  </MuiButton>
+                      <Button
+                        size="sm"
+                        className="font-medium min-w-[150px]"
+                        startIcon={<LinkIcon />}
+                      >
+                        Resume
+                      </Button>
+                    </RouterLink>
+                  </Grid>
+                  <Grid item>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=+923170460466"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button
+                        size="sm"
+                        className="font-medium min-w-[150px]"
+                        startIcon={<WhatsApp />}
+                      >
+                        Whatsapp me
+                      </Button>
+                    </a>
+                  </Grid>
+                  <Grid item>
+                    <a
+                      href="mailto:azhar.works1@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button
+                        size="sm"
+                        className="font-medium min-w-[150px]"
+                        startIcon={<EmailOutlined />}
+                      >
+                        Send email
+                      </Button>
+                    </a>
+                  </Grid>
                 </Grid>
               </List>
             </Grid>

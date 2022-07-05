@@ -6,7 +6,6 @@ import {
   TextField,
   useMediaQuery,
   useTheme,
-  Button,
 } from "@material-ui/core";
 import { WhatsApp, MailOutline } from "@material-ui/icons";
 import MuiPopup from "../RecentWork/MuiPopup";
@@ -16,6 +15,7 @@ import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
 import "./GetinTouch.css";
 import { Heading2, SectionHeading } from "../Generic/Theme";
+import Button from "../Generic/Theme/Button";
 
 const GetinTouch = () => {
   const [fullName, setFullName] = useState("");
@@ -97,15 +97,19 @@ const GetinTouch = () => {
 
   return (
     <SectionLayout className={`getInTouchSection`}>
-      <FormConfirmationDialog
-        closePopup={closePopup}
-        formStatusPopup={formStatusPopup}
-      />
+      {formStatusPopup && (
+        <FormConfirmationDialog
+          closePopup={closePopup}
+          formStatusPopup={formStatusPopup}
+        />
+      )}
+
       <LayoutContainer>
         <div className="mb-5">
           <SectionHeading type="2" number="04">
             Lets Work together!
           </SectionHeading>
+          <div id="getintouch-section-scroll-anchor" />
         </div>
 
         <Grid
@@ -281,11 +285,9 @@ const GetinTouch = () => {
                   value="false"
                   className="hidden-input"
                 />
-                <input
-                  type="submit"
-                  value={isLoading ? "Sending ..." : "Send"}
-                  className="getInTouch__submitButton"
-                />
+                <Button variant="contained" isSubmitButton className="mt-4">
+                  {isLoading ? "Sending ..." : "Send Message"}
+                </Button>
               </Grid>
               <p className="getInTouch__error">{error}</p>
             </form>
@@ -317,17 +319,34 @@ const FormConfirmationDialog = ({ formStatusPopup, closePopup }) => {
               Your message is recieved
             </Heading2>
             <p style={{ textAlign: "center", margin: "0", marginTop: "10px" }}>
-              I will try to get back to you as soon I see you message. <br />{" "}
-              For quicker response please
+              I will get back to you as soon I see you message. <br /> For
+              quicker response please
             </p>
           </Grid>
-          <Grid item>
+          <Grid item className="!mt-3">
             <a
               href="https://api.whatsapp.com/send?phone=+923170460466"
               target="_blank"
               rel="noreferrer noopenner"
             >
-              <Button color="secondary" style={{ marginTop: "5px" }}>
+              <Button
+                type="text"
+                endIcon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    className="bi bi-chevron-right h-3"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                }
+              >
                 Whatsapp me
               </Button>
             </a>

@@ -2,7 +2,7 @@ import { assets } from "../IcanCreate/assets/assets";
 
 export const ICanCreate = [
   {
-    title: "Enterprise level JavaScript(ReactJs) Web Application",
+    title: "Enterprise level JavaScript(ReactJs) web application",
     imgUrl1: assets.CVA,
     imgUrl2: assets.CovidTracker,
   },

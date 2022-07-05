@@ -5,7 +5,8 @@ import TypeWriterEffect from "react-typewriter-effect";
 import "./About.css";
 import SectionLayout from "../Layout/SectionLayout";
 import myImage from "../../myPic.jpg";
-import { MuiButton, SectionHeading } from "../Generic/Theme";
+import { SectionHeading } from "../Generic/Theme";
+import Button from "../Generic/Theme/Button";
 
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
@@ -133,9 +134,13 @@ const About = () => {
               </Grid>
               <Grid item container className={classes.buttonContainer} xs={12}>
                 <Grid item className="opacity-0 -translate-y-9 anim6">
-                  <MuiButton link="https://api.whatsapp.com/send?phone=+923170460466">
-                    Get in touch
-                  </MuiButton>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+923170460466"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button>Get in touch</Button>
+                  </a>
                 </Grid>
               </Grid>
             </Grid>

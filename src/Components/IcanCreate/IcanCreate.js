@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 import { ICanCreate } from "../_files/__iCanCreate";
 import SectionLayout from "../Layout/SectionLayout";
 import LayoutContainer from "../Layout/LayoutContainer";
-import { Heading2, MuiButton, SectionHeading } from "../Generic/Theme";
+import { Heading2, SectionHeading } from "../Generic/Theme";
+import Button from "../Generic/Theme/Button";
 
 const IcanCreate = () => {
   return (
@@ -66,9 +67,26 @@ const ICanCreateCard = ({
               smooth={true}
               duration={duration ? duration : 500}
             >
-              <MuiButton size="small" variant="contained">
-                Book now
-              </MuiButton>
+              <Button
+                type="text"
+                endIcon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    className="bi bi-chevron-right h-3"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                }
+              >
+                book now
+              </Button>
             </Link>
           </div>
         </CardContent>
