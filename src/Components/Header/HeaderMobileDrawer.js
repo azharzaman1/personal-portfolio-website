@@ -118,7 +118,7 @@ export default function MobileSideNav({ open, closeDrawer }) {
                   </Grid>
                   <Grid item>
                     <a
-                      href="https://api.whatsapp.com/send?phone=+923170460466"
+                      href="https://api.whatsapp.com/send?phone=923170460466&text=Hi"
                       target="_blank"
                       rel="noreferrer"
                     >

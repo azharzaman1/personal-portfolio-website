@@ -10,7 +10,7 @@ export const projects = [
     logoAlt: "Code Godown Logo",
     src: "https://code-godown.vercel.app/",
     github: "https://github.com/azharzaman1/code-godown",
-    desc: "Code Godown is a Code saving, code manipulating, Code sharing, Code related articles publishing platform. This is something for code lovers. Platform is in development phase, if anyone wants to contribute, you are most welcome.",
+    desc: "Code Godown is a code storing, code manipulating, code sharing platform, built on MERN stack. ReactJs is responsible for the frontend and Backend is running on NodeJs. MongoDB is serving as database.",
     techsLogos: [
       {
         title: "javascript",
@@ -61,7 +61,7 @@ export const projects = [
     logoAlt: "eCommerce Store Front",
     src: "https://ecommerce-store-front.vercel.app",
     github: "https://github.com/azharzaman1/ecommerce-store-front",
-    desc: "Built an eCommerce store frontend, fetching database from Graphql API. Store is still under development, and there is lot to come.",
+    desc: "Built an eCommerce store frontend, findings its database from a Graphql API. Redux is managing state and data flow.",
     techsLogos: [
       {
         title: "javascript",
@@ -88,7 +88,7 @@ export const projects = [
     translateY: "12px",
     src: "https://covidtracker.azharzaman.com/",
     github: "https://github.com/azharzaman1/covid-tracker",
-    desc: "Built a fully functional COVID-19 Tracker with React using latest web technologies like React, JavaScript. Tracker finds its realtime database from 'disease.sh' using realtime API calls.",
+    desc: "Built a fully functional COVID-19 Tracker with React using latest web technologies like React, JavaScript. Tracker finds its realtime database from 'disease.sh' database using realtime API calls.",
     techsLogos: [
       {
         title: "javascript",
@@ -111,7 +111,7 @@ export const projects = [
     logoAlt: "Amazon Logo",
     src: "https://amazondemo.azharzaman.com/",
     github: "https://github.com/azharzaman1/fullstack-amazon-clone",
-    desc: "I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities Cart, Checkout Payment via Stripe, and much more.",
+    desc: "Recently completed Amazon demo with React, with full eCommerce functionalities like cart, account, checkout payment via Stripe, and much more.",
     techsLogos: [
       {
         title: "javascript",
@@ -134,7 +134,7 @@ export const projects = [
     logoAlt: "Library application logo",
     src: "https://azhar-libraryapp.vercel.app/",
     github: "https://github.com/azharzaman1/library-application-client",
-    desc: "Built library application to practice MERN stack, with secure JWT-authentication, mongodb as database, Expressjs REST apis built on MVC pattern.",
+    desc: "Library application to practice MERN stack, with secure JWT-authentication, mongodb serving as database, expressjs REST apis built on MVC pattern.",
     techsLogos: [
       {
         title: "javascript",
@@ -173,7 +173,7 @@ export const projects = [
     logoAlt: "Netflix Logo",
     src: "https://netflixdemo.azharzaman.com/",
     github: "https://github.com/azharzaman1/netflix-portfolio-clone",
-    desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial(clever programmer), but finished on my own.",
+    desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial, but finished on my own. Finds tmdb as movies database.",
     techsLogos: [
       {
         title: "javascript",
@@ -194,7 +194,7 @@ export const projects = [
     logoAlt: "Airbnb Logo",
     src: "https://airbnbdemo.azharzaman.com/",
     github: "https://github.com/azharzaman1/airbnb-portfolio-project",
-    desc: "Built Airbnb clone using NextJs, Tailwind CSS and something really cool Server side rendering by NextJs. It is a nice little application with awesome UI and basic feautres of world famous Airbnb.",
+    desc: "Built Airbnb clone using NextJs, Tailwind CSS and something really cool, Server side rendering by NextJs. It is a nice little application with awesome UI and basic feautres of world famous Airbnb.",
     techsLogos: [
       {
         title: "javascript",
@@ -221,7 +221,7 @@ export const projects = [
     logoAlt: "Azhar Logo",
     // github: "https://github.com/azharzaman1/personal-portfolio-website",
     // src: "https://azharzaman.com",
-    desc: "I built my personal portfolio website on ReactJs to showcase my skill-set and recent work. Making this website simple but expressive was my first priority. And I believe it meet all the requirements of an elegant design website.",
+    desc: "My personal portfolio website built on ReactJs. Enlisting my skill-set, expertise, and recent work experience. Making this website simple but expressive was my first priority, and here it is.",
     techsLogos: [
       {
         title: "javascript",

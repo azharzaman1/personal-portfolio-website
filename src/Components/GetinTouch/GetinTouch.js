@@ -126,10 +126,9 @@ const GetinTouch = () => {
                 className="leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans mb-5"
               >
                 Well! You reached this point, means your interest in my
-                skill-set. If you want me build something for you, something
-                efficient, something cool, give me a signal. Or in case you just
-                want to discuss your project, my inbox is always waiting for
-                nice persons like you. Thanks
+                skill-set. If you want me build something awesome for you, or
+                you just want to discuss your project, or have a role for me at
+                your awesome company, my inbox itself is waiting for you. Thanks
               </p>
             </Grid>
             <Grid
@@ -170,7 +169,7 @@ const GetinTouch = () => {
               <Divider orientation="vertical" flexItem variant="middle" />
               <Grid item>
                 <a
-                  href="https://api.whatsapp.com/send?phone=+923170460466"
+                  href="https://api.whatsapp.com/send?phone=923170460466&text=Hi"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -317,7 +316,7 @@ const FormConfirmationDialog = ({ formStatusPopup, closePopup }) => {
           </Grid>
           <Grid item className="!mt-3">
             <a
-              href="https://api.whatsapp.com/send?phone=+923170460466"
+              href="https://api.whatsapp.com/send?phone=923170460466&text=Hi"
               target="_blank"
               rel="noreferrer noopenner"
             >

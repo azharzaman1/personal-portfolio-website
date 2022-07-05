@@ -124,16 +124,15 @@ const About = () => {
               <Text className="opacity-0 -translate-y-9 leading-6 text-sm md:text-[15px] font-normal font-sans max-w-lg anim5">
                 I am frontend and MERN stack developer, specializing in some of
                 the powerful and trending web technologies like JavaScript,
-                ReactJs, NextJs, NodeJs, MongoDB etclasses. I build and design
-                exceptional websites on every niche, web applications, custom
-                themes & interfaces, eCommerce stores with custom
-                functionalities.
+                ReactJs, NodeJs, ExpressJs MongoDB, Redux, etc. If you just want
+                to discuss your project, or want to offer me a role at your
+                awesome company, Lets talk 🎧.
               </Text>
             </Grid>
             <Grid item container className={classes.buttonContainer} xs={12}>
               <Grid item className="opacity-0 -translate-y-9 anim6">
                 <a
-                  href="https://api.whatsapp.com/send?phone=+923170460466"
+                  href="https://api.whatsapp.com/send?phone=923170460466&text=Hi"
                   target="_blank"
                   rel="noreferrer"
                 >
