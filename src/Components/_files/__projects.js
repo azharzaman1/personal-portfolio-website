@@ -4,7 +4,7 @@ import assets from "./assets/assets";
 
 export const projects = [
   {
-    order: 0,
+    key: 0,
     title: "Code Godown V1",
     logo: CodeLogo,
     logoAlt: "Code Godown Logo",
@@ -55,13 +55,13 @@ export const projects = [
     logoClasses: "w-10 -translate-y-2",
   },
   {
-    order: 1,
+    key: 1,
     title: "eCommerce Store Front",
     logo: CodeLogo,
     logoAlt: "eCommerce Store Front",
     src: "https://ecommerce-store-front.vercel.app",
     github: "https://github.com/azharzaman1/ecommerce-store-front",
-    desc: "Built an eCommerce store frontend, findings its database from a Graphql API. Redux is managing state and data flow.",
+    desc: "Built an eCommerce store frontend with ReactJs, finding its database from a Graphql API. Redux is managing state and data flow.",
     techsLogos: [
       {
         title: "javascript",
@@ -80,61 +80,56 @@ export const projects = [
     logoClasses: "w-10 -translate-y-2",
   },
   {
-    order: 2,
-    title: "Covid-19 Tracker",
-    logo: "https://i.ibb.co/h7JVqGg/tracker.png",
-    logoAlt: "Tracker Logo",
-    logoHeight: "50px",
-    translateY: "12px",
-    src: "https://covidtracker.azharzaman.com/",
-    github: "https://github.com/azharzaman1/covid-tracker",
-    desc: "Built a fully functional COVID-19 Tracker with React using latest web technologies like React, JavaScript. Tracker finds its realtime database from 'disease.sh' database using realtime API calls.",
+    key: 2,
+    title: "API Archive",
+    logo: CodeLogo,
+    logoAlt: "API archive logo",
+    src: "https://api-archive-client.vercel.app/",
+    github: "https://github.com/azharzaman1/api-archive-client.git",
+    desc: "API archive built with MERN stack, with 1400+ APIs at the moment. Appilication uses MongoDB as database, and NodeJs is running on backend.",
     techsLogos: [
       {
         title: "javascript",
         Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
       },
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
-      {
-        Logo: assets.ChartJsLogo,
-        title: "react-chartjs",
-        isImage: true,
-      },
-      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
-    ],
-    logoClasses: "w-24 -translate-y-1.5",
-  },
-  {
-    order: 3,
-    title: "Fully-featured Amazon demo",
-    logo: "https://i.ibb.co/YkkjL4g/amazon.png",
-    logoAlt: "Amazon Logo",
-    src: "https://amazondemo.azharzaman.com/",
-    github: "https://github.com/azharzaman1/fullstack-amazon-clone",
-    desc: "Recently completed Amazon demo with React, with full eCommerce functionalities like cart, account, checkout payment via Stripe, and much more.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
       {
         Logo: <assets.ReduxLogo className="w-5 h-5" />,
         title: "redux(toolkit)",
       },
-      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
-      { Logo: <assets.StripeLogo className="w-10" />, title: "stripe-js" },
+      {
+        title: "nodejs",
+        Logo: <assets.NodeLogo className="w-5 h-5" />,
+      },
+      {
+        Logo: assets.ExpressLogo,
+        title: "expressjs",
+        isImage: true,
+      },
+      {
+        title: "mongodb",
+        Logo: <assets.MongoLogo className="w-5 h-5" />,
+      },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
+      {
+        title: "react-query",
+        Logo: <assets.ReactQueryLogo className="w-5 h-5" />,
+      },
     ],
-    logoClasses: "w-24 -translate-y-1",
+    logoClasses: "w-10 -translate-y-2",
   },
   {
-    order: 4,
-    title: "Library Application (development)",
+    key: 3,
+    title: "Library Application",
     logo: CodeLogo,
     logoAlt: "Library application logo",
     src: "https://azhar-libraryapp.vercel.app/",
     github: "https://github.com/azharzaman1/library-application-client",
-    desc: "Library application to practice MERN stack, with secure JWT-authentication, mongodb serving as database, expressjs REST apis built on MVC pattern.",
+    desc: "Built library application to practice MERN stack, with secure JWT-authentication, mongodb serving as database, expressjs to build protected APIs on MVC pattern. Role based authentication and UI",
     techsLogos: [
       {
         title: "javascript",
@@ -167,7 +162,55 @@ export const projects = [
     logoClasses: "w-10 -translate-y-2",
   },
   {
-    order: 5,
+    key: 4,
+    title: "Covid-19 Tracker",
+    logo: "https://i.ibb.co/h7JVqGg/tracker.png",
+    logoAlt: "Tracker Logo",
+    logoHeight: "50px",
+    translateY: "12px",
+    src: "https://covidtracker.azharzaman.com/",
+    // github: "https://github.com/azharzaman1/covid-tracker",
+    desc: "Built a fully functional COVID-19 Tracker with React using latest web technologies like React, JavaScript. Tracker finds its realtime database from 'disease.sh' database using realtime API calls.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: assets.ChartJsLogo,
+        title: "react-chartjs",
+        isImage: true,
+      },
+      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
+    ],
+    logoClasses: "w-24 -translate-y-1.5",
+  },
+  {
+    key: 5,
+    title: "Fully-featured Amazon demo",
+    logo: "https://i.ibb.co/YkkjL4g/amazon.png",
+    logoAlt: "Amazon Logo",
+    src: "https://amazondemo.azharzaman.com/",
+    github: "https://github.com/azharzaman1/fullstack-amazon-clone",
+    desc: "Recently completed Amazon demo with React, with full eCommerce functionalities like cart, account, checkout payment via Stripe, and much more.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+      {
+        Logo: <assets.ReduxLogo className="w-5 h-5" />,
+        title: "redux(toolkit)",
+      },
+      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
+      { Logo: <assets.StripeLogo className="w-10" />, title: "stripe-js" },
+    ],
+    logoClasses: "w-24 -translate-y-1",
+  },
+  {
+    key: 6,
     title: "Netflix demo",
     logo: "https://i.ibb.co/ZJZ9kKx/netflix.png",
     logoAlt: "Netflix Logo",
@@ -188,7 +231,7 @@ export const projects = [
     logoClasses: "w-24 -translate-y-1",
   },
   {
-    order: 6,
+    key: 7,
     title: "Airbnb demo",
     logo: AirbnbLogo,
     logoAlt: "Airbnb Logo",
@@ -215,7 +258,7 @@ export const projects = [
     logoClasses: "w-24 -translate-y-1",
   },
   {
-    order: 7,
+    key: 8,
     title: "Personal Portfolio Site",
     logo: "https://i.ibb.co/SJPMpGH/azhar.png",
     logoAlt: "Azhar Logo",
@@ -240,7 +283,7 @@ export const projects = [
 ];
 
 // {
-//   order: 8,
+//   key: 8,
 //   title: "Single Product eCommerce site (development)",
 //   logo: CodeLogo,
 //   logoAlt: "Library application logo",
@@ -276,7 +319,7 @@ export const projects = [
 // },
 
 // {
-//   order: 8,
+//   key: 8,
 //   title: "Google Demo",
 //   logo: 'https://i.ibb.co/RDJS7Yw/google.png',
 //   logoAlt: "Google Logo",
@@ -300,7 +343,7 @@ export const projects = [
 
 // export const projectsWPDev = [
 //   {
-//     order: 1,
+//     key: 1,
 //     title: "Multi-vendor Marketplace | Peeeko",
 //     logo: "wp",
 //     // src: "https://peeeko.com",
@@ -309,7 +352,7 @@ export const projects = [
 //     dataAOS: "fade-up",
 //   },
 //   {
-//     order: 2,
+//     key: 2,
 //     title: "Agency Bussiness Site | PlanNative",
 //     logo: "wp",
 //     src: "https://plannative.com",
@@ -318,7 +361,7 @@ export const projects = [
 //     dataAOS: "fade-up",
 //   },
 //   {
-//     order: 3,
+//     key: 3,
 //     title: "Business Site | BRPakistan",
 //     logo: "wp",
 //     // src: "http://brpakistan.com/",

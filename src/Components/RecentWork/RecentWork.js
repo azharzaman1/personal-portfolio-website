@@ -50,7 +50,7 @@ const RecentWork = () => {
           {projects.map((project) => (
             <PortfolioProject
               project={project}
-              key={project.order}
+              key={project.key}
               data-aos="fade-up"
               data-aos-delay={400}
             />
@@ -176,7 +176,7 @@ const PortfolioProject = ({
     {projectsWPDev.map((project) => (
       <PortfolioProject
         project={project}
-        key={project.order}
+        key={project.key}
         data-aos="fade-up"
         data-aos-delay={400}
         className="min-h-[280px]"
