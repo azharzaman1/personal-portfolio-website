@@ -2,7 +2,7 @@ const Text = ({ type = "primary", center, children, className }) => {
   if (type === "primary") {
     return (
       <p
-        className={`text-sm md:text-[15px] text-primaryText text-opacity-90 tracking-wide font-sans ${className}`}
+        className={`text-sm md:text-[15px] text-primaryText tracking-wide font-sans font-normal ${className}`}
       >
         {children}
       </p>

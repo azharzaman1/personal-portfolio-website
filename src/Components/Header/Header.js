@@ -114,6 +114,12 @@ const Navigation = () => {
         />
         <NavItem
           number="04"
+          linkText="Blog"
+          duration="1500"
+          to="blog-section-scroll-anchor"
+        />
+        <NavItem
+          number="05"
           linkText="Get in Touch"
           duration="1500"
           to="getintouch-section-scroll-anchor"

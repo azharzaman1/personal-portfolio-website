@@ -1,10 +1,11 @@
 import React from "react";
 import About from "../Components/About/About";
+import Blog from "../Components/Blog";
 import Expertise from "../Components/Expertise/Expertise";
 import Footer from "../Components/Footer/Footer";
 import GetinTouch from "../Components/GetinTouch/GetinTouch";
 import Header from "../Components/Header/Header";
-import IcanCreate from "../Components/IcanCreate/IcanCreate";
+// import IcanCreate from "../Components/IcanCreate/IcanCreate";
 import RecentWork from "../Components/RecentWork/RecentWork";
 
 const Homepage = () => {
@@ -14,7 +15,8 @@ const Homepage = () => {
       <About />
       <Expertise />
       <RecentWork />
-      <IcanCreate />
+      <Blog />
+      {/* <IcanCreate /> */}
       <GetinTouch />
       <Footer />
     </div>

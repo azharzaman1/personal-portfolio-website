@@ -43,7 +43,7 @@ const Heading = ({
   if (type === "secondary") {
     return (
       <h4
-        className={`text-xs md:text-sm lg:text-base font-sans text-textBright ${
+        className={`text-sm md:text-base lg:text-lg font-sans text-textBright ${
           center && "text-center"
         } ${className}`}
         {...rest}
