@@ -88,6 +88,11 @@ export default function MobileSideNav({ open, closeDrawer }) {
                   closeDrawer={closeDrawer}
                 />
                 <MuiListItem
+                  primaryText="My Blog"
+                  to="blog-section-scroll-anchor"
+                  closeDrawer={closeDrawer}
+                />
+                <MuiListItem
                   primaryText="Get in touch"
                   to="getintouch-section-scroll-anchor"
                   closeDrawer={closeDrawer}
@@ -170,6 +175,7 @@ const MuiListItem = ({
     <Link
       to={to}
       smooth={true}
+      offset={-100}
       delay={275}
       duration={!duration ? 1000 : duration}
       onClick={closeDrawer}
