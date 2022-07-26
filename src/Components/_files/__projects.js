@@ -84,7 +84,7 @@ export const projects = [
     title: "API Archive",
     logo: CodeLogo,
     logoAlt: "API archive logo",
-    src: "https://api-archive-client.vercel.app/",
+    src: "https://api-archive.vercel.app/",
     github: "https://github.com/azharzaman1/api-archive-client.git",
     desc: "API archive built with MERN stack, with 1400+ APIs at the moment. Appilication uses MongoDB as database, and NodeJs is running on backend.",
     techsLogos: [
