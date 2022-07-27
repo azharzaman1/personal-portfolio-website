@@ -4,7 +4,6 @@ import LayoutContainer from "../Layout/LayoutContainer";
 import SectionLayout from "../Layout/SectionLayout";
 import { posts } from "../_files/__blogPosts";
 import BlogPost from "./BlogPost";
-// import { ReactComponent as ExternalLinkIcon } from "../_files/assets/extlink.svg";
 import { Launch } from "@material-ui/icons";
 import { Tooltip } from "@material-ui/core";
 
@@ -15,7 +14,7 @@ const Blog = () => {
         <Heading type="section" className="flex">
           <span>Latest from my</span>
           <a
-            href="https://medium.com/@idrazhar"
+            href="https://blog.azharzaman.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center ml-1"
