@@ -27,6 +27,7 @@ import { ReactComponent as CanvaLogo } from "./canva-logo.svg";
 import { ReactComponent as GithubLogo } from "./github-logo.svg";
 import { ReactComponent as NetlifyLogo } from "./netlify-logo.svg";
 import { ReactComponent as ReactQueryLogo } from "./react-query-logo.svg";
+// import SanityLogo from "./sanity.svg";
 
 import TestingLibLogo from "./testing-lib.png";
 
@@ -78,6 +79,7 @@ const assets = {
   NetlifyLogo,
   ReactQueryLogo,
   GraphqlLogo,
+  // SanityLogo,
 };
 
 export default assets;

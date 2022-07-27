@@ -187,6 +187,40 @@ export const projects = [
     logoClasses: "w-24 -translate-y-1.5",
   },
   {
+    key: 8,
+    title: "Personal Blog",
+    logo: "https://i.ibb.co/SJPMpGH/azhar.png",
+    logoAlt: "Personal blog logo",
+    github: "https://github.com/azharzaman1/blog",
+    src: "https://blog.azharzaman.com",
+    desc: "Personal blog built with Next.js(React framework) on frontend and Sanity CMS is supporting backend. Blog is built with latest really cool concepts, like Server Side Rendering(SSR) and very powerful on-demand Incremental Static Generation(ISR).",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "nextjs",
+        Logo: (
+          <div className="bg-white rounded-full h-5 flex justify-center items-center">
+            <assets.NextLogo2 className="w-5 h-5" />
+          </div>
+        ),
+      },
+      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
+      {
+        Logo: (
+          <span className="text-textDim font-medium uppercase tracking-widest">
+            Sanity
+          </span>
+        ),
+        title: "sanity cms",
+      },
+    ],
+    logoClasses: "w-24 -translate-y-2",
+  },
+  {
     key: 5,
     title: "Fully-featured Amazon demo",
     logo: "https://i.ibb.co/YkkjL4g/amazon.png",
@@ -204,29 +238,8 @@ export const projects = [
         Logo: <assets.ReduxLogo className="w-5 h-5" />,
         title: "redux(toolkit)",
       },
-      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
+      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
       { Logo: <assets.StripeLogo className="w-10" />, title: "stripe-js" },
-    ],
-    logoClasses: "w-24 -translate-y-1",
-  },
-  {
-    key: 6,
-    title: "Netflix demo",
-    logo: "https://i.ibb.co/ZJZ9kKx/netflix.png",
-    logoAlt: "Netflix Logo",
-    src: "https://netflixdemo.azharzaman.com/",
-    github: "https://github.com/azharzaman1/netflix-portfolio-clone",
-    desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial, but finished on my own. Finds tmdb as movies database.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
-      },
     ],
     logoClasses: "w-24 -translate-y-1",
   },
@@ -280,6 +293,27 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
+  {
+    key: 6,
+    title: "Netflix demo",
+    logo: "https://i.ibb.co/ZJZ9kKx/netflix.png",
+    logoAlt: "Netflix Logo",
+    src: "https://netflixdemo.azharzaman.com/",
+    github: "https://github.com/azharzaman1/netflix-portfolio-clone",
+    desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial, but finished on my own. Finds tmdb as movies database.",
+    techsLogos: [
+      {
+        title: "javascript",
+        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+      },
+      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+      {
+        title: "mui(material-ui)",
+        Logo: <assets.MuiLogo className="w-5 h-5" />,
+      },
+    ],
+    logoClasses: "w-24 -translate-y-1",
+  },
 ];
 
 // {
@@ -313,7 +347,7 @@ export const projects = [
 //       Logo: <assets.ReduxLogo className="w-5 h-5" />,
 //       title: "redux(toolkit)",
 //     },
-//     { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "Firebase" },
+//     { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
 //   ],
 //   logoClasses: "w-10 -translate-y-2",
 // },
