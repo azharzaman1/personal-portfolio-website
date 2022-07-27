@@ -293,27 +293,27 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
-  {
-    key: 6,
-    title: "Netflix demo",
-    logo: "https://i.ibb.co/ZJZ9kKx/netflix.png",
-    logoAlt: "Netflix Logo",
-    src: "https://netflixdemo.azharzaman.com/",
-    github: "https://github.com/azharzaman1/netflix-portfolio-clone",
-    desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial, but finished on my own. Finds tmdb as movies database.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
-      },
-    ],
-    logoClasses: "w-24 -translate-y-1",
-  },
+  // {
+  //   key: 6,
+  //   title: "Netflix demo",
+  //   logo: "https://i.ibb.co/ZJZ9kKx/netflix.png",
+  //   logoAlt: "Netflix Logo",
+  //   src: "https://netflixdemo.azharzaman.com/",
+  //   github: "https://github.com/azharzaman1/netflix-portfolio-clone",
+  //   desc: "Built Netflix listing page, finding movies database from tmdb. Got an idea from yt tutorial, but finished on my own. Finds tmdb as movies database.",
+  //   techsLogos: [
+  //     {
+  //       title: "javascript",
+  //       Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+  //     },
+  //     { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
+  //     {
+  //       title: "mui(material-ui)",
+  //       Logo: <assets.MuiLogo className="w-5 h-5" />,
+  //     },
+  //   ],
+  //   logoClasses: "w-24 -translate-y-1",
+  // },
 ];
 
 // {
