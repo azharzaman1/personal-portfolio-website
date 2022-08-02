@@ -220,29 +220,29 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
-  {
-    key: 5,
-    title: "Fully-featured Amazon demo",
-    logo: "https://i.ibb.co/YkkjL4g/amazon.png",
-    logoAlt: "Amazon Logo",
-    src: "https://amazondemo.azharzaman.com/",
-    github: "https://github.com/azharzaman1/fullstack-amazon-clone",
-    desc: "Recently completed Amazon demo with React, with full eCommerce functionalities like cart, account, checkout payment via Stripe, and much more.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
-      {
-        Logo: <assets.ReduxLogo className="w-5 h-5" />,
-        title: "redux(toolkit)",
-      },
-      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
-      { Logo: <assets.StripeLogo className="w-10" />, title: "stripe-js" },
-    ],
-    logoClasses: "w-24 -translate-y-1",
-  },
+  // {
+  //   key: 5,
+  //   title: "Fully-featured Amazon demo",
+  //   logo: "https://i.ibb.co/YkkjL4g/amazon.png",
+  //   logoAlt: "Amazon Logo",
+  //   src: "https://amazondemo.azharzaman.com/",
+  //   github: "https://github.com/azharzaman1/fullstack-amazon-clone",
+  //   desc: "Recently completed Amazon demo with React, with full eCommerce functionalities like cart, account, checkout payment via Stripe, and much more.",
+  //   techsLogos: [
+  //     {
+  //       title: "javascript",
+  //       Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+  //     },
+  //     { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
+  //     {
+  //       Logo: <assets.ReduxLogo className="w-5 h-5" />,
+  //       title: "redux(toolkit)",
+  //     },
+  //     { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
+  //     { Logo: <assets.StripeLogo className="w-10" />, title: "stripe-js" },
+  //   ],
+  //   logoClasses: "w-24 -translate-y-1",
+  // },
   {
     key: 7,
     title: "Airbnb demo",

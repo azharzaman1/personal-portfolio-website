@@ -1,5 +1,15 @@
 export const posts = [
   {
+    title: "SSR - SSG - ISR - CSR in Next.js - The Ultimate Guide",
+    excerpt:
+      "Are you a React lover? If you ask me, of course, I am a die-hard fan. In this article, will compare React and Next.js performance, CSR vs SSR, types or prerendering in Next.js, and something called ISR.",
+    url: "https://blog.azharzaman.com/post/types-of-rendering-in-next-js-the-ultimate-guide",
+    banner:
+      "https://cdn.sanity.io/images/r4trdkw6/production/10ea30fdc27b57026c6bf956f4ce903ff7fc575c-1921x1082.png",
+    publishedAt: "August 02, 2022",
+    tags: ["nextjs", "ssr", "ssg", "isr", "csr"],
+  },
+  {
     title: "0 to 1 — How JavaScript works under the hood",
     excerpt:
       "In this article, we will learn a little history of JavaScript, How JavaScript works under the hood? What is the Runtime environment? What role does the JavaScript engine play in code execution? What the heck is Execution context? What is Scope, TDZ, and a lot more?",
