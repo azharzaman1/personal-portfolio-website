@@ -11,21 +11,25 @@ const Footer = () => {
             link="https://azharzaman.com"
             title="Website"
             icon={<Language style={{ color: "#e2e2e29d" }} fontSize="small" />}
+            className="!mt-2 !md:mt-0"
           />
           <Chip
             link="https://github.com/azharzaman1"
             title="Github"
             icon={<GitHub style={{ color: "#e2e2e29d" }} fontSize="small" />}
+            className="!mt-2 !md:mt-0"
           />
           <Chip
             link="https://www.linkedin.com/in/azhar-zaman/"
             title="LinkedIn"
             icon={<LinkedIn style={{ color: "#e2e2e29d" }} fontSize="small" />}
+            className="!mt-2 !md:mt-0"
           />
           <Chip
             link="https://twitter.com/idrazhar"
             title="Twitter"
             icon={<Twitter style={{ color: "#e2e2e29d" }} fontSize="small" />}
+            className="!mt-2 !md:mt-0"
           />
         </Grid>
       </Grid>

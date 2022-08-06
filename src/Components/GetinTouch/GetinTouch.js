@@ -28,30 +28,7 @@ const GetinTouch = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("sm"));
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
-
-  const dynamicDelay = (d, t, m) => {
-    if (!isTablet && !isMobile) {
-      if (d) {
-        return d;
-      } else {
-        return "300";
-      }
-    } else if (isTablet && !isMobile) {
-      if (t) {
-        return t;
-      } else {
-        return "300";
-      }
-    } else {
-      if (m) {
-        return m;
-      } else {
-        return "300";
-      }
-    }
-  };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -122,7 +99,7 @@ const GetinTouch = () => {
             <Grid item xs={12} md={9}>
               <p
                 data-aos="fade-up"
-                data-aos-delay="600"
+                data-aos-delay={500}
                 className="leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans mb-5"
               >
                 Well! You reached this point, means your interest in my
@@ -137,7 +114,7 @@ const GetinTouch = () => {
               alignItems="center"
               className="getInTouchSection__leftEmails"
               data-aos="fade-up"
-              data-aos-delay="800"
+              data-aos-delay={500}
             >
               <Grid item>
                 <MailOutline
@@ -158,7 +135,7 @@ const GetinTouch = () => {
               className="getInTouchSection__leftWhatsApp"
               alignItems="center"
               data-aos="fade-up"
-              data-aos-delay="950"
+              data-aos-delay={500}
             >
               <Grid item>
                 <WhatsApp
@@ -184,8 +161,8 @@ const GetinTouch = () => {
             xs={12}
             md={6}
             className={`pt-12 md:pt-0 w-full justify-center md:justify-end`}
-            data-aos={isTablet || isMobile ? "fade-up" : "fade-left"}
-            data-aos-delay={dynamicDelay("1500", null, null)}
+            data-aos="fade-up"
+            data-aos-delay={500}
           >
             <form
               className={`getInTouch__form py-6 px-4 md:px-6 rounded-md w-full max-w-lg bg-backgroundContrast`}

@@ -5,7 +5,11 @@ import Text from "../Generic/Theme/Text";
 
 const BlogPost = ({ data }) => {
   return (
-    <div className="blog-post bg-backgroundContrast border-t-4 border-secondary rounded pb-4">
+    <div
+      className="blog-post bg-backgroundContrast border-t-4 border-secondary rounded pb-4"
+      data-aos="fade-up"
+      data-aos-delay={400}
+    >
       <a href={data.url} target="_blank" rel="noopener noreferrer">
         <div className="blog-post-banner relative cursor-pointer">
           <img src={data.banner} alt={data.title} />
