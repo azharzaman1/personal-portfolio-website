@@ -1,5 +1,14 @@
 export const posts = [
   {
+    title: "Asynchronous JavaScript",
+    excerpt:
+      "Beginner friendly guide about Asynchronous JavaScript, covering Callback functions, role of Web APIs, the Promises, callback queue etc.",
+    url: "https://blog.azharzaman.com/post/asynchronous-javascript",
+    banner: "https://miro.medium.com/max/700/1*UzjLmJVnqP35YOF4OldsVA.jpeg",
+    publishedAt: "August 14, 2022",
+    tags: ["javascript", "promises", "callbacks"],
+  },
+  {
     title: "SSR - SSG - ISR - CSR in Next.js - The Ultimate Guide",
     excerpt:
       "Are you a React lover? If you ask me, of course, I am a die-hard fan. In this article, will compare React and Next.js performance, CSR vs SSR, types or prerendering in Next.js, and something called ISR.",
@@ -27,15 +36,5 @@ export const posts = [
     banner: "https://miro.medium.com/max/700/1*UzjLmJVnqP35YOF4OldsVA.jpeg",
     publishedAt: "July 22, 2022",
     tags: ["javascript", "callbacks", "eventloop"],
-  },
-
-  {
-    title: "Implementing Layout Structure in NextJs the right way",
-    excerpt:
-      "When I started coding in NextJs, I really struggled while implementing Layout based architecture. The React model allows us to build UI in a series of components. Many of these components are often reused between pages. Layouts let you build consistent UI throughout your application.",
-    url: "https://blog.azharzaman.com/post/implementing-layout-structure-in-nextjs-the-right-way",
-    banner: "https://miro.medium.com/max/1400/1*2Ljb-qnnY5wA8rm5__cP5w.jpeg",
-    publishedAt: "March 10, 2022",
-    tags: ["reactjs", "nextjs", "layouts"],
   },
 ];
