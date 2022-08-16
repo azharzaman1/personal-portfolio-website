@@ -9,7 +9,7 @@ export const projects = [
     logo: CodeLogo,
     logoAlt: "Code Godown Logo",
     src: "https://code-godown.vercel.app/",
-    github: "https://github.com/azharzaman1/code-godown",
+    // github: "https://github.com/azharzaman1/code-godown",
     desc: "Code Godown is a code storing, code manipulating, code sharing platform, built on MERN stack. ReactJs is responsible for the frontend and Backend is running on NodeJs. MongoDB is serving as database.",
     techsLogos: [
       {
