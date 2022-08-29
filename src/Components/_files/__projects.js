@@ -8,7 +8,7 @@ export const projects = [
     title: "Code Godown V1",
     logo: CodeLogo,
     logoAlt: "Code Godown Logo",
-    src: "https://code-godown.vercel.app/",
+    src: "https://codegodown.azharzaman.com/",
     // github: "https://github.com/azharzaman1/code-godown",
     desc: "Code Godown is a code storing, code manipulating, code sharing platform, built on MERN stack. ReactJs is responsible for the frontend and Backend is running on NodeJs. MongoDB is serving as database.",
     techsLogos: [
@@ -59,7 +59,7 @@ export const projects = [
     title: "eCommerce Store Front",
     logo: CodeLogo,
     logoAlt: "eCommerce Store Front",
-    src: "https://ecommerce-store-front.vercel.app",
+    src: "https://ecom-store.azharzaman.com/",
     github: "https://github.com/azharzaman1/ecommerce-store-front",
     desc: "Built an eCommerce store frontend with ReactJs, finding its database from a Graphql API. Redux is managing state and data flow.",
     techsLogos: [
@@ -84,7 +84,7 @@ export const projects = [
     title: "API Archive",
     logo: CodeLogo,
     logoAlt: "API archive logo",
-    src: "https://api-archive.vercel.app/",
+    src: "https://apiarchive.azharzaman.com/",
     github: "https://github.com/azharzaman1/api-archive-client.git",
     desc: "API archive built with MERN stack, with 1400+ APIs at the moment. Appilication uses MongoDB as database, and NodeJs is running on backend.",
     techsLogos: [
