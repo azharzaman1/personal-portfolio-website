@@ -1,55 +1,50 @@
-import CodeLogo from "./assets/code-logo.svg";
-import AirbnbLogo from "./assets/airbnb.svg";
-import assets from "./assets/assets";
+import { techLogos, projectLogos } from "./assets";
 
 export const projects = [
   {
     key: 0,
     title: "Code Godown V1",
-    logo: CodeLogo,
+    logo: projectLogos.code,
     logoAlt: "Code Godown Logo",
     src: "https://codegodown.azharzaman.com/",
     // github: "https://github.com/azharzaman1/code-godown",
     desc: "Code Godown is a code storing, code manipulating, code sharing platform, built on MERN stack. ReactJs is responsible for the frontend and Backend is running on NodeJs. MongoDB is serving as database.",
     techsLogos: [
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "nodejs",
-        Logo: <assets.NodeLogo className="w-5 h-5" />,
+        title: "JavaScript",
+        Logo: techLogos.javascript,
       },
       {
-        Logo: assets.ExpressLogo,
-        title: "expressjs",
-        isImage: true,
+        title: "React.js",
+        Logo: techLogos.react,
       },
       {
-        title: "mongodb",
-        Logo: <assets.MongoLogo className="w-5 h-5" />,
+        title: "Node.js",
+        Logo: techLogos.node,
       },
       {
-        title: "nextjs",
-        Logo: (
-          <div className="bg-white rounded-full h-5 flex justify-center items-center">
-            <assets.NextLogo2 className="w-5 h-5" />
-          </div>
-        ),
+        title: "Express.js",
+        Logo: techLogos.express,
       },
       {
-        Logo: <assets.ReduxLogo className="w-5 h-5" />,
-        title: "redux(toolkit)",
+        title: "MongoDB",
+        Logo: techLogos.mongodb,
       },
       {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
+        title: "Next.js",
+        Logo: techLogos.nextjs,
       },
-      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
       {
-        title: "react-query",
-        Logo: <assets.ReactQueryLogo className="w-5 h-5" />,
+        title: "Redux(toolkit)",
+        Logo: techLogos.redux,
+      },
+      {
+        title: "Tailwind CSS",
+        Logo: techLogos.tailwind,
+      },
+      {
+        title: "Mui",
+        Logo: techLogos.mui,
       },
     ],
     logoClasses: "w-10 -translate-y-2",
@@ -57,24 +52,27 @@ export const projects = [
   {
     key: 1,
     title: "eCommerce Store Front",
-    logo: CodeLogo,
+    logo: projectLogos.code,
     logoAlt: "eCommerce Store Front",
     src: "https://ecom-store.azharzaman.com/",
     github: "https://github.com/azharzaman1/ecommerce-store-front",
     desc: "Built an eCommerce store frontend with ReactJs, finding its database from a Graphql API. Redux is managing state and data flow.",
     techsLogos: [
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        Logo: <assets.ReduxLogo className="w-5 h-5" />,
-        title: "redux(toolkit)",
+        title: "JavaScript",
+        Logo: techLogos.node,
       },
       {
-        title: "qraphql",
-        Logo: <assets.GraphqlLogo className="w-5 h-5" />,
+        title: "React.js",
+        Logo: techLogos.react,
+      },
+      {
+        title: "Redux(toolkit)",
+        Logo: techLogos.redux,
+      },
+      {
+        title: "Graphql",
+        Logo: techLogos.graphql,
       },
     ],
     logoClasses: "w-10 -translate-y-2",
@@ -82,42 +80,47 @@ export const projects = [
   {
     key: 2,
     title: "API Archive",
-    logo: CodeLogo,
+    logo: projectLogos.code,
     logoAlt: "API archive logo",
     src: "https://apiarchive.azharzaman.com/",
     github: "https://github.com/azharzaman1/api-archive-client.git",
     desc: "API archive built with MERN stack, with 1400+ APIs at the moment. Appilication uses MongoDB as database, and NodeJs is running on backend.",
     techsLogos: [
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        Logo: <assets.ReduxLogo className="w-5 h-5" />,
-        title: "redux(toolkit)",
+        title: "JavaScript",
+        Logo: techLogos.javascript,
       },
       {
-        title: "nodejs",
-        Logo: <assets.NodeLogo className="w-5 h-5" />,
+        title: "React.js",
+        Logo: techLogos.react,
       },
       {
-        Logo: assets.ExpressLogo,
-        title: "expressjs",
-        isImage: true,
+        title: "Redux(toolkit)",
+        Logo: techLogos.redux,
       },
       {
-        title: "mongodb",
-        Logo: <assets.MongoLogo className="w-5 h-5" />,
+        title: "Node.js",
+        Logo: techLogos.node,
       },
       {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
+        title: "Express.js",
+        Logo: techLogos.express,
       },
-      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
       {
-        title: "react-query",
-        Logo: <assets.ReactQueryLogo className="w-5 h-5" />,
+        title: "MongoDB",
+        Logo: techLogos.mongodb,
+      },
+      {
+        title: "Mui",
+        Logo: techLogos.mui,
+      },
+      {
+        title: "Tailwind CSS",
+        Logo: techLogos.tailwind,
+      },
+      {
+        title: "React Query",
+        Logo: techLogos.reactQuery,
       },
     ],
     logoClasses: "w-10 -translate-y-2",
@@ -125,38 +128,43 @@ export const projects = [
   {
     key: 3,
     title: "Library Application",
-    logo: CodeLogo,
+    logo: projectLogos.code,
     logoAlt: "Library application logo",
-    src: "https://azhar-libraryapp.vercel.app/",
+    src: "https://library.azharzaman.com/",
     github: "https://github.com/azharzaman1/library-application-client",
     desc: "Built library application to practice MERN stack, with secure JWT-authentication, mongodb serving as database, expressjs to build protected APIs on MVC pattern. Role based authentication and UI",
     techsLogos: [
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
-      {
-        title: "nodejs",
-        Logo: <assets.NodeLogo className="w-5 h-5" />,
+        title: "JavaScript",
+        Logo: techLogos.javascript,
       },
       {
-        Logo: assets.ExpressLogo,
-        title: "expressjs",
-        isImage: true,
+        title: "React.js",
+        Logo: techLogos.react,
       },
       {
-        title: "mongodb",
-        Logo: <assets.MongoLogo className="w-5 h-5" />,
+        title: "Node.js",
+        Logo: techLogos.node,
       },
       {
-        title: "mui(material-ui)",
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
+        title: "Express.js",
+        Logo: techLogos.express,
       },
-      { title: "tailwind", Logo: <assets.TailwindLogo className="w-5 h-5" /> },
       {
-        title: "react-query",
-        Logo: <assets.ReactQueryLogo className="w-5 h-5" />,
+        title: "MongoDB",
+        Logo: techLogos.mongodb,
+      },
+      {
+        title: "Tailwind CSS",
+        Logo: techLogos.tailwind,
+      },
+      {
+        title: "Mui",
+        Logo: techLogos.mui,
+      },
+      {
+        title: "React Query",
+        Logo: techLogos.reactQuery,
       },
     ],
     logoClasses: "w-10 -translate-y-2",
@@ -173,16 +181,17 @@ export const projects = [
     desc: "Built a fully functional COVID-19 Tracker with React using latest web technologies like React, JavaScript. Tracker finds its realtime database from 'disease.sh' database using realtime API calls.",
     techsLogos: [
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+        title: "JavaScript",
+        Logo: techLogos.javascript,
       },
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
       {
-        Logo: assets.ChartJsLogo,
-        title: "react-chartjs",
-        isImage: true,
+        title: "React.js",
+        Logo: techLogos.react,
       },
-      { Logo: <assets.FirebaseLogo className="w-5 h-5" />, title: "firebase" },
+      {
+        title: "Firebase",
+        Logo: techLogos.firebase,
+      },
     ],
     logoClasses: "w-24 -translate-y-1.5",
   },
@@ -196,30 +205,81 @@ export const projects = [
     desc: "Personal blog built with Next.js(React framework) on frontend and Sanity CMS is supporting backend. Blog is built with latest really cool concepts, like Server Side Rendering(SSR) and very powerful on-demand Incremental Static Generation(ISR).",
     techsLogos: [
       {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
+        title: "JavaScript",
+        Logo: techLogos.javascript,
       },
-      { title: "reactjs", Logo: <assets.ReactLogo className="w-5 h-5" /> },
       {
-        title: "nextjs",
-        Logo: (
-          <div className="bg-white rounded-full h-5 flex justify-center items-center">
-            <assets.NextLogo2 className="w-5 h-5" />
-          </div>
-        ),
+        title: "React.js",
+        Logo: techLogos.react,
       },
-      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
       {
-        Logo: (
-          <span className="text-textDim font-medium uppercase tracking-widest">
-            Sanity
-          </span>
-        ),
-        title: "sanity cms",
+        title: "Next.js",
+        Logo: techLogos.nextjs,
+      },
+      {
+        title: "Tailwind CSS",
+        Logo: techLogos.tailwind,
       },
     ],
     logoClasses: "w-24 -translate-y-2",
   },
+  {
+    key: 7,
+    title: "Airbnb demo",
+    logo: projectLogos.airbnb,
+    logoAlt: "Airbnb Logo",
+    src: "https://airbnbdemo.azharzaman.com/",
+    github: "https://github.com/azharzaman1/airbnb-portfolio-project",
+    desc: "Built Airbnb clone using NextJs, Tailwind CSS and something really cool, Server side rendering by NextJs. It is a nice little application with awesome UI and basic feautres of world famous Airbnb.",
+    techsLogos: [
+      {
+        title: "JavaScript",
+        Logo: techLogos.javascript,
+      },
+      {
+        title: "React.js",
+        Logo: techLogos.react,
+      },
+      {
+        title: "Next.js",
+        Logo: techLogos.nextjs,
+      },
+      {
+        title: "Tailwind CSS",
+        Logo: techLogos.tailwind,
+      },
+    ],
+    logoClasses: "w-24 -translate-y-1",
+  },
+  {
+    key: 8,
+    title: "Personal Portfolio Site",
+    logo: "https://i.ibb.co/SJPMpGH/azhar.png",
+    logoAlt: "Azhar Logo",
+    // github: "https://github.com/azharzaman1/personal-portfolio-website",
+    // src: "https://azharzaman.com",
+    desc: "My personal portfolio website built on ReactJs. Enlisting my skill-set, expertise, and recent work experience. Making this website simple but expressive was my first priority, and here it is.",
+    techsLogos: [
+      {
+        title: "JavaScript",
+        Logo: techLogos.javascript,
+      },
+      {
+        title: "React.js",
+        Logo: techLogos.react,
+      },
+      {
+        title: "Mui",
+        Logo: techLogos.mui,
+      },
+      {
+        title: "Tailwind CSS",
+        Logo: techLogos.tailwind,
+      },
+    ],
+    logoClasses: "w-24 -translate-y-2",
+  },
+
   // {
   //   key: 5,
   //   title: "Fully-featured Amazon demo",
@@ -243,56 +303,7 @@ export const projects = [
   //   ],
   //   logoClasses: "w-24 -translate-y-1",
   // },
-  {
-    key: 7,
-    title: "Airbnb demo",
-    logo: AirbnbLogo,
-    logoAlt: "Airbnb Logo",
-    src: "https://airbnbdemo.azharzaman.com/",
-    github: "https://github.com/azharzaman1/airbnb-portfolio-project",
-    desc: "Built Airbnb clone using NextJs, Tailwind CSS and something really cool, Server side rendering by NextJs. It is a nice little application with awesome UI and basic feautres of world famous Airbnb.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
-      {
-        Logo: (
-          <div className="bg-white rounded-full h-5 flex justify-center items-center">
-            <assets.NextLogo2 className="w-5 h-5" />
-          </div>
-        ),
-        title: "nextjs",
-      },
-      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
-      { Logo: <assets.MapboxLogo className="w-20" />, title: "mapbox" },
-    ],
-    logoClasses: "w-24 -translate-y-1",
-  },
-  {
-    key: 8,
-    title: "Personal Portfolio Site",
-    logo: "https://i.ibb.co/SJPMpGH/azhar.png",
-    logoAlt: "Azhar Logo",
-    // github: "https://github.com/azharzaman1/personal-portfolio-website",
-    // src: "https://azharzaman.com",
-    desc: "My personal portfolio website built on ReactJs. Enlisting my skill-set, expertise, and recent work experience. Making this website simple but expressive was my first priority, and here it is.",
-    techsLogos: [
-      {
-        title: "javascript",
-        Logo: <assets.JavaScriptLogo className="w-5 h-5" />,
-      },
-      { Logo: <assets.ReactLogo className="w-5 h-5" />, title: "reactjs" },
-      {
-        Logo: <assets.MuiLogo className="w-5 h-5" />,
-        title: "mui(material-ui)",
-      },
-      { Logo: <assets.AOSLogo className="w-8" />, title: "animate on scroll" },
-      { Logo: <assets.TailwindLogo className="w-5 h-5" />, title: "tailwind" },
-    ],
-    logoClasses: "w-24 -translate-y-2",
-  },
+
   // {
   //   key: 6,
   //   title: "Netflix demo",
@@ -319,7 +330,7 @@ export const projects = [
 // {
 //   key: 8,
 //   title: "Single Product eCommerce site (development)",
-//   logo: CodeLogo,
+//   logo: projectLogos.code,
 //   logoAlt: "Library application logo",
 //   src: "https://single-product-ecommerce.vercel.app/",
 //   github: "https://github.com/azharzaman1/single-product-site",

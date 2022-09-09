@@ -1,32 +1,31 @@
-import assets from "./assets/assets";
-
+import { techLogos } from "./assets";
 export const mernExpertise = [
   [
     {
       key: 0,
       title: "MongoDB",
-      logo: assets.MongoLogo,
+      logoImg: techLogos.mongodb,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "ExpressJs",
-      logoImg: assets.ExpressLogo,
+      logoImg: techLogos.express,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 2,
       title: "ReactJs",
-      logo: assets.ReactLogo,
+      logoImg: techLogos.react,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 3,
       title: "NodeJs",
-      logo: assets.NodeLogo,
+      logoImg: techLogos.node,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -38,7 +37,7 @@ export const frontEndExpertise = [
     {
       key: 0,
       title: "JavaScript",
-      logo: assets.JavaScriptLogo,
+      logoImg: techLogos.javascript,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -47,14 +46,14 @@ export const frontEndExpertise = [
     {
       key: 0,
       title: "ReactJs (Hooks)",
-      logo: assets.ReactLogo,
+      logoImg: techLogos.react,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "NextJs",
-      logo: assets.NextLogo,
+      logoImg: techLogos.nextjs,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -63,21 +62,21 @@ export const frontEndExpertise = [
     {
       key: 0,
       title: "HTML5",
-      logo: assets.HTMLLogo,
+      logoImg: techLogos.html5,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "CSS3",
-      logo: assets.CSSLogo,
+      logoImg: techLogos.css3,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 2,
       title: "Tailwind CSS",
-      logo: assets.TailwindLogo,
+      logoImg: techLogos.tailwind,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -86,14 +85,14 @@ export const frontEndExpertise = [
     {
       key: 0,
       title: "Bootstrap",
-      logo: assets.BootstrapLogo,
+      logoImg: techLogos.bootstrap,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "Mui",
-      logo: assets.MuiLogo,
+      logoImg: techLogos.mui,
       dataAOS: "fade-up",
     },
   ],
@@ -101,7 +100,7 @@ export const frontEndExpertise = [
     {
       key: 0,
       title: "Basic PS / Figma",
-      logo: assets.CanvaLogo,
+      logoImg: techLogos.figma,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -112,8 +111,8 @@ export const toolsAndLibraries = [
   [
     {
       key: 0,
-      title: "Redux - Context",
-      logo: assets.ReduxLogo,
+      title: "Redux",
+      logoImg: techLogos.redux,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -122,14 +121,14 @@ export const toolsAndLibraries = [
     {
       key: 0,
       title: "React Query",
-      logo: assets.ReactQueryLogo,
+      logoImg: techLogos.reactQuery,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "Bootstrap (React)",
-      logo: assets.BootstrapLogo,
+      logoImg: techLogos.bootstrap,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -138,21 +137,21 @@ export const toolsAndLibraries = [
     {
       key: 0,
       title: "SCSS (Sass)",
-      logo: assets.SassLogo,
+      logoImg: techLogos.sass,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "Vercel / Netlify / Heroku",
-      logo: assets.NetlifyLogo,
+      logoImg: techLogos.heroku,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 2,
       title: "Git/Hub",
-      logo: assets.GithubLogo,
+      logoImg: techLogos.git,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
@@ -161,14 +160,14 @@ export const toolsAndLibraries = [
     {
       key: 0,
       title: "Jest / Testing Library",
-      logoImg: assets.TestingLibLogo,
+      logoImg: techLogos.jest,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },
     {
       key: 1,
       title: "Google Firebase",
-      logo: assets.FirebaseLogo,
+      logoImg: techLogos.firebase,
       dataAOS: "fade-up",
     },
   ],
@@ -176,7 +175,7 @@ export const toolsAndLibraries = [
     {
       key: 2,
       title: "WordPress",
-      logo: assets.WPLogo,
+      logoImg: techLogos.wordpress,
       dataAOS: "fade-up",
       dataAOS_delay: 500,
     },

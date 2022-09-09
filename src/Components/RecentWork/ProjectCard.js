@@ -7,8 +7,6 @@ import {
   Tooltip,
 } from "@material-ui/core";
 import { ViewCarouselOutlined, GitHub } from "@material-ui/icons";
-import { ReactComponent as WooLogo } from "../_files/assets/woo.svg";
-import { ReactComponent as WPLogo } from "../_files/assets/wp.svg";
 import { Launch } from "@material-ui/icons";
 import Spacer from "../Generic/Spacer";
 import Heading from "../Generic/Theme/Heading";
@@ -35,20 +33,11 @@ const ProjectCard = ({
               justifyContent="space-between"
             >
               <Grid item>
-                {project.logo === "wp" ? (
-                  // wp project logo
-                  <div className="flex space-x-1 items-center">
-                    <WPLogo width="130px" className="h-[40px]" />
-                    {project.wooLogo && <WooLogo />}
-                  </div>
-                ) : (
-                  // coding-project
-                  <img
-                    src={project.logo}
-                    alt={project.logoAlt}
-                    className={project.logoClasses}
-                  />
-                )}
+                <img
+                  src={project.logo}
+                  alt={project.logoAlt}
+                  className={project.logoClasses}
+                />
               </Grid>
               <Grid
                 item
@@ -105,11 +94,7 @@ const ProjectCard = ({
                 <Grid item key={Math.random() * i}>
                   <div className="h-5 flex items-center justify-center mt-3 cursor-pointer">
                     <Tooltip title={tech?.title} placement="top" arrow>
-                      {tech.isImage ? (
-                        <img src={tech.Logo} alt="." className="w-6" />
-                      ) : (
-                        tech.Logo
-                      )}
+                      <img src={tech.Logo} alt="." className="w-5" />
                     </Tooltip>
                   </div>
                 </Grid>
