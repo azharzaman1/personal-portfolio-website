@@ -223,6 +223,7 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-2",
   },
+  /*
   {
     key: 7,
     title: "Airbnb demo",
@@ -251,6 +252,7 @@ export const projects = [
     ],
     logoClasses: "w-24 -translate-y-1",
   },
+  */
   {
     key: 8,
     title: "Personal Portfolio Site",
