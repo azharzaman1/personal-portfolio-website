@@ -103,9 +103,9 @@ const GetinTouch = () => {
                 className="leading-6 max-w-lg text-sm md:text-[15px] font-normal font-sans mb-5"
               >
                 Well! You reached this point, means your interest in my
-                skill-set. If you want me build something awesome for you, or
+                skill-set. If you want me to build something awesome for you, or
                 you just want to discuss your project, or have a role for me at
-                your awesome company, my inbox itself is waiting for you. Thanks
+                your awesome company, my inbox is waiting for you. Thanks
               </p>
             </Grid>
             <Grid
