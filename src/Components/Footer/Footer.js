@@ -25,12 +25,14 @@ const Footer = () => {
             icon={<LinkedIn style={{ color: "#e2e2e29d" }} fontSize="small" />}
             className="!mt-2 !md:mt-0"
           />
+              {/*
           <Chip
             link="https://twitter.com/idrazhar"
             title="Twitter"
             icon={<Twitter style={{ color: "#e2e2e29d" }} fontSize="small" />}
             className="!mt-2 !md:mt-0"
           />
+          */}
         </Grid>
       </Grid>
     </div>
