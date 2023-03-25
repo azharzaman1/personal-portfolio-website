@@ -40,11 +40,13 @@ const Footer = () => {
             title="LinkedIn"
             icon={<LinkedIn fontSize="small" />}
           />
+          {/*
           <MuiChip
             link="https://twitter.com/idrazhar"
             title="Twitter"
             icon={<Twitter fontSize="small" />}
           />
+          */}
         </Grid>
       </Grid>
     </div>
